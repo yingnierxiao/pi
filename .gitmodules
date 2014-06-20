@@ -2,3 +2,6 @@
 	path = rpi-gpio
 	url = https://github.com/Tieske/rpi-gpio.git
 
+[submodule "skynet"]
+	path = skynet
+	url = https://github.com/cloudwu/skynet.git
