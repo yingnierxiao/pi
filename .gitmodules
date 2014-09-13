@@ -1,6 +1,6 @@
 [submodule "wiringPi"]
 	path = wiringPi
-	url = git://git.drogon.net/wiringPi
+	url = https://github.com/wronex/wiringPi.git
 [submodule "rpi-gpio"]
 	path = rpi-gpio
 	url = https://github.com/Tieske/rpi-gpio.git
