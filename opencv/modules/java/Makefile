@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/modules/java/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/java/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/modules/java/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/java/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/java/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/java/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/java/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/java/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/java/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/java/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 modules/java/CMakeFiles/opencv_java.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/java/CMakeFiles/opencv_java.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/java/CMakeFiles/opencv_java.dir/rule
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/rule
 
 # Convenience name for target.
@@ -173,7 +163,7 @@ opencv_java: modules/java/CMakeFiles/opencv_java.dir/rule
 
 # fast build rule for target.
 opencv_java/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/build
 .PHONY : opencv_java/fast
 
 calib3d.o: calib3d.cpp.o
@@ -181,7 +171,7 @@ calib3d.o: calib3d.cpp.o
 
 # target to build an object file
 calib3d.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/calib3d.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/calib3d.cpp.o
 .PHONY : calib3d.cpp.o
 
 calib3d.i: calib3d.cpp.i
@@ -189,7 +179,7 @@ calib3d.i: calib3d.cpp.i
 
 # target to preprocess a source file
 calib3d.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/calib3d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/calib3d.cpp.i
 .PHONY : calib3d.cpp.i
 
 calib3d.s: calib3d.cpp.s
@@ -197,7 +187,7 @@ calib3d.s: calib3d.cpp.s
 
 # target to generate assembly for a file
 calib3d.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/calib3d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/calib3d.cpp.s
 .PHONY : calib3d.cpp.s
 
 contrib.o: contrib.cpp.o
@@ -205,7 +195,7 @@ contrib.o: contrib.cpp.o
 
 # target to build an object file
 contrib.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/contrib.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/contrib.cpp.o
 .PHONY : contrib.cpp.o
 
 contrib.i: contrib.cpp.i
@@ -213,7 +203,7 @@ contrib.i: contrib.cpp.i
 
 # target to preprocess a source file
 contrib.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/contrib.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/contrib.cpp.i
 .PHONY : contrib.cpp.i
 
 contrib.s: contrib.cpp.s
@@ -221,7 +211,7 @@ contrib.s: contrib.cpp.s
 
 # target to generate assembly for a file
 contrib.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/contrib.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/contrib.cpp.s
 .PHONY : contrib.cpp.s
 
 core.o: core.cpp.o
@@ -229,7 +219,7 @@ core.o: core.cpp.o
 
 # target to build an object file
 core.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/core.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/core.cpp.o
 .PHONY : core.cpp.o
 
 core.i: core.cpp.i
@@ -237,7 +227,7 @@ core.i: core.cpp.i
 
 # target to preprocess a source file
 core.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/core.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/core.cpp.i
 .PHONY : core.cpp.i
 
 core.s: core.cpp.s
@@ -245,7 +235,7 @@ core.s: core.cpp.s
 
 # target to generate assembly for a file
 core.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/core.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/core.cpp.s
 .PHONY : core.cpp.s
 
 features2d.o: features2d.cpp.o
@@ -253,7 +243,7 @@ features2d.o: features2d.cpp.o
 
 # target to build an object file
 features2d.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/features2d.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/features2d.cpp.o
 .PHONY : features2d.cpp.o
 
 features2d.i: features2d.cpp.i
@@ -261,7 +251,7 @@ features2d.i: features2d.cpp.i
 
 # target to preprocess a source file
 features2d.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/features2d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/features2d.cpp.i
 .PHONY : features2d.cpp.i
 
 features2d.s: features2d.cpp.s
@@ -269,7 +259,7 @@ features2d.s: features2d.cpp.s
 
 # target to generate assembly for a file
 features2d.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/features2d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/features2d.cpp.s
 .PHONY : features2d.cpp.s
 
 generator/src/cpp/Mat.o: generator/src/cpp/Mat.cpp.o
@@ -277,7 +267,7 @@ generator/src/cpp/Mat.o: generator/src/cpp/Mat.cpp.o
 
 # target to build an object file
 generator/src/cpp/Mat.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.o
 .PHONY : generator/src/cpp/Mat.cpp.o
 
 generator/src/cpp/Mat.i: generator/src/cpp/Mat.cpp.i
@@ -285,7 +275,7 @@ generator/src/cpp/Mat.i: generator/src/cpp/Mat.cpp.i
 
 # target to preprocess a source file
 generator/src/cpp/Mat.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.i
 .PHONY : generator/src/cpp/Mat.cpp.i
 
 generator/src/cpp/Mat.s: generator/src/cpp/Mat.cpp.s
@@ -293,7 +283,7 @@ generator/src/cpp/Mat.s: generator/src/cpp/Mat.cpp.s
 
 # target to generate assembly for a file
 generator/src/cpp/Mat.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.s
 .PHONY : generator/src/cpp/Mat.cpp.s
 
 generator/src/cpp/converters.o: generator/src/cpp/converters.cpp.o
@@ -301,7 +291,7 @@ generator/src/cpp/converters.o: generator/src/cpp/converters.cpp.o
 
 # target to build an object file
 generator/src/cpp/converters.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.o
 .PHONY : generator/src/cpp/converters.cpp.o
 
 generator/src/cpp/converters.i: generator/src/cpp/converters.cpp.i
@@ -309,7 +299,7 @@ generator/src/cpp/converters.i: generator/src/cpp/converters.cpp.i
 
 # target to preprocess a source file
 generator/src/cpp/converters.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.i
 .PHONY : generator/src/cpp/converters.cpp.i
 
 generator/src/cpp/converters.s: generator/src/cpp/converters.cpp.s
@@ -317,7 +307,7 @@ generator/src/cpp/converters.s: generator/src/cpp/converters.cpp.s
 
 # target to generate assembly for a file
 generator/src/cpp/converters.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.s
 .PHONY : generator/src/cpp/converters.cpp.s
 
 generator/src/cpp/core_manual.o: generator/src/cpp/core_manual.cpp.o
@@ -325,7 +315,7 @@ generator/src/cpp/core_manual.o: generator/src/cpp/core_manual.cpp.o
 
 # target to build an object file
 generator/src/cpp/core_manual.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.o
 .PHONY : generator/src/cpp/core_manual.cpp.o
 
 generator/src/cpp/core_manual.i: generator/src/cpp/core_manual.cpp.i
@@ -333,7 +323,7 @@ generator/src/cpp/core_manual.i: generator/src/cpp/core_manual.cpp.i
 
 # target to preprocess a source file
 generator/src/cpp/core_manual.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.i
 .PHONY : generator/src/cpp/core_manual.cpp.i
 
 generator/src/cpp/core_manual.s: generator/src/cpp/core_manual.cpp.s
@@ -341,7 +331,7 @@ generator/src/cpp/core_manual.s: generator/src/cpp/core_manual.cpp.s
 
 # target to generate assembly for a file
 generator/src/cpp/core_manual.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.s
 .PHONY : generator/src/cpp/core_manual.cpp.s
 
 generator/src/cpp/gpu.o: generator/src/cpp/gpu.cpp.o
@@ -349,7 +339,7 @@ generator/src/cpp/gpu.o: generator/src/cpp/gpu.cpp.o
 
 # target to build an object file
 generator/src/cpp/gpu.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.o
 .PHONY : generator/src/cpp/gpu.cpp.o
 
 generator/src/cpp/gpu.i: generator/src/cpp/gpu.cpp.i
@@ -357,7 +347,7 @@ generator/src/cpp/gpu.i: generator/src/cpp/gpu.cpp.i
 
 # target to preprocess a source file
 generator/src/cpp/gpu.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.i
 .PHONY : generator/src/cpp/gpu.cpp.i
 
 generator/src/cpp/gpu.s: generator/src/cpp/gpu.cpp.s
@@ -365,7 +355,7 @@ generator/src/cpp/gpu.s: generator/src/cpp/gpu.cpp.s
 
 # target to generate assembly for a file
 generator/src/cpp/gpu.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.s
 .PHONY : generator/src/cpp/gpu.cpp.s
 
 generator/src/cpp/jni_part.o: generator/src/cpp/jni_part.cpp.o
@@ -373,7 +363,7 @@ generator/src/cpp/jni_part.o: generator/src/cpp/jni_part.cpp.o
 
 # target to build an object file
 generator/src/cpp/jni_part.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.o
 .PHONY : generator/src/cpp/jni_part.cpp.o
 
 generator/src/cpp/jni_part.i: generator/src/cpp/jni_part.cpp.i
@@ -381,7 +371,7 @@ generator/src/cpp/jni_part.i: generator/src/cpp/jni_part.cpp.i
 
 # target to preprocess a source file
 generator/src/cpp/jni_part.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.i
 .PHONY : generator/src/cpp/jni_part.cpp.i
 
 generator/src/cpp/jni_part.s: generator/src/cpp/jni_part.cpp.s
@@ -389,7 +379,7 @@ generator/src/cpp/jni_part.s: generator/src/cpp/jni_part.cpp.s
 
 # target to generate assembly for a file
 generator/src/cpp/jni_part.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.s
 .PHONY : generator/src/cpp/jni_part.cpp.s
 
 generator/src/cpp/utils.o: generator/src/cpp/utils.cpp.o
@@ -397,7 +387,7 @@ generator/src/cpp/utils.o: generator/src/cpp/utils.cpp.o
 
 # target to build an object file
 generator/src/cpp/utils.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.o
 .PHONY : generator/src/cpp/utils.cpp.o
 
 generator/src/cpp/utils.i: generator/src/cpp/utils.cpp.i
@@ -405,7 +395,7 @@ generator/src/cpp/utils.i: generator/src/cpp/utils.cpp.i
 
 # target to preprocess a source file
 generator/src/cpp/utils.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.i
 .PHONY : generator/src/cpp/utils.cpp.i
 
 generator/src/cpp/utils.s: generator/src/cpp/utils.cpp.s
@@ -413,7 +403,7 @@ generator/src/cpp/utils.s: generator/src/cpp/utils.cpp.s
 
 # target to generate assembly for a file
 generator/src/cpp/utils.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.s
 .PHONY : generator/src/cpp/utils.cpp.s
 
 highgui.o: highgui.cpp.o
@@ -421,7 +411,7 @@ highgui.o: highgui.cpp.o
 
 # target to build an object file
 highgui.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/highgui.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/highgui.cpp.o
 .PHONY : highgui.cpp.o
 
 highgui.i: highgui.cpp.i
@@ -429,7 +419,7 @@ highgui.i: highgui.cpp.i
 
 # target to preprocess a source file
 highgui.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/highgui.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/highgui.cpp.i
 .PHONY : highgui.cpp.i
 
 highgui.s: highgui.cpp.s
@@ -437,7 +427,7 @@ highgui.s: highgui.cpp.s
 
 # target to generate assembly for a file
 highgui.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/highgui.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/highgui.cpp.s
 .PHONY : highgui.cpp.s
 
 imgproc.o: imgproc.cpp.o
@@ -445,7 +435,7 @@ imgproc.o: imgproc.cpp.o
 
 # target to build an object file
 imgproc.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.o
 .PHONY : imgproc.cpp.o
 
 imgproc.i: imgproc.cpp.i
@@ -453,7 +443,7 @@ imgproc.i: imgproc.cpp.i
 
 # target to preprocess a source file
 imgproc.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.i
 .PHONY : imgproc.cpp.i
 
 imgproc.s: imgproc.cpp.s
@@ -461,7 +451,7 @@ imgproc.s: imgproc.cpp.s
 
 # target to generate assembly for a file
 imgproc.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.s
 .PHONY : imgproc.cpp.s
 
 ml.o: ml.cpp.o
@@ -469,7 +459,7 @@ ml.o: ml.cpp.o
 
 # target to build an object file
 ml.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/ml.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/ml.cpp.o
 .PHONY : ml.cpp.o
 
 ml.i: ml.cpp.i
@@ -477,7 +467,7 @@ ml.i: ml.cpp.i
 
 # target to preprocess a source file
 ml.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/ml.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/ml.cpp.i
 .PHONY : ml.cpp.i
 
 ml.s: ml.cpp.s
@@ -485,7 +475,7 @@ ml.s: ml.cpp.s
 
 # target to generate assembly for a file
 ml.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/ml.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/ml.cpp.s
 .PHONY : ml.cpp.s
 
 objdetect.o: objdetect.cpp.o
@@ -493,7 +483,7 @@ objdetect.o: objdetect.cpp.o
 
 # target to build an object file
 objdetect.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/objdetect.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/objdetect.cpp.o
 .PHONY : objdetect.cpp.o
 
 objdetect.i: objdetect.cpp.i
@@ -501,7 +491,7 @@ objdetect.i: objdetect.cpp.i
 
 # target to preprocess a source file
 objdetect.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/objdetect.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/objdetect.cpp.i
 .PHONY : objdetect.cpp.i
 
 objdetect.s: objdetect.cpp.s
@@ -509,7 +499,7 @@ objdetect.s: objdetect.cpp.s
 
 # target to generate assembly for a file
 objdetect.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/objdetect.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/objdetect.cpp.s
 .PHONY : objdetect.cpp.s
 
 photo.o: photo.cpp.o
@@ -517,7 +507,7 @@ photo.o: photo.cpp.o
 
 # target to build an object file
 photo.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/photo.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/photo.cpp.o
 .PHONY : photo.cpp.o
 
 photo.i: photo.cpp.i
@@ -525,7 +515,7 @@ photo.i: photo.cpp.i
 
 # target to preprocess a source file
 photo.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/photo.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/photo.cpp.i
 .PHONY : photo.cpp.i
 
 photo.s: photo.cpp.s
@@ -533,7 +523,7 @@ photo.s: photo.cpp.s
 
 # target to generate assembly for a file
 photo.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/photo.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/photo.cpp.s
 .PHONY : photo.cpp.s
 
 video.o: video.cpp.o
@@ -541,7 +531,7 @@ video.o: video.cpp.o
 
 # target to build an object file
 video.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/video.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/video.cpp.o
 .PHONY : video.cpp.o
 
 video.i: video.cpp.i
@@ -549,7 +539,7 @@ video.i: video.cpp.i
 
 # target to preprocess a source file
 video.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/video.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/video.cpp.i
 .PHONY : video.cpp.i
 
 video.s: video.cpp.s
@@ -557,7 +547,7 @@ video.s: video.cpp.s
 
 # target to generate assembly for a file
 video.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/video.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/video.cpp.s
 .PHONY : video.cpp.s
 
 # Help Target
@@ -569,7 +559,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_java"
 	@echo "... package"
@@ -634,6 +623,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

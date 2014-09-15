@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/ocl/CMakeFiles/opencv_ocl.dir/depend.make
@@ -136,25 +136,25 @@ modules/ocl/opencl_kernels.cpp: modules/ocl/src/opencl/stereocsbp.cl
 modules/ocl/opencl_kernels.cpp: modules/ocl/src/opencl/svm.cl
 modules/ocl/opencl_kernels.cpp: modules/ocl/src/opencl/tvl1flow.cl
 modules/ocl/opencl_kernels.cpp: cmake/cl2cpp.cmake
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels.cpp, opencl_kernels.hpp"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCL_DIR="/Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/opencl" -DOUTPUT="/Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/opencl_kernels.cpp" -P /Users/zj/Desktop/code/opencv-2.4.9/cmake/cl2cpp.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCL_DIR="/Users/zj/Desktop/code/pi/opencv/modules/ocl/src/opencl" -DOUTPUT="/Users/zj/Desktop/code/pi/opencv/modules/ocl/opencl_kernels.cpp" -P /Users/zj/Desktop/code/pi/opencv/cmake/cl2cpp.cmake
 
 modules/ocl/opencl_kernels.hpp: modules/ocl/opencl_kernels.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/arithm.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/arithm.cpp.o: modules/ocl/src/arithm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/arithm.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/arithm.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/arithm.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/arithm.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/arithm.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/arithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/arithm.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/arithm.cpp > CMakeFiles/opencv_ocl.dir/src/arithm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/arithm.cpp > CMakeFiles/opencv_ocl.dir/src/arithm.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/arithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/arithm.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/arithm.cpp -o CMakeFiles/opencv_ocl.dir/src/arithm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/arithm.cpp -o CMakeFiles/opencv_ocl.dir/src/arithm.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/arithm.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/arithm.cpp.o.requires
@@ -167,17 +167,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/arithm.cpp.o.provides.build: modules/o
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.o: modules/ocl/src/bgfg_mog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/bgfg_mog.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/bgfg_mog.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/bgfg_mog.cpp > CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/bgfg_mog.cpp > CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/bgfg_mog.cpp -o CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/bgfg_mog.cpp -o CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.o.requires
@@ -190,17 +190,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/bgfg_mog.cpp.o.provides.build: modules
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/blend.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/blend.cpp.o: modules/ocl/src/blend.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/blend.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/blend.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/blend.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/blend.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/blend.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/blend.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/blend.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/blend.cpp > CMakeFiles/opencv_ocl.dir/src/blend.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/blend.cpp > CMakeFiles/opencv_ocl.dir/src/blend.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/blend.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/blend.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/blend.cpp -o CMakeFiles/opencv_ocl.dir/src/blend.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/blend.cpp -o CMakeFiles/opencv_ocl.dir/src/blend.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/blend.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/blend.cpp.o.requires
@@ -213,17 +213,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/blend.cpp.o.provides.build: modules/oc
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.o: modules/ocl/src/brute_force_matcher.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/brute_force_matcher.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/brute_force_matcher.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/brute_force_matcher.cpp > CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/brute_force_matcher.cpp > CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/brute_force_matcher.cpp -o CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/brute_force_matcher.cpp -o CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.o.requires
@@ -236,17 +236,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/brute_force_matcher.cpp.o.provides.bui
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.o: modules/ocl/src/build_warps.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/build_warps.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/build_warps.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/build_warps.cpp > CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/build_warps.cpp > CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/build_warps.cpp -o CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/build_warps.cpp -o CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.o.requires
@@ -259,17 +259,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/build_warps.cpp.o.provides.build: modu
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/canny.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/canny.cpp.o: modules/ocl/src/canny.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/canny.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/canny.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/canny.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/canny.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/canny.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/canny.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/canny.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/canny.cpp > CMakeFiles/opencv_ocl.dir/src/canny.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/canny.cpp > CMakeFiles/opencv_ocl.dir/src/canny.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/canny.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/canny.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/canny.cpp -o CMakeFiles/opencv_ocl.dir/src/canny.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/canny.cpp -o CMakeFiles/opencv_ocl.dir/src/canny.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/canny.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/canny.cpp.o.requires
@@ -282,17 +282,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/canny.cpp.o.provides.build: modules/oc
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.o: modules/ocl/src/cl_context.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_context.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_context.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_context.cpp > CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_context.cpp > CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_context.cpp -o CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_context.cpp -o CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.o.requires
@@ -305,17 +305,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_context.cpp.o.provides.build: modul
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.o: modules/ocl/src/cl_operations.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_operations.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_operations.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_operations.cpp > CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_operations.cpp > CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_operations.cpp -o CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_operations.cpp -o CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.o.requires
@@ -328,17 +328,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_operations.cpp.o.provides.build: mo
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.o: modules/ocl/src/cl_programcache.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_programcache.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_programcache.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_programcache.cpp > CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_programcache.cpp > CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_programcache.cpp -o CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_programcache.cpp -o CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.o.requires
@@ -351,17 +351,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_programcache.cpp.o.provides.build: 
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.o: modules/ocl/src/cl_runtime/cl_runtime.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_runtime/cl_runtime.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_runtime/cl_runtime.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_runtime/cl_runtime.cpp > CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_runtime/cl_runtime.cpp > CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_runtime/cl_runtime.cpp -o CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_runtime/cl_runtime.cpp -o CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.o.requires
@@ -374,17 +374,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/cl_runtime.cpp.o.provides.b
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.o: modules/ocl/src/cl_runtime/clamdblas_runtime.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_runtime/clamdblas_runtime.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_runtime/clamdblas_runtime.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_runtime/clamdblas_runtime.cpp > CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_runtime/clamdblas_runtime.cpp > CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_runtime/clamdblas_runtime.cpp -o CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_runtime/clamdblas_runtime.cpp -o CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.o.requires
@@ -397,17 +397,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdblas_runtime.cpp.o.pro
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.o: modules/ocl/src/cl_runtime/clamdfft_runtime.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_runtime/clamdfft_runtime.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_runtime/clamdfft_runtime.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_runtime/clamdfft_runtime.cpp > CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_runtime/clamdfft_runtime.cpp > CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/cl_runtime/clamdfft_runtime.cpp -o CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/cl_runtime/clamdfft_runtime.cpp -o CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.o.requires
@@ -420,17 +420,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/cl_runtime/clamdfft_runtime.cpp.o.prov
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/color.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/color.cpp.o: modules/ocl/src/color.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/color.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/color.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/color.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/color.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/color.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/color.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/color.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/color.cpp > CMakeFiles/opencv_ocl.dir/src/color.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/color.cpp > CMakeFiles/opencv_ocl.dir/src/color.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/color.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/color.cpp -o CMakeFiles/opencv_ocl.dir/src/color.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/color.cpp -o CMakeFiles/opencv_ocl.dir/src/color.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/color.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/color.cpp.o.requires
@@ -443,17 +443,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/color.cpp.o.provides.build: modules/oc
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.o: modules/ocl/src/columnsum.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/columnsum.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/columnsum.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/columnsum.cpp > CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/columnsum.cpp > CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/columnsum.cpp -o CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/columnsum.cpp -o CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.o.requires
@@ -466,17 +466,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/columnsum.cpp.o.provides.build: module
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/error.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/error.cpp.o: modules/ocl/src/error.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/error.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/error.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/error.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/error.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/error.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/error.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/error.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/error.cpp > CMakeFiles/opencv_ocl.dir/src/error.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/error.cpp > CMakeFiles/opencv_ocl.dir/src/error.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/error.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/error.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/error.cpp -o CMakeFiles/opencv_ocl.dir/src/error.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/error.cpp -o CMakeFiles/opencv_ocl.dir/src/error.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/error.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/error.cpp.o.requires
@@ -489,17 +489,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/error.cpp.o.provides.build: modules/oc
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/fft.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/fft.cpp.o: modules/ocl/src/fft.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/fft.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/fft.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/fft.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/fft.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/fft.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/fft.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/fft.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/fft.cpp > CMakeFiles/opencv_ocl.dir/src/fft.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/fft.cpp > CMakeFiles/opencv_ocl.dir/src/fft.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/fft.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/fft.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/fft.cpp -o CMakeFiles/opencv_ocl.dir/src/fft.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/fft.cpp -o CMakeFiles/opencv_ocl.dir/src/fft.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/fft.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/fft.cpp.o.requires
@@ -512,17 +512,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/fft.cpp.o.provides.build: modules/ocl/
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/filtering.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/filtering.cpp.o: modules/ocl/src/filtering.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/filtering.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/filtering.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/filtering.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/filtering.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/filtering.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/filtering.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/filtering.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/filtering.cpp > CMakeFiles/opencv_ocl.dir/src/filtering.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/filtering.cpp > CMakeFiles/opencv_ocl.dir/src/filtering.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/filtering.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/filtering.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/filtering.cpp -o CMakeFiles/opencv_ocl.dir/src/filtering.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/filtering.cpp -o CMakeFiles/opencv_ocl.dir/src/filtering.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/filtering.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/filtering.cpp.o.requires
@@ -535,17 +535,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/filtering.cpp.o.provides.build: module
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/gemm.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/gemm.cpp.o: modules/ocl/src/gemm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/gemm.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/gemm.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/gemm.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/gemm.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/gemm.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/gemm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/gemm.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/gemm.cpp > CMakeFiles/opencv_ocl.dir/src/gemm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/gemm.cpp > CMakeFiles/opencv_ocl.dir/src/gemm.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/gemm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/gemm.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/gemm.cpp -o CMakeFiles/opencv_ocl.dir/src/gemm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/gemm.cpp -o CMakeFiles/opencv_ocl.dir/src/gemm.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/gemm.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/gemm.cpp.o.requires
@@ -558,17 +558,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/gemm.cpp.o.provides.build: modules/ocl
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/gftt.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/gftt.cpp.o: modules/ocl/src/gftt.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/gftt.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/gftt.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/gftt.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/gftt.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/gftt.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/gftt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/gftt.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/gftt.cpp > CMakeFiles/opencv_ocl.dir/src/gftt.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/gftt.cpp > CMakeFiles/opencv_ocl.dir/src/gftt.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/gftt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/gftt.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/gftt.cpp -o CMakeFiles/opencv_ocl.dir/src/gftt.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/gftt.cpp -o CMakeFiles/opencv_ocl.dir/src/gftt.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/gftt.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/gftt.cpp.o.requires
@@ -581,17 +581,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/gftt.cpp.o.provides.build: modules/ocl
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/haar.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/haar.cpp.o: modules/ocl/src/haar.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/haar.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/haar.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/haar.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/haar.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/haar.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/haar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/haar.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/haar.cpp > CMakeFiles/opencv_ocl.dir/src/haar.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/haar.cpp > CMakeFiles/opencv_ocl.dir/src/haar.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/haar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/haar.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/haar.cpp -o CMakeFiles/opencv_ocl.dir/src/haar.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/haar.cpp -o CMakeFiles/opencv_ocl.dir/src/haar.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/haar.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/haar.cpp.o.requires
@@ -604,17 +604,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/haar.cpp.o.provides.build: modules/ocl
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/hog.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/hog.cpp.o: modules/ocl/src/hog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/hog.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/hog.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/hog.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/hog.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/hog.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/hog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/hog.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/hog.cpp > CMakeFiles/opencv_ocl.dir/src/hog.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/hog.cpp > CMakeFiles/opencv_ocl.dir/src/hog.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/hog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/hog.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/hog.cpp -o CMakeFiles/opencv_ocl.dir/src/hog.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/hog.cpp -o CMakeFiles/opencv_ocl.dir/src/hog.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/hog.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/hog.cpp.o.requires
@@ -627,17 +627,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/hog.cpp.o.provides.build: modules/ocl/
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.o: modules/ocl/src/imgproc.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/imgproc.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/imgproc.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/imgproc.cpp > CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/imgproc.cpp > CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/imgproc.cpp -o CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/imgproc.cpp -o CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.o.requires
@@ -650,17 +650,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/imgproc.cpp.o.provides.build: modules/
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.o: modules/ocl/src/interpolate_frames.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/interpolate_frames.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/interpolate_frames.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/interpolate_frames.cpp > CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/interpolate_frames.cpp > CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/interpolate_frames.cpp -o CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/interpolate_frames.cpp -o CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.o.requires
@@ -673,17 +673,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/interpolate_frames.cpp.o.provides.buil
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/kalman.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/kalman.cpp.o: modules/ocl/src/kalman.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/kalman.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/kalman.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/kalman.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/kalman.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/kalman.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/kalman.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/kalman.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/kalman.cpp > CMakeFiles/opencv_ocl.dir/src/kalman.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/kalman.cpp > CMakeFiles/opencv_ocl.dir/src/kalman.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/kalman.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/kalman.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/kalman.cpp -o CMakeFiles/opencv_ocl.dir/src/kalman.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/kalman.cpp -o CMakeFiles/opencv_ocl.dir/src/kalman.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/kalman.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/kalman.cpp.o.requires
@@ -696,17 +696,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/kalman.cpp.o.provides.build: modules/o
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.o: modules/ocl/src/kmeans.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/kmeans.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/kmeans.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/kmeans.cpp > CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/kmeans.cpp > CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/kmeans.cpp -o CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/kmeans.cpp -o CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.o.requires
@@ -719,17 +719,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/kmeans.cpp.o.provides.build: modules/o
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/knearest.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/knearest.cpp.o: modules/ocl/src/knearest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/knearest.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/knearest.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/knearest.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/knearest.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/knearest.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/knearest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/knearest.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/knearest.cpp > CMakeFiles/opencv_ocl.dir/src/knearest.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/knearest.cpp > CMakeFiles/opencv_ocl.dir/src/knearest.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/knearest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/knearest.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/knearest.cpp -o CMakeFiles/opencv_ocl.dir/src/knearest.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/knearest.cpp -o CMakeFiles/opencv_ocl.dir/src/knearest.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/knearest.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/knearest.cpp.o.requires
@@ -742,17 +742,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/knearest.cpp.o.provides.build: modules
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/match_template.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/match_template.cpp.o: modules/ocl/src/match_template.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/match_template.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/match_template.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/match_template.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/match_template.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/match_template.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/match_template.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/match_template.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/match_template.cpp > CMakeFiles/opencv_ocl.dir/src/match_template.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/match_template.cpp > CMakeFiles/opencv_ocl.dir/src/match_template.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/match_template.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/match_template.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/match_template.cpp -o CMakeFiles/opencv_ocl.dir/src/match_template.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/match_template.cpp -o CMakeFiles/opencv_ocl.dir/src/match_template.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/match_template.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/match_template.cpp.o.requires
@@ -765,17 +765,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/match_template.cpp.o.provides.build: m
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.o: modules/ocl/src/matrix_operations.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/matrix_operations.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/matrix_operations.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/matrix_operations.cpp > CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/matrix_operations.cpp > CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/matrix_operations.cpp -o CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/matrix_operations.cpp -o CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.o.requires
@@ -788,17 +788,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/matrix_operations.cpp.o.provides.build
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.o: modules/ocl/src/mcwutil.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/mcwutil.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/mcwutil.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/mcwutil.cpp > CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/mcwutil.cpp > CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/mcwutil.cpp -o CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/mcwutil.cpp -o CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.o.requires
@@ -811,17 +811,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/mcwutil.cpp.o.provides.build: modules/
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/moments.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/moments.cpp.o: modules/ocl/src/moments.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/moments.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/moments.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/moments.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/moments.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/moments.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/moments.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/moments.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/moments.cpp > CMakeFiles/opencv_ocl.dir/src/moments.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/moments.cpp > CMakeFiles/opencv_ocl.dir/src/moments.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/moments.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/moments.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/moments.cpp -o CMakeFiles/opencv_ocl.dir/src/moments.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/moments.cpp -o CMakeFiles/opencv_ocl.dir/src/moments.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/moments.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/moments.cpp.o.requires
@@ -834,17 +834,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/moments.cpp.o.provides.build: modules/
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.o: modules/ocl/src/mssegmentation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/mssegmentation.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/mssegmentation.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/mssegmentation.cpp > CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/mssegmentation.cpp > CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/mssegmentation.cpp -o CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/mssegmentation.cpp -o CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.o.requires
@@ -857,17 +857,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/mssegmentation.cpp.o.provides.build: m
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.o: modules/ocl/src/optical_flow_farneback.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/optical_flow_farneback.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/optical_flow_farneback.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/optical_flow_farneback.cpp > CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/optical_flow_farneback.cpp > CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/optical_flow_farneback.cpp -o CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/optical_flow_farneback.cpp -o CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.o.requires
@@ -880,17 +880,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/optical_flow_farneback.cpp.o.provides.
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.o: modules/ocl/src/pyrdown.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/pyrdown.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/pyrdown.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/pyrdown.cpp > CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/pyrdown.cpp > CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/pyrdown.cpp -o CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/pyrdown.cpp -o CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.o.requires
@@ -903,17 +903,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrdown.cpp.o.provides.build: modules/
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.o: modules/ocl/src/pyrlk.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/pyrlk.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/pyrlk.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/pyrlk.cpp > CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/pyrlk.cpp > CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/pyrlk.cpp -o CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/pyrlk.cpp -o CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.o.requires
@@ -926,17 +926,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrlk.cpp.o.provides.build: modules/oc
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.o: modules/ocl/src/pyrup.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/pyrup.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/pyrup.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/pyrup.cpp > CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/pyrup.cpp > CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/pyrup.cpp -o CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/pyrup.cpp -o CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.o.requires
@@ -949,17 +949,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/pyrup.cpp.o.provides.build: modules/oc
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.o: modules/ocl/src/sort_by_key.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/sort_by_key.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/sort_by_key.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/sort_by_key.cpp > CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/sort_by_key.cpp > CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/sort_by_key.cpp -o CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/sort_by_key.cpp -o CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.o.requires
@@ -972,17 +972,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/sort_by_key.cpp.o.provides.build: modu
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.o: modules/ocl/src/split_merge.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/split_merge.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/split_merge.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/split_merge.cpp > CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/split_merge.cpp > CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/split_merge.cpp -o CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/split_merge.cpp -o CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.o.requires
@@ -995,17 +995,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/split_merge.cpp.o.provides.build: modu
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.o: modules/ocl/src/stereo_csbp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/stereo_csbp.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/stereo_csbp.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/stereo_csbp.cpp > CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/stereo_csbp.cpp > CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/stereo_csbp.cpp -o CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/stereo_csbp.cpp -o CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.o.requires
@@ -1018,17 +1018,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereo_csbp.cpp.o.provides.build: modu
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.o: modules/ocl/src/stereobm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/stereobm.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/stereobm.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/stereobm.cpp > CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/stereobm.cpp > CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/stereobm.cpp -o CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/stereobm.cpp -o CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.o.requires
@@ -1041,17 +1041,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobm.cpp.o.provides.build: modules
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.o: modules/ocl/src/stereobp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/stereobp.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/stereobp.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/stereobp.cpp > CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/stereobp.cpp > CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/stereobp.cpp -o CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/stereobp.cpp -o CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.o.requires
@@ -1064,17 +1064,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/stereobp.cpp.o.provides.build: modules
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/svm.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/svm.cpp.o: modules/ocl/src/svm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/svm.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/svm.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/svm.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/svm.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/svm.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/svm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/svm.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/svm.cpp > CMakeFiles/opencv_ocl.dir/src/svm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/svm.cpp > CMakeFiles/opencv_ocl.dir/src/svm.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/svm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/svm.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/svm.cpp -o CMakeFiles/opencv_ocl.dir/src/svm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/svm.cpp -o CMakeFiles/opencv_ocl.dir/src/svm.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/svm.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/svm.cpp.o.requires
@@ -1087,17 +1087,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/svm.cpp.o.provides.build: modules/ocl/
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.o: modules/ocl/src/tvl1flow.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/tvl1flow.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/tvl1flow.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/tvl1flow.cpp > CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/tvl1flow.cpp > CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/src/tvl1flow.cpp -o CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/src/tvl1flow.cpp -o CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.o.requires
@@ -1110,17 +1110,17 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/src/tvl1flow.cpp.o.provides.build: modules
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.o: modules/ocl/CMakeFiles/opencv_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.o: modules/ocl/opencl_kernels.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_44)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/opencl_kernels.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/opencl_kernels.cpp
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/opencl_kernels.cpp > CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/opencl_kernels.cpp > CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.i
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/opencl_kernels.cpp -o CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/opencl_kernels.cpp -o CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.s
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/opencl_kernels.cpp.o.requires
@@ -1240,8 +1240,8 @@ lib/libopencv_ocl.2.4.9.dylib: lib/libopencv_imgproc.2.4.9.dylib
 lib/libopencv_ocl.2.4.9.dylib: lib/libopencv_core.2.4.9.dylib
 lib/libopencv_ocl.2.4.9.dylib: modules/ocl/CMakeFiles/opencv_ocl.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../lib/libopencv_ocl.dylib"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_ocl.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && $(CMAKE_COMMAND) -E cmake_symlink_library ../../lib/libopencv_ocl.2.4.9.dylib ../../lib/libopencv_ocl.2.4.dylib ../../lib/libopencv_ocl.dylib
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_ocl.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && $(CMAKE_COMMAND) -E cmake_symlink_library ../../lib/libopencv_ocl.2.4.9.dylib ../../lib/libopencv_ocl.2.4.dylib ../../lib/libopencv_ocl.dylib
 
 lib/libopencv_ocl.2.4.dylib: lib/libopencv_ocl.2.4.9.dylib
 
@@ -1297,11 +1297,11 @@ modules/ocl/CMakeFiles/opencv_ocl.dir/requires: modules/ocl/CMakeFiles/opencv_oc
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/requires
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && $(CMAKE_COMMAND) -P CMakeFiles/opencv_ocl.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && $(CMAKE_COMMAND) -P CMakeFiles/opencv_ocl.dir/cmake_clean.cmake
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/clean
 
 modules/ocl/CMakeFiles/opencv_ocl.dir/depend: modules/ocl/opencl_kernels.cpp
 modules/ocl/CMakeFiles/opencv_ocl.dir/depend: modules/ocl/opencl_kernels.hpp
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/CMakeFiles/opencv_ocl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/ocl /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/ocl /Users/zj/Desktop/code/pi/opencv/modules/ocl/CMakeFiles/opencv_ocl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/depend
 

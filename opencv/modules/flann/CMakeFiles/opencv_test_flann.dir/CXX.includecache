@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/flann/test/test_lshtable_badarg.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/flann/test/test_lshtable_badarg.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/flann/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/flann/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/flann/test/test_main.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/flann/test/test_main.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/flann/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/flann/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/flann/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/flann/test/test_precomp.hpp
 opencv2/ts/ts.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/flann/test/opencv2/ts/ts.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/flann/test/opencv2/ts/ts.hpp
 opencv2/core/core.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/flann/test/opencv2/core/core.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/flann/test/opencv2/core/core.hpp
 opencv2/flann/flann.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/flann/test/opencv2/flann/flann.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/flann/test/opencv2/flann/flann.hpp
 iostream
 -
 

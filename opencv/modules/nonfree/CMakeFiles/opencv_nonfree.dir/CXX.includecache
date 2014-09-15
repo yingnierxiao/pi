@@ -6,67 +6,47 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/opencl_kernels.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/opencl_kernels.cpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/precomp.hpp
 opencl_kernels.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/opencl_kernels.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/opencl_kernels.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/opencl_kernels.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/opencl_kernels.hpp
 opencv2/ocl/private/util.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/opencv2/ocl/private/util.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/opencv2/ocl/private/util.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/nonfree_init.cpp
-precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/precomp.hpp
-
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/src/precomp.hpp
 cvconfig.h
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/cvconfig.h
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/src/cvconfig.h
 opencv2/opencv_modules.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/opencv2/opencv_modules.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/src/opencv2/opencv_modules.hpp
 opencv2/nonfree/nonfree.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/opencv2/nonfree/nonfree.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/src/opencv2/nonfree/nonfree.hpp
 opencv2/imgproc/imgproc.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/opencv2/imgproc/imgproc.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/src/opencv2/imgproc/imgproc.hpp
 opencv2/core/internal.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/opencv2/core/internal.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/src/opencv2/core/internal.hpp
 opencv2/nonfree/gpu.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/opencv2/nonfree/gpu.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/src/opencv2/nonfree/gpu.hpp
 opencv2/gpu/stream_accessor.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/opencv2/gpu/stream_accessor.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/src/opencv2/gpu/stream_accessor.hpp
 opencv2/gpu/device/common.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/opencv2/gpu/device/common.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/src/opencv2/gpu/device/common.hpp
 opencv2/nonfree/ocl.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/opencv2/nonfree/ocl.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/src/opencv2/nonfree/ocl.hpp
 opencv2/ocl/private/util.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/opencv2/ocl/private/util.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/src/opencv2/ocl/private/util.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/sift.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/src/surf_ocl.cpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/precomp.hpp
-iostream
--
-stdarg.h
--
-
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/surf.cpp
-precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/precomp.hpp
-
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/surf_gpu.cpp
-precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/precomp.hpp
-
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/surf_ocl.cpp
-precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/src/precomp.hpp
 cstdio
 -
 sstream
 -
 opencl_kernels.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/src/opencl_kernels.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/src/opencl_kernels.hpp
 
 cvconfig.h
 

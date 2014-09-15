@@ -6,35 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/test/test_cascadeandhog.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/test/test_cascadeandhog.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/test/test_precomp.hpp
 opencv2/imgproc/imgproc.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/test/opencv2/imgproc/imgproc.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/test/opencv2/imgproc/imgproc.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/test/test_latentsvmdetector.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/test/test_latentsvmdetector.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/test/test_precomp.hpp
 string
 -
 cvconfig.h
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/test/cvconfig.h
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/test/cvconfig.h
 tbb/task_scheduler_init.h
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/test/tbb/task_scheduler_init.h
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/test/tbb/task_scheduler_init.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/test/test_main.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/test/test_main.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/test/test_precomp.hpp
 opencv2/ts/ts.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/test/opencv2/ts/ts.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/test/opencv2/ts/ts.hpp
 opencv2/objdetect/objdetect.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/test/opencv2/objdetect/objdetect.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/test/opencv2/objdetect/objdetect.hpp
 opencv2/imgproc/imgproc.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/test/opencv2/imgproc/imgproc.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/test/opencv2/imgproc/imgproc.hpp
 opencv2/highgui/highgui.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/test/opencv2/highgui/highgui.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/test/opencv2/highgui/highgui.hpp
 
 cvconfig.h
 

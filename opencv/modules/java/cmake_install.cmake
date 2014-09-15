@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zj/Desktop/code/opencv-2.4.9/modules/java
+# Install script for directory: /Users/zj/Desktop/code/pi/opencv/modules/java
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -28,43 +28,40 @@ IF(NOT CMAKE_INSTALL_COMPONENT)
 ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "java")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/OpenCV/java" TYPE FILE FILES "/Users/zj/Desktop/code/opencv-2.4.9/bin/opencv-249.jar")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/OpenCV/java" TYPE FILE FILES "/Users/zj/Desktop/code/pi/opencv/bin/opencv-249.jar")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "java")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "java")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/OpenCV/java" TYPE SHARED_LIBRARY FILES "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_java249.dylib")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/OpenCV/java" TYPE SHARED_LIBRARY FILES "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_java249.dylib")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/OpenCV/java/libopencv_java249.dylib" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/OpenCV/java/libopencv_java249.dylib")
     EXECUTE_PROCESS(COMMAND "/usr/bin/install_name_tool"
       -id "lib/libopencv_java249.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_calib3d.2.4.dylib" "lib/libopencv_calib3d.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_contrib.2.4.dylib" "lib/libopencv_contrib.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_core.2.4.dylib" "lib/libopencv_core.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_features2d.2.4.dylib" "lib/libopencv_features2d.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_flann.2.4.dylib" "lib/libopencv_flann.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_gpu.2.4.dylib" "lib/libopencv_gpu.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_highgui.2.4.dylib" "lib/libopencv_highgui.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_imgproc.2.4.dylib" "lib/libopencv_imgproc.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_legacy.2.4.dylib" "lib/libopencv_legacy.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_ml.2.4.dylib" "lib/libopencv_ml.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_nonfree.2.4.dylib" "lib/libopencv_nonfree.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_objdetect.2.4.dylib" "lib/libopencv_objdetect.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_ocl.2.4.dylib" "lib/libopencv_ocl.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_photo.2.4.dylib" "lib/libopencv_photo.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_video.2.4.dylib" "lib/libopencv_video.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_calib3d.2.4.dylib" "lib/libopencv_calib3d.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_contrib.2.4.dylib" "lib/libopencv_contrib.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_core.2.4.dylib" "lib/libopencv_core.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_features2d.2.4.dylib" "lib/libopencv_features2d.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_flann.2.4.dylib" "lib/libopencv_flann.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_gpu.2.4.dylib" "lib/libopencv_gpu.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_highgui.2.4.dylib" "lib/libopencv_highgui.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_imgproc.2.4.dylib" "lib/libopencv_imgproc.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_legacy.2.4.dylib" "lib/libopencv_legacy.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_ml.2.4.dylib" "lib/libopencv_ml.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_nonfree.2.4.dylib" "lib/libopencv_nonfree.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_objdetect.2.4.dylib" "lib/libopencv_objdetect.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_ocl.2.4.dylib" "lib/libopencv_ocl.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_photo.2.4.dylib" "lib/libopencv_photo.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_video.2.4.dylib" "lib/libopencv_video.2.4.dylib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/OpenCV/java/libopencv_java249.dylib")
     execute_process(COMMAND /usr/bin/install_name_tool
       -add_rpath "/usr/local/lib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/OpenCV/java/libopencv_java249.dylib")
-    IF(CMAKE_INSTALL_DO_STRIP)
-      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/OpenCV/java/libopencv_java249.dylib")
-    ENDIF(CMAKE_INSTALL_DO_STRIP)
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "java")
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/Users/zj/Desktop/code/opencv-2.4.9/modules/java/test/cmake_install.cmake")
+  INCLUDE("/Users/zj/Desktop/code/pi/opencv/modules/java/test/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

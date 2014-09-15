@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/apps/haartraining/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/haartraining/CMakeFiles/opencv_createsamples.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/CMakeFiles/opencv_createsamples.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/CMakeFiles/opencv_createsamples.dir/rule
 .PHONY : apps/haartraining/CMakeFiles/opencv_createsamples.dir/rule
 
 # Convenience name for target.
@@ -173,12 +163,12 @@ opencv_createsamples: apps/haartraining/CMakeFiles/opencv_createsamples.dir/rule
 
 # fast build rule for target.
 opencv_createsamples/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_createsamples.dir/build.make apps/haartraining/CMakeFiles/opencv_createsamples.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_createsamples.dir/build.make apps/haartraining/CMakeFiles/opencv_createsamples.dir/build
 .PHONY : opencv_createsamples/fast
 
 # Convenience name for target.
 apps/haartraining/CMakeFiles/opencv_haartraining.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/CMakeFiles/opencv_haartraining.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/CMakeFiles/opencv_haartraining.dir/rule
 .PHONY : apps/haartraining/CMakeFiles/opencv_haartraining.dir/rule
 
 # Convenience name for target.
@@ -187,12 +177,12 @@ opencv_haartraining: apps/haartraining/CMakeFiles/opencv_haartraining.dir/rule
 
 # fast build rule for target.
 opencv_haartraining/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining.dir/build
 .PHONY : opencv_haartraining/fast
 
 # Convenience name for target.
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/rule
 .PHONY : apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/rule
 
 # Convenience name for target.
@@ -201,12 +191,12 @@ opencv_haartraining_engine: apps/haartraining/CMakeFiles/opencv_haartraining_eng
 
 # fast build rule for target.
 opencv_haartraining_engine/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build
 .PHONY : opencv_haartraining_engine/fast
 
 # Convenience name for target.
 apps/haartraining/CMakeFiles/opencv_performance.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/CMakeFiles/opencv_performance.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/CMakeFiles/opencv_performance.dir/rule
 .PHONY : apps/haartraining/CMakeFiles/opencv_performance.dir/rule
 
 # Convenience name for target.
@@ -215,7 +205,7 @@ opencv_performance: apps/haartraining/CMakeFiles/opencv_performance.dir/rule
 
 # fast build rule for target.
 opencv_performance/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_performance.dir/build.make apps/haartraining/CMakeFiles/opencv_performance.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_performance.dir/build.make apps/haartraining/CMakeFiles/opencv_performance.dir/build
 .PHONY : opencv_performance/fast
 
 createsamples.o: createsamples.cpp.o
@@ -223,7 +213,7 @@ createsamples.o: createsamples.cpp.o
 
 # target to build an object file
 createsamples.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_createsamples.dir/build.make apps/haartraining/CMakeFiles/opencv_createsamples.dir/createsamples.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_createsamples.dir/build.make apps/haartraining/CMakeFiles/opencv_createsamples.dir/createsamples.cpp.o
 .PHONY : createsamples.cpp.o
 
 createsamples.i: createsamples.cpp.i
@@ -231,7 +221,7 @@ createsamples.i: createsamples.cpp.i
 
 # target to preprocess a source file
 createsamples.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_createsamples.dir/build.make apps/haartraining/CMakeFiles/opencv_createsamples.dir/createsamples.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_createsamples.dir/build.make apps/haartraining/CMakeFiles/opencv_createsamples.dir/createsamples.cpp.i
 .PHONY : createsamples.cpp.i
 
 createsamples.s: createsamples.cpp.s
@@ -239,7 +229,7 @@ createsamples.s: createsamples.cpp.s
 
 # target to generate assembly for a file
 createsamples.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_createsamples.dir/build.make apps/haartraining/CMakeFiles/opencv_createsamples.dir/createsamples.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_createsamples.dir/build.make apps/haartraining/CMakeFiles/opencv_createsamples.dir/createsamples.cpp.s
 .PHONY : createsamples.cpp.s
 
 cvboost.o: cvboost.cpp.o
@@ -247,7 +237,7 @@ cvboost.o: cvboost.cpp.o
 
 # target to build an object file
 cvboost.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.o
 .PHONY : cvboost.cpp.o
 
 cvboost.i: cvboost.cpp.i
@@ -255,7 +245,7 @@ cvboost.i: cvboost.cpp.i
 
 # target to preprocess a source file
 cvboost.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.i
 .PHONY : cvboost.cpp.i
 
 cvboost.s: cvboost.cpp.s
@@ -263,7 +253,7 @@ cvboost.s: cvboost.cpp.s
 
 # target to generate assembly for a file
 cvboost.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.s
 .PHONY : cvboost.cpp.s
 
 cvcommon.o: cvcommon.cpp.o
@@ -271,7 +261,7 @@ cvcommon.o: cvcommon.cpp.o
 
 # target to build an object file
 cvcommon.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.o
 .PHONY : cvcommon.cpp.o
 
 cvcommon.i: cvcommon.cpp.i
@@ -279,7 +269,7 @@ cvcommon.i: cvcommon.cpp.i
 
 # target to preprocess a source file
 cvcommon.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.i
 .PHONY : cvcommon.cpp.i
 
 cvcommon.s: cvcommon.cpp.s
@@ -287,7 +277,7 @@ cvcommon.s: cvcommon.cpp.s
 
 # target to generate assembly for a file
 cvcommon.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.s
 .PHONY : cvcommon.cpp.s
 
 cvhaarclassifier.o: cvhaarclassifier.cpp.o
@@ -295,7 +285,7 @@ cvhaarclassifier.o: cvhaarclassifier.cpp.o
 
 # target to build an object file
 cvhaarclassifier.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.o
 .PHONY : cvhaarclassifier.cpp.o
 
 cvhaarclassifier.i: cvhaarclassifier.cpp.i
@@ -303,7 +293,7 @@ cvhaarclassifier.i: cvhaarclassifier.cpp.i
 
 # target to preprocess a source file
 cvhaarclassifier.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.i
 .PHONY : cvhaarclassifier.cpp.i
 
 cvhaarclassifier.s: cvhaarclassifier.cpp.s
@@ -311,7 +301,7 @@ cvhaarclassifier.s: cvhaarclassifier.cpp.s
 
 # target to generate assembly for a file
 cvhaarclassifier.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.s
 .PHONY : cvhaarclassifier.cpp.s
 
 cvhaartraining.o: cvhaartraining.cpp.o
@@ -319,7 +309,7 @@ cvhaartraining.o: cvhaartraining.cpp.o
 
 # target to build an object file
 cvhaartraining.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.o
 .PHONY : cvhaartraining.cpp.o
 
 cvhaartraining.i: cvhaartraining.cpp.i
@@ -327,7 +317,7 @@ cvhaartraining.i: cvhaartraining.cpp.i
 
 # target to preprocess a source file
 cvhaartraining.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.i
 .PHONY : cvhaartraining.cpp.i
 
 cvhaartraining.s: cvhaartraining.cpp.s
@@ -335,7 +325,7 @@ cvhaartraining.s: cvhaartraining.cpp.s
 
 # target to generate assembly for a file
 cvhaartraining.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.s
 .PHONY : cvhaartraining.cpp.s
 
 cvsamples.o: cvsamples.cpp.o
@@ -343,7 +333,7 @@ cvsamples.o: cvsamples.cpp.o
 
 # target to build an object file
 cvsamples.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.o
 .PHONY : cvsamples.cpp.o
 
 cvsamples.i: cvsamples.cpp.i
@@ -351,7 +341,7 @@ cvsamples.i: cvsamples.cpp.i
 
 # target to preprocess a source file
 cvsamples.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.i
 .PHONY : cvsamples.cpp.i
 
 cvsamples.s: cvsamples.cpp.s
@@ -359,7 +349,7 @@ cvsamples.s: cvsamples.cpp.s
 
 # target to generate assembly for a file
 cvsamples.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.s
 .PHONY : cvsamples.cpp.s
 
 haartraining.o: haartraining.cpp.o
@@ -367,7 +357,7 @@ haartraining.o: haartraining.cpp.o
 
 # target to build an object file
 haartraining.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining.dir/haartraining.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining.dir/haartraining.cpp.o
 .PHONY : haartraining.cpp.o
 
 haartraining.i: haartraining.cpp.i
@@ -375,7 +365,7 @@ haartraining.i: haartraining.cpp.i
 
 # target to preprocess a source file
 haartraining.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining.dir/haartraining.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining.dir/haartraining.cpp.i
 .PHONY : haartraining.cpp.i
 
 haartraining.s: haartraining.cpp.s
@@ -383,7 +373,7 @@ haartraining.s: haartraining.cpp.s
 
 # target to generate assembly for a file
 haartraining.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining.dir/haartraining.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining.dir/haartraining.cpp.s
 .PHONY : haartraining.cpp.s
 
 performance.o: performance.cpp.o
@@ -391,7 +381,7 @@ performance.o: performance.cpp.o
 
 # target to build an object file
 performance.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_performance.dir/build.make apps/haartraining/CMakeFiles/opencv_performance.dir/performance.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_performance.dir/build.make apps/haartraining/CMakeFiles/opencv_performance.dir/performance.cpp.o
 .PHONY : performance.cpp.o
 
 performance.i: performance.cpp.i
@@ -399,7 +389,7 @@ performance.i: performance.cpp.i
 
 # target to preprocess a source file
 performance.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_performance.dir/build.make apps/haartraining/CMakeFiles/opencv_performance.dir/performance.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_performance.dir/build.make apps/haartraining/CMakeFiles/opencv_performance.dir/performance.cpp.i
 .PHONY : performance.cpp.i
 
 performance.s: performance.cpp.s
@@ -407,7 +397,7 @@ performance.s: performance.cpp.s
 
 # target to generate assembly for a file
 performance.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_performance.dir/build.make apps/haartraining/CMakeFiles/opencv_performance.dir/performance.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f apps/haartraining/CMakeFiles/opencv_performance.dir/build.make apps/haartraining/CMakeFiles/opencv_performance.dir/performance.cpp.s
 .PHONY : performance.cpp.s
 
 # Help Target
@@ -419,7 +409,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_createsamples"
 	@echo "... opencv_haartraining"
@@ -463,6 +452,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

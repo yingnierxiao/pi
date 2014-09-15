@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/imgproc/CMakeFiles/opencv_imgproc.dir/depend.make
@@ -54,17 +54,17 @@ include modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o: modules/imgproc/src/accum.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/accum.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/accum.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/accum.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/accum.cpp > CMakeFiles/opencv_imgproc.dir/src/accum.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/accum.cpp > CMakeFiles/opencv_imgproc.dir/src/accum.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/accum.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/accum.cpp -o CMakeFiles/opencv_imgproc.dir/src/accum.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/accum.cpp -o CMakeFiles/opencv_imgproc.dir/src/accum.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o.requires
@@ -77,17 +77,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o.provides.build: mo
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.o: modules/imgproc/src/approx.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/approx.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/approx.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/approx.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/approx.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/approx.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/approx.cpp > CMakeFiles/opencv_imgproc.dir/src/approx.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/approx.cpp > CMakeFiles/opencv_imgproc.dir/src/approx.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/approx.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/approx.cpp -o CMakeFiles/opencv_imgproc.dir/src/approx.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/approx.cpp -o CMakeFiles/opencv_imgproc.dir/src/approx.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.o.requires
@@ -100,17 +100,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.o.provides.build: m
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o: modules/imgproc/src/canny.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/canny.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/canny.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/canny.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/canny.cpp > CMakeFiles/opencv_imgproc.dir/src/canny.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/canny.cpp > CMakeFiles/opencv_imgproc.dir/src/canny.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/canny.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/canny.cpp -o CMakeFiles/opencv_imgproc.dir/src/canny.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/canny.cpp -o CMakeFiles/opencv_imgproc.dir/src/canny.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o.requires
@@ -123,17 +123,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o.provides.build: mo
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o: modules/imgproc/src/clahe.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/clahe.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/clahe.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/clahe.cpp > CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/clahe.cpp > CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/clahe.cpp -o CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/clahe.cpp -o CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o.requires
@@ -146,17 +146,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o.provides.build: mo
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o: modules/imgproc/src/color.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/color.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/color.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/color.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/color.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/color.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/color.cpp > CMakeFiles/opencv_imgproc.dir/src/color.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/color.cpp > CMakeFiles/opencv_imgproc.dir/src/color.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/color.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/color.cpp -o CMakeFiles/opencv_imgproc.dir/src/color.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/color.cpp -o CMakeFiles/opencv_imgproc.dir/src/color.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o.requires
@@ -169,17 +169,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o.provides.build: mo
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o: modules/imgproc/src/contours.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/contours.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/contours.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/contours.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/contours.cpp > CMakeFiles/opencv_imgproc.dir/src/contours.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/contours.cpp > CMakeFiles/opencv_imgproc.dir/src/contours.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/contours.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/contours.cpp -o CMakeFiles/opencv_imgproc.dir/src/contours.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/contours.cpp -o CMakeFiles/opencv_imgproc.dir/src/contours.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o.requires
@@ -192,17 +192,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o.provides.build:
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o: modules/imgproc/src/convhull.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/convhull.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/convhull.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/convhull.cpp > CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/convhull.cpp > CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/convhull.cpp -o CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/convhull.cpp -o CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o.requires
@@ -215,17 +215,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o.provides.build:
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o: modules/imgproc/src/corner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/corner.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/corner.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/corner.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/corner.cpp > CMakeFiles/opencv_imgproc.dir/src/corner.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/corner.cpp > CMakeFiles/opencv_imgproc.dir/src/corner.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/corner.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/corner.cpp -o CMakeFiles/opencv_imgproc.dir/src/corner.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/corner.cpp -o CMakeFiles/opencv_imgproc.dir/src/corner.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o.requires
@@ -238,17 +238,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o.provides.build: m
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o: modules/imgproc/src/cornersubpix.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/cornersubpix.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/cornersubpix.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/cornersubpix.cpp > CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/cornersubpix.cpp > CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/cornersubpix.cpp -o CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/cornersubpix.cpp -o CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o.requires
@@ -261,17 +261,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o.provides.bu
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o: modules/imgproc/src/deriv.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/deriv.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/deriv.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/deriv.cpp > CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/deriv.cpp > CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/deriv.cpp -o CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/deriv.cpp -o CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o.requires
@@ -284,17 +284,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o.provides.build: mo
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o: modules/imgproc/src/distransform.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/distransform.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/distransform.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/distransform.cpp > CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/distransform.cpp > CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/distransform.cpp -o CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/distransform.cpp -o CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o.requires
@@ -307,17 +307,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o.provides.bu
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o: modules/imgproc/src/emd.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/emd.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/emd.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/emd.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/emd.cpp > CMakeFiles/opencv_imgproc.dir/src/emd.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/emd.cpp > CMakeFiles/opencv_imgproc.dir/src/emd.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/emd.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/emd.cpp -o CMakeFiles/opencv_imgproc.dir/src/emd.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/emd.cpp -o CMakeFiles/opencv_imgproc.dir/src/emd.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o.requires
@@ -330,17 +330,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o.provides.build: modu
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o: modules/imgproc/src/featureselect.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/featureselect.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/featureselect.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/featureselect.cpp > CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/featureselect.cpp > CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/featureselect.cpp -o CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/featureselect.cpp -o CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o.requires
@@ -353,17 +353,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o.provides.b
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o: modules/imgproc/src/filter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/filter.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/filter.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/filter.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/filter.cpp > CMakeFiles/opencv_imgproc.dir/src/filter.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/filter.cpp > CMakeFiles/opencv_imgproc.dir/src/filter.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/filter.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/filter.cpp -o CMakeFiles/opencv_imgproc.dir/src/filter.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/filter.cpp -o CMakeFiles/opencv_imgproc.dir/src/filter.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o.requires
@@ -376,17 +376,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o.provides.build: m
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o: modules/imgproc/src/floodfill.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/floodfill.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/floodfill.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/floodfill.cpp > CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/floodfill.cpp > CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/floodfill.cpp -o CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/floodfill.cpp -o CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o.requires
@@ -399,17 +399,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o.provides.build
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o: modules/imgproc/src/gabor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/gabor.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/gabor.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/gabor.cpp > CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/gabor.cpp > CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/gabor.cpp -o CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/gabor.cpp -o CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o.requires
@@ -422,17 +422,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o.provides.build: mo
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o: modules/imgproc/src/generalized_hough.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/generalized_hough.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/generalized_hough.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/generalized_hough.cpp > CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/generalized_hough.cpp > CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/generalized_hough.cpp -o CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/generalized_hough.cpp -o CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o.requires
@@ -445,17 +445,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o.provid
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o: modules/imgproc/src/geometry.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/geometry.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/geometry.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/geometry.cpp > CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/geometry.cpp > CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/geometry.cpp -o CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/geometry.cpp -o CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o.requires
@@ -468,17 +468,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o.provides.build:
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o: modules/imgproc/src/grabcut.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/grabcut.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/grabcut.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/grabcut.cpp > CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/grabcut.cpp > CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/grabcut.cpp -o CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/grabcut.cpp -o CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o.requires
@@ -491,17 +491,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o.provides.build: 
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o: modules/imgproc/src/histogram.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/histogram.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/histogram.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/histogram.cpp > CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/histogram.cpp > CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/histogram.cpp -o CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/histogram.cpp -o CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o.requires
@@ -514,17 +514,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o.provides.build
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o: modules/imgproc/src/hough.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/hough.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/hough.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/hough.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/hough.cpp > CMakeFiles/opencv_imgproc.dir/src/hough.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/hough.cpp > CMakeFiles/opencv_imgproc.dir/src/hough.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/hough.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/hough.cpp -o CMakeFiles/opencv_imgproc.dir/src/hough.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/hough.cpp -o CMakeFiles/opencv_imgproc.dir/src/hough.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o.requires
@@ -537,17 +537,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o.provides.build: mo
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o: modules/imgproc/src/imgwarp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/imgwarp.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/imgwarp.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/imgwarp.cpp > CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/imgwarp.cpp > CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/imgwarp.cpp -o CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/imgwarp.cpp -o CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o.requires
@@ -560,17 +560,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o.provides.build: 
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o: modules/imgproc/src/linefit.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/linefit.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/linefit.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/linefit.cpp > CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/linefit.cpp > CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/linefit.cpp -o CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/linefit.cpp -o CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o.requires
@@ -583,17 +583,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o.provides.build: 
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o: modules/imgproc/src/matchcontours.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/matchcontours.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/matchcontours.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/matchcontours.cpp > CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/matchcontours.cpp > CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/matchcontours.cpp -o CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/matchcontours.cpp -o CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o.requires
@@ -606,17 +606,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o.provides.b
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o: modules/imgproc/src/moments.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/moments.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/moments.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/moments.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/moments.cpp > CMakeFiles/opencv_imgproc.dir/src/moments.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/moments.cpp > CMakeFiles/opencv_imgproc.dir/src/moments.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/moments.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/moments.cpp -o CMakeFiles/opencv_imgproc.dir/src/moments.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/moments.cpp -o CMakeFiles/opencv_imgproc.dir/src/moments.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o.requires
@@ -629,17 +629,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o.provides.build: 
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o: modules/imgproc/src/morph.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/morph.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/morph.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/morph.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/morph.cpp > CMakeFiles/opencv_imgproc.dir/src/morph.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/morph.cpp > CMakeFiles/opencv_imgproc.dir/src/morph.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/morph.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/morph.cpp -o CMakeFiles/opencv_imgproc.dir/src/morph.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/morph.cpp -o CMakeFiles/opencv_imgproc.dir/src/morph.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o.requires
@@ -652,17 +652,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o.provides.build: mo
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o: modules/imgproc/src/phasecorr.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/phasecorr.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/phasecorr.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/phasecorr.cpp > CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/phasecorr.cpp > CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/phasecorr.cpp -o CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/phasecorr.cpp -o CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o.requires
@@ -675,17 +675,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o.provides.build
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o: modules/imgproc/src/pyramids.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/pyramids.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/pyramids.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/pyramids.cpp > CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/pyramids.cpp > CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/pyramids.cpp -o CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/pyramids.cpp -o CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o.requires
@@ -698,17 +698,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o.provides.build:
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o: modules/imgproc/src/rotcalipers.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/rotcalipers.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/rotcalipers.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/rotcalipers.cpp > CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/rotcalipers.cpp > CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/rotcalipers.cpp -o CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/rotcalipers.cpp -o CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o.requires
@@ -721,17 +721,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o.provides.bui
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o: modules/imgproc/src/samplers.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/samplers.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/samplers.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/samplers.cpp > CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/samplers.cpp > CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/samplers.cpp -o CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/samplers.cpp -o CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o.requires
@@ -744,17 +744,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o.provides.build:
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o: modules/imgproc/src/segmentation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/segmentation.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/segmentation.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/segmentation.cpp > CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/segmentation.cpp > CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/segmentation.cpp -o CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/segmentation.cpp -o CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o.requires
@@ -767,17 +767,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o.provides.bu
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o: modules/imgproc/src/shapedescr.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/shapedescr.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/shapedescr.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/shapedescr.cpp > CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/shapedescr.cpp > CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/shapedescr.cpp -o CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/shapedescr.cpp -o CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o.requires
@@ -790,17 +790,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o.provides.buil
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o: modules/imgproc/src/smooth.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/smooth.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/smooth.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/smooth.cpp > CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/smooth.cpp > CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/smooth.cpp -o CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/smooth.cpp -o CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o.requires
@@ -813,17 +813,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o.provides.build: m
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o: modules/imgproc/src/subdivision2d.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/subdivision2d.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/subdivision2d.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/subdivision2d.cpp > CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/subdivision2d.cpp > CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/subdivision2d.cpp -o CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/subdivision2d.cpp -o CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o.requires
@@ -836,17 +836,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o.provides.b
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o: modules/imgproc/src/sumpixels.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/sumpixels.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/sumpixels.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/sumpixels.cpp > CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/sumpixels.cpp > CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/sumpixels.cpp -o CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/sumpixels.cpp -o CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o.requires
@@ -859,17 +859,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o.provides.build
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o: modules/imgproc/src/tables.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/tables.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/tables.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/tables.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/tables.cpp > CMakeFiles/opencv_imgproc.dir/src/tables.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/tables.cpp > CMakeFiles/opencv_imgproc.dir/src/tables.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/tables.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/tables.cpp -o CMakeFiles/opencv_imgproc.dir/src/tables.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/tables.cpp -o CMakeFiles/opencv_imgproc.dir/src/tables.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o.requires
@@ -882,17 +882,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o.provides.build: m
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o: modules/imgproc/src/templmatch.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/templmatch.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/templmatch.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/templmatch.cpp > CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/templmatch.cpp > CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/templmatch.cpp -o CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/templmatch.cpp -o CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o.requires
@@ -905,17 +905,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o.provides.buil
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o: modules/imgproc/src/thresh.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/thresh.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/thresh.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/thresh.cpp > CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/thresh.cpp > CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/thresh.cpp -o CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/thresh.cpp -o CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o.requires
@@ -928,17 +928,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o.provides.build: m
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o: modules/imgproc/src/undistort.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/undistort.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/undistort.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/undistort.cpp > CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/undistort.cpp > CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/undistort.cpp -o CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/undistort.cpp -o CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o.requires
@@ -951,17 +951,17 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o.provides.build
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o: modules/imgproc/src/utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/utils.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/utils.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/utils.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/utils.cpp > CMakeFiles/opencv_imgproc.dir/src/utils.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/utils.cpp > CMakeFiles/opencv_imgproc.dir/src/utils.cpp.i
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/utils.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/src/utils.cpp -o CMakeFiles/opencv_imgproc.dir/src/utils.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/imgproc/src/utils.cpp -o CMakeFiles/opencv_imgproc.dir/src/utils.cpp.s
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o.requires:
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o.requires
@@ -1062,8 +1062,8 @@ lib/libopencv_imgproc.2.4.9.dylib: modules/imgproc/CMakeFiles/opencv_imgproc.dir
 lib/libopencv_imgproc.2.4.9.dylib: lib/libopencv_core.2.4.9.dylib
 lib/libopencv_imgproc.2.4.9.dylib: modules/imgproc/CMakeFiles/opencv_imgproc.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../lib/libopencv_imgproc.dylib"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_imgproc.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && $(CMAKE_COMMAND) -E cmake_symlink_library ../../lib/libopencv_imgproc.2.4.9.dylib ../../lib/libopencv_imgproc.2.4.dylib ../../lib/libopencv_imgproc.dylib
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_imgproc.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && $(CMAKE_COMMAND) -E cmake_symlink_library ../../lib/libopencv_imgproc.2.4.9.dylib ../../lib/libopencv_imgproc.2.4.dylib ../../lib/libopencv_imgproc.dylib
 
 lib/libopencv_imgproc.2.4.dylib: lib/libopencv_imgproc.2.4.9.dylib
 
@@ -1116,10 +1116,10 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFil
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc && $(CMAKE_COMMAND) -P CMakeFiles/opencv_imgproc.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/imgproc && $(CMAKE_COMMAND) -P CMakeFiles/opencv_imgproc.dir/cmake_clean.cmake
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/clean
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/CMakeFiles/opencv_imgproc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/imgproc /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/imgproc /Users/zj/Desktop/code/pi/opencv/modules/imgproc/CMakeFiles/opencv_imgproc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/depend
 

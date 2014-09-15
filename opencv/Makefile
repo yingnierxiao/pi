@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	/usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,9 +123,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1055,7 +1045,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_modules"
 	@echo "... opencv_perf_tests"

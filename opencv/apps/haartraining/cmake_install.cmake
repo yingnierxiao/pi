@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining
+# Install script for directory: /Users/zj/Desktop/code/pi/opencv/apps/haartraining
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -28,77 +28,68 @@ IF(NOT CMAKE_INSTALL_COMPONENT)
 ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/zj/Desktop/code/opencv-2.4.9/bin/opencv_haartraining")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/zj/Desktop/code/pi/opencv/bin/opencv_haartraining")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_haartraining" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_haartraining")
     EXECUTE_PROCESS(COMMAND "/usr/bin/install_name_tool"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_calib3d.2.4.dylib" "lib/libopencv_calib3d.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_core.2.4.dylib" "lib/libopencv_core.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_features2d.2.4.dylib" "lib/libopencv_features2d.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_flann.2.4.dylib" "lib/libopencv_flann.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_highgui.2.4.dylib" "lib/libopencv_highgui.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_imgproc.2.4.dylib" "lib/libopencv_imgproc.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_legacy.2.4.dylib" "lib/libopencv_legacy.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_ml.2.4.dylib" "lib/libopencv_ml.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_objdetect.2.4.dylib" "lib/libopencv_objdetect.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_video.2.4.dylib" "lib/libopencv_video.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_calib3d.2.4.dylib" "lib/libopencv_calib3d.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_core.2.4.dylib" "lib/libopencv_core.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_features2d.2.4.dylib" "lib/libopencv_features2d.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_flann.2.4.dylib" "lib/libopencv_flann.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_highgui.2.4.dylib" "lib/libopencv_highgui.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_imgproc.2.4.dylib" "lib/libopencv_imgproc.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_legacy.2.4.dylib" "lib/libopencv_legacy.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_ml.2.4.dylib" "lib/libopencv_ml.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_objdetect.2.4.dylib" "lib/libopencv_objdetect.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_video.2.4.dylib" "lib/libopencv_video.2.4.dylib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_haartraining")
     execute_process(COMMAND /usr/bin/install_name_tool
       -add_rpath "/usr/local/lib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_haartraining")
-    IF(CMAKE_INSTALL_DO_STRIP)
-      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_haartraining")
-    ENDIF(CMAKE_INSTALL_DO_STRIP)
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/zj/Desktop/code/opencv-2.4.9/bin/opencv_createsamples")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/zj/Desktop/code/pi/opencv/bin/opencv_createsamples")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_createsamples" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_createsamples")
     EXECUTE_PROCESS(COMMAND "/usr/bin/install_name_tool"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_calib3d.2.4.dylib" "lib/libopencv_calib3d.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_core.2.4.dylib" "lib/libopencv_core.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_features2d.2.4.dylib" "lib/libopencv_features2d.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_flann.2.4.dylib" "lib/libopencv_flann.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_highgui.2.4.dylib" "lib/libopencv_highgui.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_imgproc.2.4.dylib" "lib/libopencv_imgproc.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_legacy.2.4.dylib" "lib/libopencv_legacy.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_ml.2.4.dylib" "lib/libopencv_ml.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_objdetect.2.4.dylib" "lib/libopencv_objdetect.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_video.2.4.dylib" "lib/libopencv_video.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_calib3d.2.4.dylib" "lib/libopencv_calib3d.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_core.2.4.dylib" "lib/libopencv_core.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_features2d.2.4.dylib" "lib/libopencv_features2d.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_flann.2.4.dylib" "lib/libopencv_flann.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_highgui.2.4.dylib" "lib/libopencv_highgui.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_imgproc.2.4.dylib" "lib/libopencv_imgproc.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_legacy.2.4.dylib" "lib/libopencv_legacy.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_ml.2.4.dylib" "lib/libopencv_ml.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_objdetect.2.4.dylib" "lib/libopencv_objdetect.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_video.2.4.dylib" "lib/libopencv_video.2.4.dylib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_createsamples")
     execute_process(COMMAND /usr/bin/install_name_tool
       -add_rpath "/usr/local/lib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_createsamples")
-    IF(CMAKE_INSTALL_DO_STRIP)
-      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_createsamples")
-    ENDIF(CMAKE_INSTALL_DO_STRIP)
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/zj/Desktop/code/opencv-2.4.9/bin/opencv_performance")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/zj/Desktop/code/pi/opencv/bin/opencv_performance")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_performance" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_performance")
     EXECUTE_PROCESS(COMMAND "/usr/bin/install_name_tool"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_calib3d.2.4.dylib" "lib/libopencv_calib3d.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_core.2.4.dylib" "lib/libopencv_core.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_features2d.2.4.dylib" "lib/libopencv_features2d.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_flann.2.4.dylib" "lib/libopencv_flann.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_highgui.2.4.dylib" "lib/libopencv_highgui.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_imgproc.2.4.dylib" "lib/libopencv_imgproc.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_legacy.2.4.dylib" "lib/libopencv_legacy.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_ml.2.4.dylib" "lib/libopencv_ml.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_objdetect.2.4.dylib" "lib/libopencv_objdetect.2.4.dylib"
-      -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_video.2.4.dylib" "lib/libopencv_video.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_calib3d.2.4.dylib" "lib/libopencv_calib3d.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_core.2.4.dylib" "lib/libopencv_core.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_features2d.2.4.dylib" "lib/libopencv_features2d.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_flann.2.4.dylib" "lib/libopencv_flann.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_highgui.2.4.dylib" "lib/libopencv_highgui.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_imgproc.2.4.dylib" "lib/libopencv_imgproc.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_legacy.2.4.dylib" "lib/libopencv_legacy.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_ml.2.4.dylib" "lib/libopencv_ml.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_objdetect.2.4.dylib" "lib/libopencv_objdetect.2.4.dylib"
+      -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_video.2.4.dylib" "lib/libopencv_video.2.4.dylib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_performance")
     execute_process(COMMAND /usr/bin/install_name_tool
       -add_rpath "/usr/local/lib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_performance")
-    IF(CMAKE_INSTALL_DO_STRIP)
-      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opencv_performance")
-    ENDIF(CMAKE_INSTALL_DO_STRIP)
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
 

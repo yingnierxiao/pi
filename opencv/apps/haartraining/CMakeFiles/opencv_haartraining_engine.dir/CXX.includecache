@@ -6,31 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/_cvcommon.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/_cvcommon.h
 opencv2/core/core.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/opencv2/core/core.hpp
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/opencv2/core/core.hpp
 opencv2/core/internal.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/opencv2/core/internal.hpp
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/opencv2/core/internal.hpp
 cxcore.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cxcore.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cxcore.h
 cv.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cv.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cv.h
 cxmisc.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cxmisc.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cxmisc.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/_cvhaartraining.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/_cvhaartraining.h
 _cvcommon.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/_cvcommon.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/_cvcommon.h
 cvclassifier.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvclassifier.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvclassifier.h
 cstring
 -
 cstdio
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvboost.cpp
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvboost.cpp
 cvconfig.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvconfig.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvconfig.h
 malloc.h
 -
 memory.h
@@ -48,21 +48,21 @@ ctime
 climits
 -
 _cvcommon.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/_cvcommon.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/_cvcommon.h
 cvclassifier.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvclassifier.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvclassifier.h
 omp.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/omp.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/omp.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvclassifier.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvclassifier.h
 cmath
 -
 cxcore.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cxcore.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cxcore.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvcommon.cpp
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvcommon.cpp
 _cvcommon.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/_cvcommon.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/_cvcommon.h
 cstring
 -
 ctime
@@ -74,15 +74,15 @@ sys/types.h
 direct.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvhaarclassifier.cpp
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvhaarclassifier.cpp
 _cvhaartraining.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/_cvhaartraining.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/_cvhaartraining.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvhaartraining.cpp
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvhaartraining.cpp
 cvhaartraining.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvhaartraining.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvhaartraining.h
 _cvhaartraining.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/_cvhaartraining.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/_cvhaartraining.h
 cstdio
 -
 cstdlib
@@ -94,21 +94,21 @@ climits
 ctype.h
 -
 highgui.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/highgui.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/highgui.h
 ctime
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvhaartraining.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvhaartraining.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvsamples.cpp
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvsamples.cpp
 cvhaartraining.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvhaartraining.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvhaartraining.h
 _cvhaartraining.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/_cvhaartraining.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/_cvhaartraining.h
 cv.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cv.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cv.h
 highgui.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/highgui.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/highgui.h
 
 cvconfig.h
 

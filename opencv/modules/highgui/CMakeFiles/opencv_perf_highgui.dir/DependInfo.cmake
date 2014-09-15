@@ -4,9 +4,9 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/perf/perf_input.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_perf_highgui.dir/perf/perf_input.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/perf/perf_main.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_perf_highgui.dir/perf/perf_main.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/perf/perf_output.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_perf_highgui.dir/perf/perf_output.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/perf/perf_input.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_perf_highgui.dir/perf/perf_input.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/perf/perf_main.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_perf_highgui.dir/perf/perf_main.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/perf/perf_output.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_perf_highgui.dir/perf/perf_output.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "Clang")
 
@@ -17,12 +17,12 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/core/CMakeFiles/opencv_core.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/CMakeFiles/opencv_imgproc.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ts/CMakeFiles/opencv_ts.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/flann/CMakeFiles/opencv_flann.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/CMakeFiles/opencv_features2d.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/modules/core/CMakeFiles/opencv_core.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/modules/imgproc/CMakeFiles/opencv_imgproc.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ts/CMakeFiles/opencv_ts.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/modules/flann/CMakeFiles/opencv_flann.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/modules/features2d/CMakeFiles/opencv_features2d.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

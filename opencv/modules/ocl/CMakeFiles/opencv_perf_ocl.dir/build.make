@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/ocl/CMakeFiles/opencv_perf_ocl.dir/depend.make
@@ -54,17 +54,17 @@ include modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.o: modules/ocl/perf/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/main.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/main.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/main.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/main.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/main.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/main.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.o.requires
@@ -77,17 +77,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/main.cpp.o.provides.build: modul
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.o: modules/ocl/perf/perf_arithm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_arithm.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_arithm.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_arithm.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_arithm.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_arithm.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_arithm.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.o.requires
@@ -100,17 +100,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_arithm.cpp.o.provides.build
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.o: modules/ocl/perf/perf_bgfg.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_bgfg.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_bgfg.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_bgfg.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_bgfg.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_bgfg.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_bgfg.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.o.requires
@@ -123,17 +123,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_bgfg.cpp.o.provides.build: 
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.o: modules/ocl/perf/perf_blend.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_blend.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_blend.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_blend.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_blend.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_blend.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_blend.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.o.requires
@@ -146,17 +146,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_blend.cpp.o.provides.build:
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.o: modules/ocl/perf/perf_brute_force_matcher.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_brute_force_matcher.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_brute_force_matcher.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_brute_force_matcher.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_brute_force_matcher.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_brute_force_matcher.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_brute_force_matcher.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.o.requires
@@ -169,17 +169,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_brute_force_matcher.cpp.o.p
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.o: modules/ocl/perf/perf_calib3d.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_calib3d.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_calib3d.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_calib3d.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_calib3d.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_calib3d.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_calib3d.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.o.requires
@@ -192,17 +192,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_calib3d.cpp.o.provides.buil
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.o: modules/ocl/perf/perf_canny.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_canny.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_canny.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_canny.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_canny.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_canny.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_canny.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.o.requires
@@ -215,17 +215,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_canny.cpp.o.provides.build:
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.o: modules/ocl/perf/perf_color.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_color.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_color.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_color.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_color.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_color.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_color.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.o.requires
@@ -238,17 +238,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_color.cpp.o.provides.build:
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.o: modules/ocl/perf/perf_fft.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_fft.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_fft.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_fft.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_fft.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_fft.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_fft.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.o.requires
@@ -261,17 +261,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_fft.cpp.o.provides.build: m
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.o: modules/ocl/perf/perf_filters.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_filters.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_filters.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_filters.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_filters.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_filters.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_filters.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.o.requires
@@ -284,17 +284,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_filters.cpp.o.provides.buil
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.o: modules/ocl/perf/perf_gemm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_gemm.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_gemm.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_gemm.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_gemm.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_gemm.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_gemm.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.o.requires
@@ -307,17 +307,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gemm.cpp.o.provides.build: 
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.o: modules/ocl/perf/perf_gftt.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_gftt.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_gftt.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_gftt.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_gftt.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_gftt.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_gftt.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.o.requires
@@ -330,17 +330,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_gftt.cpp.o.provides.build: 
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.o: modules/ocl/perf/perf_haar.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_haar.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_haar.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_haar.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_haar.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_haar.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_haar.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.o.requires
@@ -353,17 +353,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_haar.cpp.o.provides.build: 
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.o: modules/ocl/perf/perf_hog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_hog.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_hog.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_hog.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_hog.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_hog.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_hog.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.o.requires
@@ -376,17 +376,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_hog.cpp.o.provides.build: m
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.o: modules/ocl/perf/perf_imgproc.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_imgproc.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_imgproc.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_imgproc.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_imgproc.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_imgproc.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_imgproc.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.o.requires
@@ -399,17 +399,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgproc.cpp.o.provides.buil
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.o: modules/ocl/perf/perf_imgwarp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_imgwarp.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_imgwarp.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_imgwarp.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_imgwarp.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_imgwarp.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_imgwarp.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.o.requires
@@ -422,17 +422,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_imgwarp.cpp.o.provides.buil
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.o: modules/ocl/perf/perf_kalman.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_kalman.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_kalman.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_kalman.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_kalman.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_kalman.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_kalman.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.o.requires
@@ -445,17 +445,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_kalman.cpp.o.provides.build
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.o: modules/ocl/perf/perf_match_template.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_match_template.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_match_template.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_match_template.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_match_template.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_match_template.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_match_template.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.o.requires
@@ -468,17 +468,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_match_template.cpp.o.provid
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.o: modules/ocl/perf/perf_matrix_operation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_matrix_operation.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_matrix_operation.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_matrix_operation.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_matrix_operation.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_matrix_operation.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_matrix_operation.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.o.requires
@@ -491,17 +491,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_matrix_operation.cpp.o.prov
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.o: modules/ocl/perf/perf_ml.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_ml.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_ml.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_ml.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_ml.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_ml.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_ml.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.o.requires
@@ -514,17 +514,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_ml.cpp.o.provides.build: mo
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.o: modules/ocl/perf/perf_moments.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_moments.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_moments.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_moments.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_moments.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_moments.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_moments.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.o.requires
@@ -537,17 +537,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_moments.cpp.o.provides.buil
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.o: modules/ocl/perf/perf_opticalflow.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_opticalflow.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_opticalflow.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_opticalflow.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_opticalflow.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_opticalflow.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_opticalflow.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.o.requires
@@ -560,17 +560,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_opticalflow.cpp.o.provides.
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.o: modules/ocl/perf/perf_pyramid.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_pyramid.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_pyramid.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_pyramid.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_pyramid.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_pyramid.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_pyramid.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.o.requires
@@ -583,17 +583,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_pyramid.cpp.o.provides.buil
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.o: modules/ocl/perf/perf_split_merge.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_split_merge.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_split_merge.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_split_merge.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_split_merge.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_split_merge.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_split_merge.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.o.requires
@@ -606,17 +606,17 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_split_merge.cpp.o.provides.
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.o: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.o: modules/ocl/perf/perf_stat.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_stat.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_stat.cpp
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_stat.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_stat.cpp > CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.i
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/perf/perf_stat.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/perf/perf_stat.cpp -o CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.s
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/perf/perf_stat.cpp.o.requires
@@ -712,7 +712,7 @@ bin/opencv_perf_ocl: lib/libopencv_imgproc.2.4.9.dylib
 bin/opencv_perf_ocl: lib/libopencv_core.2.4.9.dylib
 bin/opencv_perf_ocl: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../bin/opencv_perf_ocl"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_perf_ocl.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_perf_ocl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/build: bin/opencv_perf_ocl
@@ -746,10 +746,10 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/requires: modules/ocl/CMakeFiles/open
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/requires
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && $(CMAKE_COMMAND) -P CMakeFiles/opencv_perf_ocl.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && $(CMAKE_COMMAND) -P CMakeFiles/opencv_perf_ocl.dir/cmake_clean.cmake
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/clean
 
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/CMakeFiles/opencv_perf_ocl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/ocl /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/ocl /Users/zj/Desktop/code/pi/opencv/modules/ocl/CMakeFiles/opencv_perf_ocl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/depend
 

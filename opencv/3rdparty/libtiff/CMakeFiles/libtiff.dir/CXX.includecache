@@ -6,27 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_config.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_config.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_dir.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_dir.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_stream.cxx
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_stream.cxx
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 tiffio.hxx
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffio.hxx
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffio.hxx
 iostream
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiff.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiff.h
 tif_config.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_config.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_config.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffio.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffio.h
 tiff.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiff.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiff.h
 tiffvers.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffvers.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffvers.h
 windows.h
 -
 stdio.h
@@ -34,15 +34,15 @@ stdio.h
 stdarg.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffio.hxx
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffio.hxx
 iostream
 -
 tiff.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiff.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiff.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 tif_config.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_config.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_config.h
 fcntl.h
 -
 sys/types.h
@@ -54,9 +54,9 @@ assert.h
 search.h
 -
 tiffio.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffio.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffio.h
 tif_dir.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_dir.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_dir.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffvers.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffvers.h
 

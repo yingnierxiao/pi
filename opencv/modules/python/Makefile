@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/modules/python/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/python/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/modules/python/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/python/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/python/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/python/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/python/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/python/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/python/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/python/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 modules/python/CMakeFiles/opencv_python.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/python/CMakeFiles/opencv_python.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/python/CMakeFiles/opencv_python.dir/rule
 .PHONY : modules/python/CMakeFiles/opencv_python.dir/rule
 
 # Convenience name for target.
@@ -173,7 +163,7 @@ opencv_python: modules/python/CMakeFiles/opencv_python.dir/rule
 
 # fast build rule for target.
 opencv_python/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/python/CMakeFiles/opencv_python.dir/build.make modules/python/CMakeFiles/opencv_python.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/python/CMakeFiles/opencv_python.dir/build.make modules/python/CMakeFiles/opencv_python.dir/build
 .PHONY : opencv_python/fast
 
 src2/cv2.o: src2/cv2.cpp.o
@@ -181,7 +171,7 @@ src2/cv2.o: src2/cv2.cpp.o
 
 # target to build an object file
 src2/cv2.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/python/CMakeFiles/opencv_python.dir/build.make modules/python/CMakeFiles/opencv_python.dir/src2/cv2.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/python/CMakeFiles/opencv_python.dir/build.make modules/python/CMakeFiles/opencv_python.dir/src2/cv2.cpp.o
 .PHONY : src2/cv2.cpp.o
 
 src2/cv2.i: src2/cv2.cpp.i
@@ -189,7 +179,7 @@ src2/cv2.i: src2/cv2.cpp.i
 
 # target to preprocess a source file
 src2/cv2.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/python/CMakeFiles/opencv_python.dir/build.make modules/python/CMakeFiles/opencv_python.dir/src2/cv2.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/python/CMakeFiles/opencv_python.dir/build.make modules/python/CMakeFiles/opencv_python.dir/src2/cv2.cpp.i
 .PHONY : src2/cv2.cpp.i
 
 src2/cv2.s: src2/cv2.cpp.s
@@ -197,7 +187,7 @@ src2/cv2.s: src2/cv2.cpp.s
 
 # target to generate assembly for a file
 src2/cv2.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/python/CMakeFiles/opencv_python.dir/build.make modules/python/CMakeFiles/opencv_python.dir/src2/cv2.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/python/CMakeFiles/opencv_python.dir/build.make modules/python/CMakeFiles/opencv_python.dir/src2/cv2.cpp.s
 .PHONY : src2/cv2.cpp.s
 
 # Help Target
@@ -209,7 +199,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_python"
 	@echo "... package"
@@ -229,6 +218,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

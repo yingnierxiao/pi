@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/legacy/CMakeFiles/opencv_test_legacy.dir/depend.make
@@ -54,17 +54,17 @@ include modules/legacy/CMakeFiles/opencv_test_legacy.dir/flags.make
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.o: modules/legacy/CMakeFiles/opencv_test_legacy.dir/flags.make
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.o: modules/legacy/test/test_bruteforcematcher.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_bruteforcematcher.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_bruteforcematcher.cpp
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_bruteforcematcher.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_bruteforcematcher.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.i
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_bruteforcematcher.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_bruteforcematcher.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.s
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.o.requires:
 .PHONY : modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.o.requires
@@ -77,17 +77,17 @@ modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.o: modules/legacy/CMakeFiles/opencv_test_legacy.dir/flags.make
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.o: modules/legacy/test/test_em.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_em.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_em.cpp
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_em.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_em.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.i
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_em.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_em.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.s
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.o.requires:
 .PHONY : modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.o.requires
@@ -100,17 +100,17 @@ modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.o.provides.bui
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.o: modules/legacy/CMakeFiles/opencv_test_legacy.dir/flags.make
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.o: modules/legacy/test/test_main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_main.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_main.cpp
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_main.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_main.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.i
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_main.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_main.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.s
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.o.requires:
 .PHONY : modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.o.requires
@@ -123,17 +123,17 @@ modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.o.provides.b
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.o: modules/legacy/CMakeFiles/opencv_test_legacy.dir/flags.make
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.o: modules/legacy/test/test_nearestneighbors.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_nearestneighbors.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_nearestneighbors.cpp
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_nearestneighbors.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_nearestneighbors.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.i
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_nearestneighbors.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_nearestneighbors.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.s
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.o.requires:
 .PHONY : modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.o.requires
@@ -146,17 +146,17 @@ modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.o: modules/legacy/CMakeFiles/opencv_test_legacy.dir/flags.make
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.o: modules/legacy/test/test_optflow.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_optflow.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_optflow.cpp
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_optflow.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_optflow.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.i
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_optflow.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_optflow.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.s
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.o.requires:
 .PHONY : modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.o.requires
@@ -169,17 +169,17 @@ modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.o.provide
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.o: modules/legacy/CMakeFiles/opencv_test_legacy.dir/flags.make
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.o: modules/legacy/test/test_pyrsegmentation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_pyrsegmentation.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_pyrsegmentation.cpp
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_pyrsegmentation.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_pyrsegmentation.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.i
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_pyrsegmentation.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_pyrsegmentation.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.s
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.o.requires:
 .PHONY : modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.o.requires
@@ -192,17 +192,17 @@ modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.o
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.o: modules/legacy/CMakeFiles/opencv_test_legacy.dir/flags.make
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.o: modules/legacy/test/test_stereomatching.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_stereomatching.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_stereomatching.cpp
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_stereomatching.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_stereomatching.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.i
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_stereomatching.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_stereomatching.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.s
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.o.requires:
 .PHONY : modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.o.requires
@@ -215,17 +215,17 @@ modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.o.
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.o: modules/legacy/CMakeFiles/opencv_test_legacy.dir/flags.make
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.o: modules/legacy/test/test_subdivisions.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_subdivisions.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_subdivisions.cpp
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_subdivisions.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_subdivisions.cpp > CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.i
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/test/test_subdivisions.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/legacy/test/test_subdivisions.cpp -o CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.s
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.o.requires:
 .PHONY : modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.o.requires
@@ -285,7 +285,7 @@ bin/opencv_test_legacy: lib/libopencv_imgproc.2.4.9.dylib
 bin/opencv_test_legacy: lib/libopencv_core.2.4.9.dylib
 bin/opencv_test_legacy: modules/legacy/CMakeFiles/opencv_test_legacy.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../bin/opencv_test_legacy"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_test_legacy.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_test_legacy.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/build: bin/opencv_test_legacy
@@ -302,10 +302,10 @@ modules/legacy/CMakeFiles/opencv_test_legacy.dir/requires: modules/legacy/CMakeF
 .PHONY : modules/legacy/CMakeFiles/opencv_test_legacy.dir/requires
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy && $(CMAKE_COMMAND) -P CMakeFiles/opencv_test_legacy.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/legacy && $(CMAKE_COMMAND) -P CMakeFiles/opencv_test_legacy.dir/cmake_clean.cmake
 .PHONY : modules/legacy/CMakeFiles/opencv_test_legacy.dir/clean
 
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/CMakeFiles/opencv_test_legacy.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/legacy /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/legacy /Users/zj/Desktop/code/pi/opencv/modules/legacy/CMakeFiles/opencv_test_legacy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/legacy/CMakeFiles/opencv_test_legacy.dir/depend
 

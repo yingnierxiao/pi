@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zj/Desktop/code/opencv-2.4.9/apps
+# Install script for directory: /Users/zj/Desktop/code/pi/opencv/apps
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,8 +29,8 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cmake_install.cmake")
-  INCLUDE("/Users/zj/Desktop/code/opencv-2.4.9/apps/traincascade/cmake_install.cmake")
+  INCLUDE("/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cmake_install.cmake")
+  INCLUDE("/Users/zj/Desktop/code/pi/opencv/apps/traincascade/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

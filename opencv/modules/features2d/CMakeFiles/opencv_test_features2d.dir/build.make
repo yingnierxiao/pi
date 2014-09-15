@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/features2d/CMakeFiles/opencv_test_features2d.dir/depend.make
@@ -54,17 +54,17 @@ include modules/features2d/CMakeFiles/opencv_test_features2d.dir/flags.make
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: modules/features2d/CMakeFiles/opencv_test_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: modules/features2d/test/test_brisk.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_brisk.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_brisk.cpp
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_brisk.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_brisk.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.i
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_brisk.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_brisk.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.s
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o.requires:
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o.requires
@@ -77,17 +77,17 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o.p
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: modules/features2d/CMakeFiles/opencv_test_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: modules/features2d/test/test_descriptors_regression.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_descriptors_regression.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_descriptors_regression.cpp
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_descriptors_regression.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_descriptors_regression.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.i
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_descriptors_regression.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_descriptors_regression.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.s
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o.requires:
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o.requires
@@ -100,17 +100,17 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_r
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: modules/features2d/CMakeFiles/opencv_test_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: modules/features2d/test/test_detectors_regression.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_detectors_regression.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_detectors_regression.cpp
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_detectors_regression.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_detectors_regression.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.i
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_detectors_regression.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_detectors_regression.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.s
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o.requires:
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o.requires
@@ -123,17 +123,17 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_reg
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: modules/features2d/CMakeFiles/opencv_test_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: modules/features2d/test/test_fast.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_fast.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_fast.cpp
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_fast.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_fast.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.i
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_fast.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_fast.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.s
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o.requires:
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o.requires
@@ -146,17 +146,17 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o.pr
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: modules/features2d/CMakeFiles/opencv_test_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: modules/features2d/test/test_keypoints.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_keypoints.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_keypoints.cpp
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_keypoints.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_keypoints.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.i
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_keypoints.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_keypoints.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.s
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o.requires:
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o.requires
@@ -169,17 +169,17 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: modules/features2d/CMakeFiles/opencv_test_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: modules/features2d/test/test_main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_main.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_main.cpp
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_main.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_main.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.i
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_main.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_main.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.s
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o.requires:
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o.requires
@@ -192,17 +192,17 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o.pr
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: modules/features2d/CMakeFiles/opencv_test_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: modules/features2d/test/test_matchers_algorithmic.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_matchers_algorithmic.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_matchers_algorithmic.cpp
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_matchers_algorithmic.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_matchers_algorithmic.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.i
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_matchers_algorithmic.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_matchers_algorithmic.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.s
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o.requires:
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o.requires
@@ -215,17 +215,17 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algo
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: modules/features2d/CMakeFiles/opencv_test_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: modules/features2d/test/test_mser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_mser.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_mser.cpp
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_mser.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_mser.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.i
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_mser.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_mser.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.s
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o.requires:
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o.requires
@@ -238,17 +238,17 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o.pr
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: modules/features2d/CMakeFiles/opencv_test_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: modules/features2d/test/test_nearestneighbors.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_nearestneighbors.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_nearestneighbors.cpp
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_nearestneighbors.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_nearestneighbors.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.i
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_nearestneighbors.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_nearestneighbors.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.s
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o.requires:
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o.requires
@@ -261,17 +261,17 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighb
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: modules/features2d/CMakeFiles/opencv_test_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: modules/features2d/test/test_orb.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_orb.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_orb.cpp
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_orb.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_orb.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.i
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_orb.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_orb.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.s
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o.requires:
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o.requires
@@ -284,17 +284,17 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o.pro
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: modules/features2d/CMakeFiles/opencv_test_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: modules/features2d/test/test_rotation_and_scale_invariance.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_rotation_and_scale_invariance.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_rotation_and_scale_invariance.cpp
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_rotation_and_scale_invariance.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_rotation_and_scale_invariance.cpp > CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.i
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/test/test_rotation_and_scale_invariance.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/features2d/test/test_rotation_and_scale_invariance.cpp -o CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.s
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o.requires:
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o.requires
@@ -352,7 +352,7 @@ bin/opencv_test_features2d: lib/libopencv_imgproc.2.4.9.dylib
 bin/opencv_test_features2d: lib/libopencv_core.2.4.9.dylib
 bin/opencv_test_features2d: modules/features2d/CMakeFiles/opencv_test_features2d.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../bin/opencv_test_features2d"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_test_features2d.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_test_features2d.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/build: bin/opencv_test_features2d
@@ -372,10 +372,10 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/requires: modules/featu
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/requires
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d && $(CMAKE_COMMAND) -P CMakeFiles/opencv_test_features2d.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/features2d && $(CMAKE_COMMAND) -P CMakeFiles/opencv_test_features2d.dir/cmake_clean.cmake
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/clean
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/CMakeFiles/opencv_test_features2d.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/features2d /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/features2d /Users/zj/Desktop/code/pi/opencv/modules/features2d/CMakeFiles/opencv_test_features2d.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/depend
 

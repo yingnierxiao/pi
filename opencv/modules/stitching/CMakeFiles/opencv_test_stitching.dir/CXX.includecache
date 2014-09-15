@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/stitching/test/test_blenders.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/stitching/test/test_blenders.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/stitching/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/stitching/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/stitching/test/test_main.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/stitching/test/test_main.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/stitching/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/stitching/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/stitching/test/test_matchers.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/stitching/test/test_matchers.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/stitching/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/stitching/test/test_precomp.hpp
 opencv2/opencv_modules.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/stitching/test/opencv2/opencv_modules.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/stitching/test/opencv2/opencv_modules.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/stitching/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/stitching/test/test_precomp.hpp
 iostream
 -
 string

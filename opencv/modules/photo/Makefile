@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/modules/photo/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/photo/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/modules/photo/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/photo/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/photo/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/photo/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/photo/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/photo/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/photo/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/photo/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 modules/photo/CMakeFiles/opencv_perf_photo.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/photo/CMakeFiles/opencv_perf_photo.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/photo/CMakeFiles/opencv_perf_photo.dir/rule
 .PHONY : modules/photo/CMakeFiles/opencv_perf_photo.dir/rule
 
 # Convenience name for target.
@@ -173,12 +163,12 @@ opencv_perf_photo: modules/photo/CMakeFiles/opencv_perf_photo.dir/rule
 
 # fast build rule for target.
 opencv_perf_photo/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/build
 .PHONY : opencv_perf_photo/fast
 
 # Convenience name for target.
 modules/photo/CMakeFiles/opencv_photo.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/photo/CMakeFiles/opencv_photo.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/photo/CMakeFiles/opencv_photo.dir/rule
 .PHONY : modules/photo/CMakeFiles/opencv_photo.dir/rule
 
 # Convenience name for target.
@@ -187,12 +177,12 @@ opencv_photo: modules/photo/CMakeFiles/opencv_photo.dir/rule
 
 # fast build rule for target.
 opencv_photo/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/build
 .PHONY : opencv_photo/fast
 
 # Convenience name for target.
 modules/photo/CMakeFiles/opencv_test_photo.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/photo/CMakeFiles/opencv_test_photo.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/photo/CMakeFiles/opencv_test_photo.dir/rule
 .PHONY : modules/photo/CMakeFiles/opencv_test_photo.dir/rule
 
 # Convenience name for target.
@@ -201,7 +191,7 @@ opencv_test_photo: modules/photo/CMakeFiles/opencv_test_photo.dir/rule
 
 # fast build rule for target.
 opencv_test_photo/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/build
 .PHONY : opencv_test_photo/fast
 
 perf/perf_inpaint.o: perf/perf_inpaint.cpp.o
@@ -209,7 +199,7 @@ perf/perf_inpaint.o: perf/perf_inpaint.cpp.o
 
 # target to build an object file
 perf/perf_inpaint.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_inpaint.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_inpaint.cpp.o
 .PHONY : perf/perf_inpaint.cpp.o
 
 perf/perf_inpaint.i: perf/perf_inpaint.cpp.i
@@ -217,7 +207,7 @@ perf/perf_inpaint.i: perf/perf_inpaint.cpp.i
 
 # target to preprocess a source file
 perf/perf_inpaint.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_inpaint.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_inpaint.cpp.i
 .PHONY : perf/perf_inpaint.cpp.i
 
 perf/perf_inpaint.s: perf/perf_inpaint.cpp.s
@@ -225,7 +215,7 @@ perf/perf_inpaint.s: perf/perf_inpaint.cpp.s
 
 # target to generate assembly for a file
 perf/perf_inpaint.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_inpaint.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_inpaint.cpp.s
 .PHONY : perf/perf_inpaint.cpp.s
 
 perf/perf_main.o: perf/perf_main.cpp.o
@@ -233,7 +223,7 @@ perf/perf_main.o: perf/perf_main.cpp.o
 
 # target to build an object file
 perf/perf_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_main.cpp.o
 .PHONY : perf/perf_main.cpp.o
 
 perf/perf_main.i: perf/perf_main.cpp.i
@@ -241,7 +231,7 @@ perf/perf_main.i: perf/perf_main.cpp.i
 
 # target to preprocess a source file
 perf/perf_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_main.cpp.i
 .PHONY : perf/perf_main.cpp.i
 
 perf/perf_main.s: perf/perf_main.cpp.s
@@ -249,7 +239,7 @@ perf/perf_main.s: perf/perf_main.cpp.s
 
 # target to generate assembly for a file
 perf/perf_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_main.cpp.s
 .PHONY : perf/perf_main.cpp.s
 
 src/denoising.o: src/denoising.cpp.o
@@ -257,7 +247,7 @@ src/denoising.o: src/denoising.cpp.o
 
 # target to build an object file
 src/denoising.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cpp.o
 .PHONY : src/denoising.cpp.o
 
 src/denoising.i: src/denoising.cpp.i
@@ -265,7 +255,7 @@ src/denoising.i: src/denoising.cpp.i
 
 # target to preprocess a source file
 src/denoising.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cpp.i
 .PHONY : src/denoising.cpp.i
 
 src/denoising.s: src/denoising.cpp.s
@@ -273,7 +263,7 @@ src/denoising.s: src/denoising.cpp.s
 
 # target to generate assembly for a file
 src/denoising.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cpp.s
 .PHONY : src/denoising.cpp.s
 
 src/inpaint.o: src/inpaint.cpp.o
@@ -281,7 +271,7 @@ src/inpaint.o: src/inpaint.cpp.o
 
 # target to build an object file
 src/inpaint.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/inpaint.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/inpaint.cpp.o
 .PHONY : src/inpaint.cpp.o
 
 src/inpaint.i: src/inpaint.cpp.i
@@ -289,7 +279,7 @@ src/inpaint.i: src/inpaint.cpp.i
 
 # target to preprocess a source file
 src/inpaint.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/inpaint.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/inpaint.cpp.i
 .PHONY : src/inpaint.cpp.i
 
 src/inpaint.s: src/inpaint.cpp.s
@@ -297,7 +287,7 @@ src/inpaint.s: src/inpaint.cpp.s
 
 # target to generate assembly for a file
 src/inpaint.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/inpaint.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/inpaint.cpp.s
 .PHONY : src/inpaint.cpp.s
 
 test/test_denoising.o: test/test_denoising.cpp.o
@@ -305,7 +295,7 @@ test/test_denoising.o: test/test_denoising.cpp.o
 
 # target to build an object file
 test/test_denoising.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.o
 .PHONY : test/test_denoising.cpp.o
 
 test/test_denoising.i: test/test_denoising.cpp.i
@@ -313,7 +303,7 @@ test/test_denoising.i: test/test_denoising.cpp.i
 
 # target to preprocess a source file
 test/test_denoising.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.i
 .PHONY : test/test_denoising.cpp.i
 
 test/test_denoising.s: test/test_denoising.cpp.s
@@ -321,7 +311,7 @@ test/test_denoising.s: test/test_denoising.cpp.s
 
 # target to generate assembly for a file
 test/test_denoising.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.s
 .PHONY : test/test_denoising.cpp.s
 
 test/test_inpaint.o: test/test_inpaint.cpp.o
@@ -329,7 +319,7 @@ test/test_inpaint.o: test/test_inpaint.cpp.o
 
 # target to build an object file
 test/test_inpaint.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_inpaint.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_inpaint.cpp.o
 .PHONY : test/test_inpaint.cpp.o
 
 test/test_inpaint.i: test/test_inpaint.cpp.i
@@ -337,7 +327,7 @@ test/test_inpaint.i: test/test_inpaint.cpp.i
 
 # target to preprocess a source file
 test/test_inpaint.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_inpaint.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_inpaint.cpp.i
 .PHONY : test/test_inpaint.cpp.i
 
 test/test_inpaint.s: test/test_inpaint.cpp.s
@@ -345,7 +335,7 @@ test/test_inpaint.s: test/test_inpaint.cpp.s
 
 # target to generate assembly for a file
 test/test_inpaint.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_inpaint.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_inpaint.cpp.s
 .PHONY : test/test_inpaint.cpp.s
 
 test/test_main.o: test/test_main.cpp.o
@@ -353,7 +343,7 @@ test/test_main.o: test/test_main.cpp.o
 
 # target to build an object file
 test/test_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_main.cpp.o
 .PHONY : test/test_main.cpp.o
 
 test/test_main.i: test/test_main.cpp.i
@@ -361,7 +351,7 @@ test/test_main.i: test/test_main.cpp.i
 
 # target to preprocess a source file
 test/test_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_main.cpp.i
 .PHONY : test/test_main.cpp.i
 
 test/test_main.s: test/test_main.cpp.s
@@ -369,7 +359,7 @@ test/test_main.s: test/test_main.cpp.s
 
 # target to generate assembly for a file
 test/test_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_main.cpp.s
 .PHONY : test/test_main.cpp.s
 
 # Help Target
@@ -381,7 +371,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_perf_photo"
 	@echo "... opencv_photo"
@@ -421,6 +410,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

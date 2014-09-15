@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zj/Desktop/code/opencv-2.4.9
+# Install script for directory: /Users/zj/Desktop/code/pi/opencv
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -28,26 +28,26 @@ IF(NOT CMAKE_INSTALL_COMPONENT)
 ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2" TYPE FILE FILES "/Users/zj/Desktop/code/opencv-2.4.9/opencv2/opencv_modules.hpp")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2" TYPE FILE FILES "/Users/zj/Desktop/code/pi/opencv/opencv2/opencv_modules.hpp")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/zj/Desktop/code/opencv-2.4.9/unix-install/opencv.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/zj/Desktop/code/pi/opencv/unix-install/opencv.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/OpenCV" TYPE FILE FILES "/Users/zj/Desktop/code/opencv-2.4.9/unix-install/OpenCVConfig.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/OpenCV" TYPE FILE FILES "/Users/zj/Desktop/code/pi/opencv/unix-install/OpenCVConfig.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/OpenCV" TYPE FILE FILES "/Users/zj/Desktop/code/opencv-2.4.9/unix-install/OpenCVConfig-version.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/OpenCV" TYPE FILE FILES "/Users/zj/Desktop/code/pi/opencv/unix-install/OpenCVConfig-version.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/OpenCV/OpenCVModules.cmake")
     FILE(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/OpenCV/OpenCVModules.cmake"
-         "/Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles/Export/share/OpenCV/OpenCVModules.cmake")
+         "/Users/zj/Desktop/code/pi/opencv/CMakeFiles/Export/share/OpenCV/OpenCVModules.cmake")
     IF(EXPORT_FILE_CHANGED)
       FILE(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/OpenCV/OpenCVModules-*.cmake")
       IF(OLD_CONFIG_FILES)
@@ -56,25 +56,25 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
       ENDIF(OLD_CONFIG_FILES)
     ENDIF(EXPORT_FILE_CHANGED)
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/OpenCV" TYPE FILE FILES "/Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles/Export/share/OpenCV/OpenCVModules.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/OpenCV" TYPE FILE FILES "/Users/zj/Desktop/code/pi/opencv/CMakeFiles/Export/share/OpenCV/OpenCVModules.cmake")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/OpenCV" TYPE FILE FILES "/Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles/Export/share/OpenCV/OpenCVModules-release.cmake")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/OpenCV" TYPE FILE FILES "/Users/zj/Desktop/code/pi/opencv/CMakeFiles/Export/share/OpenCV/OpenCVModules-release.cmake")
   ENDIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/zlib/cmake_install.cmake")
-  INCLUDE("/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/cmake_install.cmake")
-  INCLUDE("/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libjpeg/cmake_install.cmake")
-  INCLUDE("/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libjasper/cmake_install.cmake")
-  INCLUDE("/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libpng/cmake_install.cmake")
-  INCLUDE("/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/openexr/cmake_install.cmake")
-  INCLUDE("/Users/zj/Desktop/code/opencv-2.4.9/include/cmake_install.cmake")
-  INCLUDE("/Users/zj/Desktop/code/opencv-2.4.9/modules/cmake_install.cmake")
-  INCLUDE("/Users/zj/Desktop/code/opencv-2.4.9/doc/cmake_install.cmake")
-  INCLUDE("/Users/zj/Desktop/code/opencv-2.4.9/data/cmake_install.cmake")
-  INCLUDE("/Users/zj/Desktop/code/opencv-2.4.9/apps/cmake_install.cmake")
+  INCLUDE("/Users/zj/Desktop/code/pi/opencv/3rdparty/zlib/cmake_install.cmake")
+  INCLUDE("/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/cmake_install.cmake")
+  INCLUDE("/Users/zj/Desktop/code/pi/opencv/3rdparty/libjpeg/cmake_install.cmake")
+  INCLUDE("/Users/zj/Desktop/code/pi/opencv/3rdparty/libjasper/cmake_install.cmake")
+  INCLUDE("/Users/zj/Desktop/code/pi/opencv/3rdparty/libpng/cmake_install.cmake")
+  INCLUDE("/Users/zj/Desktop/code/pi/opencv/3rdparty/openexr/cmake_install.cmake")
+  INCLUDE("/Users/zj/Desktop/code/pi/opencv/include/cmake_install.cmake")
+  INCLUDE("/Users/zj/Desktop/code/pi/opencv/modules/cmake_install.cmake")
+  INCLUDE("/Users/zj/Desktop/code/pi/opencv/doc/cmake_install.cmake")
+  INCLUDE("/Users/zj/Desktop/code/pi/opencv/data/cmake_install.cmake")
+  INCLUDE("/Users/zj/Desktop/code/pi/opencv/apps/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -84,7 +84,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/Users/zj/Desktop/code/opencv-2.4.9/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/Users/zj/Desktop/code/pi/opencv/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/Users/zj/Desktop/code/opencv-2.4.9/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/Users/zj/Desktop/code/pi/opencv/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

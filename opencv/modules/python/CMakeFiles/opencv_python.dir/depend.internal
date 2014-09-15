@@ -74,8 +74,8 @@ modules/python/CMakeFiles/opencv_python.dir/src2/cv2.cpp.o
  /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/numpy/core/include/numpy/numpyconfig.h
  /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/numpy/core/include/numpy/old_defines.h
  /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/numpy/core/include/numpy/utils.h
- /Users/zj/Desktop/code/opencv-2.4.9/modules/python/src2/cv2.cpp
- /Users/zj/Desktop/code/opencv-2.4.9/modules/python/src2/cv2.cv.hpp
+ /Users/zj/Desktop/code/pi/opencv/modules/python/src2/cv2.cpp
+ /Users/zj/Desktop/code/pi/opencv/modules/python/src2/cv2.cv.hpp
  modules/calib3d/include/opencv2/calib3d/calib3d.hpp
  modules/contrib/include/opencv2/contrib/contrib.hpp
  modules/contrib/include/opencv2/contrib/openfabmap.hpp

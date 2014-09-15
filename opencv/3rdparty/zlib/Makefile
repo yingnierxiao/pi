@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/3rdparty/zlib/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 3rdparty/zlib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/3rdparty/zlib/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 3rdparty/zlib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 3rdparty/zlib/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 3rdparty/zlib/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 3rdparty/zlib/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 3rdparty/zlib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 3rdparty/zlib/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 3rdparty/zlib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 3rdparty/zlib/CMakeFiles/zlib.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 3rdparty/zlib/CMakeFiles/zlib.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 3rdparty/zlib/CMakeFiles/zlib.dir/rule
 .PHONY : 3rdparty/zlib/CMakeFiles/zlib.dir/rule
 
 # Convenience name for target.
@@ -173,7 +163,7 @@ zlib: 3rdparty/zlib/CMakeFiles/zlib.dir/rule
 
 # fast build rule for target.
 zlib/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/build
 .PHONY : zlib/fast
 
 adler32.o: adler32.c.o
@@ -181,7 +171,7 @@ adler32.o: adler32.c.o
 
 # target to build an object file
 adler32.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/adler32.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/adler32.c.o
 .PHONY : adler32.c.o
 
 adler32.i: adler32.c.i
@@ -189,7 +179,7 @@ adler32.i: adler32.c.i
 
 # target to preprocess a source file
 adler32.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/adler32.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/adler32.c.i
 .PHONY : adler32.c.i
 
 adler32.s: adler32.c.s
@@ -197,7 +187,7 @@ adler32.s: adler32.c.s
 
 # target to generate assembly for a file
 adler32.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/adler32.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/adler32.c.s
 .PHONY : adler32.c.s
 
 compress.o: compress.c.o
@@ -205,7 +195,7 @@ compress.o: compress.c.o
 
 # target to build an object file
 compress.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/compress.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/compress.c.o
 .PHONY : compress.c.o
 
 compress.i: compress.c.i
@@ -213,7 +203,7 @@ compress.i: compress.c.i
 
 # target to preprocess a source file
 compress.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/compress.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/compress.c.i
 .PHONY : compress.c.i
 
 compress.s: compress.c.s
@@ -221,7 +211,7 @@ compress.s: compress.c.s
 
 # target to generate assembly for a file
 compress.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/compress.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/compress.c.s
 .PHONY : compress.c.s
 
 crc32.o: crc32.c.o
@@ -229,7 +219,7 @@ crc32.o: crc32.c.o
 
 # target to build an object file
 crc32.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/crc32.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/crc32.c.o
 .PHONY : crc32.c.o
 
 crc32.i: crc32.c.i
@@ -237,7 +227,7 @@ crc32.i: crc32.c.i
 
 # target to preprocess a source file
 crc32.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/crc32.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/crc32.c.i
 .PHONY : crc32.c.i
 
 crc32.s: crc32.c.s
@@ -245,7 +235,7 @@ crc32.s: crc32.c.s
 
 # target to generate assembly for a file
 crc32.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/crc32.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/crc32.c.s
 .PHONY : crc32.c.s
 
 deflate.o: deflate.c.o
@@ -253,7 +243,7 @@ deflate.o: deflate.c.o
 
 # target to build an object file
 deflate.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/deflate.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/deflate.c.o
 .PHONY : deflate.c.o
 
 deflate.i: deflate.c.i
@@ -261,7 +251,7 @@ deflate.i: deflate.c.i
 
 # target to preprocess a source file
 deflate.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/deflate.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/deflate.c.i
 .PHONY : deflate.c.i
 
 deflate.s: deflate.c.s
@@ -269,7 +259,7 @@ deflate.s: deflate.c.s
 
 # target to generate assembly for a file
 deflate.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/deflate.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/deflate.c.s
 .PHONY : deflate.c.s
 
 gzclose.o: gzclose.c.o
@@ -277,7 +267,7 @@ gzclose.o: gzclose.c.o
 
 # target to build an object file
 gzclose.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzclose.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzclose.c.o
 .PHONY : gzclose.c.o
 
 gzclose.i: gzclose.c.i
@@ -285,7 +275,7 @@ gzclose.i: gzclose.c.i
 
 # target to preprocess a source file
 gzclose.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzclose.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzclose.c.i
 .PHONY : gzclose.c.i
 
 gzclose.s: gzclose.c.s
@@ -293,7 +283,7 @@ gzclose.s: gzclose.c.s
 
 # target to generate assembly for a file
 gzclose.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzclose.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzclose.c.s
 .PHONY : gzclose.c.s
 
 gzlib.o: gzlib.c.o
@@ -301,7 +291,7 @@ gzlib.o: gzlib.c.o
 
 # target to build an object file
 gzlib.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzlib.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzlib.c.o
 .PHONY : gzlib.c.o
 
 gzlib.i: gzlib.c.i
@@ -309,7 +299,7 @@ gzlib.i: gzlib.c.i
 
 # target to preprocess a source file
 gzlib.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzlib.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzlib.c.i
 .PHONY : gzlib.c.i
 
 gzlib.s: gzlib.c.s
@@ -317,7 +307,7 @@ gzlib.s: gzlib.c.s
 
 # target to generate assembly for a file
 gzlib.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzlib.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzlib.c.s
 .PHONY : gzlib.c.s
 
 gzread.o: gzread.c.o
@@ -325,7 +315,7 @@ gzread.o: gzread.c.o
 
 # target to build an object file
 gzread.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzread.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzread.c.o
 .PHONY : gzread.c.o
 
 gzread.i: gzread.c.i
@@ -333,7 +323,7 @@ gzread.i: gzread.c.i
 
 # target to preprocess a source file
 gzread.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzread.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzread.c.i
 .PHONY : gzread.c.i
 
 gzread.s: gzread.c.s
@@ -341,7 +331,7 @@ gzread.s: gzread.c.s
 
 # target to generate assembly for a file
 gzread.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzread.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzread.c.s
 .PHONY : gzread.c.s
 
 gzwrite.o: gzwrite.c.o
@@ -349,7 +339,7 @@ gzwrite.o: gzwrite.c.o
 
 # target to build an object file
 gzwrite.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzwrite.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzwrite.c.o
 .PHONY : gzwrite.c.o
 
 gzwrite.i: gzwrite.c.i
@@ -357,7 +347,7 @@ gzwrite.i: gzwrite.c.i
 
 # target to preprocess a source file
 gzwrite.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzwrite.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzwrite.c.i
 .PHONY : gzwrite.c.i
 
 gzwrite.s: gzwrite.c.s
@@ -365,7 +355,7 @@ gzwrite.s: gzwrite.c.s
 
 # target to generate assembly for a file
 gzwrite.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzwrite.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/gzwrite.c.s
 .PHONY : gzwrite.c.s
 
 infback.o: infback.c.o
@@ -373,7 +363,7 @@ infback.o: infback.c.o
 
 # target to build an object file
 infback.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/infback.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/infback.c.o
 .PHONY : infback.c.o
 
 infback.i: infback.c.i
@@ -381,7 +371,7 @@ infback.i: infback.c.i
 
 # target to preprocess a source file
 infback.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/infback.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/infback.c.i
 .PHONY : infback.c.i
 
 infback.s: infback.c.s
@@ -389,7 +379,7 @@ infback.s: infback.c.s
 
 # target to generate assembly for a file
 infback.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/infback.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/infback.c.s
 .PHONY : infback.c.s
 
 inffast.o: inffast.c.o
@@ -397,7 +387,7 @@ inffast.o: inffast.c.o
 
 # target to build an object file
 inffast.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inffast.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inffast.c.o
 .PHONY : inffast.c.o
 
 inffast.i: inffast.c.i
@@ -405,7 +395,7 @@ inffast.i: inffast.c.i
 
 # target to preprocess a source file
 inffast.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inffast.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inffast.c.i
 .PHONY : inffast.c.i
 
 inffast.s: inffast.c.s
@@ -413,7 +403,7 @@ inffast.s: inffast.c.s
 
 # target to generate assembly for a file
 inffast.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inffast.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inffast.c.s
 .PHONY : inffast.c.s
 
 inflate.o: inflate.c.o
@@ -421,7 +411,7 @@ inflate.o: inflate.c.o
 
 # target to build an object file
 inflate.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inflate.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inflate.c.o
 .PHONY : inflate.c.o
 
 inflate.i: inflate.c.i
@@ -429,7 +419,7 @@ inflate.i: inflate.c.i
 
 # target to preprocess a source file
 inflate.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inflate.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inflate.c.i
 .PHONY : inflate.c.i
 
 inflate.s: inflate.c.s
@@ -437,7 +427,7 @@ inflate.s: inflate.c.s
 
 # target to generate assembly for a file
 inflate.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inflate.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inflate.c.s
 .PHONY : inflate.c.s
 
 inftrees.o: inftrees.c.o
@@ -445,7 +435,7 @@ inftrees.o: inftrees.c.o
 
 # target to build an object file
 inftrees.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inftrees.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inftrees.c.o
 .PHONY : inftrees.c.o
 
 inftrees.i: inftrees.c.i
@@ -453,7 +443,7 @@ inftrees.i: inftrees.c.i
 
 # target to preprocess a source file
 inftrees.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inftrees.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inftrees.c.i
 .PHONY : inftrees.c.i
 
 inftrees.s: inftrees.c.s
@@ -461,7 +451,7 @@ inftrees.s: inftrees.c.s
 
 # target to generate assembly for a file
 inftrees.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inftrees.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/inftrees.c.s
 .PHONY : inftrees.c.s
 
 trees.o: trees.c.o
@@ -469,7 +459,7 @@ trees.o: trees.c.o
 
 # target to build an object file
 trees.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/trees.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/trees.c.o
 .PHONY : trees.c.o
 
 trees.i: trees.c.i
@@ -477,7 +467,7 @@ trees.i: trees.c.i
 
 # target to preprocess a source file
 trees.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/trees.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/trees.c.i
 .PHONY : trees.c.i
 
 trees.s: trees.c.s
@@ -485,7 +475,7 @@ trees.s: trees.c.s
 
 # target to generate assembly for a file
 trees.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/trees.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/trees.c.s
 .PHONY : trees.c.s
 
 uncompr.o: uncompr.c.o
@@ -493,7 +483,7 @@ uncompr.o: uncompr.c.o
 
 # target to build an object file
 uncompr.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/uncompr.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/uncompr.c.o
 .PHONY : uncompr.c.o
 
 uncompr.i: uncompr.c.i
@@ -501,7 +491,7 @@ uncompr.i: uncompr.c.i
 
 # target to preprocess a source file
 uncompr.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/uncompr.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/uncompr.c.i
 .PHONY : uncompr.c.i
 
 uncompr.s: uncompr.c.s
@@ -509,7 +499,7 @@ uncompr.s: uncompr.c.s
 
 # target to generate assembly for a file
 uncompr.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/uncompr.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/uncompr.c.s
 .PHONY : uncompr.c.s
 
 zutil.o: zutil.c.o
@@ -517,7 +507,7 @@ zutil.o: zutil.c.o
 
 # target to build an object file
 zutil.c.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/zutil.c.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/zutil.c.o
 .PHONY : zutil.c.o
 
 zutil.i: zutil.c.i
@@ -525,7 +515,7 @@ zutil.i: zutil.c.i
 
 # target to preprocess a source file
 zutil.c.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/zutil.c.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/zutil.c.i
 .PHONY : zutil.c.i
 
 zutil.s: zutil.c.s
@@ -533,7 +523,7 @@ zutil.s: zutil.c.s
 
 # target to generate assembly for a file
 zutil.c.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/zutil.c.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/zutil.c.s
 .PHONY : zutil.c.s
 
 # Help Target
@@ -545,7 +535,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... package"
 	@echo "... package_source"
@@ -607,6 +596,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

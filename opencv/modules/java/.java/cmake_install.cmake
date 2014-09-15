@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zj/Desktop/code/opencv-2.4.9/modules/java
+# Install script for directory: /Users/zj/Desktop/code/pi/opencv/modules/java
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

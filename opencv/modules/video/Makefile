@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/modules/video/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/video/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/modules/video/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/video/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/video/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/video/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/video/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/video/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/video/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/video/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 modules/video/CMakeFiles/opencv_perf_video.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/video/CMakeFiles/opencv_perf_video.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/video/CMakeFiles/opencv_perf_video.dir/rule
 .PHONY : modules/video/CMakeFiles/opencv_perf_video.dir/rule
 
 # Convenience name for target.
@@ -173,12 +163,12 @@ opencv_perf_video: modules/video/CMakeFiles/opencv_perf_video.dir/rule
 
 # fast build rule for target.
 opencv_perf_video/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/build
 .PHONY : opencv_perf_video/fast
 
 # Convenience name for target.
 modules/video/CMakeFiles/opencv_test_video.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/video/CMakeFiles/opencv_test_video.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/video/CMakeFiles/opencv_test_video.dir/rule
 .PHONY : modules/video/CMakeFiles/opencv_test_video.dir/rule
 
 # Convenience name for target.
@@ -187,12 +177,12 @@ opencv_test_video: modules/video/CMakeFiles/opencv_test_video.dir/rule
 
 # fast build rule for target.
 opencv_test_video/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/build
 .PHONY : opencv_test_video/fast
 
 # Convenience name for target.
 modules/video/CMakeFiles/opencv_video.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/video/CMakeFiles/opencv_video.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/video/CMakeFiles/opencv_video.dir/rule
 .PHONY : modules/video/CMakeFiles/opencv_video.dir/rule
 
 # Convenience name for target.
@@ -201,7 +191,7 @@ opencv_video: modules/video/CMakeFiles/opencv_video.dir/rule
 
 # fast build rule for target.
 opencv_video/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/build
 .PHONY : opencv_video/fast
 
 perf/perf_main.o: perf/perf_main.cpp.o
@@ -209,7 +199,7 @@ perf/perf_main.o: perf/perf_main.cpp.o
 
 # target to build an object file
 perf/perf_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_main.cpp.o
 .PHONY : perf/perf_main.cpp.o
 
 perf/perf_main.i: perf/perf_main.cpp.i
@@ -217,7 +207,7 @@ perf/perf_main.i: perf/perf_main.cpp.i
 
 # target to preprocess a source file
 perf/perf_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_main.cpp.i
 .PHONY : perf/perf_main.cpp.i
 
 perf/perf_main.s: perf/perf_main.cpp.s
@@ -225,7 +215,7 @@ perf/perf_main.s: perf/perf_main.cpp.s
 
 # target to generate assembly for a file
 perf/perf_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_main.cpp.s
 .PHONY : perf/perf_main.cpp.s
 
 perf/perf_optflowpyrlk.o: perf/perf_optflowpyrlk.cpp.o
@@ -233,7 +223,7 @@ perf/perf_optflowpyrlk.o: perf/perf_optflowpyrlk.cpp.o
 
 # target to build an object file
 perf/perf_optflowpyrlk.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_optflowpyrlk.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_optflowpyrlk.cpp.o
 .PHONY : perf/perf_optflowpyrlk.cpp.o
 
 perf/perf_optflowpyrlk.i: perf/perf_optflowpyrlk.cpp.i
@@ -241,7 +231,7 @@ perf/perf_optflowpyrlk.i: perf/perf_optflowpyrlk.cpp.i
 
 # target to preprocess a source file
 perf/perf_optflowpyrlk.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_optflowpyrlk.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_optflowpyrlk.cpp.i
 .PHONY : perf/perf_optflowpyrlk.cpp.i
 
 perf/perf_optflowpyrlk.s: perf/perf_optflowpyrlk.cpp.s
@@ -249,7 +239,7 @@ perf/perf_optflowpyrlk.s: perf/perf_optflowpyrlk.cpp.s
 
 # target to generate assembly for a file
 perf/perf_optflowpyrlk.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_optflowpyrlk.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_optflowpyrlk.cpp.s
 .PHONY : perf/perf_optflowpyrlk.cpp.s
 
 perf/perf_tvl1optflow.o: perf/perf_tvl1optflow.cpp.o
@@ -257,7 +247,7 @@ perf/perf_tvl1optflow.o: perf/perf_tvl1optflow.cpp.o
 
 # target to build an object file
 perf/perf_tvl1optflow.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.o
 .PHONY : perf/perf_tvl1optflow.cpp.o
 
 perf/perf_tvl1optflow.i: perf/perf_tvl1optflow.cpp.i
@@ -265,7 +255,7 @@ perf/perf_tvl1optflow.i: perf/perf_tvl1optflow.cpp.i
 
 # target to preprocess a source file
 perf/perf_tvl1optflow.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.i
 .PHONY : perf/perf_tvl1optflow.cpp.i
 
 perf/perf_tvl1optflow.s: perf/perf_tvl1optflow.cpp.s
@@ -273,7 +263,7 @@ perf/perf_tvl1optflow.s: perf/perf_tvl1optflow.cpp.s
 
 # target to generate assembly for a file
 perf/perf_tvl1optflow.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.s
 .PHONY : perf/perf_tvl1optflow.cpp.s
 
 src/bgfg_gaussmix.o: src/bgfg_gaussmix.cpp.o
@@ -281,7 +271,7 @@ src/bgfg_gaussmix.o: src/bgfg_gaussmix.cpp.o
 
 # target to build an object file
 src/bgfg_gaussmix.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o
 .PHONY : src/bgfg_gaussmix.cpp.o
 
 src/bgfg_gaussmix.i: src/bgfg_gaussmix.cpp.i
@@ -289,7 +279,7 @@ src/bgfg_gaussmix.i: src/bgfg_gaussmix.cpp.i
 
 # target to preprocess a source file
 src/bgfg_gaussmix.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.i
 .PHONY : src/bgfg_gaussmix.cpp.i
 
 src/bgfg_gaussmix.s: src/bgfg_gaussmix.cpp.s
@@ -297,7 +287,7 @@ src/bgfg_gaussmix.s: src/bgfg_gaussmix.cpp.s
 
 # target to generate assembly for a file
 src/bgfg_gaussmix.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.s
 .PHONY : src/bgfg_gaussmix.cpp.s
 
 src/bgfg_gaussmix2.o: src/bgfg_gaussmix2.cpp.o
@@ -305,7 +295,7 @@ src/bgfg_gaussmix2.o: src/bgfg_gaussmix2.cpp.o
 
 # target to build an object file
 src/bgfg_gaussmix2.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.o
 .PHONY : src/bgfg_gaussmix2.cpp.o
 
 src/bgfg_gaussmix2.i: src/bgfg_gaussmix2.cpp.i
@@ -313,7 +303,7 @@ src/bgfg_gaussmix2.i: src/bgfg_gaussmix2.cpp.i
 
 # target to preprocess a source file
 src/bgfg_gaussmix2.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.i
 .PHONY : src/bgfg_gaussmix2.cpp.i
 
 src/bgfg_gaussmix2.s: src/bgfg_gaussmix2.cpp.s
@@ -321,7 +311,7 @@ src/bgfg_gaussmix2.s: src/bgfg_gaussmix2.cpp.s
 
 # target to generate assembly for a file
 src/bgfg_gaussmix2.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.s
 .PHONY : src/bgfg_gaussmix2.cpp.s
 
 src/bgfg_gmg.o: src/bgfg_gmg.cpp.o
@@ -329,7 +319,7 @@ src/bgfg_gmg.o: src/bgfg_gmg.cpp.o
 
 # target to build an object file
 src/bgfg_gmg.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o
 .PHONY : src/bgfg_gmg.cpp.o
 
 src/bgfg_gmg.i: src/bgfg_gmg.cpp.i
@@ -337,7 +327,7 @@ src/bgfg_gmg.i: src/bgfg_gmg.cpp.i
 
 # target to preprocess a source file
 src/bgfg_gmg.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.i
 .PHONY : src/bgfg_gmg.cpp.i
 
 src/bgfg_gmg.s: src/bgfg_gmg.cpp.s
@@ -345,7 +335,7 @@ src/bgfg_gmg.s: src/bgfg_gmg.cpp.s
 
 # target to generate assembly for a file
 src/bgfg_gmg.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.s
 .PHONY : src/bgfg_gmg.cpp.s
 
 src/camshift.o: src/camshift.cpp.o
@@ -353,7 +343,7 @@ src/camshift.o: src/camshift.cpp.o
 
 # target to build an object file
 src/camshift.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/camshift.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/camshift.cpp.o
 .PHONY : src/camshift.cpp.o
 
 src/camshift.i: src/camshift.cpp.i
@@ -361,7 +351,7 @@ src/camshift.i: src/camshift.cpp.i
 
 # target to preprocess a source file
 src/camshift.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/camshift.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/camshift.cpp.i
 .PHONY : src/camshift.cpp.i
 
 src/camshift.s: src/camshift.cpp.s
@@ -369,7 +359,7 @@ src/camshift.s: src/camshift.cpp.s
 
 # target to generate assembly for a file
 src/camshift.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/camshift.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/camshift.cpp.s
 .PHONY : src/camshift.cpp.s
 
 src/kalman.o: src/kalman.cpp.o
@@ -377,7 +367,7 @@ src/kalman.o: src/kalman.cpp.o
 
 # target to build an object file
 src/kalman.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/kalman.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/kalman.cpp.o
 .PHONY : src/kalman.cpp.o
 
 src/kalman.i: src/kalman.cpp.i
@@ -385,7 +375,7 @@ src/kalman.i: src/kalman.cpp.i
 
 # target to preprocess a source file
 src/kalman.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/kalman.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/kalman.cpp.i
 .PHONY : src/kalman.cpp.i
 
 src/kalman.s: src/kalman.cpp.s
@@ -393,7 +383,7 @@ src/kalman.s: src/kalman.cpp.s
 
 # target to generate assembly for a file
 src/kalman.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/kalman.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/kalman.cpp.s
 .PHONY : src/kalman.cpp.s
 
 src/lkpyramid.o: src/lkpyramid.cpp.o
@@ -401,7 +391,7 @@ src/lkpyramid.o: src/lkpyramid.cpp.o
 
 # target to build an object file
 src/lkpyramid.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.o
 .PHONY : src/lkpyramid.cpp.o
 
 src/lkpyramid.i: src/lkpyramid.cpp.i
@@ -409,7 +399,7 @@ src/lkpyramid.i: src/lkpyramid.cpp.i
 
 # target to preprocess a source file
 src/lkpyramid.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.i
 .PHONY : src/lkpyramid.cpp.i
 
 src/lkpyramid.s: src/lkpyramid.cpp.s
@@ -417,7 +407,7 @@ src/lkpyramid.s: src/lkpyramid.cpp.s
 
 # target to generate assembly for a file
 src/lkpyramid.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.s
 .PHONY : src/lkpyramid.cpp.s
 
 src/motempl.o: src/motempl.cpp.o
@@ -425,7 +415,7 @@ src/motempl.o: src/motempl.cpp.o
 
 # target to build an object file
 src/motempl.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o
 .PHONY : src/motempl.cpp.o
 
 src/motempl.i: src/motempl.cpp.i
@@ -433,7 +423,7 @@ src/motempl.i: src/motempl.cpp.i
 
 # target to preprocess a source file
 src/motempl.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.i
 .PHONY : src/motempl.cpp.i
 
 src/motempl.s: src/motempl.cpp.s
@@ -441,7 +431,7 @@ src/motempl.s: src/motempl.cpp.s
 
 # target to generate assembly for a file
 src/motempl.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.s
 .PHONY : src/motempl.cpp.s
 
 src/optflowgf.o: src/optflowgf.cpp.o
@@ -449,7 +439,7 @@ src/optflowgf.o: src/optflowgf.cpp.o
 
 # target to build an object file
 src/optflowgf.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.o
 .PHONY : src/optflowgf.cpp.o
 
 src/optflowgf.i: src/optflowgf.cpp.i
@@ -457,7 +447,7 @@ src/optflowgf.i: src/optflowgf.cpp.i
 
 # target to preprocess a source file
 src/optflowgf.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.i
 .PHONY : src/optflowgf.cpp.i
 
 src/optflowgf.s: src/optflowgf.cpp.s
@@ -465,7 +455,7 @@ src/optflowgf.s: src/optflowgf.cpp.s
 
 # target to generate assembly for a file
 src/optflowgf.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.s
 .PHONY : src/optflowgf.cpp.s
 
 src/simpleflow.o: src/simpleflow.cpp.o
@@ -473,7 +463,7 @@ src/simpleflow.o: src/simpleflow.cpp.o
 
 # target to build an object file
 src/simpleflow.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o
 .PHONY : src/simpleflow.cpp.o
 
 src/simpleflow.i: src/simpleflow.cpp.i
@@ -481,7 +471,7 @@ src/simpleflow.i: src/simpleflow.cpp.i
 
 # target to preprocess a source file
 src/simpleflow.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.i
 .PHONY : src/simpleflow.cpp.i
 
 src/simpleflow.s: src/simpleflow.cpp.s
@@ -489,7 +479,7 @@ src/simpleflow.s: src/simpleflow.cpp.s
 
 # target to generate assembly for a file
 src/simpleflow.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.s
 .PHONY : src/simpleflow.cpp.s
 
 src/tvl1flow.o: src/tvl1flow.cpp.o
@@ -497,7 +487,7 @@ src/tvl1flow.o: src/tvl1flow.cpp.o
 
 # target to build an object file
 src/tvl1flow.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/tvl1flow.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/tvl1flow.cpp.o
 .PHONY : src/tvl1flow.cpp.o
 
 src/tvl1flow.i: src/tvl1flow.cpp.i
@@ -505,7 +495,7 @@ src/tvl1flow.i: src/tvl1flow.cpp.i
 
 # target to preprocess a source file
 src/tvl1flow.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/tvl1flow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/tvl1flow.cpp.i
 .PHONY : src/tvl1flow.cpp.i
 
 src/tvl1flow.s: src/tvl1flow.cpp.s
@@ -513,7 +503,7 @@ src/tvl1flow.s: src/tvl1flow.cpp.s
 
 # target to generate assembly for a file
 src/tvl1flow.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/tvl1flow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/tvl1flow.cpp.s
 .PHONY : src/tvl1flow.cpp.s
 
 src/video_init.o: src/video_init.cpp.o
@@ -521,7 +511,7 @@ src/video_init.o: src/video_init.cpp.o
 
 # target to build an object file
 src/video_init.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/video_init.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/video_init.cpp.o
 .PHONY : src/video_init.cpp.o
 
 src/video_init.i: src/video_init.cpp.i
@@ -529,7 +519,7 @@ src/video_init.i: src/video_init.cpp.i
 
 # target to preprocess a source file
 src/video_init.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/video_init.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/video_init.cpp.i
 .PHONY : src/video_init.cpp.i
 
 src/video_init.s: src/video_init.cpp.s
@@ -537,7 +527,7 @@ src/video_init.s: src/video_init.cpp.s
 
 # target to generate assembly for a file
 src/video_init.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/video_init.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/video_init.cpp.s
 .PHONY : src/video_init.cpp.s
 
 test/test_accum.o: test/test_accum.cpp.o
@@ -545,7 +535,7 @@ test/test_accum.o: test/test_accum.cpp.o
 
 # target to build an object file
 test/test_accum.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_accum.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_accum.cpp.o
 .PHONY : test/test_accum.cpp.o
 
 test/test_accum.i: test/test_accum.cpp.i
@@ -553,7 +543,7 @@ test/test_accum.i: test/test_accum.cpp.i
 
 # target to preprocess a source file
 test/test_accum.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_accum.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_accum.cpp.i
 .PHONY : test/test_accum.cpp.i
 
 test/test_accum.s: test/test_accum.cpp.s
@@ -561,7 +551,7 @@ test/test_accum.s: test/test_accum.cpp.s
 
 # target to generate assembly for a file
 test/test_accum.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_accum.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_accum.cpp.s
 .PHONY : test/test_accum.cpp.s
 
 test/test_backgroundsubtractor_gbh.o: test/test_backgroundsubtractor_gbh.cpp.o
@@ -569,7 +559,7 @@ test/test_backgroundsubtractor_gbh.o: test/test_backgroundsubtractor_gbh.cpp.o
 
 # target to build an object file
 test/test_backgroundsubtractor_gbh.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_backgroundsubtractor_gbh.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_backgroundsubtractor_gbh.cpp.o
 .PHONY : test/test_backgroundsubtractor_gbh.cpp.o
 
 test/test_backgroundsubtractor_gbh.i: test/test_backgroundsubtractor_gbh.cpp.i
@@ -577,7 +567,7 @@ test/test_backgroundsubtractor_gbh.i: test/test_backgroundsubtractor_gbh.cpp.i
 
 # target to preprocess a source file
 test/test_backgroundsubtractor_gbh.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_backgroundsubtractor_gbh.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_backgroundsubtractor_gbh.cpp.i
 .PHONY : test/test_backgroundsubtractor_gbh.cpp.i
 
 test/test_backgroundsubtractor_gbh.s: test/test_backgroundsubtractor_gbh.cpp.s
@@ -585,7 +575,7 @@ test/test_backgroundsubtractor_gbh.s: test/test_backgroundsubtractor_gbh.cpp.s
 
 # target to generate assembly for a file
 test/test_backgroundsubtractor_gbh.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_backgroundsubtractor_gbh.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_backgroundsubtractor_gbh.cpp.s
 .PHONY : test/test_backgroundsubtractor_gbh.cpp.s
 
 test/test_camshift.o: test/test_camshift.cpp.o
@@ -593,7 +583,7 @@ test/test_camshift.o: test/test_camshift.cpp.o
 
 # target to build an object file
 test/test_camshift.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_camshift.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_camshift.cpp.o
 .PHONY : test/test_camshift.cpp.o
 
 test/test_camshift.i: test/test_camshift.cpp.i
@@ -601,7 +591,7 @@ test/test_camshift.i: test/test_camshift.cpp.i
 
 # target to preprocess a source file
 test/test_camshift.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_camshift.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_camshift.cpp.i
 .PHONY : test/test_camshift.cpp.i
 
 test/test_camshift.s: test/test_camshift.cpp.s
@@ -609,7 +599,7 @@ test/test_camshift.s: test/test_camshift.cpp.s
 
 # target to generate assembly for a file
 test/test_camshift.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_camshift.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_camshift.cpp.s
 .PHONY : test/test_camshift.cpp.s
 
 test/test_estimaterigid.o: test/test_estimaterigid.cpp.o
@@ -617,7 +607,7 @@ test/test_estimaterigid.o: test/test_estimaterigid.cpp.o
 
 # target to build an object file
 test/test_estimaterigid.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_estimaterigid.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_estimaterigid.cpp.o
 .PHONY : test/test_estimaterigid.cpp.o
 
 test/test_estimaterigid.i: test/test_estimaterigid.cpp.i
@@ -625,7 +615,7 @@ test/test_estimaterigid.i: test/test_estimaterigid.cpp.i
 
 # target to preprocess a source file
 test/test_estimaterigid.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_estimaterigid.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_estimaterigid.cpp.i
 .PHONY : test/test_estimaterigid.cpp.i
 
 test/test_estimaterigid.s: test/test_estimaterigid.cpp.s
@@ -633,7 +623,7 @@ test/test_estimaterigid.s: test/test_estimaterigid.cpp.s
 
 # target to generate assembly for a file
 test/test_estimaterigid.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_estimaterigid.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_estimaterigid.cpp.s
 .PHONY : test/test_estimaterigid.cpp.s
 
 test/test_kalman.o: test/test_kalman.cpp.o
@@ -641,7 +631,7 @@ test/test_kalman.o: test/test_kalman.cpp.o
 
 # target to build an object file
 test/test_kalman.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_kalman.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_kalman.cpp.o
 .PHONY : test/test_kalman.cpp.o
 
 test/test_kalman.i: test/test_kalman.cpp.i
@@ -649,7 +639,7 @@ test/test_kalman.i: test/test_kalman.cpp.i
 
 # target to preprocess a source file
 test/test_kalman.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_kalman.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_kalman.cpp.i
 .PHONY : test/test_kalman.cpp.i
 
 test/test_kalman.s: test/test_kalman.cpp.s
@@ -657,7 +647,7 @@ test/test_kalman.s: test/test_kalman.cpp.s
 
 # target to generate assembly for a file
 test/test_kalman.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_kalman.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_kalman.cpp.s
 .PHONY : test/test_kalman.cpp.s
 
 test/test_main.o: test/test_main.cpp.o
@@ -665,7 +655,7 @@ test/test_main.o: test/test_main.cpp.o
 
 # target to build an object file
 test/test_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_main.cpp.o
 .PHONY : test/test_main.cpp.o
 
 test/test_main.i: test/test_main.cpp.i
@@ -673,7 +663,7 @@ test/test_main.i: test/test_main.cpp.i
 
 # target to preprocess a source file
 test/test_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_main.cpp.i
 .PHONY : test/test_main.cpp.i
 
 test/test_main.s: test/test_main.cpp.s
@@ -681,7 +671,7 @@ test/test_main.s: test/test_main.cpp.s
 
 # target to generate assembly for a file
 test/test_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_main.cpp.s
 .PHONY : test/test_main.cpp.s
 
 test/test_motiontemplates.o: test/test_motiontemplates.cpp.o
@@ -689,7 +679,7 @@ test/test_motiontemplates.o: test/test_motiontemplates.cpp.o
 
 # target to build an object file
 test/test_motiontemplates.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_motiontemplates.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_motiontemplates.cpp.o
 .PHONY : test/test_motiontemplates.cpp.o
 
 test/test_motiontemplates.i: test/test_motiontemplates.cpp.i
@@ -697,7 +687,7 @@ test/test_motiontemplates.i: test/test_motiontemplates.cpp.i
 
 # target to preprocess a source file
 test/test_motiontemplates.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_motiontemplates.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_motiontemplates.cpp.i
 .PHONY : test/test_motiontemplates.cpp.i
 
 test/test_motiontemplates.s: test/test_motiontemplates.cpp.s
@@ -705,7 +695,7 @@ test/test_motiontemplates.s: test/test_motiontemplates.cpp.s
 
 # target to generate assembly for a file
 test/test_motiontemplates.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_motiontemplates.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_motiontemplates.cpp.s
 .PHONY : test/test_motiontemplates.cpp.s
 
 test/test_optflowpyrlk.o: test/test_optflowpyrlk.cpp.o
@@ -713,7 +703,7 @@ test/test_optflowpyrlk.o: test/test_optflowpyrlk.cpp.o
 
 # target to build an object file
 test/test_optflowpyrlk.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_optflowpyrlk.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_optflowpyrlk.cpp.o
 .PHONY : test/test_optflowpyrlk.cpp.o
 
 test/test_optflowpyrlk.i: test/test_optflowpyrlk.cpp.i
@@ -721,7 +711,7 @@ test/test_optflowpyrlk.i: test/test_optflowpyrlk.cpp.i
 
 # target to preprocess a source file
 test/test_optflowpyrlk.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_optflowpyrlk.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_optflowpyrlk.cpp.i
 .PHONY : test/test_optflowpyrlk.cpp.i
 
 test/test_optflowpyrlk.s: test/test_optflowpyrlk.cpp.s
@@ -729,7 +719,7 @@ test/test_optflowpyrlk.s: test/test_optflowpyrlk.cpp.s
 
 # target to generate assembly for a file
 test/test_optflowpyrlk.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_optflowpyrlk.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_optflowpyrlk.cpp.s
 .PHONY : test/test_optflowpyrlk.cpp.s
 
 test/test_simpleflow.o: test/test_simpleflow.cpp.o
@@ -737,7 +727,7 @@ test/test_simpleflow.o: test/test_simpleflow.cpp.o
 
 # target to build an object file
 test/test_simpleflow.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_simpleflow.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_simpleflow.cpp.o
 .PHONY : test/test_simpleflow.cpp.o
 
 test/test_simpleflow.i: test/test_simpleflow.cpp.i
@@ -745,7 +735,7 @@ test/test_simpleflow.i: test/test_simpleflow.cpp.i
 
 # target to preprocess a source file
 test/test_simpleflow.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_simpleflow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_simpleflow.cpp.i
 .PHONY : test/test_simpleflow.cpp.i
 
 test/test_simpleflow.s: test/test_simpleflow.cpp.s
@@ -753,7 +743,7 @@ test/test_simpleflow.s: test/test_simpleflow.cpp.s
 
 # target to generate assembly for a file
 test/test_simpleflow.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_simpleflow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_simpleflow.cpp.s
 .PHONY : test/test_simpleflow.cpp.s
 
 test/test_tvl1optflow.o: test/test_tvl1optflow.cpp.o
@@ -761,7 +751,7 @@ test/test_tvl1optflow.o: test/test_tvl1optflow.cpp.o
 
 # target to build an object file
 test/test_tvl1optflow.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_tvl1optflow.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_tvl1optflow.cpp.o
 .PHONY : test/test_tvl1optflow.cpp.o
 
 test/test_tvl1optflow.i: test/test_tvl1optflow.cpp.i
@@ -769,7 +759,7 @@ test/test_tvl1optflow.i: test/test_tvl1optflow.cpp.i
 
 # target to preprocess a source file
 test/test_tvl1optflow.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_tvl1optflow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_tvl1optflow.cpp.i
 .PHONY : test/test_tvl1optflow.cpp.i
 
 test/test_tvl1optflow.s: test/test_tvl1optflow.cpp.s
@@ -777,7 +767,7 @@ test/test_tvl1optflow.s: test/test_tvl1optflow.cpp.s
 
 # target to generate assembly for a file
 test/test_tvl1optflow.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_tvl1optflow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_tvl1optflow.cpp.s
 .PHONY : test/test_tvl1optflow.cpp.s
 
 # Help Target
@@ -789,7 +779,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_perf_video"
 	@echo "... opencv_test_video"
@@ -880,6 +869,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -6,45 +6,45 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_gpu.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_gpu.cpp
 perf_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_precomp.hpp
 cvconfig.h
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/cvconfig.h
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/cvconfig.h
 opencv2/ts/gpu_perf.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/opencv2/ts/gpu_perf.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/opencv2/ts/gpu_perf.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_main.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_main.cpp
 perf_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_precomp.hpp
 opencv2/ts/gpu_perf.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/opencv2/ts/gpu_perf.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/opencv2/ts/gpu_perf.hpp
 opencv2/ocl/private/opencl_dumpinfo.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/opencv2/ocl/private/opencl_dumpinfo.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/opencv2/ocl/private/opencl_dumpinfo.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_precomp.hpp
 cvconfig.h
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/cvconfig.h
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/cvconfig.h
 opencv2/ts/ts.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/opencv2/ts/ts.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/opencv2/ts/ts.hpp
 opencv2/nonfree/nonfree.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/opencv2/nonfree/nonfree.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/opencv2/nonfree/nonfree.hpp
 opencv2/highgui/highgui.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/opencv2/highgui/highgui.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/opencv2/highgui/highgui.hpp
 opencv2/opencv_modules.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/opencv2/opencv_modules.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/opencv2/opencv_modules.hpp
 opencv2/nonfree/ocl.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/opencv2/nonfree/ocl.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/opencv2/nonfree/ocl.hpp
 opencv2/nonfree/gpu.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/opencv2/nonfree/gpu.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/opencv2/nonfree/gpu.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_surf.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_surf.cpp
 perf_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_surf_ocl.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_surf_ocl.cpp
 perf_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_precomp.hpp
 
 cvconfig.h
 

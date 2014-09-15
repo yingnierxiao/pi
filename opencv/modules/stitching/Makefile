@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/modules/stitching/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/stitching/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/modules/stitching/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/stitching/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/stitching/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/stitching/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/stitching/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/stitching/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/stitching/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/stitching/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/rule
 .PHONY : modules/stitching/CMakeFiles/opencv_perf_stitching.dir/rule
 
 # Convenience name for target.
@@ -173,12 +163,12 @@ opencv_perf_stitching: modules/stitching/CMakeFiles/opencv_perf_stitching.dir/ru
 
 # fast build rule for target.
 opencv_perf_stitching/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build
 .PHONY : opencv_perf_stitching/fast
 
 # Convenience name for target.
 modules/stitching/CMakeFiles/opencv_stitching.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/stitching/CMakeFiles/opencv_stitching.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/stitching/CMakeFiles/opencv_stitching.dir/rule
 .PHONY : modules/stitching/CMakeFiles/opencv_stitching.dir/rule
 
 # Convenience name for target.
@@ -187,12 +177,12 @@ opencv_stitching: modules/stitching/CMakeFiles/opencv_stitching.dir/rule
 
 # fast build rule for target.
 opencv_stitching/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/build
 .PHONY : opencv_stitching/fast
 
 # Convenience name for target.
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/stitching/CMakeFiles/opencv_test_stitching.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/stitching/CMakeFiles/opencv_test_stitching.dir/rule
 .PHONY : modules/stitching/CMakeFiles/opencv_test_stitching.dir/rule
 
 # Convenience name for target.
@@ -201,7 +191,7 @@ opencv_test_stitching: modules/stitching/CMakeFiles/opencv_test_stitching.dir/ru
 
 # fast build rule for target.
 opencv_test_stitching/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/build
 .PHONY : opencv_test_stitching/fast
 
 perf/perf_main.o: perf/perf_main.cpp.o
@@ -209,7 +199,7 @@ perf/perf_main.o: perf/perf_main.cpp.o
 
 # target to build an object file
 perf/perf_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_main.cpp.o
 .PHONY : perf/perf_main.cpp.o
 
 perf/perf_main.i: perf/perf_main.cpp.i
@@ -217,7 +207,7 @@ perf/perf_main.i: perf/perf_main.cpp.i
 
 # target to preprocess a source file
 perf/perf_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_main.cpp.i
 .PHONY : perf/perf_main.cpp.i
 
 perf/perf_main.s: perf/perf_main.cpp.s
@@ -225,7 +215,7 @@ perf/perf_main.s: perf/perf_main.cpp.s
 
 # target to generate assembly for a file
 perf/perf_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_main.cpp.s
 .PHONY : perf/perf_main.cpp.s
 
 perf/perf_stich.o: perf/perf_stich.cpp.o
@@ -233,7 +223,7 @@ perf/perf_stich.o: perf/perf_stich.cpp.o
 
 # target to build an object file
 perf/perf_stich.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_stich.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_stich.cpp.o
 .PHONY : perf/perf_stich.cpp.o
 
 perf/perf_stich.i: perf/perf_stich.cpp.i
@@ -241,7 +231,7 @@ perf/perf_stich.i: perf/perf_stich.cpp.i
 
 # target to preprocess a source file
 perf/perf_stich.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_stich.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_stich.cpp.i
 .PHONY : perf/perf_stich.cpp.i
 
 perf/perf_stich.s: perf/perf_stich.cpp.s
@@ -249,7 +239,7 @@ perf/perf_stich.s: perf/perf_stich.cpp.s
 
 # target to generate assembly for a file
 perf/perf_stich.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_stich.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_stich.cpp.s
 .PHONY : perf/perf_stich.cpp.s
 
 src/autocalib.o: src/autocalib.cpp.o
@@ -257,7 +247,7 @@ src/autocalib.o: src/autocalib.cpp.o
 
 # target to build an object file
 src/autocalib.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/autocalib.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/autocalib.cpp.o
 .PHONY : src/autocalib.cpp.o
 
 src/autocalib.i: src/autocalib.cpp.i
@@ -265,7 +255,7 @@ src/autocalib.i: src/autocalib.cpp.i
 
 # target to preprocess a source file
 src/autocalib.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/autocalib.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/autocalib.cpp.i
 .PHONY : src/autocalib.cpp.i
 
 src/autocalib.s: src/autocalib.cpp.s
@@ -273,7 +263,7 @@ src/autocalib.s: src/autocalib.cpp.s
 
 # target to generate assembly for a file
 src/autocalib.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/autocalib.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/autocalib.cpp.s
 .PHONY : src/autocalib.cpp.s
 
 src/blenders.o: src/blenders.cpp.o
@@ -281,7 +271,7 @@ src/blenders.o: src/blenders.cpp.o
 
 # target to build an object file
 src/blenders.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/blenders.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/blenders.cpp.o
 .PHONY : src/blenders.cpp.o
 
 src/blenders.i: src/blenders.cpp.i
@@ -289,7 +279,7 @@ src/blenders.i: src/blenders.cpp.i
 
 # target to preprocess a source file
 src/blenders.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/blenders.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/blenders.cpp.i
 .PHONY : src/blenders.cpp.i
 
 src/blenders.s: src/blenders.cpp.s
@@ -297,7 +287,7 @@ src/blenders.s: src/blenders.cpp.s
 
 # target to generate assembly for a file
 src/blenders.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/blenders.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/blenders.cpp.s
 .PHONY : src/blenders.cpp.s
 
 src/camera.o: src/camera.cpp.o
@@ -305,7 +295,7 @@ src/camera.o: src/camera.cpp.o
 
 # target to build an object file
 src/camera.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/camera.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/camera.cpp.o
 .PHONY : src/camera.cpp.o
 
 src/camera.i: src/camera.cpp.i
@@ -313,7 +303,7 @@ src/camera.i: src/camera.cpp.i
 
 # target to preprocess a source file
 src/camera.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/camera.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/camera.cpp.i
 .PHONY : src/camera.cpp.i
 
 src/camera.s: src/camera.cpp.s
@@ -321,7 +311,7 @@ src/camera.s: src/camera.cpp.s
 
 # target to generate assembly for a file
 src/camera.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/camera.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/camera.cpp.s
 .PHONY : src/camera.cpp.s
 
 src/exposure_compensate.o: src/exposure_compensate.cpp.o
@@ -329,7 +319,7 @@ src/exposure_compensate.o: src/exposure_compensate.cpp.o
 
 # target to build an object file
 src/exposure_compensate.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/exposure_compensate.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/exposure_compensate.cpp.o
 .PHONY : src/exposure_compensate.cpp.o
 
 src/exposure_compensate.i: src/exposure_compensate.cpp.i
@@ -337,7 +327,7 @@ src/exposure_compensate.i: src/exposure_compensate.cpp.i
 
 # target to preprocess a source file
 src/exposure_compensate.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/exposure_compensate.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/exposure_compensate.cpp.i
 .PHONY : src/exposure_compensate.cpp.i
 
 src/exposure_compensate.s: src/exposure_compensate.cpp.s
@@ -345,7 +335,7 @@ src/exposure_compensate.s: src/exposure_compensate.cpp.s
 
 # target to generate assembly for a file
 src/exposure_compensate.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/exposure_compensate.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/exposure_compensate.cpp.s
 .PHONY : src/exposure_compensate.cpp.s
 
 src/matchers.o: src/matchers.cpp.o
@@ -353,7 +343,7 @@ src/matchers.o: src/matchers.cpp.o
 
 # target to build an object file
 src/matchers.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/matchers.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/matchers.cpp.o
 .PHONY : src/matchers.cpp.o
 
 src/matchers.i: src/matchers.cpp.i
@@ -361,7 +351,7 @@ src/matchers.i: src/matchers.cpp.i
 
 # target to preprocess a source file
 src/matchers.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/matchers.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/matchers.cpp.i
 .PHONY : src/matchers.cpp.i
 
 src/matchers.s: src/matchers.cpp.s
@@ -369,7 +359,7 @@ src/matchers.s: src/matchers.cpp.s
 
 # target to generate assembly for a file
 src/matchers.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/matchers.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/matchers.cpp.s
 .PHONY : src/matchers.cpp.s
 
 src/motion_estimators.o: src/motion_estimators.cpp.o
@@ -377,7 +367,7 @@ src/motion_estimators.o: src/motion_estimators.cpp.o
 
 # target to build an object file
 src/motion_estimators.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/motion_estimators.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/motion_estimators.cpp.o
 .PHONY : src/motion_estimators.cpp.o
 
 src/motion_estimators.i: src/motion_estimators.cpp.i
@@ -385,7 +375,7 @@ src/motion_estimators.i: src/motion_estimators.cpp.i
 
 # target to preprocess a source file
 src/motion_estimators.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/motion_estimators.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/motion_estimators.cpp.i
 .PHONY : src/motion_estimators.cpp.i
 
 src/motion_estimators.s: src/motion_estimators.cpp.s
@@ -393,7 +383,7 @@ src/motion_estimators.s: src/motion_estimators.cpp.s
 
 # target to generate assembly for a file
 src/motion_estimators.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/motion_estimators.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/motion_estimators.cpp.s
 .PHONY : src/motion_estimators.cpp.s
 
 src/seam_finders.o: src/seam_finders.cpp.o
@@ -401,7 +391,7 @@ src/seam_finders.o: src/seam_finders.cpp.o
 
 # target to build an object file
 src/seam_finders.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/seam_finders.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/seam_finders.cpp.o
 .PHONY : src/seam_finders.cpp.o
 
 src/seam_finders.i: src/seam_finders.cpp.i
@@ -409,7 +399,7 @@ src/seam_finders.i: src/seam_finders.cpp.i
 
 # target to preprocess a source file
 src/seam_finders.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/seam_finders.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/seam_finders.cpp.i
 .PHONY : src/seam_finders.cpp.i
 
 src/seam_finders.s: src/seam_finders.cpp.s
@@ -417,7 +407,7 @@ src/seam_finders.s: src/seam_finders.cpp.s
 
 # target to generate assembly for a file
 src/seam_finders.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/seam_finders.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/seam_finders.cpp.s
 .PHONY : src/seam_finders.cpp.s
 
 src/stitcher.o: src/stitcher.cpp.o
@@ -425,7 +415,7 @@ src/stitcher.o: src/stitcher.cpp.o
 
 # target to build an object file
 src/stitcher.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/stitcher.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/stitcher.cpp.o
 .PHONY : src/stitcher.cpp.o
 
 src/stitcher.i: src/stitcher.cpp.i
@@ -433,7 +423,7 @@ src/stitcher.i: src/stitcher.cpp.i
 
 # target to preprocess a source file
 src/stitcher.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/stitcher.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/stitcher.cpp.i
 .PHONY : src/stitcher.cpp.i
 
 src/stitcher.s: src/stitcher.cpp.s
@@ -441,7 +431,7 @@ src/stitcher.s: src/stitcher.cpp.s
 
 # target to generate assembly for a file
 src/stitcher.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/stitcher.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/stitcher.cpp.s
 .PHONY : src/stitcher.cpp.s
 
 src/util.o: src/util.cpp.o
@@ -449,7 +439,7 @@ src/util.o: src/util.cpp.o
 
 # target to build an object file
 src/util.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/util.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/util.cpp.o
 .PHONY : src/util.cpp.o
 
 src/util.i: src/util.cpp.i
@@ -457,7 +447,7 @@ src/util.i: src/util.cpp.i
 
 # target to preprocess a source file
 src/util.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/util.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/util.cpp.i
 .PHONY : src/util.cpp.i
 
 src/util.s: src/util.cpp.s
@@ -465,7 +455,7 @@ src/util.s: src/util.cpp.s
 
 # target to generate assembly for a file
 src/util.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/util.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/util.cpp.s
 .PHONY : src/util.cpp.s
 
 src/warpers.o: src/warpers.cpp.o
@@ -473,7 +463,7 @@ src/warpers.o: src/warpers.cpp.o
 
 # target to build an object file
 src/warpers.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers.cpp.o
 .PHONY : src/warpers.cpp.o
 
 src/warpers.i: src/warpers.cpp.i
@@ -481,7 +471,7 @@ src/warpers.i: src/warpers.cpp.i
 
 # target to preprocess a source file
 src/warpers.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers.cpp.i
 .PHONY : src/warpers.cpp.i
 
 src/warpers.s: src/warpers.cpp.s
@@ -489,7 +479,7 @@ src/warpers.s: src/warpers.cpp.s
 
 # target to generate assembly for a file
 src/warpers.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers.cpp.s
 .PHONY : src/warpers.cpp.s
 
 test/test_blenders.o: test/test_blenders.cpp.o
@@ -497,7 +487,7 @@ test/test_blenders.o: test/test_blenders.cpp.o
 
 # target to build an object file
 test/test_blenders.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o
 .PHONY : test/test_blenders.cpp.o
 
 test/test_blenders.i: test/test_blenders.cpp.i
@@ -505,7 +495,7 @@ test/test_blenders.i: test/test_blenders.cpp.i
 
 # target to preprocess a source file
 test/test_blenders.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.i
 .PHONY : test/test_blenders.cpp.i
 
 test/test_blenders.s: test/test_blenders.cpp.s
@@ -513,7 +503,7 @@ test/test_blenders.s: test/test_blenders.cpp.s
 
 # target to generate assembly for a file
 test/test_blenders.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.s
 .PHONY : test/test_blenders.cpp.s
 
 test/test_main.o: test/test_main.cpp.o
@@ -521,7 +511,7 @@ test/test_main.o: test/test_main.cpp.o
 
 # target to build an object file
 test/test_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o
 .PHONY : test/test_main.cpp.o
 
 test/test_main.i: test/test_main.cpp.i
@@ -529,7 +519,7 @@ test/test_main.i: test/test_main.cpp.i
 
 # target to preprocess a source file
 test/test_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.i
 .PHONY : test/test_main.cpp.i
 
 test/test_main.s: test/test_main.cpp.s
@@ -537,7 +527,7 @@ test/test_main.s: test/test_main.cpp.s
 
 # target to generate assembly for a file
 test/test_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.s
 .PHONY : test/test_main.cpp.s
 
 test/test_matchers.o: test/test_matchers.cpp.o
@@ -545,7 +535,7 @@ test/test_matchers.o: test/test_matchers.cpp.o
 
 # target to build an object file
 test/test_matchers.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o
 .PHONY : test/test_matchers.cpp.o
 
 test/test_matchers.i: test/test_matchers.cpp.i
@@ -553,7 +543,7 @@ test/test_matchers.i: test/test_matchers.cpp.i
 
 # target to preprocess a source file
 test/test_matchers.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.i
 .PHONY : test/test_matchers.cpp.i
 
 test/test_matchers.s: test/test_matchers.cpp.s
@@ -561,7 +551,7 @@ test/test_matchers.s: test/test_matchers.cpp.s
 
 # target to generate assembly for a file
 test/test_matchers.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.s
 .PHONY : test/test_matchers.cpp.s
 
 # Help Target
@@ -573,7 +563,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_perf_stitching"
 	@echo "... opencv_stitching"
@@ -637,6 +626,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

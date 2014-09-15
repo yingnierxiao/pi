@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/depend.make
@@ -54,17 +54,17 @@ include modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/flags.make
 
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.o: modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.o: modules/objdetect/perf/perf_cascadeclassifier.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/perf/perf_cascadeclassifier.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/perf/perf_cascadeclassifier.cpp
 
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/perf/perf_cascadeclassifier.cpp > CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/perf/perf_cascadeclassifier.cpp > CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/perf/perf_cascadeclassifier.cpp -o CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/perf/perf_cascadeclassifier.cpp -o CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.o.requires
@@ -77,17 +77,17 @@ modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifi
 
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.o: modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.o: modules/objdetect/perf/perf_main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/perf/perf_main.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/perf/perf_main.cpp
 
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/perf/perf_main.cpp > CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/perf/perf_main.cpp > CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/perf/perf_main.cpp -o CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/perf/perf_main.cpp -o CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.o.requires
@@ -126,7 +126,7 @@ bin/opencv_perf_objdetect: lib/libopencv_flann.2.4.9.dylib
 bin/opencv_perf_objdetect: lib/libopencv_core.2.4.9.dylib
 bin/opencv_perf_objdetect: modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../bin/opencv_perf_objdetect"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_perf_objdetect.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_perf_objdetect.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build: bin/opencv_perf_objdetect
@@ -137,10 +137,10 @@ modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/requires: modules/objdete
 .PHONY : modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/requires
 
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && $(CMAKE_COMMAND) -P CMakeFiles/opencv_perf_objdetect.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && $(CMAKE_COMMAND) -P CMakeFiles/opencv_perf_objdetect.dir/cmake_clean.cmake
 .PHONY : modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/clean
 
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/objdetect /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/objdetect /Users/zj/Desktop/code/pi/opencv/modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/depend
 

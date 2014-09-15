@@ -6,29 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/test_main.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/superres/test/test_main.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/superres/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/superres/test/test_precomp.hpp
 cvconfig.h
-/Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/cvconfig.h
+/Users/zj/Desktop/code/pi/opencv/modules/superres/test/cvconfig.h
 opencv2/opencv_modules.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/opencv2/opencv_modules.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/superres/test/opencv2/opencv_modules.hpp
 opencv2/core/core.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/opencv2/core/core.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/superres/test/opencv2/core/core.hpp
 opencv2/imgproc/imgproc.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/opencv2/imgproc/imgproc.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/superres/test/opencv2/imgproc/imgproc.hpp
 opencv2/ts/ts.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/opencv2/ts/ts.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/superres/test/opencv2/ts/ts.hpp
 opencv2/superres/superres.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/opencv2/superres/superres.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/superres/test/opencv2/superres/superres.hpp
 input_array_utility.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/input_array_utility.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/superres/test/input_array_utility.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/test_superres.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/superres/test/test_superres.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/superres/test/test_precomp.hpp
 
 cvconfig.h
 

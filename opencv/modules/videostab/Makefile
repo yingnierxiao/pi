@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/videostab/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/modules/videostab/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/videostab/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/videostab/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/videostab/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/videostab/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/videostab/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/videostab/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/videostab/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 modules/videostab/CMakeFiles/opencv_videostab.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/videostab/CMakeFiles/opencv_videostab.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/videostab/CMakeFiles/opencv_videostab.dir/rule
 .PHONY : modules/videostab/CMakeFiles/opencv_videostab.dir/rule
 
 # Convenience name for target.
@@ -173,7 +163,7 @@ opencv_videostab: modules/videostab/CMakeFiles/opencv_videostab.dir/rule
 
 # fast build rule for target.
 opencv_videostab/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/build
 .PHONY : opencv_videostab/fast
 
 src/deblurring.o: src/deblurring.cpp.o
@@ -181,7 +171,7 @@ src/deblurring.o: src/deblurring.cpp.o
 
 # target to build an object file
 src/deblurring.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o
 .PHONY : src/deblurring.cpp.o
 
 src/deblurring.i: src/deblurring.cpp.i
@@ -189,7 +179,7 @@ src/deblurring.i: src/deblurring.cpp.i
 
 # target to preprocess a source file
 src/deblurring.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.i
 .PHONY : src/deblurring.cpp.i
 
 src/deblurring.s: src/deblurring.cpp.s
@@ -197,7 +187,7 @@ src/deblurring.s: src/deblurring.cpp.s
 
 # target to generate assembly for a file
 src/deblurring.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.s
 .PHONY : src/deblurring.cpp.s
 
 src/fast_marching.o: src/fast_marching.cpp.o
@@ -205,7 +195,7 @@ src/fast_marching.o: src/fast_marching.cpp.o
 
 # target to build an object file
 src/fast_marching.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o
 .PHONY : src/fast_marching.cpp.o
 
 src/fast_marching.i: src/fast_marching.cpp.i
@@ -213,7 +203,7 @@ src/fast_marching.i: src/fast_marching.cpp.i
 
 # target to preprocess a source file
 src/fast_marching.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.i
 .PHONY : src/fast_marching.cpp.i
 
 src/fast_marching.s: src/fast_marching.cpp.s
@@ -221,7 +211,7 @@ src/fast_marching.s: src/fast_marching.cpp.s
 
 # target to generate assembly for a file
 src/fast_marching.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.s
 .PHONY : src/fast_marching.cpp.s
 
 src/frame_source.o: src/frame_source.cpp.o
@@ -229,7 +219,7 @@ src/frame_source.o: src/frame_source.cpp.o
 
 # target to build an object file
 src/frame_source.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o
 .PHONY : src/frame_source.cpp.o
 
 src/frame_source.i: src/frame_source.cpp.i
@@ -237,7 +227,7 @@ src/frame_source.i: src/frame_source.cpp.i
 
 # target to preprocess a source file
 src/frame_source.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.i
 .PHONY : src/frame_source.cpp.i
 
 src/frame_source.s: src/frame_source.cpp.s
@@ -245,7 +235,7 @@ src/frame_source.s: src/frame_source.cpp.s
 
 # target to generate assembly for a file
 src/frame_source.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.s
 .PHONY : src/frame_source.cpp.s
 
 src/global_motion.o: src/global_motion.cpp.o
@@ -253,7 +243,7 @@ src/global_motion.o: src/global_motion.cpp.o
 
 # target to build an object file
 src/global_motion.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o
 .PHONY : src/global_motion.cpp.o
 
 src/global_motion.i: src/global_motion.cpp.i
@@ -261,7 +251,7 @@ src/global_motion.i: src/global_motion.cpp.i
 
 # target to preprocess a source file
 src/global_motion.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.i
 .PHONY : src/global_motion.cpp.i
 
 src/global_motion.s: src/global_motion.cpp.s
@@ -269,7 +259,7 @@ src/global_motion.s: src/global_motion.cpp.s
 
 # target to generate assembly for a file
 src/global_motion.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.s
 .PHONY : src/global_motion.cpp.s
 
 src/inpainting.o: src/inpainting.cpp.o
@@ -277,7 +267,7 @@ src/inpainting.o: src/inpainting.cpp.o
 
 # target to build an object file
 src/inpainting.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o
 .PHONY : src/inpainting.cpp.o
 
 src/inpainting.i: src/inpainting.cpp.i
@@ -285,7 +275,7 @@ src/inpainting.i: src/inpainting.cpp.i
 
 # target to preprocess a source file
 src/inpainting.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.i
 .PHONY : src/inpainting.cpp.i
 
 src/inpainting.s: src/inpainting.cpp.s
@@ -293,7 +283,7 @@ src/inpainting.s: src/inpainting.cpp.s
 
 # target to generate assembly for a file
 src/inpainting.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.s
 .PHONY : src/inpainting.cpp.s
 
 src/log.o: src/log.cpp.o
@@ -301,7 +291,7 @@ src/log.o: src/log.cpp.o
 
 # target to build an object file
 src/log.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o
 .PHONY : src/log.cpp.o
 
 src/log.i: src/log.cpp.i
@@ -309,7 +299,7 @@ src/log.i: src/log.cpp.i
 
 # target to preprocess a source file
 src/log.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.i
 .PHONY : src/log.cpp.i
 
 src/log.s: src/log.cpp.s
@@ -317,7 +307,7 @@ src/log.s: src/log.cpp.s
 
 # target to generate assembly for a file
 src/log.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.s
 .PHONY : src/log.cpp.s
 
 src/motion_stabilizing.o: src/motion_stabilizing.cpp.o
@@ -325,7 +315,7 @@ src/motion_stabilizing.o: src/motion_stabilizing.cpp.o
 
 # target to build an object file
 src/motion_stabilizing.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o
 .PHONY : src/motion_stabilizing.cpp.o
 
 src/motion_stabilizing.i: src/motion_stabilizing.cpp.i
@@ -333,7 +323,7 @@ src/motion_stabilizing.i: src/motion_stabilizing.cpp.i
 
 # target to preprocess a source file
 src/motion_stabilizing.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.i
 .PHONY : src/motion_stabilizing.cpp.i
 
 src/motion_stabilizing.s: src/motion_stabilizing.cpp.s
@@ -341,7 +331,7 @@ src/motion_stabilizing.s: src/motion_stabilizing.cpp.s
 
 # target to generate assembly for a file
 src/motion_stabilizing.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.s
 .PHONY : src/motion_stabilizing.cpp.s
 
 src/optical_flow.o: src/optical_flow.cpp.o
@@ -349,7 +339,7 @@ src/optical_flow.o: src/optical_flow.cpp.o
 
 # target to build an object file
 src/optical_flow.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o
 .PHONY : src/optical_flow.cpp.o
 
 src/optical_flow.i: src/optical_flow.cpp.i
@@ -357,7 +347,7 @@ src/optical_flow.i: src/optical_flow.cpp.i
 
 # target to preprocess a source file
 src/optical_flow.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.i
 .PHONY : src/optical_flow.cpp.i
 
 src/optical_flow.s: src/optical_flow.cpp.s
@@ -365,7 +355,7 @@ src/optical_flow.s: src/optical_flow.cpp.s
 
 # target to generate assembly for a file
 src/optical_flow.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.s
 .PHONY : src/optical_flow.cpp.s
 
 src/stabilizer.o: src/stabilizer.cpp.o
@@ -373,7 +363,7 @@ src/stabilizer.o: src/stabilizer.cpp.o
 
 # target to build an object file
 src/stabilizer.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o
 .PHONY : src/stabilizer.cpp.o
 
 src/stabilizer.i: src/stabilizer.cpp.i
@@ -381,7 +371,7 @@ src/stabilizer.i: src/stabilizer.cpp.i
 
 # target to preprocess a source file
 src/stabilizer.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.i
 .PHONY : src/stabilizer.cpp.i
 
 src/stabilizer.s: src/stabilizer.cpp.s
@@ -389,7 +379,7 @@ src/stabilizer.s: src/stabilizer.cpp.s
 
 # target to generate assembly for a file
 src/stabilizer.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.s
 .PHONY : src/stabilizer.cpp.s
 
 # Help Target
@@ -401,7 +391,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_videostab"
 	@echo "... package"
@@ -445,6 +434,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -50,10 +50,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Target rules for target CMakeFiles/opencv_modules.dir
@@ -62,9 +62,9 @@ CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
 CMakeFiles/opencv_modules.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 CMakeFiles/opencv_modules.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 CMakeFiles/opencv_modules.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-CMakeFiles/opencv_modules.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 CMakeFiles/opencv_modules.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 CMakeFiles/opencv_modules.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+CMakeFiles/opencv_modules.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 CMakeFiles/opencv_modules.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 CMakeFiles/opencv_modules.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 CMakeFiles/opencv_modules.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -80,15 +80,15 @@ CMakeFiles/opencv_modules.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 CMakeFiles/opencv_modules.dir/all: modules/videostab/CMakeFiles/opencv_videostab.dir/all
 	$(MAKE) -f CMakeFiles/opencv_modules.dir/build.make CMakeFiles/opencv_modules.dir/depend
 	$(MAKE) -f CMakeFiles/opencv_modules.dir/build.make CMakeFiles/opencv_modules.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_modules"
 .PHONY : CMakeFiles/opencv_modules.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/opencv_modules.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 57
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/opencv_modules.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : CMakeFiles/opencv_modules.dir/rule
 
 # Convenience name for target.
@@ -123,15 +123,15 @@ CMakeFiles/opencv_perf_tests.dir/all: modules/stitching/CMakeFiles/opencv_perf_s
 CMakeFiles/opencv_perf_tests.dir/all: modules/superres/CMakeFiles/opencv_perf_superres.dir/all
 	$(MAKE) -f CMakeFiles/opencv_perf_tests.dir/build.make CMakeFiles/opencv_perf_tests.dir/depend
 	$(MAKE) -f CMakeFiles/opencv_perf_tests.dir/build.make CMakeFiles/opencv_perf_tests.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_perf_tests"
 .PHONY : CMakeFiles/opencv_perf_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/opencv_perf_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/opencv_perf_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : CMakeFiles/opencv_perf_tests.dir/rule
 
 # Convenience name for target.
@@ -170,15 +170,15 @@ CMakeFiles/opencv_tests.dir/all: modules/stitching/CMakeFiles/opencv_test_stitch
 CMakeFiles/opencv_tests.dir/all: modules/superres/CMakeFiles/opencv_test_superres.dir/all
 	$(MAKE) -f CMakeFiles/opencv_tests.dir/build.make CMakeFiles/opencv_tests.dir/depend
 	$(MAKE) -f CMakeFiles/opencv_tests.dir/build.make CMakeFiles/opencv_tests.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_tests"
 .PHONY : CMakeFiles/opencv_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/opencv_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 72
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/opencv_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : CMakeFiles/opencv_tests.dir/rule
 
 # Convenience name for target.
@@ -201,15 +201,15 @@ clean: CMakeFiles/opencv_tests.dir/clean
 CMakeFiles/uninstall.dir/all:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -247,7 +247,7 @@ clean: CMakeFiles/uninstall.dir/clean
 3rdparty/zlib/CMakeFiles/zlib.dir/all:
 	$(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/depend
 	$(MAKE) -f 3rdparty/zlib/CMakeFiles/zlib.dir/build.make 3rdparty/zlib/CMakeFiles/zlib.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  99 100
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  99 100
 	@echo "Built target zlib"
 .PHONY : 3rdparty/zlib/CMakeFiles/zlib.dir/all
 
@@ -257,9 +257,9 @@ all: 3rdparty/zlib/CMakeFiles/zlib.dir/all
 
 # Build rule for subdir invocation for target.
 3rdparty/zlib/CMakeFiles/zlib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 3rdparty/zlib/CMakeFiles/zlib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : 3rdparty/zlib/CMakeFiles/zlib.dir/rule
 
 # Convenience name for target.
@@ -297,7 +297,7 @@ clean: 3rdparty/zlib/CMakeFiles/zlib.dir/clean
 3rdparty/libtiff/CMakeFiles/libtiff.dir/all: 3rdparty/zlib/CMakeFiles/zlib.dir/all
 	$(MAKE) -f 3rdparty/libtiff/CMakeFiles/libtiff.dir/build.make 3rdparty/libtiff/CMakeFiles/libtiff.dir/depend
 	$(MAKE) -f 3rdparty/libtiff/CMakeFiles/libtiff.dir/build.make 3rdparty/libtiff/CMakeFiles/libtiff.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  15 16 17 18
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  15 16 17 18
 	@echo "Built target libtiff"
 .PHONY : 3rdparty/libtiff/CMakeFiles/libtiff.dir/all
 
@@ -307,9 +307,9 @@ all: 3rdparty/libtiff/CMakeFiles/libtiff.dir/all
 
 # Build rule for subdir invocation for target.
 3rdparty/libtiff/CMakeFiles/libtiff.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 3rdparty/libtiff/CMakeFiles/libtiff.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : 3rdparty/libtiff/CMakeFiles/libtiff.dir/rule
 
 # Convenience name for target.
@@ -347,7 +347,7 @@ clean: 3rdparty/libtiff/CMakeFiles/libtiff.dir/clean
 3rdparty/libjpeg/CMakeFiles/libjpeg.dir/all:
 	$(MAKE) -f 3rdparty/libjpeg/CMakeFiles/libjpeg.dir/build.make 3rdparty/libjpeg/CMakeFiles/libjpeg.dir/depend
 	$(MAKE) -f 3rdparty/libjpeg/CMakeFiles/libjpeg.dir/build.make 3rdparty/libjpeg/CMakeFiles/libjpeg.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  10 11 12 13
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  10 11 12 13
 	@echo "Built target libjpeg"
 .PHONY : 3rdparty/libjpeg/CMakeFiles/libjpeg.dir/all
 
@@ -357,9 +357,9 @@ all: 3rdparty/libjpeg/CMakeFiles/libjpeg.dir/all
 
 # Build rule for subdir invocation for target.
 3rdparty/libjpeg/CMakeFiles/libjpeg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 3rdparty/libjpeg/CMakeFiles/libjpeg.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : 3rdparty/libjpeg/CMakeFiles/libjpeg.dir/rule
 
 # Convenience name for target.
@@ -397,7 +397,7 @@ clean: 3rdparty/libjpeg/CMakeFiles/libjpeg.dir/clean
 3rdparty/libjasper/CMakeFiles/libjasper.dir/all:
 	$(MAKE) -f 3rdparty/libjasper/CMakeFiles/libjasper.dir/build.make 3rdparty/libjasper/CMakeFiles/libjasper.dir/depend
 	$(MAKE) -f 3rdparty/libjasper/CMakeFiles/libjasper.dir/build.make 3rdparty/libjasper/CMakeFiles/libjasper.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  7 8 9
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  7 8 9
 	@echo "Built target libjasper"
 .PHONY : 3rdparty/libjasper/CMakeFiles/libjasper.dir/all
 
@@ -407,9 +407,9 @@ all: 3rdparty/libjasper/CMakeFiles/libjasper.dir/all
 
 # Build rule for subdir invocation for target.
 3rdparty/libjasper/CMakeFiles/libjasper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 3rdparty/libjasper/CMakeFiles/libjasper.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : 3rdparty/libjasper/CMakeFiles/libjasper.dir/rule
 
 # Convenience name for target.
@@ -447,7 +447,7 @@ clean: 3rdparty/libjasper/CMakeFiles/libjasper.dir/clean
 3rdparty/libpng/CMakeFiles/libpng.dir/all: 3rdparty/zlib/CMakeFiles/zlib.dir/all
 	$(MAKE) -f 3rdparty/libpng/CMakeFiles/libpng.dir/build.make 3rdparty/libpng/CMakeFiles/libpng.dir/depend
 	$(MAKE) -f 3rdparty/libpng/CMakeFiles/libpng.dir/build.make 3rdparty/libpng/CMakeFiles/libpng.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  14
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  14
 	@echo "Built target libpng"
 .PHONY : 3rdparty/libpng/CMakeFiles/libpng.dir/all
 
@@ -457,9 +457,9 @@ all: 3rdparty/libpng/CMakeFiles/libpng.dir/all
 
 # Build rule for subdir invocation for target.
 3rdparty/libpng/CMakeFiles/libpng.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 3rdparty/libpng/CMakeFiles/libpng.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : 3rdparty/libpng/CMakeFiles/libpng.dir/rule
 
 # Convenience name for target.
@@ -497,7 +497,7 @@ clean: 3rdparty/libpng/CMakeFiles/libpng.dir/clean
 3rdparty/openexr/CMakeFiles/IlmImf.dir/all: 3rdparty/zlib/CMakeFiles/zlib.dir/all
 	$(MAKE) -f 3rdparty/openexr/CMakeFiles/IlmImf.dir/build.make 3rdparty/openexr/CMakeFiles/IlmImf.dir/depend
 	$(MAKE) -f 3rdparty/openexr/CMakeFiles/IlmImf.dir/build.make 3rdparty/openexr/CMakeFiles/IlmImf.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  1 2 3 4 5 6
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  1 2 3 4 5 6
 	@echo "Built target IlmImf"
 .PHONY : 3rdparty/openexr/CMakeFiles/IlmImf.dir/all
 
@@ -507,9 +507,9 @@ all: 3rdparty/openexr/CMakeFiles/IlmImf.dir/all
 
 # Build rule for subdir invocation for target.
 3rdparty/openexr/CMakeFiles/IlmImf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 3rdparty/openexr/CMakeFiles/IlmImf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : 3rdparty/openexr/CMakeFiles/IlmImf.dir/rule
 
 # Convenience name for target.
@@ -1091,7 +1091,7 @@ modules/core/preinstall:
 modules/core/CMakeFiles/opencv_core.dir/all: 3rdparty/zlib/CMakeFiles/zlib.dir/all
 	$(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/depend
 	$(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  23 24
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  23 24
 	@echo "Built target opencv_core"
 .PHONY : modules/core/CMakeFiles/opencv_core.dir/all
 
@@ -1101,9 +1101,9 @@ all: modules/core/CMakeFiles/opencv_core.dir/all
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/opencv_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/opencv_core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/opencv_core.dir/rule
 
 # Convenience name for target.
@@ -1131,7 +1131,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/all: modules/highgui/CMakeFiles/ope
 modules/core/CMakeFiles/opencv_perf_core.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/core/CMakeFiles/opencv_perf_core.dir/build.make modules/core/CMakeFiles/opencv_perf_core.dir/depend
 	$(MAKE) -f modules/core/CMakeFiles/opencv_perf_core.dir/build.make modules/core/CMakeFiles/opencv_perf_core.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  61
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  61
 	@echo "Built target opencv_perf_core"
 .PHONY : modules/core/CMakeFiles/opencv_perf_core.dir/all
 
@@ -1141,9 +1141,9 @@ all: modules/core/CMakeFiles/opencv_perf_core.dir/all
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/opencv_perf_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/opencv_perf_core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/opencv_perf_core.dir/rule
 
 # Convenience name for target.
@@ -1171,7 +1171,7 @@ modules/core/CMakeFiles/opencv_test_core.dir/all: modules/highgui/CMakeFiles/ope
 modules/core/CMakeFiles/opencv_test_core.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/depend
 	$(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  73
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  73
 	@echo "Built target opencv_test_core"
 .PHONY : modules/core/CMakeFiles/opencv_test_core.dir/all
 
@@ -1181,9 +1181,9 @@ all: modules/core/CMakeFiles/opencv_test_core.dir/all
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/opencv_test_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/opencv_test_core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/opencv_test_core.dir/rule
 
 # Convenience name for target.
@@ -1223,7 +1223,7 @@ modules/flann/preinstall:
 modules/flann/CMakeFiles/opencv_flann.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 	$(MAKE) -f modules/flann/CMakeFiles/opencv_flann.dir/build.make modules/flann/CMakeFiles/opencv_flann.dir/depend
 	$(MAKE) -f modules/flann/CMakeFiles/opencv_flann.dir/build.make modules/flann/CMakeFiles/opencv_flann.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_flann"
 .PHONY : modules/flann/CMakeFiles/opencv_flann.dir/all
 
@@ -1233,9 +1233,9 @@ all: modules/flann/CMakeFiles/opencv_flann.dir/all
 
 # Build rule for subdir invocation for target.
 modules/flann/CMakeFiles/opencv_flann.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 modules/flann/CMakeFiles/opencv_flann.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/flann/CMakeFiles/opencv_flann.dir/rule
 
 # Convenience name for target.
@@ -1263,7 +1263,7 @@ modules/flann/CMakeFiles/opencv_test_flann.dir/all: modules/highgui/CMakeFiles/o
 modules/flann/CMakeFiles/opencv_test_flann.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/flann/CMakeFiles/opencv_test_flann.dir/build.make modules/flann/CMakeFiles/opencv_test_flann.dir/depend
 	$(MAKE) -f modules/flann/CMakeFiles/opencv_test_flann.dir/build.make modules/flann/CMakeFiles/opencv_test_flann.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_test_flann"
 .PHONY : modules/flann/CMakeFiles/opencv_test_flann.dir/all
 
@@ -1273,9 +1273,9 @@ all: modules/flann/CMakeFiles/opencv_test_flann.dir/all
 
 # Build rule for subdir invocation for target.
 modules/flann/CMakeFiles/opencv_test_flann.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 modules/flann/CMakeFiles/opencv_test_flann.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/flann/CMakeFiles/opencv_test_flann.dir/rule
 
 # Convenience name for target.
@@ -1317,7 +1317,7 @@ modules/imgproc/preinstall:
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 	$(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/depend
 	$(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  34 35 36
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  34 35 36
 	@echo "Built target opencv_imgproc"
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
 
@@ -1327,9 +1327,9 @@ all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
 
 # Build rule for subdir invocation for target.
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/rule
 
 # Convenience name for target.
@@ -1357,7 +1357,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/all: modules/highgui/CMakeFil
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/depend
 	$(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  64 65
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  64 65
 	@echo "Built target opencv_perf_imgproc"
 .PHONY : modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/all
 
@@ -1367,9 +1367,9 @@ all: modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/all
 
 # Build rule for subdir invocation for target.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 32
 	$(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/rule
 
 # Convenience name for target.
@@ -1397,7 +1397,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/all: modules/highgui/CMakeFil
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/depend
 	$(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  79 80
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  79 80
 	@echo "Built target opencv_test_imgproc"
 .PHONY : modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/all
 
@@ -1407,9 +1407,9 @@ all: modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/all
 
 # Build rule for subdir invocation for target.
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 32
 	$(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/rule
 
 # Convenience name for target.
@@ -1448,17 +1448,17 @@ modules/highgui/preinstall:
 # Target rules for target modules/highgui/CMakeFiles/opencv_highgui.dir
 
 # All Build rule for target.
-modules/highgui/CMakeFiles/opencv_highgui.dir/all: 3rdparty/libjasper/CMakeFiles/libjasper.dir/all
-modules/highgui/CMakeFiles/opencv_highgui.dir/all: 3rdparty/libpng/CMakeFiles/libpng.dir/all
 modules/highgui/CMakeFiles/opencv_highgui.dir/all: 3rdparty/zlib/CMakeFiles/zlib.dir/all
 modules/highgui/CMakeFiles/opencv_highgui.dir/all: 3rdparty/libtiff/CMakeFiles/libtiff.dir/all
 modules/highgui/CMakeFiles/opencv_highgui.dir/all: 3rdparty/libjpeg/CMakeFiles/libjpeg.dir/all
+modules/highgui/CMakeFiles/opencv_highgui.dir/all: 3rdparty/libjasper/CMakeFiles/libjasper.dir/all
+modules/highgui/CMakeFiles/opencv_highgui.dir/all: 3rdparty/libpng/CMakeFiles/libpng.dir/all
 modules/highgui/CMakeFiles/opencv_highgui.dir/all: 3rdparty/openexr/CMakeFiles/IlmImf.dir/all
 modules/highgui/CMakeFiles/opencv_highgui.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/highgui/CMakeFiles/opencv_highgui.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
 	$(MAKE) -f modules/highgui/CMakeFiles/opencv_highgui.dir/build.make modules/highgui/CMakeFiles/opencv_highgui.dir/depend
 	$(MAKE) -f modules/highgui/CMakeFiles/opencv_highgui.dir/build.make modules/highgui/CMakeFiles/opencv_highgui.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  32 33
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  32 33
 	@echo "Built target opencv_highgui"
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/all
 
@@ -1468,9 +1468,9 @@ all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
 
 # Build rule for subdir invocation for target.
 modules/highgui/CMakeFiles/opencv_highgui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 modules/highgui/CMakeFiles/opencv_highgui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/rule
 
 # Convenience name for target.
@@ -1498,7 +1498,7 @@ modules/highgui/CMakeFiles/opencv_perf_highgui.dir/all: modules/highgui/CMakeFil
 modules/highgui/CMakeFiles/opencv_perf_highgui.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/highgui/CMakeFiles/opencv_perf_highgui.dir/build.make modules/highgui/CMakeFiles/opencv_perf_highgui.dir/depend
 	$(MAKE) -f modules/highgui/CMakeFiles/opencv_perf_highgui.dir/build.make modules/highgui/CMakeFiles/opencv_perf_highgui.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_perf_highgui"
 .PHONY : modules/highgui/CMakeFiles/opencv_perf_highgui.dir/all
 
@@ -1508,9 +1508,9 @@ all: modules/highgui/CMakeFiles/opencv_perf_highgui.dir/all
 
 # Build rule for subdir invocation for target.
 modules/highgui/CMakeFiles/opencv_perf_highgui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 modules/highgui/CMakeFiles/opencv_perf_highgui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/highgui/CMakeFiles/opencv_perf_highgui.dir/rule
 
 # Convenience name for target.
@@ -1538,7 +1538,7 @@ modules/highgui/CMakeFiles/opencv_test_highgui.dir/all: modules/highgui/CMakeFil
 modules/highgui/CMakeFiles/opencv_test_highgui.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/highgui/CMakeFiles/opencv_test_highgui.dir/build.make modules/highgui/CMakeFiles/opencv_test_highgui.dir/depend
 	$(MAKE) -f modules/highgui/CMakeFiles/opencv_test_highgui.dir/build.make modules/highgui/CMakeFiles/opencv_test_highgui.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  78
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  78
 	@echo "Built target opencv_test_highgui"
 .PHONY : modules/highgui/CMakeFiles/opencv_test_highgui.dir/all
 
@@ -1548,9 +1548,9 @@ all: modules/highgui/CMakeFiles/opencv_test_highgui.dir/all
 
 # Build rule for subdir invocation for target.
 modules/highgui/CMakeFiles/opencv_test_highgui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 modules/highgui/CMakeFiles/opencv_test_highgui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/highgui/CMakeFiles/opencv_test_highgui.dir/rule
 
 # Convenience name for target.
@@ -1595,7 +1595,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/all: modules/imgproc/CMakeFi
 modules/features2d/CMakeFiles/opencv_features2d.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
 	$(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/depend
 	$(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  25 26
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  25 26
 	@echo "Built target opencv_features2d"
 .PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/all
 
@@ -1605,9 +1605,9 @@ all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 
 # Build rule for subdir invocation for target.
 modules/features2d/CMakeFiles/opencv_features2d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 29
 	$(MAKE) -f CMakeFiles/Makefile2 modules/features2d/CMakeFiles/opencv_features2d.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/rule
 
 # Convenience name for target.
@@ -1635,7 +1635,7 @@ modules/features2d/CMakeFiles/opencv_perf_features2d.dir/all: modules/highgui/CM
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/features2d/CMakeFiles/opencv_perf_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_perf_features2d.dir/depend
 	$(MAKE) -f modules/features2d/CMakeFiles/opencv_perf_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_perf_features2d.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  62
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  62
 	@echo "Built target opencv_perf_features2d"
 .PHONY : modules/features2d/CMakeFiles/opencv_perf_features2d.dir/all
 
@@ -1645,9 +1645,9 @@ all: modules/features2d/CMakeFiles/opencv_perf_features2d.dir/all
 
 # Build rule for subdir invocation for target.
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/features2d/CMakeFiles/opencv_perf_features2d.dir/rule
 
 # Convenience name for target.
@@ -1675,7 +1675,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/all: modules/highgui/CM
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/features2d/CMakeFiles/opencv_test_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_test_features2d.dir/depend
 	$(MAKE) -f modules/features2d/CMakeFiles/opencv_test_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_test_features2d.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  74
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  74
 	@echo "Built target opencv_test_features2d"
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/all
 
@@ -1685,9 +1685,9 @@ all: modules/features2d/CMakeFiles/opencv_test_features2d.dir/all
 
 # Build rule for subdir invocation for target.
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 modules/features2d/CMakeFiles/opencv_test_features2d.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/features2d/CMakeFiles/opencv_test_features2d.dir/rule
 
 # Convenience name for target.
@@ -1733,7 +1733,7 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/all: modules/features2d/CMakeFiles
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
 	$(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/depend
 	$(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  19
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  19
 	@echo "Built target opencv_calib3d"
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 
@@ -1743,9 +1743,9 @@ all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 
 # Build rule for subdir invocation for target.
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/rule
 
 # Convenience name for target.
@@ -1768,13 +1768,13 @@ clean: modules/calib3d/CMakeFiles/opencv_calib3d.dir/clean
 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/depend
 	$(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_perf_calib3d"
 .PHONY : modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/all
 
@@ -1784,9 +1784,9 @@ all: modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/all
 
 # Build rule for subdir invocation for target.
 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/rule
 
 # Convenience name for target.
@@ -1809,13 +1809,13 @@ clean: modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/clean
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/depend
 	$(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  71 72
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  71 72
 	@echo "Built target opencv_test_calib3d"
 .PHONY : modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/all
 
@@ -1825,9 +1825,9 @@ all: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/all
 
 # Build rule for subdir invocation for target.
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 33
 	$(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/rule
 
 # Convenience name for target.
@@ -1867,7 +1867,7 @@ modules/ml/preinstall:
 modules/ml/CMakeFiles/opencv_ml.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 	$(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/depend
 	$(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  54
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  54
 	@echo "Built target opencv_ml"
 .PHONY : modules/ml/CMakeFiles/opencv_ml.dir/all
 
@@ -1877,9 +1877,9 @@ all: modules/ml/CMakeFiles/opencv_ml.dir/all
 
 # Build rule for subdir invocation for target.
 modules/ml/CMakeFiles/opencv_ml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 modules/ml/CMakeFiles/opencv_ml.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/ml/CMakeFiles/opencv_ml.dir/rule
 
 # Convenience name for target.
@@ -1908,7 +1908,7 @@ modules/ml/CMakeFiles/opencv_test_ml.dir/all: modules/ml/CMakeFiles/opencv_ml.di
 modules/ml/CMakeFiles/opencv_test_ml.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/ml/CMakeFiles/opencv_test_ml.dir/build.make modules/ml/CMakeFiles/opencv_test_ml.dir/depend
 	$(MAKE) -f modules/ml/CMakeFiles/opencv_test_ml.dir/build.make modules/ml/CMakeFiles/opencv_test_ml.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  91
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  91
 	@echo "Built target opencv_test_ml"
 .PHONY : modules/ml/CMakeFiles/opencv_test_ml.dir/all
 
@@ -1918,9 +1918,9 @@ all: modules/ml/CMakeFiles/opencv_test_ml.dir/all
 
 # Build rule for subdir invocation for target.
 modules/ml/CMakeFiles/opencv_test_ml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 32
 	$(MAKE) -f CMakeFiles/Makefile2 modules/ml/CMakeFiles/opencv_test_ml.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/ml/CMakeFiles/opencv_test_ml.dir/rule
 
 # Convenience name for target.
@@ -1968,7 +1968,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/all: modules/video/CMakeFiles/ope
 modules/video/CMakeFiles/opencv_perf_video.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/depend
 	$(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_perf_video"
 .PHONY : modules/video/CMakeFiles/opencv_perf_video.dir/all
 
@@ -1978,9 +1978,9 @@ all: modules/video/CMakeFiles/opencv_perf_video.dir/all
 
 # Build rule for subdir invocation for target.
 modules/video/CMakeFiles/opencv_perf_video.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 modules/video/CMakeFiles/opencv_perf_video.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/video/CMakeFiles/opencv_perf_video.dir/rule
 
 # Convenience name for target.
@@ -2009,7 +2009,7 @@ modules/video/CMakeFiles/opencv_test_video.dir/all: modules/video/CMakeFiles/ope
 modules/video/CMakeFiles/opencv_test_video.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/depend
 	$(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  95
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  95
 	@echo "Built target opencv_test_video"
 .PHONY : modules/video/CMakeFiles/opencv_test_video.dir/all
 
@@ -2019,9 +2019,9 @@ all: modules/video/CMakeFiles/opencv_test_video.dir/all
 
 # Build rule for subdir invocation for target.
 modules/video/CMakeFiles/opencv_test_video.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 modules/video/CMakeFiles/opencv_test_video.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/video/CMakeFiles/opencv_test_video.dir/rule
 
 # Convenience name for target.
@@ -2045,7 +2045,7 @@ modules/video/CMakeFiles/opencv_video.dir/all: modules/core/CMakeFiles/opencv_co
 modules/video/CMakeFiles/opencv_video.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
 	$(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/depend
 	$(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_video"
 .PHONY : modules/video/CMakeFiles/opencv_video.dir/all
 
@@ -2055,9 +2055,9 @@ all: modules/video/CMakeFiles/opencv_video.dir/all
 
 # Build rule for subdir invocation for target.
 modules/video/CMakeFiles/opencv_video.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 modules/video/CMakeFiles/opencv_video.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/video/CMakeFiles/opencv_video.dir/rule
 
 # Convenience name for target.
@@ -2097,14 +2097,14 @@ modules/legacy/preinstall:
 modules/legacy/CMakeFiles/opencv_legacy.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/legacy/CMakeFiles/opencv_legacy.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/legacy/CMakeFiles/opencv_legacy.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/legacy/CMakeFiles/opencv_legacy.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/legacy/CMakeFiles/opencv_legacy.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/legacy/CMakeFiles/opencv_legacy.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/legacy/CMakeFiles/opencv_legacy.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/legacy/CMakeFiles/opencv_legacy.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/legacy/CMakeFiles/opencv_legacy.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 	$(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/depend
 	$(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  46 47 48 49 50 51 52 53
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  46 47 48 49 50 51 52 53
 	@echo "Built target opencv_legacy"
 .PHONY : modules/legacy/CMakeFiles/opencv_legacy.dir/all
 
@@ -2114,9 +2114,9 @@ all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
 
 # Build rule for subdir invocation for target.
 modules/legacy/CMakeFiles/opencv_legacy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 39
 	$(MAKE) -f CMakeFiles/Makefile2 modules/legacy/CMakeFiles/opencv_legacy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/legacy/CMakeFiles/opencv_legacy.dir/rule
 
 # Convenience name for target.
@@ -2139,16 +2139,16 @@ clean: modules/legacy/CMakeFiles/opencv_legacy.dir/clean
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/legacy/CMakeFiles/opencv_test_legacy.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/legacy/CMakeFiles/opencv_test_legacy.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/depend
 	$(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  90
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  90
 	@echo "Built target opencv_test_legacy"
 .PHONY : modules/legacy/CMakeFiles/opencv_test_legacy.dir/all
 
@@ -2158,9 +2158,9 @@ all: modules/legacy/CMakeFiles/opencv_test_legacy.dir/all
 
 # Build rule for subdir invocation for target.
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 41
 	$(MAKE) -f CMakeFiles/Makefile2 modules/legacy/CMakeFiles/opencv_test_legacy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/legacy/CMakeFiles/opencv_test_legacy.dir/rule
 
 # Convenience name for target.
@@ -2204,7 +2204,7 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/all: modules/imgproc/CMakeFile
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
 	$(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/depend
 	$(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  56
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  56
 	@echo "Built target opencv_objdetect"
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/all
 
@@ -2214,9 +2214,9 @@ all: modules/objdetect/CMakeFiles/opencv_objdetect.dir/all
 
 # Build rule for subdir invocation for target.
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 28
 	$(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/CMakeFiles/opencv_objdetect.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/rule
 
 # Convenience name for target.
@@ -2245,7 +2245,7 @@ modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/all: modules/objdetect/CM
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/depend
 	$(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_perf_objdetect"
 .PHONY : modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/all
 
@@ -2255,9 +2255,9 @@ all: modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/all
 
 # Build rule for subdir invocation for target.
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/rule
 
 # Convenience name for target.
@@ -2286,7 +2286,7 @@ modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/all: modules/objdetect/CM
 modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/depend
 	$(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_test_objdetect"
 .PHONY : modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/all
 
@@ -2296,9 +2296,9 @@ all: modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/all
 
 # Build rule for subdir invocation for target.
 modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/rule
 
 # Convenience name for target.
@@ -2346,7 +2346,7 @@ modules/photo/CMakeFiles/opencv_perf_photo.dir/all: modules/photo/CMakeFiles/ope
 modules/photo/CMakeFiles/opencv_perf_photo.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/depend
 	$(MAKE) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  68
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  68
 	@echo "Built target opencv_perf_photo"
 .PHONY : modules/photo/CMakeFiles/opencv_perf_photo.dir/all
 
@@ -2356,9 +2356,9 @@ all: modules/photo/CMakeFiles/opencv_perf_photo.dir/all
 
 # Build rule for subdir invocation for target.
 modules/photo/CMakeFiles/opencv_perf_photo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 32
 	$(MAKE) -f CMakeFiles/Makefile2 modules/photo/CMakeFiles/opencv_perf_photo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/photo/CMakeFiles/opencv_perf_photo.dir/rule
 
 # Convenience name for target.
@@ -2382,7 +2382,7 @@ modules/photo/CMakeFiles/opencv_photo.dir/all: modules/core/CMakeFiles/opencv_co
 modules/photo/CMakeFiles/opencv_photo.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
 	$(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/depend
 	$(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  69
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  69
 	@echo "Built target opencv_photo"
 .PHONY : modules/photo/CMakeFiles/opencv_photo.dir/all
 
@@ -2392,9 +2392,9 @@ all: modules/photo/CMakeFiles/opencv_photo.dir/all
 
 # Build rule for subdir invocation for target.
 modules/photo/CMakeFiles/opencv_photo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 modules/photo/CMakeFiles/opencv_photo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/photo/CMakeFiles/opencv_photo.dir/rule
 
 # Convenience name for target.
@@ -2423,7 +2423,7 @@ modules/photo/CMakeFiles/opencv_test_photo.dir/all: modules/photo/CMakeFiles/ope
 modules/photo/CMakeFiles/opencv_test_photo.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/depend
 	$(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_test_photo"
 .PHONY : modules/photo/CMakeFiles/opencv_test_photo.dir/all
 
@@ -2433,9 +2433,9 @@ all: modules/photo/CMakeFiles/opencv_test_photo.dir/all
 
 # Build rule for subdir invocation for target.
 modules/photo/CMakeFiles/opencv_test_photo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 modules/photo/CMakeFiles/opencv_test_photo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/photo/CMakeFiles/opencv_test_photo.dir/rule
 
 # Convenience name for target.
@@ -2477,9 +2477,9 @@ modules/gpu/preinstall:
 modules/gpu/CMakeFiles/opencv_gpu.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/gpu/CMakeFiles/opencv_gpu.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/gpu/CMakeFiles/opencv_gpu.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/gpu/CMakeFiles/opencv_gpu.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/gpu/CMakeFiles/opencv_gpu.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/gpu/CMakeFiles/opencv_gpu.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/gpu/CMakeFiles/opencv_gpu.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/gpu/CMakeFiles/opencv_gpu.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/gpu/CMakeFiles/opencv_gpu.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/gpu/CMakeFiles/opencv_gpu.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -2487,7 +2487,7 @@ modules/gpu/CMakeFiles/opencv_gpu.dir/all: modules/objdetect/CMakeFiles/opencv_o
 modules/gpu/CMakeFiles/opencv_gpu.dir/all: modules/photo/CMakeFiles/opencv_photo.dir/all
 	$(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/depend
 	$(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  27 28 29 30 31
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  27 28 29 30 31
 	@echo "Built target opencv_gpu"
 .PHONY : modules/gpu/CMakeFiles/opencv_gpu.dir/all
 
@@ -2497,9 +2497,9 @@ all: modules/gpu/CMakeFiles/opencv_gpu.dir/all
 
 # Build rule for subdir invocation for target.
 modules/gpu/CMakeFiles/opencv_gpu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 46
 	$(MAKE) -f CMakeFiles/Makefile2 modules/gpu/CMakeFiles/opencv_gpu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/gpu/CMakeFiles/opencv_gpu.dir/rule
 
 # Convenience name for target.
@@ -2522,9 +2522,9 @@ clean: modules/gpu/CMakeFiles/opencv_gpu.dir/clean
 modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -2534,7 +2534,7 @@ modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all: modules/gpu/CMakeFiles/opencv_gp
 modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/depend
 	$(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  63
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  63
 	@echo "Built target opencv_perf_gpu"
 .PHONY : modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all
 
@@ -2544,9 +2544,9 @@ all: modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all
 
 # Build rule for subdir invocation for target.
 modules/gpu/CMakeFiles/opencv_perf_gpu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 modules/gpu/CMakeFiles/opencv_perf_gpu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/gpu/CMakeFiles/opencv_perf_gpu.dir/rule
 
 # Convenience name for target.
@@ -2569,9 +2569,9 @@ clean: modules/gpu/CMakeFiles/opencv_perf_gpu.dir/clean
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/gpu/CMakeFiles/opencv_test_gpu.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/gpu/CMakeFiles/opencv_test_gpu.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -2581,7 +2581,7 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/all: modules/gpu/CMakeFiles/opencv_gp
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/depend
 	$(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  75 76 77
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  75 76 77
 	@echo "Built target opencv_test_gpu"
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/all
 
@@ -2591,9 +2591,9 @@ all: modules/gpu/CMakeFiles/opencv_test_gpu.dir/all
 
 # Build rule for subdir invocation for target.
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 50
 	$(MAKE) -f CMakeFiles/Makefile2 modules/gpu/CMakeFiles/opencv_test_gpu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/rule
 
 # Convenience name for target.
@@ -2635,15 +2635,15 @@ modules/ocl/preinstall:
 modules/ocl/CMakeFiles/opencv_ocl.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/ocl/CMakeFiles/opencv_ocl.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/ocl/CMakeFiles/opencv_ocl.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/ocl/CMakeFiles/opencv_ocl.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/ocl/CMakeFiles/opencv_ocl.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/ocl/CMakeFiles/opencv_ocl.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/ocl/CMakeFiles/opencv_ocl.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/ocl/CMakeFiles/opencv_ocl.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/ocl/CMakeFiles/opencv_ocl.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/ocl/CMakeFiles/opencv_ocl.dir/all: modules/objdetect/CMakeFiles/opencv_objdetect.dir/all
 	$(MAKE) -f modules/ocl/CMakeFiles/opencv_ocl.dir/build.make modules/ocl/CMakeFiles/opencv_ocl.dir/depend
 	$(MAKE) -f modules/ocl/CMakeFiles/opencv_ocl.dir/build.make modules/ocl/CMakeFiles/opencv_ocl.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  57 58 59 60
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  57 58 59 60
 	@echo "Built target opencv_ocl"
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/all
 
@@ -2653,9 +2653,9 @@ all: modules/ocl/CMakeFiles/opencv_ocl.dir/all
 
 # Build rule for subdir invocation for target.
 modules/ocl/CMakeFiles/opencv_ocl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 36
 	$(MAKE) -f CMakeFiles/Makefile2 modules/ocl/CMakeFiles/opencv_ocl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/ocl/CMakeFiles/opencv_ocl.dir/rule
 
 # Convenience name for target.
@@ -2678,9 +2678,9 @@ clean: modules/ocl/CMakeFiles/opencv_ocl.dir/clean
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all: modules/objdetect/CMakeFiles/opencv_objdetect.dir/all
@@ -2688,7 +2688,7 @@ modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all: modules/ocl/CMakeFiles/opencv_oc
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/ocl/CMakeFiles/opencv_perf_ocl.dir/build.make modules/ocl/CMakeFiles/opencv_perf_ocl.dir/depend
 	$(MAKE) -f modules/ocl/CMakeFiles/opencv_perf_ocl.dir/build.make modules/ocl/CMakeFiles/opencv_perf_ocl.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  66 67
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  66 67
 	@echo "Built target opencv_perf_ocl"
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all
 
@@ -2698,9 +2698,9 @@ all: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all
 
 # Build rule for subdir invocation for target.
 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 39
 	$(MAKE) -f CMakeFiles/Makefile2 modules/ocl/CMakeFiles/opencv_perf_ocl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/ocl/CMakeFiles/opencv_perf_ocl.dir/rule
 
 # Convenience name for target.
@@ -2723,9 +2723,9 @@ clean: modules/ocl/CMakeFiles/opencv_perf_ocl.dir/clean
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/ocl/CMakeFiles/opencv_test_ocl.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/ocl/CMakeFiles/opencv_test_ocl.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/all: modules/objdetect/CMakeFiles/opencv_objdetect.dir/all
@@ -2733,7 +2733,7 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/all: modules/ocl/CMakeFiles/opencv_oc
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/ocl/CMakeFiles/opencv_test_ocl.dir/build.make modules/ocl/CMakeFiles/opencv_test_ocl.dir/depend
 	$(MAKE) -f modules/ocl/CMakeFiles/opencv_test_ocl.dir/build.make modules/ocl/CMakeFiles/opencv_test_ocl.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  92 93 94
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  92 93 94
 	@echo "Built target opencv_test_ocl"
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/all
 
@@ -2743,9 +2743,9 @@ all: modules/ocl/CMakeFiles/opencv_test_ocl.dir/all
 
 # Build rule for subdir invocation for target.
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 40
 	$(MAKE) -f CMakeFiles/Makefile2 modules/ocl/CMakeFiles/opencv_test_ocl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/rule
 
 # Convenience name for target.
@@ -2787,9 +2787,9 @@ modules/nonfree/preinstall:
 modules/nonfree/CMakeFiles/opencv_nonfree.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/nonfree/CMakeFiles/opencv_nonfree.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/nonfree/CMakeFiles/opencv_nonfree.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/nonfree/CMakeFiles/opencv_nonfree.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/nonfree/CMakeFiles/opencv_nonfree.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/nonfree/CMakeFiles/opencv_nonfree.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/nonfree/CMakeFiles/opencv_nonfree.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/nonfree/CMakeFiles/opencv_nonfree.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/nonfree/CMakeFiles/opencv_nonfree.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/nonfree/CMakeFiles/opencv_nonfree.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -2799,7 +2799,7 @@ modules/nonfree/CMakeFiles/opencv_nonfree.dir/all: modules/gpu/CMakeFiles/opencv
 modules/nonfree/CMakeFiles/opencv_nonfree.dir/all: modules/ocl/CMakeFiles/opencv_ocl.dir/all
 	$(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/depend
 	$(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  55
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  55
 	@echo "Built target opencv_nonfree"
 .PHONY : modules/nonfree/CMakeFiles/opencv_nonfree.dir/all
 
@@ -2809,9 +2809,9 @@ all: modules/nonfree/CMakeFiles/opencv_nonfree.dir/all
 
 # Build rule for subdir invocation for target.
 modules/nonfree/CMakeFiles/opencv_nonfree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 51
 	$(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/CMakeFiles/opencv_nonfree.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/nonfree/CMakeFiles/opencv_nonfree.dir/rule
 
 # Convenience name for target.
@@ -2834,9 +2834,9 @@ clean: modules/nonfree/CMakeFiles/opencv_nonfree.dir/clean
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -2848,7 +2848,7 @@ modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all: modules/nonfree/CMakeFil
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/depend
 	$(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_perf_nonfree"
 .PHONY : modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all
 
@@ -2858,9 +2858,9 @@ all: modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all
 
 # Build rule for subdir invocation for target.
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 52
 	$(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/rule
 
 # Convenience name for target.
@@ -2883,9 +2883,9 @@ clean: modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/clean
 modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -2897,7 +2897,7 @@ modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all: modules/nonfree/CMakeFil
 modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/depend
 	$(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_test_nonfree"
 .PHONY : modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all
 
@@ -2907,9 +2907,9 @@ all: modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all
 
 # Build rule for subdir invocation for target.
 modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 52
 	$(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/rule
 
 # Convenience name for target.
@@ -2949,9 +2949,9 @@ modules/contrib/preinstall:
 modules/contrib/CMakeFiles/opencv_contrib.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/contrib/CMakeFiles/opencv_contrib.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/contrib/CMakeFiles/opencv_contrib.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/contrib/CMakeFiles/opencv_contrib.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/contrib/CMakeFiles/opencv_contrib.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/contrib/CMakeFiles/opencv_contrib.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/contrib/CMakeFiles/opencv_contrib.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/contrib/CMakeFiles/opencv_contrib.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/contrib/CMakeFiles/opencv_contrib.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/contrib/CMakeFiles/opencv_contrib.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -2962,7 +2962,7 @@ modules/contrib/CMakeFiles/opencv_contrib.dir/all: modules/ocl/CMakeFiles/opencv
 modules/contrib/CMakeFiles/opencv_contrib.dir/all: modules/nonfree/CMakeFiles/opencv_nonfree.dir/all
 	$(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/depend
 	$(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  20 21 22
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  20 21 22
 	@echo "Built target opencv_contrib"
 .PHONY : modules/contrib/CMakeFiles/opencv_contrib.dir/all
 
@@ -2972,9 +2972,9 @@ all: modules/contrib/CMakeFiles/opencv_contrib.dir/all
 
 # Build rule for subdir invocation for target.
 modules/contrib/CMakeFiles/opencv_contrib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 54
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 modules/contrib/CMakeFiles/opencv_contrib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/contrib/CMakeFiles/opencv_contrib.dir/rule
 
 # Convenience name for target.
@@ -2997,9 +2997,9 @@ clean: modules/contrib/CMakeFiles/opencv_contrib.dir/clean
 modules/contrib/CMakeFiles/opencv_test_contrib.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/contrib/CMakeFiles/opencv_test_contrib.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/contrib/CMakeFiles/opencv_test_contrib.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/contrib/CMakeFiles/opencv_test_contrib.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/contrib/CMakeFiles/opencv_test_contrib.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/contrib/CMakeFiles/opencv_test_contrib.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/contrib/CMakeFiles/opencv_test_contrib.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/contrib/CMakeFiles/opencv_test_contrib.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/contrib/CMakeFiles/opencv_test_contrib.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/contrib/CMakeFiles/opencv_test_contrib.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -3012,7 +3012,7 @@ modules/contrib/CMakeFiles/opencv_test_contrib.dir/all: modules/contrib/CMakeFil
 modules/contrib/CMakeFiles/opencv_test_contrib.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/contrib/CMakeFiles/opencv_test_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_test_contrib.dir/depend
 	$(MAKE) -f modules/contrib/CMakeFiles/opencv_test_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_test_contrib.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_test_contrib"
 .PHONY : modules/contrib/CMakeFiles/opencv_test_contrib.dir/all
 
@@ -3022,9 +3022,9 @@ all: modules/contrib/CMakeFiles/opencv_test_contrib.dir/all
 
 # Build rule for subdir invocation for target.
 modules/contrib/CMakeFiles/opencv_test_contrib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 55
 	$(MAKE) -f CMakeFiles/Makefile2 modules/contrib/CMakeFiles/opencv_test_contrib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/contrib/CMakeFiles/opencv_test_contrib.dir/rule
 
 # Convenience name for target.
@@ -3064,9 +3064,9 @@ modules/java/preinstall: modules/java/test/preinstall
 modules/java/CMakeFiles/opencv_java.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/java/CMakeFiles/opencv_java.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/java/CMakeFiles/opencv_java.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/java/CMakeFiles/opencv_java.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/java/CMakeFiles/opencv_java.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/java/CMakeFiles/opencv_java.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/java/CMakeFiles/opencv_java.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/java/CMakeFiles/opencv_java.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/java/CMakeFiles/opencv_java.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/java/CMakeFiles/opencv_java.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -3078,7 +3078,7 @@ modules/java/CMakeFiles/opencv_java.dir/all: modules/nonfree/CMakeFiles/opencv_n
 modules/java/CMakeFiles/opencv_java.dir/all: modules/contrib/CMakeFiles/opencv_contrib.dir/all
 	$(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/depend
 	$(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  37 38 39 40 41 42 43 44 45
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  37 38 39 40 41 42 43 44 45
 	@echo "Built target opencv_java"
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/all
 
@@ -3088,9 +3088,9 @@ all: modules/java/CMakeFiles/opencv_java.dir/all
 
 # Build rule for subdir invocation for target.
 modules/java/CMakeFiles/opencv_java.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 63
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 modules/java/CMakeFiles/opencv_java.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/rule
 
 # Convenience name for target.
@@ -3130,7 +3130,7 @@ modules/java/test/CMakeFiles/opencv_test_java.dir/all: modules/java/CMakeFiles/o
 modules/java/test/CMakeFiles/opencv_test_java.dir/all: modules/java/test/CMakeFiles/opencv_test_java_properties.dir/all
 	$(MAKE) -f modules/java/test/CMakeFiles/opencv_test_java.dir/build.make modules/java/test/CMakeFiles/opencv_test_java.dir/depend
 	$(MAKE) -f modules/java/test/CMakeFiles/opencv_test_java.dir/build.make modules/java/test/CMakeFiles/opencv_test_java.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  81 82 83 84 85 86 87 88 89
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  81 82 83 84 85 86 87 88 89
 	@echo "Built target opencv_test_java"
 .PHONY : modules/java/test/CMakeFiles/opencv_test_java.dir/all
 
@@ -3140,9 +3140,9 @@ all: modules/java/test/CMakeFiles/opencv_test_java.dir/all
 
 # Build rule for subdir invocation for target.
 modules/java/test/CMakeFiles/opencv_test_java.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 72
 	$(MAKE) -f CMakeFiles/Makefile2 modules/java/test/CMakeFiles/opencv_test_java.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/java/test/CMakeFiles/opencv_test_java.dir/rule
 
 # Convenience name for target.
@@ -3165,15 +3165,15 @@ clean: modules/java/test/CMakeFiles/opencv_test_java.dir/clean
 modules/java/test/CMakeFiles/opencv_test_java_properties.dir/all: modules/java/CMakeFiles/opencv_java.dir/all
 	$(MAKE) -f modules/java/test/CMakeFiles/opencv_test_java_properties.dir/build.make modules/java/test/CMakeFiles/opencv_test_java_properties.dir/depend
 	$(MAKE) -f modules/java/test/CMakeFiles/opencv_test_java_properties.dir/build.make modules/java/test/CMakeFiles/opencv_test_java_properties.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_test_java_properties"
 .PHONY : modules/java/test/CMakeFiles/opencv_test_java_properties.dir/all
 
 # Build rule for subdir invocation for target.
 modules/java/test/CMakeFiles/opencv_test_java_properties.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 63
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 63
 	$(MAKE) -f CMakeFiles/Makefile2 modules/java/test/CMakeFiles/opencv_test_java_properties.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/java/test/CMakeFiles/opencv_test_java_properties.dir/rule
 
 # Convenience name for target.
@@ -3211,9 +3211,9 @@ modules/python/preinstall:
 modules/python/CMakeFiles/opencv_python.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/python/CMakeFiles/opencv_python.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/python/CMakeFiles/opencv_python.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/python/CMakeFiles/opencv_python.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/python/CMakeFiles/opencv_python.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/python/CMakeFiles/opencv_python.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/python/CMakeFiles/opencv_python.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/python/CMakeFiles/opencv_python.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/python/CMakeFiles/opencv_python.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/python/CMakeFiles/opencv_python.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -3225,7 +3225,7 @@ modules/python/CMakeFiles/opencv_python.dir/all: modules/nonfree/CMakeFiles/open
 modules/python/CMakeFiles/opencv_python.dir/all: modules/contrib/CMakeFiles/opencv_contrib.dir/all
 	$(MAKE) -f modules/python/CMakeFiles/opencv_python.dir/build.make modules/python/CMakeFiles/opencv_python.dir/depend
 	$(MAKE) -f modules/python/CMakeFiles/opencv_python.dir/build.make modules/python/CMakeFiles/opencv_python.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_python"
 .PHONY : modules/python/CMakeFiles/opencv_python.dir/all
 
@@ -3235,9 +3235,9 @@ all: modules/python/CMakeFiles/opencv_python.dir/all
 
 # Build rule for subdir invocation for target.
 modules/python/CMakeFiles/opencv_python.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 54
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 modules/python/CMakeFiles/opencv_python.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/python/CMakeFiles/opencv_python.dir/rule
 
 # Convenience name for target.
@@ -3279,9 +3279,9 @@ modules/stitching/preinstall:
 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -3294,7 +3294,7 @@ modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all: modules/stitching/CM
 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/depend
 	$(MAKE) -f modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_perf_stitching.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_perf_stitching"
 .PHONY : modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all
 
@@ -3304,9 +3304,9 @@ all: modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all
 
 # Build rule for subdir invocation for target.
 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 53
 	$(MAKE) -f CMakeFiles/Makefile2 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/stitching/CMakeFiles/opencv_perf_stitching.dir/rule
 
 # Convenience name for target.
@@ -3329,9 +3329,9 @@ clean: modules/stitching/CMakeFiles/opencv_perf_stitching.dir/clean
 modules/stitching/CMakeFiles/opencv_stitching.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/stitching/CMakeFiles/opencv_stitching.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/stitching/CMakeFiles/opencv_stitching.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/stitching/CMakeFiles/opencv_stitching.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/stitching/CMakeFiles/opencv_stitching.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/stitching/CMakeFiles/opencv_stitching.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/stitching/CMakeFiles/opencv_stitching.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/stitching/CMakeFiles/opencv_stitching.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/stitching/CMakeFiles/opencv_stitching.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/stitching/CMakeFiles/opencv_stitching.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -3342,7 +3342,7 @@ modules/stitching/CMakeFiles/opencv_stitching.dir/all: modules/ocl/CMakeFiles/op
 modules/stitching/CMakeFiles/opencv_stitching.dir/all: modules/nonfree/CMakeFiles/opencv_nonfree.dir/all
 	$(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/depend
 	$(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  70
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  70
 	@echo "Built target opencv_stitching"
 .PHONY : modules/stitching/CMakeFiles/opencv_stitching.dir/all
 
@@ -3352,9 +3352,9 @@ all: modules/stitching/CMakeFiles/opencv_stitching.dir/all
 
 # Build rule for subdir invocation for target.
 modules/stitching/CMakeFiles/opencv_stitching.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 52
 	$(MAKE) -f CMakeFiles/Makefile2 modules/stitching/CMakeFiles/opencv_stitching.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/stitching/CMakeFiles/opencv_stitching.dir/rule
 
 # Convenience name for target.
@@ -3377,9 +3377,9 @@ clean: modules/stitching/CMakeFiles/opencv_stitching.dir/clean
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/stitching/CMakeFiles/opencv_test_stitching.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/stitching/CMakeFiles/opencv_test_stitching.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -3392,7 +3392,7 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/all: modules/stitching/CM
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/depend
 	$(MAKE) -f modules/stitching/CMakeFiles/opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_test_stitching.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_test_stitching"
 .PHONY : modules/stitching/CMakeFiles/opencv_test_stitching.dir/all
 
@@ -3402,9 +3402,9 @@ all: modules/stitching/CMakeFiles/opencv_test_stitching.dir/all
 
 # Build rule for subdir invocation for target.
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 53
 	$(MAKE) -f CMakeFiles/Makefile2 modules/stitching/CMakeFiles/opencv_test_stitching.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/stitching/CMakeFiles/opencv_test_stitching.dir/rule
 
 # Convenience name for target.
@@ -3446,9 +3446,9 @@ modules/superres/preinstall:
 modules/superres/CMakeFiles/opencv_perf_superres.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/superres/CMakeFiles/opencv_perf_superres.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/superres/CMakeFiles/opencv_perf_superres.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/superres/CMakeFiles/opencv_perf_superres.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/superres/CMakeFiles/opencv_perf_superres.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/superres/CMakeFiles/opencv_perf_superres.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/superres/CMakeFiles/opencv_perf_superres.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/superres/CMakeFiles/opencv_perf_superres.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/superres/CMakeFiles/opencv_perf_superres.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/superres/CMakeFiles/opencv_perf_superres.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -3460,7 +3460,7 @@ modules/superres/CMakeFiles/opencv_perf_superres.dir/all: modules/superres/CMake
 modules/superres/CMakeFiles/opencv_perf_superres.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/superres/CMakeFiles/opencv_perf_superres.dir/build.make modules/superres/CMakeFiles/opencv_perf_superres.dir/depend
 	$(MAKE) -f modules/superres/CMakeFiles/opencv_perf_superres.dir/build.make modules/superres/CMakeFiles/opencv_perf_superres.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_perf_superres"
 .PHONY : modules/superres/CMakeFiles/opencv_perf_superres.dir/all
 
@@ -3470,9 +3470,9 @@ all: modules/superres/CMakeFiles/opencv_perf_superres.dir/all
 
 # Build rule for subdir invocation for target.
 modules/superres/CMakeFiles/opencv_perf_superres.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 51
 	$(MAKE) -f CMakeFiles/Makefile2 modules/superres/CMakeFiles/opencv_perf_superres.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/superres/CMakeFiles/opencv_perf_superres.dir/rule
 
 # Convenience name for target.
@@ -3495,9 +3495,9 @@ clean: modules/superres/CMakeFiles/opencv_perf_superres.dir/clean
 modules/superres/CMakeFiles/opencv_superres.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/superres/CMakeFiles/opencv_superres.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/superres/CMakeFiles/opencv_superres.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/superres/CMakeFiles/opencv_superres.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/superres/CMakeFiles/opencv_superres.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/superres/CMakeFiles/opencv_superres.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/superres/CMakeFiles/opencv_superres.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/superres/CMakeFiles/opencv_superres.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/superres/CMakeFiles/opencv_superres.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/superres/CMakeFiles/opencv_superres.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -3507,7 +3507,7 @@ modules/superres/CMakeFiles/opencv_superres.dir/all: modules/gpu/CMakeFiles/open
 modules/superres/CMakeFiles/opencv_superres.dir/all: modules/ocl/CMakeFiles/opencv_ocl.dir/all
 	$(MAKE) -f modules/superres/CMakeFiles/opencv_superres.dir/build.make modules/superres/CMakeFiles/opencv_superres.dir/depend
 	$(MAKE) -f modules/superres/CMakeFiles/opencv_superres.dir/build.make modules/superres/CMakeFiles/opencv_superres.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_superres"
 .PHONY : modules/superres/CMakeFiles/opencv_superres.dir/all
 
@@ -3517,9 +3517,9 @@ all: modules/superres/CMakeFiles/opencv_superres.dir/all
 
 # Build rule for subdir invocation for target.
 modules/superres/CMakeFiles/opencv_superres.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 50
 	$(MAKE) -f CMakeFiles/Makefile2 modules/superres/CMakeFiles/opencv_superres.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/superres/CMakeFiles/opencv_superres.dir/rule
 
 # Convenience name for target.
@@ -3542,9 +3542,9 @@ clean: modules/superres/CMakeFiles/opencv_superres.dir/clean
 modules/superres/CMakeFiles/opencv_test_superres.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/superres/CMakeFiles/opencv_test_superres.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/superres/CMakeFiles/opencv_test_superres.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/superres/CMakeFiles/opencv_test_superres.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/superres/CMakeFiles/opencv_test_superres.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/superres/CMakeFiles/opencv_test_superres.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/superres/CMakeFiles/opencv_test_superres.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/superres/CMakeFiles/opencv_test_superres.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/superres/CMakeFiles/opencv_test_superres.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/superres/CMakeFiles/opencv_test_superres.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -3556,7 +3556,7 @@ modules/superres/CMakeFiles/opencv_test_superres.dir/all: modules/superres/CMake
 modules/superres/CMakeFiles/opencv_test_superres.dir/all: modules/ts/CMakeFiles/opencv_ts.dir/all
 	$(MAKE) -f modules/superres/CMakeFiles/opencv_test_superres.dir/build.make modules/superres/CMakeFiles/opencv_test_superres.dir/depend
 	$(MAKE) -f modules/superres/CMakeFiles/opencv_test_superres.dir/build.make modules/superres/CMakeFiles/opencv_test_superres.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_test_superres"
 .PHONY : modules/superres/CMakeFiles/opencv_test_superres.dir/all
 
@@ -3566,9 +3566,9 @@ all: modules/superres/CMakeFiles/opencv_test_superres.dir/all
 
 # Build rule for subdir invocation for target.
 modules/superres/CMakeFiles/opencv_test_superres.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 51
 	$(MAKE) -f CMakeFiles/Makefile2 modules/superres/CMakeFiles/opencv_test_superres.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/superres/CMakeFiles/opencv_test_superres.dir/rule
 
 # Convenience name for target.
@@ -3610,7 +3610,7 @@ modules/ts/CMakeFiles/opencv_ts.dir/all: modules/features2d/CMakeFiles/opencv_fe
 modules/ts/CMakeFiles/opencv_ts.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
 	$(MAKE) -f modules/ts/CMakeFiles/opencv_ts.dir/build.make modules/ts/CMakeFiles/opencv_ts.dir/depend
 	$(MAKE) -f modules/ts/CMakeFiles/opencv_ts.dir/build.make modules/ts/CMakeFiles/opencv_ts.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  97
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  97
 	@echo "Built target opencv_ts"
 .PHONY : modules/ts/CMakeFiles/opencv_ts.dir/all
 
@@ -3620,9 +3620,9 @@ all: modules/ts/CMakeFiles/opencv_ts.dir/all
 
 # Build rule for subdir invocation for target.
 modules/ts/CMakeFiles/opencv_ts.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 modules/ts/CMakeFiles/opencv_ts.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/ts/CMakeFiles/opencv_ts.dir/rule
 
 # Convenience name for target.
@@ -3660,9 +3660,9 @@ modules/videostab/preinstall:
 modules/videostab/CMakeFiles/opencv_videostab.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/videostab/CMakeFiles/opencv_videostab.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 modules/videostab/CMakeFiles/opencv_videostab.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-modules/videostab/CMakeFiles/opencv_videostab.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/videostab/CMakeFiles/opencv_videostab.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 modules/videostab/CMakeFiles/opencv_videostab.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+modules/videostab/CMakeFiles/opencv_videostab.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 modules/videostab/CMakeFiles/opencv_videostab.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/videostab/CMakeFiles/opencv_videostab.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 modules/videostab/CMakeFiles/opencv_videostab.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -3671,7 +3671,7 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/all: modules/photo/CMakeFiles/
 modules/videostab/CMakeFiles/opencv_videostab.dir/all: modules/gpu/CMakeFiles/opencv_gpu.dir/all
 	$(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/depend
 	$(MAKE) -f modules/videostab/CMakeFiles/opencv_videostab.dir/build.make modules/videostab/CMakeFiles/opencv_videostab.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  98
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  98
 	@echo "Built target opencv_videostab"
 .PHONY : modules/videostab/CMakeFiles/opencv_videostab.dir/all
 
@@ -3681,9 +3681,9 @@ all: modules/videostab/CMakeFiles/opencv_videostab.dir/all
 
 # Build rule for subdir invocation for target.
 modules/videostab/CMakeFiles/opencv_videostab.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 47
 	$(MAKE) -f CMakeFiles/Makefile2 modules/videostab/CMakeFiles/opencv_videostab.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : modules/videostab/CMakeFiles/opencv_videostab.dir/rule
 
 # Convenience name for target.
@@ -3775,9 +3775,9 @@ apps/haartraining/preinstall:
 apps/haartraining/CMakeFiles/opencv_createsamples.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 apps/haartraining/CMakeFiles/opencv_createsamples.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 apps/haartraining/CMakeFiles/opencv_createsamples.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-apps/haartraining/CMakeFiles/opencv_createsamples.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 apps/haartraining/CMakeFiles/opencv_createsamples.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 apps/haartraining/CMakeFiles/opencv_createsamples.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+apps/haartraining/CMakeFiles/opencv_createsamples.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 apps/haartraining/CMakeFiles/opencv_createsamples.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 apps/haartraining/CMakeFiles/opencv_createsamples.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 apps/haartraining/CMakeFiles/opencv_createsamples.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -3785,7 +3785,7 @@ apps/haartraining/CMakeFiles/opencv_createsamples.dir/all: modules/objdetect/CMa
 apps/haartraining/CMakeFiles/opencv_createsamples.dir/all: apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all
 	$(MAKE) -f apps/haartraining/CMakeFiles/opencv_createsamples.dir/build.make apps/haartraining/CMakeFiles/opencv_createsamples.dir/depend
 	$(MAKE) -f apps/haartraining/CMakeFiles/opencv_createsamples.dir/build.make apps/haartraining/CMakeFiles/opencv_createsamples.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_createsamples"
 .PHONY : apps/haartraining/CMakeFiles/opencv_createsamples.dir/all
 
@@ -3795,9 +3795,9 @@ all: apps/haartraining/CMakeFiles/opencv_createsamples.dir/all
 
 # Build rule for subdir invocation for target.
 apps/haartraining/CMakeFiles/opencv_createsamples.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 40
 	$(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/CMakeFiles/opencv_createsamples.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : apps/haartraining/CMakeFiles/opencv_createsamples.dir/rule
 
 # Convenience name for target.
@@ -3820,9 +3820,9 @@ clean: apps/haartraining/CMakeFiles/opencv_createsamples.dir/clean
 apps/haartraining/CMakeFiles/opencv_haartraining.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-apps/haartraining/CMakeFiles/opencv_haartraining.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+apps/haartraining/CMakeFiles/opencv_haartraining.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -3830,7 +3830,7 @@ apps/haartraining/CMakeFiles/opencv_haartraining.dir/all: modules/objdetect/CMak
 apps/haartraining/CMakeFiles/opencv_haartraining.dir/all: apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all
 	$(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining.dir/depend
 	$(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_haartraining"
 .PHONY : apps/haartraining/CMakeFiles/opencv_haartraining.dir/all
 
@@ -3840,9 +3840,9 @@ all: apps/haartraining/CMakeFiles/opencv_haartraining.dir/all
 
 # Build rule for subdir invocation for target.
 apps/haartraining/CMakeFiles/opencv_haartraining.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 40
 	$(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/CMakeFiles/opencv_haartraining.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : apps/haartraining/CMakeFiles/opencv_haartraining.dir/rule
 
 # Convenience name for target.
@@ -3865,16 +3865,16 @@ clean: apps/haartraining/CMakeFiles/opencv_haartraining.dir/clean
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all: modules/objdetect/CMakeFiles/opencv_objdetect.dir/all
 	$(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/depend
 	$(MAKE) -f apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_haartraining_engine"
 .PHONY : apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all
 
@@ -3884,9 +3884,9 @@ all: apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all
 
 # Build rule for subdir invocation for target.
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 40
 	$(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/rule
 
 # Convenience name for target.
@@ -3909,9 +3909,9 @@ clean: apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/clean
 apps/haartraining/CMakeFiles/opencv_performance.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 apps/haartraining/CMakeFiles/opencv_performance.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 apps/haartraining/CMakeFiles/opencv_performance.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-apps/haartraining/CMakeFiles/opencv_performance.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 apps/haartraining/CMakeFiles/opencv_performance.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 apps/haartraining/CMakeFiles/opencv_performance.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+apps/haartraining/CMakeFiles/opencv_performance.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 apps/haartraining/CMakeFiles/opencv_performance.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 apps/haartraining/CMakeFiles/opencv_performance.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 apps/haartraining/CMakeFiles/opencv_performance.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -3919,7 +3919,7 @@ apps/haartraining/CMakeFiles/opencv_performance.dir/all: modules/objdetect/CMake
 apps/haartraining/CMakeFiles/opencv_performance.dir/all: apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all
 	$(MAKE) -f apps/haartraining/CMakeFiles/opencv_performance.dir/build.make apps/haartraining/CMakeFiles/opencv_performance.dir/depend
 	$(MAKE) -f apps/haartraining/CMakeFiles/opencv_performance.dir/build.make apps/haartraining/CMakeFiles/opencv_performance.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles 
 	@echo "Built target opencv_performance"
 .PHONY : apps/haartraining/CMakeFiles/opencv_performance.dir/all
 
@@ -3929,9 +3929,9 @@ all: apps/haartraining/CMakeFiles/opencv_performance.dir/all
 
 # Build rule for subdir invocation for target.
 apps/haartraining/CMakeFiles/opencv_performance.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 40
 	$(MAKE) -f CMakeFiles/Makefile2 apps/haartraining/CMakeFiles/opencv_performance.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : apps/haartraining/CMakeFiles/opencv_performance.dir/rule
 
 # Convenience name for target.
@@ -3969,9 +3969,9 @@ apps/traincascade/preinstall:
 apps/traincascade/CMakeFiles/opencv_traincascade.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 apps/traincascade/CMakeFiles/opencv_traincascade.dir/all: modules/flann/CMakeFiles/opencv_flann.dir/all
 apps/traincascade/CMakeFiles/opencv_traincascade.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
-apps/traincascade/CMakeFiles/opencv_traincascade.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 apps/traincascade/CMakeFiles/opencv_traincascade.dir/all: modules/features2d/CMakeFiles/opencv_features2d.dir/all
 apps/traincascade/CMakeFiles/opencv_traincascade.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
+apps/traincascade/CMakeFiles/opencv_traincascade.dir/all: modules/calib3d/CMakeFiles/opencv_calib3d.dir/all
 apps/traincascade/CMakeFiles/opencv_traincascade.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 apps/traincascade/CMakeFiles/opencv_traincascade.dir/all: modules/video/CMakeFiles/opencv_video.dir/all
 apps/traincascade/CMakeFiles/opencv_traincascade.dir/all: modules/legacy/CMakeFiles/opencv_legacy.dir/all
@@ -3979,7 +3979,7 @@ apps/traincascade/CMakeFiles/opencv_traincascade.dir/all: modules/objdetect/CMak
 apps/traincascade/CMakeFiles/opencv_traincascade.dir/all: apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/all
 	$(MAKE) -f apps/traincascade/CMakeFiles/opencv_traincascade.dir/build.make apps/traincascade/CMakeFiles/opencv_traincascade.dir/depend
 	$(MAKE) -f apps/traincascade/CMakeFiles/opencv_traincascade.dir/build.make apps/traincascade/CMakeFiles/opencv_traincascade.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles  96
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles  96
 	@echo "Built target opencv_traincascade"
 .PHONY : apps/traincascade/CMakeFiles/opencv_traincascade.dir/all
 
@@ -3989,9 +3989,9 @@ all: apps/traincascade/CMakeFiles/opencv_traincascade.dir/all
 
 # Build rule for subdir invocation for target.
 apps/traincascade/CMakeFiles/opencv_traincascade.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 41
 	$(MAKE) -f CMakeFiles/Makefile2 apps/traincascade/CMakeFiles/opencv_traincascade.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : apps/traincascade/CMakeFiles/opencv_traincascade.dir/rule
 
 # Convenience name for target.

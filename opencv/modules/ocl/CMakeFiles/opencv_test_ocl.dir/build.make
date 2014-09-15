@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/ocl/CMakeFiles/opencv_test_ocl.dir/depend.make
@@ -54,17 +54,17 @@ include modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/main.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/main.cpp.o: modules/ocl/test/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/main.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/main.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/main.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/main.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/main.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/main.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/main.cpp > CMakeFiles/opencv_test_ocl.dir/test/main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/main.cpp > CMakeFiles/opencv_test_ocl.dir/test/main.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/main.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/main.cpp -o CMakeFiles/opencv_test_ocl.dir/test/main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/main.cpp -o CMakeFiles/opencv_test_ocl.dir/test/main.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/main.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/main.cpp.o.requires
@@ -77,17 +77,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/main.cpp.o.provides.build: modul
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.o: modules/ocl/test/test_api.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_api.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_api.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_api.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_api.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_api.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_api.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.o.requires
@@ -100,17 +100,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_api.cpp.o.provides.build: m
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.o: modules/ocl/test/test_arithm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_arithm.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_arithm.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_arithm.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_arithm.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_arithm.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_arithm.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.o.requires
@@ -123,17 +123,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_arithm.cpp.o.provides.build
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.o: modules/ocl/test/test_bgfg.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_bgfg.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_bgfg.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_bgfg.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_bgfg.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_bgfg.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_bgfg.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.o.requires
@@ -146,17 +146,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_bgfg.cpp.o.provides.build: 
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.o: modules/ocl/test/test_blend.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_blend.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_blend.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_blend.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_blend.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_blend.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_blend.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.o.requires
@@ -169,17 +169,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_blend.cpp.o.provides.build:
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.o: modules/ocl/test/test_brute_force_matcher.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_brute_force_matcher.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_brute_force_matcher.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_brute_force_matcher.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_brute_force_matcher.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_brute_force_matcher.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_brute_force_matcher.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.o.requires
@@ -192,17 +192,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_brute_force_matcher.cpp.o.p
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.o: modules/ocl/test/test_calib3d.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_calib3d.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_calib3d.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_calib3d.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_calib3d.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_calib3d.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_calib3d.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.o.requires
@@ -215,17 +215,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_calib3d.cpp.o.provides.buil
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.o: modules/ocl/test/test_canny.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_canny.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_canny.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_canny.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_canny.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_canny.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_canny.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.o.requires
@@ -238,17 +238,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_canny.cpp.o.provides.build:
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.o: modules/ocl/test/test_color.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_color.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_color.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_color.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_color.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_color.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_color.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.o.requires
@@ -261,17 +261,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_color.cpp.o.provides.build:
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.o: modules/ocl/test/test_fft.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_fft.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_fft.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_fft.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_fft.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_fft.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_fft.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.o.requires
@@ -284,17 +284,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_fft.cpp.o.provides.build: m
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.o: modules/ocl/test/test_filters.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_filters.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_filters.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_filters.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_filters.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_filters.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_filters.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.o.requires
@@ -307,17 +307,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_filters.cpp.o.provides.buil
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.o: modules/ocl/test/test_gemm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_gemm.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_gemm.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_gemm.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_gemm.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_gemm.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_gemm.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.o.requires
@@ -330,17 +330,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_gemm.cpp.o.provides.build: 
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.o: modules/ocl/test/test_imgproc.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_imgproc.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_imgproc.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_imgproc.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_imgproc.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_imgproc.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_imgproc.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.o.requires
@@ -353,17 +353,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_imgproc.cpp.o.provides.buil
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.o: modules/ocl/test/test_kalman.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_kalman.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_kalman.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_kalman.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_kalman.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_kalman.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_kalman.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.o.requires
@@ -376,17 +376,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kalman.cpp.o.provides.build
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.o: modules/ocl/test/test_kmeans.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_kmeans.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_kmeans.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_kmeans.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_kmeans.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_kmeans.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_kmeans.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.o.requires
@@ -399,17 +399,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_kmeans.cpp.o.provides.build
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.o: modules/ocl/test/test_match_template.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_match_template.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_match_template.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_match_template.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_match_template.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_match_template.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_match_template.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.o.requires
@@ -422,17 +422,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_match_template.cpp.o.provid
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.o: modules/ocl/test/test_matrix_operation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_matrix_operation.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_matrix_operation.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_matrix_operation.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_matrix_operation.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_matrix_operation.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_matrix_operation.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.o.requires
@@ -445,17 +445,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_matrix_operation.cpp.o.prov
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.o: modules/ocl/test/test_mean_shift.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_mean_shift.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_mean_shift.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_mean_shift.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_mean_shift.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_mean_shift.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_mean_shift.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.o.requires
@@ -468,17 +468,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_mean_shift.cpp.o.provides.b
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.o: modules/ocl/test/test_ml.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_ml.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_ml.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_ml.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_ml.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_ml.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_ml.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.o.requires
@@ -491,17 +491,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_ml.cpp.o.provides.build: mo
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.o: modules/ocl/test/test_moments.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_moments.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_moments.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_moments.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_moments.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_moments.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_moments.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.o.requires
@@ -514,17 +514,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_moments.cpp.o.provides.buil
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.o: modules/ocl/test/test_objdetect.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_objdetect.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_objdetect.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_objdetect.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_objdetect.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_objdetect.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_objdetect.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.o.requires
@@ -537,17 +537,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_objdetect.cpp.o.provides.bu
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.o: modules/ocl/test/test_optflow.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_optflow.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_optflow.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_optflow.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_optflow.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_optflow.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_optflow.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.o.requires
@@ -560,17 +560,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_optflow.cpp.o.provides.buil
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.o: modules/ocl/test/test_pyramids.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_pyramids.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_pyramids.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_pyramids.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_pyramids.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_pyramids.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_pyramids.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.o.requires
@@ -583,17 +583,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_pyramids.cpp.o.provides.bui
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.o: modules/ocl/test/test_sort.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_sort.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_sort.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_sort.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_sort.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_sort.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_sort.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.o.requires
@@ -606,17 +606,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_sort.cpp.o.provides.build: 
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.o: modules/ocl/test/test_split_merge.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_split_merge.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_split_merge.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_split_merge.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_split_merge.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_split_merge.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_split_merge.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.o.requires
@@ -629,17 +629,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_split_merge.cpp.o.provides.
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.o: modules/ocl/test/test_warp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_warp.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_warp.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_warp.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_warp.cpp > CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/test_warp.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/test_warp.cpp -o CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.o.requires
@@ -652,17 +652,17 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/test_warp.cpp.o.provides.build: 
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.o: modules/ocl/CMakeFiles/opencv_test_ocl.dir/flags.make
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.o: modules/ocl/test/utility.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/utility.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/utility.cpp
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/utility.cpp > CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/utility.cpp > CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.i
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/test/utility.cpp -o CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ocl/test/utility.cpp -o CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.s
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.o.requires:
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/test/utility.cpp.o.requires
@@ -762,7 +762,7 @@ bin/opencv_test_ocl: lib/libopencv_imgproc.2.4.9.dylib
 bin/opencv_test_ocl: lib/libopencv_core.2.4.9.dylib
 bin/opencv_test_ocl: modules/ocl/CMakeFiles/opencv_test_ocl.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../bin/opencv_test_ocl"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_test_ocl.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_test_ocl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/build: bin/opencv_test_ocl
@@ -798,10 +798,10 @@ modules/ocl/CMakeFiles/opencv_test_ocl.dir/requires: modules/ocl/CMakeFiles/open
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/requires
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl && $(CMAKE_COMMAND) -P CMakeFiles/opencv_test_ocl.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ocl && $(CMAKE_COMMAND) -P CMakeFiles/opencv_test_ocl.dir/cmake_clean.cmake
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/clean
 
 modules/ocl/CMakeFiles/opencv_test_ocl.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl /Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/CMakeFiles/opencv_test_ocl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/ocl /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/ocl /Users/zj/Desktop/code/pi/opencv/modules/ocl/CMakeFiles/opencv_test_ocl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/ocl/CMakeFiles/opencv_test_ocl.dir/depend
 

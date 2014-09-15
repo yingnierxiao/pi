@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/objdetect/CMakeFiles/opencv_objdetect.dir/depend.make
@@ -54,17 +54,17 @@ include modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o: modules/objdetect/src/cascadedetect.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/cascadedetect.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/cascadedetect.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/cascadedetect.cpp > CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/cascadedetect.cpp > CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/cascadedetect.cpp -o CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/cascadedetect.cpp -o CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o.requires
@@ -77,17 +77,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o.provid
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.o: modules/objdetect/src/datamatrix.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/datamatrix.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/datamatrix.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/datamatrix.cpp > CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/datamatrix.cpp > CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/datamatrix.cpp -o CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/datamatrix.cpp -o CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.o.requires
@@ -100,17 +100,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.o.provides.
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.o: modules/objdetect/src/distancetransform.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/distancetransform.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/distancetransform.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/distancetransform.cpp > CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/distancetransform.cpp > CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/distancetransform.cpp -o CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/distancetransform.cpp -o CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.o.requires
@@ -123,17 +123,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.o.pr
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.o: modules/objdetect/src/featurepyramid.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/featurepyramid.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/featurepyramid.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/featurepyramid.cpp > CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/featurepyramid.cpp > CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/featurepyramid.cpp -o CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/featurepyramid.cpp -o CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.o.requires
@@ -146,17 +146,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.o.provi
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/fft.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/fft.cpp.o: modules/objdetect/src/fft.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/fft.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/fft.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/fft.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/fft.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/fft.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/fft.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/fft.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/fft.cpp > CMakeFiles/opencv_objdetect.dir/src/fft.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/fft.cpp > CMakeFiles/opencv_objdetect.dir/src/fft.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/fft.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/fft.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/fft.cpp -o CMakeFiles/opencv_objdetect.dir/src/fft.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/fft.cpp -o CMakeFiles/opencv_objdetect.dir/src/fft.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/fft.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/fft.cpp.o.requires
@@ -169,17 +169,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/fft.cpp.o.provides.build: 
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o: modules/objdetect/src/haar.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/haar.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/haar.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/haar.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/haar.cpp > CMakeFiles/opencv_objdetect.dir/src/haar.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/haar.cpp > CMakeFiles/opencv_objdetect.dir/src/haar.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/haar.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/haar.cpp -o CMakeFiles/opencv_objdetect.dir/src/haar.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/haar.cpp -o CMakeFiles/opencv_objdetect.dir/src/haar.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o.requires
@@ -192,17 +192,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o.provides.build:
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o: modules/objdetect/src/hog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/hog.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/hog.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/hog.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/hog.cpp > CMakeFiles/opencv_objdetect.dir/src/hog.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/hog.cpp > CMakeFiles/opencv_objdetect.dir/src/hog.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/hog.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/hog.cpp -o CMakeFiles/opencv_objdetect.dir/src/hog.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/hog.cpp -o CMakeFiles/opencv_objdetect.dir/src/hog.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o.requires
@@ -215,17 +215,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o.provides.build: 
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.o: modules/objdetect/src/latentsvm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/latentsvm.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/latentsvm.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/latentsvm.cpp > CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/latentsvm.cpp > CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/latentsvm.cpp -o CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/latentsvm.cpp -o CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.o.requires
@@ -238,17 +238,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.o.provides.b
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.o: modules/objdetect/src/latentsvmdetector.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/latentsvmdetector.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/latentsvmdetector.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/latentsvmdetector.cpp > CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/latentsvmdetector.cpp > CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/latentsvmdetector.cpp -o CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/latentsvmdetector.cpp -o CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.o.requires
@@ -261,17 +261,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.o.pr
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o: modules/objdetect/src/linemod.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/linemod.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/linemod.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/linemod.cpp > CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/linemod.cpp > CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/linemod.cpp -o CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/linemod.cpp -o CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o.requires
@@ -284,17 +284,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o.provides.bui
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.o: modules/objdetect/src/lsvmparser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/lsvmparser.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/lsvmparser.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/lsvmparser.cpp > CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/lsvmparser.cpp > CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/lsvmparser.cpp -o CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/lsvmparser.cpp -o CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.o.requires
@@ -307,17 +307,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.o.provides.
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.o: modules/objdetect/src/lsvmtbbversion.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/lsvmtbbversion.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/lsvmtbbversion.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/lsvmtbbversion.cpp > CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/lsvmtbbversion.cpp > CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/lsvmtbbversion.cpp -o CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/lsvmtbbversion.cpp -o CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.o.requires
@@ -330,17 +330,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.o.provi
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/matching.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/matching.cpp.o: modules/objdetect/src/matching.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/matching.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/matching.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/matching.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/matching.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/matching.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/matching.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/matching.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/matching.cpp > CMakeFiles/opencv_objdetect.dir/src/matching.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/matching.cpp > CMakeFiles/opencv_objdetect.dir/src/matching.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/matching.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/matching.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/matching.cpp -o CMakeFiles/opencv_objdetect.dir/src/matching.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/matching.cpp -o CMakeFiles/opencv_objdetect.dir/src/matching.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/matching.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/matching.cpp.o.requires
@@ -353,17 +353,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/matching.cpp.o.provides.bu
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.o: modules/objdetect/src/objdetect_init.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/objdetect_init.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/objdetect_init.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/objdetect_init.cpp > CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/objdetect_init.cpp > CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/objdetect_init.cpp -o CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/objdetect_init.cpp -o CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.o.requires
@@ -376,17 +376,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.o.provi
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.o: modules/objdetect/src/resizeimg.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/resizeimg.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/resizeimg.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/resizeimg.cpp > CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/resizeimg.cpp > CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/resizeimg.cpp -o CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/resizeimg.cpp -o CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.o.requires
@@ -399,17 +399,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.o.provides.b
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/routine.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/routine.cpp.o: modules/objdetect/src/routine.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/routine.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/routine.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/routine.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_objdetect.dir/src/routine.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/routine.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/routine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/routine.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/routine.cpp > CMakeFiles/opencv_objdetect.dir/src/routine.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/routine.cpp > CMakeFiles/opencv_objdetect.dir/src/routine.cpp.i
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/routine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/routine.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/src/routine.cpp -o CMakeFiles/opencv_objdetect.dir/src/routine.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/objdetect/src/routine.cpp -o CMakeFiles/opencv_objdetect.dir/src/routine.cpp.s
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/routine.cpp.o.requires:
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/routine.cpp.o.requires
@@ -466,8 +466,8 @@ lib/libopencv_objdetect.2.4.9.dylib: lib/libopencv_imgproc.2.4.9.dylib
 lib/libopencv_objdetect.2.4.9.dylib: lib/libopencv_core.2.4.9.dylib
 lib/libopencv_objdetect.2.4.9.dylib: modules/objdetect/CMakeFiles/opencv_objdetect.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../lib/libopencv_objdetect.dylib"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_objdetect.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && $(CMAKE_COMMAND) -E cmake_symlink_library ../../lib/libopencv_objdetect.2.4.9.dylib ../../lib/libopencv_objdetect.2.4.dylib ../../lib/libopencv_objdetect.dylib
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_objdetect.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && $(CMAKE_COMMAND) -E cmake_symlink_library ../../lib/libopencv_objdetect.2.4.9.dylib ../../lib/libopencv_objdetect.2.4.dylib ../../lib/libopencv_objdetect.dylib
 
 lib/libopencv_objdetect.2.4.dylib: lib/libopencv_objdetect.2.4.9.dylib
 
@@ -496,10 +496,10 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/requires: modules/objdetect/CM
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/requires
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect && $(CMAKE_COMMAND) -P CMakeFiles/opencv_objdetect.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/objdetect && $(CMAKE_COMMAND) -P CMakeFiles/opencv_objdetect.dir/cmake_clean.cmake
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/clean
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/CMakeFiles/opencv_objdetect.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/objdetect /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/objdetect /Users/zj/Desktop/code/pi/opencv/modules/objdetect/CMakeFiles/opencv_objdetect.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/depend
 

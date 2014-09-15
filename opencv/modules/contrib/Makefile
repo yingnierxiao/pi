@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/modules/contrib/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/contrib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/modules/contrib/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/contrib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/contrib/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/contrib/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/contrib/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/contrib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/contrib/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/contrib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 modules/contrib/CMakeFiles/opencv_contrib.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/contrib/CMakeFiles/opencv_contrib.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/contrib/CMakeFiles/opencv_contrib.dir/rule
 .PHONY : modules/contrib/CMakeFiles/opencv_contrib.dir/rule
 
 # Convenience name for target.
@@ -173,12 +163,12 @@ opencv_contrib: modules/contrib/CMakeFiles/opencv_contrib.dir/rule
 
 # fast build rule for target.
 opencv_contrib/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/build
 .PHONY : opencv_contrib/fast
 
 # Convenience name for target.
 modules/contrib/CMakeFiles/opencv_test_contrib.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/contrib/CMakeFiles/opencv_test_contrib.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/contrib/CMakeFiles/opencv_test_contrib.dir/rule
 .PHONY : modules/contrib/CMakeFiles/opencv_test_contrib.dir/rule
 
 # Convenience name for target.
@@ -187,7 +177,7 @@ opencv_test_contrib: modules/contrib/CMakeFiles/opencv_test_contrib.dir/rule
 
 # fast build rule for target.
 opencv_test_contrib/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_test_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_test_contrib.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_test_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_test_contrib.dir/build
 .PHONY : opencv_test_contrib/fast
 
 src/adaptiveskindetector.o: src/adaptiveskindetector.cpp.o
@@ -195,7 +185,7 @@ src/adaptiveskindetector.o: src/adaptiveskindetector.cpp.o
 
 # target to build an object file
 src/adaptiveskindetector.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/adaptiveskindetector.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/adaptiveskindetector.cpp.o
 .PHONY : src/adaptiveskindetector.cpp.o
 
 src/adaptiveskindetector.i: src/adaptiveskindetector.cpp.i
@@ -203,7 +193,7 @@ src/adaptiveskindetector.i: src/adaptiveskindetector.cpp.i
 
 # target to preprocess a source file
 src/adaptiveskindetector.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/adaptiveskindetector.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/adaptiveskindetector.cpp.i
 .PHONY : src/adaptiveskindetector.cpp.i
 
 src/adaptiveskindetector.s: src/adaptiveskindetector.cpp.s
@@ -211,7 +201,7 @@ src/adaptiveskindetector.s: src/adaptiveskindetector.cpp.s
 
 # target to generate assembly for a file
 src/adaptiveskindetector.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/adaptiveskindetector.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/adaptiveskindetector.cpp.s
 .PHONY : src/adaptiveskindetector.cpp.s
 
 src/ba.o: src/ba.cpp.o
@@ -219,7 +209,7 @@ src/ba.o: src/ba.cpp.o
 
 # target to build an object file
 src/ba.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/ba.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/ba.cpp.o
 .PHONY : src/ba.cpp.o
 
 src/ba.i: src/ba.cpp.i
@@ -227,7 +217,7 @@ src/ba.i: src/ba.cpp.i
 
 # target to preprocess a source file
 src/ba.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/ba.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/ba.cpp.i
 .PHONY : src/ba.cpp.i
 
 src/ba.s: src/ba.cpp.s
@@ -235,7 +225,7 @@ src/ba.s: src/ba.cpp.s
 
 # target to generate assembly for a file
 src/ba.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/ba.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/ba.cpp.s
 .PHONY : src/ba.cpp.s
 
 src/basicretinafilter.o: src/basicretinafilter.cpp.o
@@ -243,7 +233,7 @@ src/basicretinafilter.o: src/basicretinafilter.cpp.o
 
 # target to build an object file
 src/basicretinafilter.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/basicretinafilter.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/basicretinafilter.cpp.o
 .PHONY : src/basicretinafilter.cpp.o
 
 src/basicretinafilter.i: src/basicretinafilter.cpp.i
@@ -251,7 +241,7 @@ src/basicretinafilter.i: src/basicretinafilter.cpp.i
 
 # target to preprocess a source file
 src/basicretinafilter.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/basicretinafilter.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/basicretinafilter.cpp.i
 .PHONY : src/basicretinafilter.cpp.i
 
 src/basicretinafilter.s: src/basicretinafilter.cpp.s
@@ -259,7 +249,7 @@ src/basicretinafilter.s: src/basicretinafilter.cpp.s
 
 # target to generate assembly for a file
 src/basicretinafilter.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/basicretinafilter.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/basicretinafilter.cpp.s
 .PHONY : src/basicretinafilter.cpp.s
 
 src/bowmsctrainer.o: src/bowmsctrainer.cpp.o
@@ -267,7 +257,7 @@ src/bowmsctrainer.o: src/bowmsctrainer.cpp.o
 
 # target to build an object file
 src/bowmsctrainer.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/bowmsctrainer.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/bowmsctrainer.cpp.o
 .PHONY : src/bowmsctrainer.cpp.o
 
 src/bowmsctrainer.i: src/bowmsctrainer.cpp.i
@@ -275,7 +265,7 @@ src/bowmsctrainer.i: src/bowmsctrainer.cpp.i
 
 # target to preprocess a source file
 src/bowmsctrainer.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/bowmsctrainer.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/bowmsctrainer.cpp.i
 .PHONY : src/bowmsctrainer.cpp.i
 
 src/bowmsctrainer.s: src/bowmsctrainer.cpp.s
@@ -283,7 +273,7 @@ src/bowmsctrainer.s: src/bowmsctrainer.cpp.s
 
 # target to generate assembly for a file
 src/bowmsctrainer.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/bowmsctrainer.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/bowmsctrainer.cpp.s
 .PHONY : src/bowmsctrainer.cpp.s
 
 src/chamfermatching.o: src/chamfermatching.cpp.o
@@ -291,7 +281,7 @@ src/chamfermatching.o: src/chamfermatching.cpp.o
 
 # target to build an object file
 src/chamfermatching.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/chamfermatching.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/chamfermatching.cpp.o
 .PHONY : src/chamfermatching.cpp.o
 
 src/chamfermatching.i: src/chamfermatching.cpp.i
@@ -299,7 +289,7 @@ src/chamfermatching.i: src/chamfermatching.cpp.i
 
 # target to preprocess a source file
 src/chamfermatching.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/chamfermatching.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/chamfermatching.cpp.i
 .PHONY : src/chamfermatching.cpp.i
 
 src/chamfermatching.s: src/chamfermatching.cpp.s
@@ -307,7 +297,7 @@ src/chamfermatching.s: src/chamfermatching.cpp.s
 
 # target to generate assembly for a file
 src/chamfermatching.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/chamfermatching.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/chamfermatching.cpp.s
 .PHONY : src/chamfermatching.cpp.s
 
 src/chowliutree.o: src/chowliutree.cpp.o
@@ -315,7 +305,7 @@ src/chowliutree.o: src/chowliutree.cpp.o
 
 # target to build an object file
 src/chowliutree.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/chowliutree.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/chowliutree.cpp.o
 .PHONY : src/chowliutree.cpp.o
 
 src/chowliutree.i: src/chowliutree.cpp.i
@@ -323,7 +313,7 @@ src/chowliutree.i: src/chowliutree.cpp.i
 
 # target to preprocess a source file
 src/chowliutree.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/chowliutree.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/chowliutree.cpp.i
 .PHONY : src/chowliutree.cpp.i
 
 src/chowliutree.s: src/chowliutree.cpp.s
@@ -331,7 +321,7 @@ src/chowliutree.s: src/chowliutree.cpp.s
 
 # target to generate assembly for a file
 src/chowliutree.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/chowliutree.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/chowliutree.cpp.s
 .PHONY : src/chowliutree.cpp.s
 
 src/colormap.o: src/colormap.cpp.o
@@ -339,7 +329,7 @@ src/colormap.o: src/colormap.cpp.o
 
 # target to build an object file
 src/colormap.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/colormap.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/colormap.cpp.o
 .PHONY : src/colormap.cpp.o
 
 src/colormap.i: src/colormap.cpp.i
@@ -347,7 +337,7 @@ src/colormap.i: src/colormap.cpp.i
 
 # target to preprocess a source file
 src/colormap.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/colormap.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/colormap.cpp.i
 .PHONY : src/colormap.cpp.i
 
 src/colormap.s: src/colormap.cpp.s
@@ -355,7 +345,7 @@ src/colormap.s: src/colormap.cpp.s
 
 # target to generate assembly for a file
 src/colormap.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/colormap.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/colormap.cpp.s
 .PHONY : src/colormap.cpp.s
 
 src/colortracker.o: src/colortracker.cpp.o
@@ -363,7 +353,7 @@ src/colortracker.o: src/colortracker.cpp.o
 
 # target to build an object file
 src/colortracker.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/colortracker.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/colortracker.cpp.o
 .PHONY : src/colortracker.cpp.o
 
 src/colortracker.i: src/colortracker.cpp.i
@@ -371,7 +361,7 @@ src/colortracker.i: src/colortracker.cpp.i
 
 # target to preprocess a source file
 src/colortracker.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/colortracker.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/colortracker.cpp.i
 .PHONY : src/colortracker.cpp.i
 
 src/colortracker.s: src/colortracker.cpp.s
@@ -379,7 +369,7 @@ src/colortracker.s: src/colortracker.cpp.s
 
 # target to generate assembly for a file
 src/colortracker.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/colortracker.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/colortracker.cpp.s
 .PHONY : src/colortracker.cpp.s
 
 src/contrib_init.o: src/contrib_init.cpp.o
@@ -387,7 +377,7 @@ src/contrib_init.o: src/contrib_init.cpp.o
 
 # target to build an object file
 src/contrib_init.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/contrib_init.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/contrib_init.cpp.o
 .PHONY : src/contrib_init.cpp.o
 
 src/contrib_init.i: src/contrib_init.cpp.i
@@ -395,7 +385,7 @@ src/contrib_init.i: src/contrib_init.cpp.i
 
 # target to preprocess a source file
 src/contrib_init.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/contrib_init.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/contrib_init.cpp.i
 .PHONY : src/contrib_init.cpp.i
 
 src/contrib_init.s: src/contrib_init.cpp.s
@@ -403,7 +393,7 @@ src/contrib_init.s: src/contrib_init.cpp.s
 
 # target to generate assembly for a file
 src/contrib_init.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/contrib_init.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/contrib_init.cpp.s
 .PHONY : src/contrib_init.cpp.s
 
 src/detection_based_tracker.o: src/detection_based_tracker.cpp.o
@@ -411,7 +401,7 @@ src/detection_based_tracker.o: src/detection_based_tracker.cpp.o
 
 # target to build an object file
 src/detection_based_tracker.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/detection_based_tracker.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/detection_based_tracker.cpp.o
 .PHONY : src/detection_based_tracker.cpp.o
 
 src/detection_based_tracker.i: src/detection_based_tracker.cpp.i
@@ -419,7 +409,7 @@ src/detection_based_tracker.i: src/detection_based_tracker.cpp.i
 
 # target to preprocess a source file
 src/detection_based_tracker.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/detection_based_tracker.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/detection_based_tracker.cpp.i
 .PHONY : src/detection_based_tracker.cpp.i
 
 src/detection_based_tracker.s: src/detection_based_tracker.cpp.s
@@ -427,7 +417,7 @@ src/detection_based_tracker.s: src/detection_based_tracker.cpp.s
 
 # target to generate assembly for a file
 src/detection_based_tracker.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/detection_based_tracker.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/detection_based_tracker.cpp.s
 .PHONY : src/detection_based_tracker.cpp.s
 
 src/facerec.o: src/facerec.cpp.o
@@ -435,7 +425,7 @@ src/facerec.o: src/facerec.cpp.o
 
 # target to build an object file
 src/facerec.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/facerec.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/facerec.cpp.o
 .PHONY : src/facerec.cpp.o
 
 src/facerec.i: src/facerec.cpp.i
@@ -443,7 +433,7 @@ src/facerec.i: src/facerec.cpp.i
 
 # target to preprocess a source file
 src/facerec.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/facerec.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/facerec.cpp.i
 .PHONY : src/facerec.cpp.i
 
 src/facerec.s: src/facerec.cpp.s
@@ -451,7 +441,7 @@ src/facerec.s: src/facerec.cpp.s
 
 # target to generate assembly for a file
 src/facerec.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/facerec.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/facerec.cpp.s
 .PHONY : src/facerec.cpp.s
 
 src/featuretracker.o: src/featuretracker.cpp.o
@@ -459,7 +449,7 @@ src/featuretracker.o: src/featuretracker.cpp.o
 
 # target to build an object file
 src/featuretracker.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/featuretracker.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/featuretracker.cpp.o
 .PHONY : src/featuretracker.cpp.o
 
 src/featuretracker.i: src/featuretracker.cpp.i
@@ -467,7 +457,7 @@ src/featuretracker.i: src/featuretracker.cpp.i
 
 # target to preprocess a source file
 src/featuretracker.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/featuretracker.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/featuretracker.cpp.i
 .PHONY : src/featuretracker.cpp.i
 
 src/featuretracker.s: src/featuretracker.cpp.s
@@ -475,7 +465,7 @@ src/featuretracker.s: src/featuretracker.cpp.s
 
 # target to generate assembly for a file
 src/featuretracker.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/featuretracker.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/featuretracker.cpp.s
 .PHONY : src/featuretracker.cpp.s
 
 src/fuzzymeanshifttracker.o: src/fuzzymeanshifttracker.cpp.o
@@ -483,7 +473,7 @@ src/fuzzymeanshifttracker.o: src/fuzzymeanshifttracker.cpp.o
 
 # target to build an object file
 src/fuzzymeanshifttracker.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/fuzzymeanshifttracker.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/fuzzymeanshifttracker.cpp.o
 .PHONY : src/fuzzymeanshifttracker.cpp.o
 
 src/fuzzymeanshifttracker.i: src/fuzzymeanshifttracker.cpp.i
@@ -491,7 +481,7 @@ src/fuzzymeanshifttracker.i: src/fuzzymeanshifttracker.cpp.i
 
 # target to preprocess a source file
 src/fuzzymeanshifttracker.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/fuzzymeanshifttracker.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/fuzzymeanshifttracker.cpp.i
 .PHONY : src/fuzzymeanshifttracker.cpp.i
 
 src/fuzzymeanshifttracker.s: src/fuzzymeanshifttracker.cpp.s
@@ -499,7 +489,7 @@ src/fuzzymeanshifttracker.s: src/fuzzymeanshifttracker.cpp.s
 
 # target to generate assembly for a file
 src/fuzzymeanshifttracker.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/fuzzymeanshifttracker.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/fuzzymeanshifttracker.cpp.s
 .PHONY : src/fuzzymeanshifttracker.cpp.s
 
 src/gencolors.o: src/gencolors.cpp.o
@@ -507,7 +497,7 @@ src/gencolors.o: src/gencolors.cpp.o
 
 # target to build an object file
 src/gencolors.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/gencolors.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/gencolors.cpp.o
 .PHONY : src/gencolors.cpp.o
 
 src/gencolors.i: src/gencolors.cpp.i
@@ -515,7 +505,7 @@ src/gencolors.i: src/gencolors.cpp.i
 
 # target to preprocess a source file
 src/gencolors.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/gencolors.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/gencolors.cpp.i
 .PHONY : src/gencolors.cpp.i
 
 src/gencolors.s: src/gencolors.cpp.s
@@ -523,7 +513,7 @@ src/gencolors.s: src/gencolors.cpp.s
 
 # target to generate assembly for a file
 src/gencolors.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/gencolors.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/gencolors.cpp.s
 .PHONY : src/gencolors.cpp.s
 
 src/hybridtracker.o: src/hybridtracker.cpp.o
@@ -531,7 +521,7 @@ src/hybridtracker.o: src/hybridtracker.cpp.o
 
 # target to build an object file
 src/hybridtracker.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/hybridtracker.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/hybridtracker.cpp.o
 .PHONY : src/hybridtracker.cpp.o
 
 src/hybridtracker.i: src/hybridtracker.cpp.i
@@ -539,7 +529,7 @@ src/hybridtracker.i: src/hybridtracker.cpp.i
 
 # target to preprocess a source file
 src/hybridtracker.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/hybridtracker.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/hybridtracker.cpp.i
 .PHONY : src/hybridtracker.cpp.i
 
 src/hybridtracker.s: src/hybridtracker.cpp.s
@@ -547,7 +537,7 @@ src/hybridtracker.s: src/hybridtracker.cpp.s
 
 # target to generate assembly for a file
 src/hybridtracker.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/hybridtracker.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/hybridtracker.cpp.s
 .PHONY : src/hybridtracker.cpp.s
 
 src/imagelogpolprojection.o: src/imagelogpolprojection.cpp.o
@@ -555,7 +545,7 @@ src/imagelogpolprojection.o: src/imagelogpolprojection.cpp.o
 
 # target to build an object file
 src/imagelogpolprojection.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/imagelogpolprojection.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/imagelogpolprojection.cpp.o
 .PHONY : src/imagelogpolprojection.cpp.o
 
 src/imagelogpolprojection.i: src/imagelogpolprojection.cpp.i
@@ -563,7 +553,7 @@ src/imagelogpolprojection.i: src/imagelogpolprojection.cpp.i
 
 # target to preprocess a source file
 src/imagelogpolprojection.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/imagelogpolprojection.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/imagelogpolprojection.cpp.i
 .PHONY : src/imagelogpolprojection.cpp.i
 
 src/imagelogpolprojection.s: src/imagelogpolprojection.cpp.s
@@ -571,7 +561,7 @@ src/imagelogpolprojection.s: src/imagelogpolprojection.cpp.s
 
 # target to generate assembly for a file
 src/imagelogpolprojection.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/imagelogpolprojection.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/imagelogpolprojection.cpp.s
 .PHONY : src/imagelogpolprojection.cpp.s
 
 src/inputoutput.o: src/inputoutput.cpp.o
@@ -579,7 +569,7 @@ src/inputoutput.o: src/inputoutput.cpp.o
 
 # target to build an object file
 src/inputoutput.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/inputoutput.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/inputoutput.cpp.o
 .PHONY : src/inputoutput.cpp.o
 
 src/inputoutput.i: src/inputoutput.cpp.i
@@ -587,7 +577,7 @@ src/inputoutput.i: src/inputoutput.cpp.i
 
 # target to preprocess a source file
 src/inputoutput.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/inputoutput.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/inputoutput.cpp.i
 .PHONY : src/inputoutput.cpp.i
 
 src/inputoutput.s: src/inputoutput.cpp.s
@@ -595,7 +585,7 @@ src/inputoutput.s: src/inputoutput.cpp.s
 
 # target to generate assembly for a file
 src/inputoutput.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/inputoutput.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/inputoutput.cpp.s
 .PHONY : src/inputoutput.cpp.s
 
 src/lda.o: src/lda.cpp.o
@@ -603,7 +593,7 @@ src/lda.o: src/lda.cpp.o
 
 # target to build an object file
 src/lda.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/lda.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/lda.cpp.o
 .PHONY : src/lda.cpp.o
 
 src/lda.i: src/lda.cpp.i
@@ -611,7 +601,7 @@ src/lda.i: src/lda.cpp.i
 
 # target to preprocess a source file
 src/lda.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/lda.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/lda.cpp.i
 .PHONY : src/lda.cpp.i
 
 src/lda.s: src/lda.cpp.s
@@ -619,7 +609,7 @@ src/lda.s: src/lda.cpp.s
 
 # target to generate assembly for a file
 src/lda.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/lda.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/lda.cpp.s
 .PHONY : src/lda.cpp.s
 
 src/logpolar_bsm.o: src/logpolar_bsm.cpp.o
@@ -627,7 +617,7 @@ src/logpolar_bsm.o: src/logpolar_bsm.cpp.o
 
 # target to build an object file
 src/logpolar_bsm.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/logpolar_bsm.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/logpolar_bsm.cpp.o
 .PHONY : src/logpolar_bsm.cpp.o
 
 src/logpolar_bsm.i: src/logpolar_bsm.cpp.i
@@ -635,7 +625,7 @@ src/logpolar_bsm.i: src/logpolar_bsm.cpp.i
 
 # target to preprocess a source file
 src/logpolar_bsm.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/logpolar_bsm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/logpolar_bsm.cpp.i
 .PHONY : src/logpolar_bsm.cpp.i
 
 src/logpolar_bsm.s: src/logpolar_bsm.cpp.s
@@ -643,7 +633,7 @@ src/logpolar_bsm.s: src/logpolar_bsm.cpp.s
 
 # target to generate assembly for a file
 src/logpolar_bsm.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/logpolar_bsm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/logpolar_bsm.cpp.s
 .PHONY : src/logpolar_bsm.cpp.s
 
 src/magnoretinafilter.o: src/magnoretinafilter.cpp.o
@@ -651,7 +641,7 @@ src/magnoretinafilter.o: src/magnoretinafilter.cpp.o
 
 # target to build an object file
 src/magnoretinafilter.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/magnoretinafilter.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/magnoretinafilter.cpp.o
 .PHONY : src/magnoretinafilter.cpp.o
 
 src/magnoretinafilter.i: src/magnoretinafilter.cpp.i
@@ -659,7 +649,7 @@ src/magnoretinafilter.i: src/magnoretinafilter.cpp.i
 
 # target to preprocess a source file
 src/magnoretinafilter.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/magnoretinafilter.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/magnoretinafilter.cpp.i
 .PHONY : src/magnoretinafilter.cpp.i
 
 src/magnoretinafilter.s: src/magnoretinafilter.cpp.s
@@ -667,7 +657,7 @@ src/magnoretinafilter.s: src/magnoretinafilter.cpp.s
 
 # target to generate assembly for a file
 src/magnoretinafilter.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/magnoretinafilter.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/magnoretinafilter.cpp.s
 .PHONY : src/magnoretinafilter.cpp.s
 
 src/octree.o: src/octree.cpp.o
@@ -675,7 +665,7 @@ src/octree.o: src/octree.cpp.o
 
 # target to build an object file
 src/octree.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/octree.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/octree.cpp.o
 .PHONY : src/octree.cpp.o
 
 src/octree.i: src/octree.cpp.i
@@ -683,7 +673,7 @@ src/octree.i: src/octree.cpp.i
 
 # target to preprocess a source file
 src/octree.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/octree.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/octree.cpp.i
 .PHONY : src/octree.cpp.i
 
 src/octree.s: src/octree.cpp.s
@@ -691,7 +681,7 @@ src/octree.s: src/octree.cpp.s
 
 # target to generate assembly for a file
 src/octree.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/octree.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/octree.cpp.s
 .PHONY : src/octree.cpp.s
 
 src/openfabmap.o: src/openfabmap.cpp.o
@@ -699,7 +689,7 @@ src/openfabmap.o: src/openfabmap.cpp.o
 
 # target to build an object file
 src/openfabmap.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/openfabmap.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/openfabmap.cpp.o
 .PHONY : src/openfabmap.cpp.o
 
 src/openfabmap.i: src/openfabmap.cpp.i
@@ -707,7 +697,7 @@ src/openfabmap.i: src/openfabmap.cpp.i
 
 # target to preprocess a source file
 src/openfabmap.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/openfabmap.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/openfabmap.cpp.i
 .PHONY : src/openfabmap.cpp.i
 
 src/openfabmap.s: src/openfabmap.cpp.s
@@ -715,7 +705,7 @@ src/openfabmap.s: src/openfabmap.cpp.s
 
 # target to generate assembly for a file
 src/openfabmap.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/openfabmap.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/openfabmap.cpp.s
 .PHONY : src/openfabmap.cpp.s
 
 src/parvoretinafilter.o: src/parvoretinafilter.cpp.o
@@ -723,7 +713,7 @@ src/parvoretinafilter.o: src/parvoretinafilter.cpp.o
 
 # target to build an object file
 src/parvoretinafilter.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/parvoretinafilter.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/parvoretinafilter.cpp.o
 .PHONY : src/parvoretinafilter.cpp.o
 
 src/parvoretinafilter.i: src/parvoretinafilter.cpp.i
@@ -731,7 +721,7 @@ src/parvoretinafilter.i: src/parvoretinafilter.cpp.i
 
 # target to preprocess a source file
 src/parvoretinafilter.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/parvoretinafilter.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/parvoretinafilter.cpp.i
 .PHONY : src/parvoretinafilter.cpp.i
 
 src/parvoretinafilter.s: src/parvoretinafilter.cpp.s
@@ -739,7 +729,7 @@ src/parvoretinafilter.s: src/parvoretinafilter.cpp.s
 
 # target to generate assembly for a file
 src/parvoretinafilter.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/parvoretinafilter.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/parvoretinafilter.cpp.s
 .PHONY : src/parvoretinafilter.cpp.s
 
 src/polyfit.o: src/polyfit.cpp.o
@@ -747,7 +737,7 @@ src/polyfit.o: src/polyfit.cpp.o
 
 # target to build an object file
 src/polyfit.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/polyfit.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/polyfit.cpp.o
 .PHONY : src/polyfit.cpp.o
 
 src/polyfit.i: src/polyfit.cpp.i
@@ -755,7 +745,7 @@ src/polyfit.i: src/polyfit.cpp.i
 
 # target to preprocess a source file
 src/polyfit.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/polyfit.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/polyfit.cpp.i
 .PHONY : src/polyfit.cpp.i
 
 src/polyfit.s: src/polyfit.cpp.s
@@ -763,7 +753,7 @@ src/polyfit.s: src/polyfit.cpp.s
 
 # target to generate assembly for a file
 src/polyfit.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/polyfit.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/polyfit.cpp.s
 .PHONY : src/polyfit.cpp.s
 
 src/retina.o: src/retina.cpp.o
@@ -771,7 +761,7 @@ src/retina.o: src/retina.cpp.o
 
 # target to build an object file
 src/retina.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retina.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retina.cpp.o
 .PHONY : src/retina.cpp.o
 
 src/retina.i: src/retina.cpp.i
@@ -779,7 +769,7 @@ src/retina.i: src/retina.cpp.i
 
 # target to preprocess a source file
 src/retina.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retina.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retina.cpp.i
 .PHONY : src/retina.cpp.i
 
 src/retina.s: src/retina.cpp.s
@@ -787,7 +777,7 @@ src/retina.s: src/retina.cpp.s
 
 # target to generate assembly for a file
 src/retina.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retina.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retina.cpp.s
 .PHONY : src/retina.cpp.s
 
 src/retinacolor.o: src/retinacolor.cpp.o
@@ -795,7 +785,7 @@ src/retinacolor.o: src/retinacolor.cpp.o
 
 # target to build an object file
 src/retinacolor.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retinacolor.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retinacolor.cpp.o
 .PHONY : src/retinacolor.cpp.o
 
 src/retinacolor.i: src/retinacolor.cpp.i
@@ -803,7 +793,7 @@ src/retinacolor.i: src/retinacolor.cpp.i
 
 # target to preprocess a source file
 src/retinacolor.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retinacolor.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retinacolor.cpp.i
 .PHONY : src/retinacolor.cpp.i
 
 src/retinacolor.s: src/retinacolor.cpp.s
@@ -811,7 +801,7 @@ src/retinacolor.s: src/retinacolor.cpp.s
 
 # target to generate assembly for a file
 src/retinacolor.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retinacolor.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retinacolor.cpp.s
 .PHONY : src/retinacolor.cpp.s
 
 src/retinafilter.o: src/retinafilter.cpp.o
@@ -819,7 +809,7 @@ src/retinafilter.o: src/retinafilter.cpp.o
 
 # target to build an object file
 src/retinafilter.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retinafilter.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retinafilter.cpp.o
 .PHONY : src/retinafilter.cpp.o
 
 src/retinafilter.i: src/retinafilter.cpp.i
@@ -827,7 +817,7 @@ src/retinafilter.i: src/retinafilter.cpp.i
 
 # target to preprocess a source file
 src/retinafilter.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retinafilter.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retinafilter.cpp.i
 .PHONY : src/retinafilter.cpp.i
 
 src/retinafilter.s: src/retinafilter.cpp.s
@@ -835,7 +825,7 @@ src/retinafilter.s: src/retinafilter.cpp.s
 
 # target to generate assembly for a file
 src/retinafilter.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retinafilter.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/retinafilter.cpp.s
 .PHONY : src/retinafilter.cpp.s
 
 src/rgbdodometry.o: src/rgbdodometry.cpp.o
@@ -843,7 +833,7 @@ src/rgbdodometry.o: src/rgbdodometry.cpp.o
 
 # target to build an object file
 src/rgbdodometry.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/rgbdodometry.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/rgbdodometry.cpp.o
 .PHONY : src/rgbdodometry.cpp.o
 
 src/rgbdodometry.i: src/rgbdodometry.cpp.i
@@ -851,7 +841,7 @@ src/rgbdodometry.i: src/rgbdodometry.cpp.i
 
 # target to preprocess a source file
 src/rgbdodometry.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/rgbdodometry.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/rgbdodometry.cpp.i
 .PHONY : src/rgbdodometry.cpp.i
 
 src/rgbdodometry.s: src/rgbdodometry.cpp.s
@@ -859,7 +849,7 @@ src/rgbdodometry.s: src/rgbdodometry.cpp.s
 
 # target to generate assembly for a file
 src/rgbdodometry.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/rgbdodometry.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/rgbdodometry.cpp.s
 .PHONY : src/rgbdodometry.cpp.s
 
 src/selfsimilarity.o: src/selfsimilarity.cpp.o
@@ -867,7 +857,7 @@ src/selfsimilarity.o: src/selfsimilarity.cpp.o
 
 # target to build an object file
 src/selfsimilarity.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/selfsimilarity.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/selfsimilarity.cpp.o
 .PHONY : src/selfsimilarity.cpp.o
 
 src/selfsimilarity.i: src/selfsimilarity.cpp.i
@@ -875,7 +865,7 @@ src/selfsimilarity.i: src/selfsimilarity.cpp.i
 
 # target to preprocess a source file
 src/selfsimilarity.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/selfsimilarity.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/selfsimilarity.cpp.i
 .PHONY : src/selfsimilarity.cpp.i
 
 src/selfsimilarity.s: src/selfsimilarity.cpp.s
@@ -883,7 +873,7 @@ src/selfsimilarity.s: src/selfsimilarity.cpp.s
 
 # target to generate assembly for a file
 src/selfsimilarity.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/selfsimilarity.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/selfsimilarity.cpp.s
 .PHONY : src/selfsimilarity.cpp.s
 
 src/spinimages.o: src/spinimages.cpp.o
@@ -891,7 +881,7 @@ src/spinimages.o: src/spinimages.cpp.o
 
 # target to build an object file
 src/spinimages.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/spinimages.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/spinimages.cpp.o
 .PHONY : src/spinimages.cpp.o
 
 src/spinimages.i: src/spinimages.cpp.i
@@ -899,7 +889,7 @@ src/spinimages.i: src/spinimages.cpp.i
 
 # target to preprocess a source file
 src/spinimages.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/spinimages.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/spinimages.cpp.i
 .PHONY : src/spinimages.cpp.i
 
 src/spinimages.s: src/spinimages.cpp.s
@@ -907,7 +897,7 @@ src/spinimages.s: src/spinimages.cpp.s
 
 # target to generate assembly for a file
 src/spinimages.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/spinimages.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/spinimages.cpp.s
 .PHONY : src/spinimages.cpp.s
 
 src/stereovar.o: src/stereovar.cpp.o
@@ -915,7 +905,7 @@ src/stereovar.o: src/stereovar.cpp.o
 
 # target to build an object file
 src/stereovar.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/stereovar.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/stereovar.cpp.o
 .PHONY : src/stereovar.cpp.o
 
 src/stereovar.i: src/stereovar.cpp.i
@@ -923,7 +913,7 @@ src/stereovar.i: src/stereovar.cpp.i
 
 # target to preprocess a source file
 src/stereovar.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/stereovar.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/stereovar.cpp.i
 .PHONY : src/stereovar.cpp.i
 
 src/stereovar.s: src/stereovar.cpp.s
@@ -931,7 +921,7 @@ src/stereovar.s: src/stereovar.cpp.s
 
 # target to generate assembly for a file
 src/stereovar.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/stereovar.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_contrib.dir/src/stereovar.cpp.s
 .PHONY : src/stereovar.cpp.s
 
 test/test_main.o: test/test_main.cpp.o
@@ -939,7 +929,7 @@ test/test_main.o: test/test_main.cpp.o
 
 # target to build an object file
 test/test_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_test_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_test_contrib.dir/test/test_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_test_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_test_contrib.dir/test/test_main.cpp.o
 .PHONY : test/test_main.cpp.o
 
 test/test_main.i: test/test_main.cpp.i
@@ -947,7 +937,7 @@ test/test_main.i: test/test_main.cpp.i
 
 # target to preprocess a source file
 test/test_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_test_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_test_contrib.dir/test/test_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_test_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_test_contrib.dir/test/test_main.cpp.i
 .PHONY : test/test_main.cpp.i
 
 test/test_main.s: test/test_main.cpp.s
@@ -955,7 +945,7 @@ test/test_main.s: test/test_main.cpp.s
 
 # target to generate assembly for a file
 test/test_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/contrib/CMakeFiles/opencv_test_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_test_contrib.dir/test/test_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/contrib/CMakeFiles/opencv_test_contrib.dir/build.make modules/contrib/CMakeFiles/opencv_test_contrib.dir/test/test_main.cpp.s
 .PHONY : test/test_main.cpp.s
 
 # Help Target
@@ -967,7 +957,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_contrib"
 	@echo "... opencv_test_contrib"
@@ -1081,6 +1070,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -4,35 +4,35 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/ann_mlp.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/ann_mlp.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/boost.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/boost.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/cnn.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/data.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/data.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/em.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/em.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/ertrees.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/estimate.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/gbt.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/gbt.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/inner_functions.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/inner_functions.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/knearest.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/knearest.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/ml_init.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/nbayes.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/nbayes.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/rtrees.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/rtrees.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/svm.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/svm.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/testset.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/testset.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/src/tree.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/CMakeFiles/opencv_ml.dir/src/tree.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/ann_mlp.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/ann_mlp.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/boost.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/boost.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/cnn.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/data.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/data.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/em.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/em.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/ertrees.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/estimate.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/gbt.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/gbt.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/inner_functions.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/inner_functions.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/knearest.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/knearest.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/ml_init.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/nbayes.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/nbayes.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/rtrees.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/rtrees.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/svm.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/svm.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/testset.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/testset.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/ml/src/tree.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/ml/CMakeFiles/opencv_ml.dir/src/tree.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "Clang")
 
 # Pairs of files generated by the same build rule.
 SET(CMAKE_MULTIPLE_OUTPUT_PAIRS
-  "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_ml.2.4.dylib" "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_ml.2.4.9.dylib"
-  "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_ml.dylib" "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_ml.2.4.9.dylib"
+  "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_ml.2.4.dylib" "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_ml.2.4.9.dylib"
+  "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_ml.dylib" "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_ml.2.4.9.dylib"
   )
 
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/core/CMakeFiles/opencv_core.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/modules/core/CMakeFiles/opencv_core.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

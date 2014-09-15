@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/modules/nonfree/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 modules/nonfree/CMakeFiles/opencv_nonfree.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/CMakeFiles/opencv_nonfree.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/CMakeFiles/opencv_nonfree.dir/rule
 .PHONY : modules/nonfree/CMakeFiles/opencv_nonfree.dir/rule
 
 # Convenience name for target.
@@ -173,12 +163,12 @@ opencv_nonfree: modules/nonfree/CMakeFiles/opencv_nonfree.dir/rule
 
 # fast build rule for target.
 opencv_nonfree/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/build
 .PHONY : opencv_nonfree/fast
 
 # Convenience name for target.
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/rule
 .PHONY : modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/rule
 
 # Convenience name for target.
@@ -187,12 +177,12 @@ opencv_perf_nonfree: modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/rule
 
 # fast build rule for target.
 opencv_perf_nonfree/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build
 .PHONY : opencv_perf_nonfree/fast
 
 # Convenience name for target.
 modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/rule
 .PHONY : modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/rule
 
 # Convenience name for target.
@@ -201,7 +191,7 @@ opencv_test_nonfree: modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/rule
 
 # fast build rule for target.
 opencv_test_nonfree/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build
 .PHONY : opencv_test_nonfree/fast
 
 opencl_kernels.o: opencl_kernels.cpp.o
@@ -209,7 +199,7 @@ opencl_kernels.o: opencl_kernels.cpp.o
 
 # target to build an object file
 opencl_kernels.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/opencl_kernels.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/opencl_kernels.cpp.o
 .PHONY : opencl_kernels.cpp.o
 
 opencl_kernels.i: opencl_kernels.cpp.i
@@ -217,7 +207,7 @@ opencl_kernels.i: opencl_kernels.cpp.i
 
 # target to preprocess a source file
 opencl_kernels.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/opencl_kernels.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/opencl_kernels.cpp.i
 .PHONY : opencl_kernels.cpp.i
 
 opencl_kernels.s: opencl_kernels.cpp.s
@@ -225,7 +215,7 @@ opencl_kernels.s: opencl_kernels.cpp.s
 
 # target to generate assembly for a file
 opencl_kernels.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/opencl_kernels.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/opencl_kernels.cpp.s
 .PHONY : opencl_kernels.cpp.s
 
 perf/perf_gpu.o: perf/perf_gpu.cpp.o
@@ -233,7 +223,7 @@ perf/perf_gpu.o: perf/perf_gpu.cpp.o
 
 # target to build an object file
 perf/perf_gpu.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.o
 .PHONY : perf/perf_gpu.cpp.o
 
 perf/perf_gpu.i: perf/perf_gpu.cpp.i
@@ -241,7 +231,7 @@ perf/perf_gpu.i: perf/perf_gpu.cpp.i
 
 # target to preprocess a source file
 perf/perf_gpu.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.i
 .PHONY : perf/perf_gpu.cpp.i
 
 perf/perf_gpu.s: perf/perf_gpu.cpp.s
@@ -249,7 +239,7 @@ perf/perf_gpu.s: perf/perf_gpu.cpp.s
 
 # target to generate assembly for a file
 perf/perf_gpu.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.s
 .PHONY : perf/perf_gpu.cpp.s
 
 perf/perf_main.o: perf/perf_main.cpp.o
@@ -257,7 +247,7 @@ perf/perf_main.o: perf/perf_main.cpp.o
 
 # target to build an object file
 perf/perf_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.o
 .PHONY : perf/perf_main.cpp.o
 
 perf/perf_main.i: perf/perf_main.cpp.i
@@ -265,7 +255,7 @@ perf/perf_main.i: perf/perf_main.cpp.i
 
 # target to preprocess a source file
 perf/perf_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.i
 .PHONY : perf/perf_main.cpp.i
 
 perf/perf_main.s: perf/perf_main.cpp.s
@@ -273,7 +263,7 @@ perf/perf_main.s: perf/perf_main.cpp.s
 
 # target to generate assembly for a file
 perf/perf_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.s
 .PHONY : perf/perf_main.cpp.s
 
 perf/perf_surf.o: perf/perf_surf.cpp.o
@@ -281,7 +271,7 @@ perf/perf_surf.o: perf/perf_surf.cpp.o
 
 # target to build an object file
 perf/perf_surf.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.o
 .PHONY : perf/perf_surf.cpp.o
 
 perf/perf_surf.i: perf/perf_surf.cpp.i
@@ -289,7 +279,7 @@ perf/perf_surf.i: perf/perf_surf.cpp.i
 
 # target to preprocess a source file
 perf/perf_surf.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.i
 .PHONY : perf/perf_surf.cpp.i
 
 perf/perf_surf.s: perf/perf_surf.cpp.s
@@ -297,7 +287,7 @@ perf/perf_surf.s: perf/perf_surf.cpp.s
 
 # target to generate assembly for a file
 perf/perf_surf.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.s
 .PHONY : perf/perf_surf.cpp.s
 
 perf/perf_surf_ocl.o: perf/perf_surf_ocl.cpp.o
@@ -305,7 +295,7 @@ perf/perf_surf_ocl.o: perf/perf_surf_ocl.cpp.o
 
 # target to build an object file
 perf/perf_surf_ocl.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.o
 .PHONY : perf/perf_surf_ocl.cpp.o
 
 perf/perf_surf_ocl.i: perf/perf_surf_ocl.cpp.i
@@ -313,7 +303,7 @@ perf/perf_surf_ocl.i: perf/perf_surf_ocl.cpp.i
 
 # target to preprocess a source file
 perf/perf_surf_ocl.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.i
 .PHONY : perf/perf_surf_ocl.cpp.i
 
 perf/perf_surf_ocl.s: perf/perf_surf_ocl.cpp.s
@@ -321,7 +311,7 @@ perf/perf_surf_ocl.s: perf/perf_surf_ocl.cpp.s
 
 # target to generate assembly for a file
 perf/perf_surf_ocl.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.s
 .PHONY : perf/perf_surf_ocl.cpp.s
 
 src/nonfree_init.o: src/nonfree_init.cpp.o
@@ -329,7 +319,7 @@ src/nonfree_init.o: src/nonfree_init.cpp.o
 
 # target to build an object file
 src/nonfree_init.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/nonfree_init.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/nonfree_init.cpp.o
 .PHONY : src/nonfree_init.cpp.o
 
 src/nonfree_init.i: src/nonfree_init.cpp.i
@@ -337,7 +327,7 @@ src/nonfree_init.i: src/nonfree_init.cpp.i
 
 # target to preprocess a source file
 src/nonfree_init.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/nonfree_init.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/nonfree_init.cpp.i
 .PHONY : src/nonfree_init.cpp.i
 
 src/nonfree_init.s: src/nonfree_init.cpp.s
@@ -345,7 +335,7 @@ src/nonfree_init.s: src/nonfree_init.cpp.s
 
 # target to generate assembly for a file
 src/nonfree_init.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/nonfree_init.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/nonfree_init.cpp.s
 .PHONY : src/nonfree_init.cpp.s
 
 src/sift.o: src/sift.cpp.o
@@ -353,7 +343,7 @@ src/sift.o: src/sift.cpp.o
 
 # target to build an object file
 src/sift.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/sift.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/sift.cpp.o
 .PHONY : src/sift.cpp.o
 
 src/sift.i: src/sift.cpp.i
@@ -361,7 +351,7 @@ src/sift.i: src/sift.cpp.i
 
 # target to preprocess a source file
 src/sift.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/sift.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/sift.cpp.i
 .PHONY : src/sift.cpp.i
 
 src/sift.s: src/sift.cpp.s
@@ -369,7 +359,7 @@ src/sift.s: src/sift.cpp.s
 
 # target to generate assembly for a file
 src/sift.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/sift.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/sift.cpp.s
 .PHONY : src/sift.cpp.s
 
 src/surf.o: src/surf.cpp.o
@@ -377,7 +367,7 @@ src/surf.o: src/surf.cpp.o
 
 # target to build an object file
 src/surf.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf.cpp.o
 .PHONY : src/surf.cpp.o
 
 src/surf.i: src/surf.cpp.i
@@ -385,7 +375,7 @@ src/surf.i: src/surf.cpp.i
 
 # target to preprocess a source file
 src/surf.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf.cpp.i
 .PHONY : src/surf.cpp.i
 
 src/surf.s: src/surf.cpp.s
@@ -393,7 +383,7 @@ src/surf.s: src/surf.cpp.s
 
 # target to generate assembly for a file
 src/surf.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf.cpp.s
 .PHONY : src/surf.cpp.s
 
 src/surf_gpu.o: src/surf_gpu.cpp.o
@@ -401,7 +391,7 @@ src/surf_gpu.o: src/surf_gpu.cpp.o
 
 # target to build an object file
 src/surf_gpu.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf_gpu.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf_gpu.cpp.o
 .PHONY : src/surf_gpu.cpp.o
 
 src/surf_gpu.i: src/surf_gpu.cpp.i
@@ -409,7 +399,7 @@ src/surf_gpu.i: src/surf_gpu.cpp.i
 
 # target to preprocess a source file
 src/surf_gpu.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf_gpu.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf_gpu.cpp.i
 .PHONY : src/surf_gpu.cpp.i
 
 src/surf_gpu.s: src/surf_gpu.cpp.s
@@ -417,7 +407,7 @@ src/surf_gpu.s: src/surf_gpu.cpp.s
 
 # target to generate assembly for a file
 src/surf_gpu.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf_gpu.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf_gpu.cpp.s
 .PHONY : src/surf_gpu.cpp.s
 
 src/surf_ocl.o: src/surf_ocl.cpp.o
@@ -425,7 +415,7 @@ src/surf_ocl.o: src/surf_ocl.cpp.o
 
 # target to build an object file
 src/surf_ocl.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf_ocl.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf_ocl.cpp.o
 .PHONY : src/surf_ocl.cpp.o
 
 src/surf_ocl.i: src/surf_ocl.cpp.i
@@ -433,7 +423,7 @@ src/surf_ocl.i: src/surf_ocl.cpp.i
 
 # target to preprocess a source file
 src/surf_ocl.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf_ocl.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf_ocl.cpp.i
 .PHONY : src/surf_ocl.cpp.i
 
 src/surf_ocl.s: src/surf_ocl.cpp.s
@@ -441,7 +431,7 @@ src/surf_ocl.s: src/surf_ocl.cpp.s
 
 # target to generate assembly for a file
 src/surf_ocl.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf_ocl.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/src/surf_ocl.cpp.s
 .PHONY : src/surf_ocl.cpp.s
 
 test/test_detectors.o: test/test_detectors.cpp.o
@@ -449,7 +439,7 @@ test/test_detectors.o: test/test_detectors.cpp.o
 
 # target to build an object file
 test/test_detectors.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_detectors.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_detectors.cpp.o
 .PHONY : test/test_detectors.cpp.o
 
 test/test_detectors.i: test/test_detectors.cpp.i
@@ -457,7 +447,7 @@ test/test_detectors.i: test/test_detectors.cpp.i
 
 # target to preprocess a source file
 test/test_detectors.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_detectors.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_detectors.cpp.i
 .PHONY : test/test_detectors.cpp.i
 
 test/test_detectors.s: test/test_detectors.cpp.s
@@ -465,7 +455,7 @@ test/test_detectors.s: test/test_detectors.cpp.s
 
 # target to generate assembly for a file
 test/test_detectors.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_detectors.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_detectors.cpp.s
 .PHONY : test/test_detectors.cpp.s
 
 test/test_features2d.o: test/test_features2d.cpp.o
@@ -473,7 +463,7 @@ test/test_features2d.o: test/test_features2d.cpp.o
 
 # target to build an object file
 test/test_features2d.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_features2d.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_features2d.cpp.o
 .PHONY : test/test_features2d.cpp.o
 
 test/test_features2d.i: test/test_features2d.cpp.i
@@ -481,7 +471,7 @@ test/test_features2d.i: test/test_features2d.cpp.i
 
 # target to preprocess a source file
 test/test_features2d.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_features2d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_features2d.cpp.i
 .PHONY : test/test_features2d.cpp.i
 
 test/test_features2d.s: test/test_features2d.cpp.s
@@ -489,7 +479,7 @@ test/test_features2d.s: test/test_features2d.cpp.s
 
 # target to generate assembly for a file
 test/test_features2d.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_features2d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_features2d.cpp.s
 .PHONY : test/test_features2d.cpp.s
 
 test/test_gpu.o: test/test_gpu.cpp.o
@@ -497,7 +487,7 @@ test/test_gpu.o: test/test_gpu.cpp.o
 
 # target to build an object file
 test/test_gpu.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_gpu.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_gpu.cpp.o
 .PHONY : test/test_gpu.cpp.o
 
 test/test_gpu.i: test/test_gpu.cpp.i
@@ -505,7 +495,7 @@ test/test_gpu.i: test/test_gpu.cpp.i
 
 # target to preprocess a source file
 test/test_gpu.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_gpu.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_gpu.cpp.i
 .PHONY : test/test_gpu.cpp.i
 
 test/test_gpu.s: test/test_gpu.cpp.s
@@ -513,7 +503,7 @@ test/test_gpu.s: test/test_gpu.cpp.s
 
 # target to generate assembly for a file
 test/test_gpu.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_gpu.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_gpu.cpp.s
 .PHONY : test/test_gpu.cpp.s
 
 test/test_keypoints.o: test/test_keypoints.cpp.o
@@ -521,7 +511,7 @@ test/test_keypoints.o: test/test_keypoints.cpp.o
 
 # target to build an object file
 test/test_keypoints.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_keypoints.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_keypoints.cpp.o
 .PHONY : test/test_keypoints.cpp.o
 
 test/test_keypoints.i: test/test_keypoints.cpp.i
@@ -529,7 +519,7 @@ test/test_keypoints.i: test/test_keypoints.cpp.i
 
 # target to preprocess a source file
 test/test_keypoints.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_keypoints.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_keypoints.cpp.i
 .PHONY : test/test_keypoints.cpp.i
 
 test/test_keypoints.s: test/test_keypoints.cpp.s
@@ -537,7 +527,7 @@ test/test_keypoints.s: test/test_keypoints.cpp.s
 
 # target to generate assembly for a file
 test/test_keypoints.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_keypoints.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_keypoints.cpp.s
 .PHONY : test/test_keypoints.cpp.s
 
 test/test_main.o: test/test_main.cpp.o
@@ -545,7 +535,7 @@ test/test_main.o: test/test_main.cpp.o
 
 # target to build an object file
 test/test_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_main.cpp.o
 .PHONY : test/test_main.cpp.o
 
 test/test_main.i: test/test_main.cpp.i
@@ -553,7 +543,7 @@ test/test_main.i: test/test_main.cpp.i
 
 # target to preprocess a source file
 test/test_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_main.cpp.i
 .PHONY : test/test_main.cpp.i
 
 test/test_main.s: test/test_main.cpp.s
@@ -561,7 +551,7 @@ test/test_main.s: test/test_main.cpp.s
 
 # target to generate assembly for a file
 test/test_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_main.cpp.s
 .PHONY : test/test_main.cpp.s
 
 test/test_rotation_and_scale_invariance.o: test/test_rotation_and_scale_invariance.cpp.o
@@ -569,7 +559,7 @@ test/test_rotation_and_scale_invariance.o: test/test_rotation_and_scale_invarian
 
 # target to build an object file
 test/test_rotation_and_scale_invariance.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_rotation_and_scale_invariance.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_rotation_and_scale_invariance.cpp.o
 .PHONY : test/test_rotation_and_scale_invariance.cpp.o
 
 test/test_rotation_and_scale_invariance.i: test/test_rotation_and_scale_invariance.cpp.i
@@ -577,7 +567,7 @@ test/test_rotation_and_scale_invariance.i: test/test_rotation_and_scale_invarian
 
 # target to preprocess a source file
 test/test_rotation_and_scale_invariance.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_rotation_and_scale_invariance.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_rotation_and_scale_invariance.cpp.i
 .PHONY : test/test_rotation_and_scale_invariance.cpp.i
 
 test/test_rotation_and_scale_invariance.s: test/test_rotation_and_scale_invariance.cpp.s
@@ -585,7 +575,7 @@ test/test_rotation_and_scale_invariance.s: test/test_rotation_and_scale_invarian
 
 # target to generate assembly for a file
 test/test_rotation_and_scale_invariance.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_rotation_and_scale_invariance.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_rotation_and_scale_invariance.cpp.s
 .PHONY : test/test_rotation_and_scale_invariance.cpp.s
 
 test/test_surf_ocl.o: test/test_surf_ocl.cpp.o
@@ -593,7 +583,7 @@ test/test_surf_ocl.o: test/test_surf_ocl.cpp.o
 
 # target to build an object file
 test/test_surf_ocl.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_surf_ocl.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_surf_ocl.cpp.o
 .PHONY : test/test_surf_ocl.cpp.o
 
 test/test_surf_ocl.i: test/test_surf_ocl.cpp.i
@@ -601,7 +591,7 @@ test/test_surf_ocl.i: test/test_surf_ocl.cpp.i
 
 # target to preprocess a source file
 test/test_surf_ocl.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_surf_ocl.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_surf_ocl.cpp.i
 .PHONY : test/test_surf_ocl.cpp.i
 
 test/test_surf_ocl.s: test/test_surf_ocl.cpp.s
@@ -609,7 +599,7 @@ test/test_surf_ocl.s: test/test_surf_ocl.cpp.s
 
 # target to generate assembly for a file
 test/test_surf_ocl.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_surf_ocl.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/test/test_surf_ocl.cpp.s
 .PHONY : test/test_surf_ocl.cpp.s
 
 # Help Target
@@ -621,7 +611,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_nonfree"
 	@echo "... opencv_perf_nonfree"
@@ -691,6 +680,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -6,31 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/test/test_denoising.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/test/test_denoising.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/test/test_precomp.hpp
 opencv2/photo/photo.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/test/opencv2/photo/photo.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/test/opencv2/photo/photo.hpp
 string
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/test/test_inpaint.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/test/test_inpaint.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/test/test_precomp.hpp
 string
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/test/test_main.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/test/test_main.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/test/test_precomp.hpp
 opencv2/ts/ts.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/test/opencv2/ts/ts.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/test/opencv2/ts/ts.hpp
 opencv2/photo/photo.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/test/opencv2/photo/photo.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/test/opencv2/photo/photo.hpp
 opencv2/highgui/highgui.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/test/opencv2/highgui/highgui.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/test/opencv2/highgui/highgui.hpp
 iostream
 -
 

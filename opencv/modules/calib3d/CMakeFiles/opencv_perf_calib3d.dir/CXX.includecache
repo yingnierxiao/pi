@@ -6,29 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/perf/perf_cicrlesGrid.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/calib3d/perf/perf_cicrlesGrid.cpp
 perf_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/calib3d/perf/perf_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/perf/perf_main.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/calib3d/perf/perf_main.cpp
 perf_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/calib3d/perf/perf_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/perf/perf_pnp.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/calib3d/perf/perf_pnp.cpp
 perf_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/calib3d/perf/perf_precomp.hpp
 opencv2/core/internal.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/perf/opencv2/core/internal.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/calib3d/perf/opencv2/core/internal.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/calib3d/perf/perf_precomp.hpp
 opencv2/ts/ts.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/perf/opencv2/ts/ts.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/calib3d/perf/opencv2/ts/ts.hpp
 opencv2/calib3d/calib3d.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/perf/opencv2/calib3d/calib3d.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/calib3d/perf/opencv2/calib3d/calib3d.hpp
 opencv2/highgui/highgui.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/perf/opencv2/highgui/highgui.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/calib3d/perf/opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/perf/opencv2/imgproc/imgproc.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/calib3d/perf/opencv2/imgproc/imgproc.hpp
 
 modules/calib3d/include/opencv2/calib3d/calib3d.hpp
 opencv2/core/core.hpp

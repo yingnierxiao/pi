@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/superres/CMakeFiles/opencv_test_superres.dir/depend.make
@@ -54,17 +54,17 @@ include modules/superres/CMakeFiles/opencv_test_superres.dir/flags.make
 
 modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.o: modules/superres/CMakeFiles/opencv_test_superres.dir/flags.make
 modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.o: modules/superres/test/test_main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/superres && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/test_main.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/superres && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/superres/test/test_main.cpp
 
 modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/superres && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/test_main.cpp > CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/superres && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/superres/test/test_main.cpp > CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.i
 
 modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/superres && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/test_main.cpp -o CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/superres && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/superres/test/test_main.cpp -o CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.s
 
 modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.o.requires:
 .PHONY : modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.o.requires
@@ -77,17 +77,17 @@ modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.o.provid
 
 modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.o: modules/superres/CMakeFiles/opencv_test_superres.dir/flags.make
 modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.o: modules/superres/test/test_superres.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/superres && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/test_superres.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/superres && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/superres/test/test_superres.cpp
 
 modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/superres && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/test_superres.cpp > CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/superres && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/superres/test/test_superres.cpp > CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.i
 
 modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/superres && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/superres/test/test_superres.cpp -o CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/superres && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/superres/test/test_superres.cpp -o CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.s
 
 modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.o.requires:
 .PHONY : modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.o.requires
@@ -145,7 +145,7 @@ bin/opencv_test_superres: lib/libopencv_imgproc.2.4.9.dylib
 bin/opencv_test_superres: lib/libopencv_core.2.4.9.dylib
 bin/opencv_test_superres: modules/superres/CMakeFiles/opencv_test_superres.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../bin/opencv_test_superres"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/superres && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_test_superres.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/superres && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_test_superres.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 modules/superres/CMakeFiles/opencv_test_superres.dir/build: bin/opencv_test_superres
@@ -156,10 +156,10 @@ modules/superres/CMakeFiles/opencv_test_superres.dir/requires: modules/superres/
 .PHONY : modules/superres/CMakeFiles/opencv_test_superres.dir/requires
 
 modules/superres/CMakeFiles/opencv_test_superres.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/superres && $(CMAKE_COMMAND) -P CMakeFiles/opencv_test_superres.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/superres && $(CMAKE_COMMAND) -P CMakeFiles/opencv_test_superres.dir/cmake_clean.cmake
 .PHONY : modules/superres/CMakeFiles/opencv_test_superres.dir/clean
 
 modules/superres/CMakeFiles/opencv_test_superres.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/superres /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/superres /Users/zj/Desktop/code/opencv-2.4.9/modules/superres/CMakeFiles/opencv_test_superres.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/superres /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/superres /Users/zj/Desktop/code/pi/opencv/modules/superres/CMakeFiles/opencv_test_superres.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/superres/CMakeFiles/opencv_test_superres.dir/depend
 

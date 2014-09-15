@@ -6,59 +6,59 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_arithm.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_arithm.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_countnonzero.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_countnonzero.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_precomp.hpp
 time.h
 -
 limits
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_ds.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_ds.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_dxt.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_dxt.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_eigen.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_eigen.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_precomp.hpp
 time.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_io.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_io.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_main.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_main.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_mat.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_mat.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_math.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_math.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_precomp.hpp
 float.h
 -
 math.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_misc.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_misc.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_operations.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_operations.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_precomp.hpp
 string
 -
 iostream
@@ -72,17 +72,17 @@ limits
 numeric
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_precomp.hpp
 opencv2/ts/ts.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/opencv2/ts/ts.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/opencv2/ts/ts.hpp
 opencv2/core/core_c.h
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/opencv2/core/core_c.h
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/opencv2/core/core_c.h
 iostream
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_rand.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_rand.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/core/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/core/test/test_precomp.hpp
 
 modules/core/include/opencv2/core/core.hpp
 opencv2/core/types_c.h

@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/gpu/CMakeFiles/opencv_test_gpu.dir/depend.make
@@ -54,17 +54,17 @@ include modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/main.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/main.cpp.o: modules/gpu/test/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/main.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/main.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/main.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/main.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/main.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/main.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/main.cpp > CMakeFiles/opencv_test_gpu.dir/test/main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/main.cpp > CMakeFiles/opencv_test_gpu.dir/test/main.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/main.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/main.cpp -o CMakeFiles/opencv_test_gpu.dir/test/main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/main.cpp -o CMakeFiles/opencv_test_gpu.dir/test/main.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/main.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/main.cpp.o.requires
@@ -77,17 +77,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/main.cpp.o.provides.build: modul
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.o: modules/gpu/test/test_bgfg.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_bgfg.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_bgfg.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_bgfg.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_bgfg.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_bgfg.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_bgfg.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.o.requires
@@ -100,17 +100,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.o.provides.build: 
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.o: modules/gpu/test/test_calib3d.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_calib3d.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_calib3d.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_calib3d.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_calib3d.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_calib3d.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_calib3d.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.o.requires
@@ -123,17 +123,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.o.provides.buil
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.o: modules/gpu/test/test_color.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_color.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_color.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_color.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_color.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_color.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_color.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.o.requires
@@ -146,17 +146,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.o.provides.build:
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.o: modules/gpu/test/test_copy_make_border.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_copy_make_border.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_copy_make_border.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_copy_make_border.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_copy_make_border.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_copy_make_border.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_copy_make_border.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.o.requires
@@ -169,17 +169,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.o.prov
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.o: modules/gpu/test/test_core.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_core.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_core.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_core.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_core.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_core.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_core.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.o.requires
@@ -192,17 +192,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.o.provides.build: 
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.o: modules/gpu/test/test_denoising.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_denoising.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_denoising.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_denoising.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_denoising.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_denoising.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_denoising.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.o.requires
@@ -215,17 +215,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.o.provides.bu
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.o: modules/gpu/test/test_features2d.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_features2d.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_features2d.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_features2d.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_features2d.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_features2d.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_features2d.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.o.requires
@@ -238,17 +238,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.o.provides.b
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.o: modules/gpu/test/test_filters.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_filters.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_filters.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_filters.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_filters.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_filters.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_filters.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.o.requires
@@ -261,17 +261,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.o.provides.buil
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.o: modules/gpu/test/test_global_motion.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_global_motion.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_global_motion.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_global_motion.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_global_motion.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_global_motion.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_global_motion.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.o.requires
@@ -284,17 +284,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.o.provide
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.o: modules/gpu/test/test_gpumat.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_gpumat.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_gpumat.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_gpumat.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_gpumat.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_gpumat.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_gpumat.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.o.requires
@@ -307,17 +307,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.o.provides.build
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.o: modules/gpu/test/test_hough.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_hough.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_hough.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_hough.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_hough.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_hough.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_hough.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.o.requires
@@ -330,17 +330,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.o.provides.build:
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.o: modules/gpu/test/test_imgproc.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_imgproc.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_imgproc.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_imgproc.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_imgproc.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_imgproc.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_imgproc.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.o.requires
@@ -353,17 +353,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.o.provides.buil
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.o: modules/gpu/test/test_labeling.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_labeling.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_labeling.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_labeling.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_labeling.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_labeling.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_labeling.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.o.requires
@@ -376,17 +376,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.o.provides.bui
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.o: modules/gpu/test/test_nvidia.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_nvidia.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_nvidia.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_nvidia.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_nvidia.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_nvidia.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_nvidia.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.o.requires
@@ -399,17 +399,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.o.provides.build
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.o: modules/gpu/test/test_objdetect.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_objdetect.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_objdetect.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_objdetect.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_objdetect.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_objdetect.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_objdetect.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.o.requires
@@ -422,17 +422,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.o.provides.bu
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.o: modules/gpu/test/test_opengl.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_opengl.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_opengl.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_opengl.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_opengl.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_opengl.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_opengl.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.o.requires
@@ -445,17 +445,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.o.provides.build
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.o: modules/gpu/test/test_optflow.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_optflow.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_optflow.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_optflow.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_optflow.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_optflow.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_optflow.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.o.requires
@@ -468,17 +468,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.o.provides.buil
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.o: modules/gpu/test/test_pyramids.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_pyramids.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_pyramids.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_pyramids.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_pyramids.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_pyramids.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_pyramids.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.o.requires
@@ -491,17 +491,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.o.provides.bui
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.o: modules/gpu/test/test_remap.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_remap.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_remap.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_remap.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_remap.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_remap.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_remap.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.o.requires
@@ -514,17 +514,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.o.provides.build:
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.o: modules/gpu/test/test_resize.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_resize.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_resize.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_resize.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_resize.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_resize.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_resize.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.o.requires
@@ -537,17 +537,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.o.provides.build
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.o: modules/gpu/test/test_stream.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_stream.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_stream.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_stream.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_stream.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_stream.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_stream.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.o.requires
@@ -560,17 +560,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.o.provides.build
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.o: modules/gpu/test/test_threshold.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_threshold.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_threshold.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_threshold.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_threshold.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_threshold.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_threshold.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.o.requires
@@ -583,17 +583,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.o.provides.bu
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.o: modules/gpu/test/test_video.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_video.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_video.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_video.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_video.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_video.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_video.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.o.requires
@@ -606,17 +606,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.o.provides.build:
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.o: modules/gpu/test/test_warp_affine.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_warp_affine.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_warp_affine.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_warp_affine.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_warp_affine.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_warp_affine.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_warp_affine.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.o.requires
@@ -629,17 +629,17 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.o.provides.
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.o: modules/gpu/CMakeFiles/opencv_test_gpu.dir/flags.make
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.o: modules/gpu/test/test_warp_perspective.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_warp_perspective.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_warp_perspective.cpp
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_warp_perspective.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_warp_perspective.cpp > CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.i
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/test/test_warp_perspective.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/gpu/test/test_warp_perspective.cpp -o CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.s
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.o.requires:
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.o.requires
@@ -741,7 +741,7 @@ bin/opencv_test_gpu: lib/libopencv_imgproc.2.4.9.dylib
 bin/opencv_test_gpu: lib/libopencv_core.2.4.9.dylib
 bin/opencv_test_gpu: modules/gpu/CMakeFiles/opencv_test_gpu.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../bin/opencv_test_gpu"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_test_gpu.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_test_gpu.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/build: bin/opencv_test_gpu
@@ -776,10 +776,10 @@ modules/gpu/CMakeFiles/opencv_test_gpu.dir/requires: modules/gpu/CMakeFiles/open
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/requires
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu && $(CMAKE_COMMAND) -P CMakeFiles/opencv_test_gpu.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/gpu && $(CMAKE_COMMAND) -P CMakeFiles/opencv_test_gpu.dir/cmake_clean.cmake
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/clean
 
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/CMakeFiles/opencv_test_gpu.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/gpu /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/gpu /Users/zj/Desktop/code/pi/opencv/modules/gpu/CMakeFiles/opencv_test_gpu.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/depend
 

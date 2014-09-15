@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/modules/imgproc/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/CMakeFiles/opencv_imgproc.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/CMakeFiles/opencv_imgproc.dir/rule
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/rule
 
 # Convenience name for target.
@@ -173,12 +163,12 @@ opencv_imgproc: modules/imgproc/CMakeFiles/opencv_imgproc.dir/rule
 
 # fast build rule for target.
 opencv_imgproc/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/build
 .PHONY : opencv_imgproc/fast
 
 # Convenience name for target.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/rule
 .PHONY : modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/rule
 
 # Convenience name for target.
@@ -187,12 +177,12 @@ opencv_perf_imgproc: modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/rule
 
 # fast build rule for target.
 opencv_perf_imgproc/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build
 .PHONY : opencv_perf_imgproc/fast
 
 # Convenience name for target.
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/rule
 .PHONY : modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/rule
 
 # Convenience name for target.
@@ -201,7 +191,7 @@ opencv_test_imgproc: modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/rule
 
 # fast build rule for target.
 opencv_test_imgproc/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build
 .PHONY : opencv_test_imgproc/fast
 
 perf/perf_bilateral.o: perf/perf_bilateral.cpp.o
@@ -209,7 +199,7 @@ perf/perf_bilateral.o: perf/perf_bilateral.cpp.o
 
 # target to build an object file
 perf/perf_bilateral.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_bilateral.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_bilateral.cpp.o
 .PHONY : perf/perf_bilateral.cpp.o
 
 perf/perf_bilateral.i: perf/perf_bilateral.cpp.i
@@ -217,7 +207,7 @@ perf/perf_bilateral.i: perf/perf_bilateral.cpp.i
 
 # target to preprocess a source file
 perf/perf_bilateral.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_bilateral.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_bilateral.cpp.i
 .PHONY : perf/perf_bilateral.cpp.i
 
 perf/perf_bilateral.s: perf/perf_bilateral.cpp.s
@@ -225,7 +215,7 @@ perf/perf_bilateral.s: perf/perf_bilateral.cpp.s
 
 # target to generate assembly for a file
 perf/perf_bilateral.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_bilateral.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_bilateral.cpp.s
 .PHONY : perf/perf_bilateral.cpp.s
 
 perf/perf_blur.o: perf/perf_blur.cpp.o
@@ -233,7 +223,7 @@ perf/perf_blur.o: perf/perf_blur.cpp.o
 
 # target to build an object file
 perf/perf_blur.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_blur.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_blur.cpp.o
 .PHONY : perf/perf_blur.cpp.o
 
 perf/perf_blur.i: perf/perf_blur.cpp.i
@@ -241,7 +231,7 @@ perf/perf_blur.i: perf/perf_blur.cpp.i
 
 # target to preprocess a source file
 perf/perf_blur.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_blur.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_blur.cpp.i
 .PHONY : perf/perf_blur.cpp.i
 
 perf/perf_blur.s: perf/perf_blur.cpp.s
@@ -249,7 +239,7 @@ perf/perf_blur.s: perf/perf_blur.cpp.s
 
 # target to generate assembly for a file
 perf/perf_blur.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_blur.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_blur.cpp.s
 .PHONY : perf/perf_blur.cpp.s
 
 perf/perf_canny.o: perf/perf_canny.cpp.o
@@ -257,7 +247,7 @@ perf/perf_canny.o: perf/perf_canny.cpp.o
 
 # target to build an object file
 perf/perf_canny.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_canny.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_canny.cpp.o
 .PHONY : perf/perf_canny.cpp.o
 
 perf/perf_canny.i: perf/perf_canny.cpp.i
@@ -265,7 +255,7 @@ perf/perf_canny.i: perf/perf_canny.cpp.i
 
 # target to preprocess a source file
 perf/perf_canny.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_canny.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_canny.cpp.i
 .PHONY : perf/perf_canny.cpp.i
 
 perf/perf_canny.s: perf/perf_canny.cpp.s
@@ -273,7 +263,7 @@ perf/perf_canny.s: perf/perf_canny.cpp.s
 
 # target to generate assembly for a file
 perf/perf_canny.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_canny.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_canny.cpp.s
 .PHONY : perf/perf_canny.cpp.s
 
 perf/perf_cornerEigenValsAndVecs.o: perf/perf_cornerEigenValsAndVecs.cpp.o
@@ -281,7 +271,7 @@ perf/perf_cornerEigenValsAndVecs.o: perf/perf_cornerEigenValsAndVecs.cpp.o
 
 # target to build an object file
 perf/perf_cornerEigenValsAndVecs.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cornerEigenValsAndVecs.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cornerEigenValsAndVecs.cpp.o
 .PHONY : perf/perf_cornerEigenValsAndVecs.cpp.o
 
 perf/perf_cornerEigenValsAndVecs.i: perf/perf_cornerEigenValsAndVecs.cpp.i
@@ -289,7 +279,7 @@ perf/perf_cornerEigenValsAndVecs.i: perf/perf_cornerEigenValsAndVecs.cpp.i
 
 # target to preprocess a source file
 perf/perf_cornerEigenValsAndVecs.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cornerEigenValsAndVecs.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cornerEigenValsAndVecs.cpp.i
 .PHONY : perf/perf_cornerEigenValsAndVecs.cpp.i
 
 perf/perf_cornerEigenValsAndVecs.s: perf/perf_cornerEigenValsAndVecs.cpp.s
@@ -297,7 +287,7 @@ perf/perf_cornerEigenValsAndVecs.s: perf/perf_cornerEigenValsAndVecs.cpp.s
 
 # target to generate assembly for a file
 perf/perf_cornerEigenValsAndVecs.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cornerEigenValsAndVecs.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cornerEigenValsAndVecs.cpp.s
 .PHONY : perf/perf_cornerEigenValsAndVecs.cpp.s
 
 perf/perf_cornerHarris.o: perf/perf_cornerHarris.cpp.o
@@ -305,7 +295,7 @@ perf/perf_cornerHarris.o: perf/perf_cornerHarris.cpp.o
 
 # target to build an object file
 perf/perf_cornerHarris.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cornerHarris.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cornerHarris.cpp.o
 .PHONY : perf/perf_cornerHarris.cpp.o
 
 perf/perf_cornerHarris.i: perf/perf_cornerHarris.cpp.i
@@ -313,7 +303,7 @@ perf/perf_cornerHarris.i: perf/perf_cornerHarris.cpp.i
 
 # target to preprocess a source file
 perf/perf_cornerHarris.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cornerHarris.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cornerHarris.cpp.i
 .PHONY : perf/perf_cornerHarris.cpp.i
 
 perf/perf_cornerHarris.s: perf/perf_cornerHarris.cpp.s
@@ -321,7 +311,7 @@ perf/perf_cornerHarris.s: perf/perf_cornerHarris.cpp.s
 
 # target to generate assembly for a file
 perf/perf_cornerHarris.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cornerHarris.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cornerHarris.cpp.s
 .PHONY : perf/perf_cornerHarris.cpp.s
 
 perf/perf_cvt_color.o: perf/perf_cvt_color.cpp.o
@@ -329,7 +319,7 @@ perf/perf_cvt_color.o: perf/perf_cvt_color.cpp.o
 
 # target to build an object file
 perf/perf_cvt_color.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.o
 .PHONY : perf/perf_cvt_color.cpp.o
 
 perf/perf_cvt_color.i: perf/perf_cvt_color.cpp.i
@@ -337,7 +327,7 @@ perf/perf_cvt_color.i: perf/perf_cvt_color.cpp.i
 
 # target to preprocess a source file
 perf/perf_cvt_color.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.i
 .PHONY : perf/perf_cvt_color.cpp.i
 
 perf/perf_cvt_color.s: perf/perf_cvt_color.cpp.s
@@ -345,7 +335,7 @@ perf/perf_cvt_color.s: perf/perf_cvt_color.cpp.s
 
 # target to generate assembly for a file
 perf/perf_cvt_color.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.s
 .PHONY : perf/perf_cvt_color.cpp.s
 
 perf/perf_distanceTransform.o: perf/perf_distanceTransform.cpp.o
@@ -353,7 +343,7 @@ perf/perf_distanceTransform.o: perf/perf_distanceTransform.cpp.o
 
 # target to build an object file
 perf/perf_distanceTransform.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o
 .PHONY : perf/perf_distanceTransform.cpp.o
 
 perf/perf_distanceTransform.i: perf/perf_distanceTransform.cpp.i
@@ -361,7 +351,7 @@ perf/perf_distanceTransform.i: perf/perf_distanceTransform.cpp.i
 
 # target to preprocess a source file
 perf/perf_distanceTransform.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.i
 .PHONY : perf/perf_distanceTransform.cpp.i
 
 perf/perf_distanceTransform.s: perf/perf_distanceTransform.cpp.s
@@ -369,7 +359,7 @@ perf/perf_distanceTransform.s: perf/perf_distanceTransform.cpp.s
 
 # target to generate assembly for a file
 perf/perf_distanceTransform.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.s
 .PHONY : perf/perf_distanceTransform.cpp.s
 
 perf/perf_filter2d.o: perf/perf_filter2d.cpp.o
@@ -377,7 +367,7 @@ perf/perf_filter2d.o: perf/perf_filter2d.cpp.o
 
 # target to build an object file
 perf/perf_filter2d.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.o
 .PHONY : perf/perf_filter2d.cpp.o
 
 perf/perf_filter2d.i: perf/perf_filter2d.cpp.i
@@ -385,7 +375,7 @@ perf/perf_filter2d.i: perf/perf_filter2d.cpp.i
 
 # target to preprocess a source file
 perf/perf_filter2d.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.i
 .PHONY : perf/perf_filter2d.cpp.i
 
 perf/perf_filter2d.s: perf/perf_filter2d.cpp.s
@@ -393,7 +383,7 @@ perf/perf_filter2d.s: perf/perf_filter2d.cpp.s
 
 # target to generate assembly for a file
 perf/perf_filter2d.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.s
 .PHONY : perf/perf_filter2d.cpp.s
 
 perf/perf_goodFeaturesToTrack.o: perf/perf_goodFeaturesToTrack.cpp.o
@@ -401,7 +391,7 @@ perf/perf_goodFeaturesToTrack.o: perf/perf_goodFeaturesToTrack.cpp.o
 
 # target to build an object file
 perf/perf_goodFeaturesToTrack.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_goodFeaturesToTrack.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_goodFeaturesToTrack.cpp.o
 .PHONY : perf/perf_goodFeaturesToTrack.cpp.o
 
 perf/perf_goodFeaturesToTrack.i: perf/perf_goodFeaturesToTrack.cpp.i
@@ -409,7 +399,7 @@ perf/perf_goodFeaturesToTrack.i: perf/perf_goodFeaturesToTrack.cpp.i
 
 # target to preprocess a source file
 perf/perf_goodFeaturesToTrack.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_goodFeaturesToTrack.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_goodFeaturesToTrack.cpp.i
 .PHONY : perf/perf_goodFeaturesToTrack.cpp.i
 
 perf/perf_goodFeaturesToTrack.s: perf/perf_goodFeaturesToTrack.cpp.s
@@ -417,7 +407,7 @@ perf/perf_goodFeaturesToTrack.s: perf/perf_goodFeaturesToTrack.cpp.s
 
 # target to generate assembly for a file
 perf/perf_goodFeaturesToTrack.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_goodFeaturesToTrack.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_goodFeaturesToTrack.cpp.s
 .PHONY : perf/perf_goodFeaturesToTrack.cpp.s
 
 perf/perf_histogram.o: perf/perf_histogram.cpp.o
@@ -425,7 +415,7 @@ perf/perf_histogram.o: perf/perf_histogram.cpp.o
 
 # target to build an object file
 perf/perf_histogram.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_histogram.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_histogram.cpp.o
 .PHONY : perf/perf_histogram.cpp.o
 
 perf/perf_histogram.i: perf/perf_histogram.cpp.i
@@ -433,7 +423,7 @@ perf/perf_histogram.i: perf/perf_histogram.cpp.i
 
 # target to preprocess a source file
 perf/perf_histogram.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_histogram.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_histogram.cpp.i
 .PHONY : perf/perf_histogram.cpp.i
 
 perf/perf_histogram.s: perf/perf_histogram.cpp.s
@@ -441,7 +431,7 @@ perf/perf_histogram.s: perf/perf_histogram.cpp.s
 
 # target to generate assembly for a file
 perf/perf_histogram.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_histogram.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_histogram.cpp.s
 .PHONY : perf/perf_histogram.cpp.s
 
 perf/perf_houghLines.o: perf/perf_houghLines.cpp.o
@@ -449,7 +439,7 @@ perf/perf_houghLines.o: perf/perf_houghLines.cpp.o
 
 # target to build an object file
 perf/perf_houghLines.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_houghLines.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_houghLines.cpp.o
 .PHONY : perf/perf_houghLines.cpp.o
 
 perf/perf_houghLines.i: perf/perf_houghLines.cpp.i
@@ -457,7 +447,7 @@ perf/perf_houghLines.i: perf/perf_houghLines.cpp.i
 
 # target to preprocess a source file
 perf/perf_houghLines.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_houghLines.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_houghLines.cpp.i
 .PHONY : perf/perf_houghLines.cpp.i
 
 perf/perf_houghLines.s: perf/perf_houghLines.cpp.s
@@ -465,7 +455,7 @@ perf/perf_houghLines.s: perf/perf_houghLines.cpp.s
 
 # target to generate assembly for a file
 perf/perf_houghLines.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_houghLines.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_houghLines.cpp.s
 .PHONY : perf/perf_houghLines.cpp.s
 
 perf/perf_integral.o: perf/perf_integral.cpp.o
@@ -473,7 +463,7 @@ perf/perf_integral.o: perf/perf_integral.cpp.o
 
 # target to build an object file
 perf/perf_integral.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_integral.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_integral.cpp.o
 .PHONY : perf/perf_integral.cpp.o
 
 perf/perf_integral.i: perf/perf_integral.cpp.i
@@ -481,7 +471,7 @@ perf/perf_integral.i: perf/perf_integral.cpp.i
 
 # target to preprocess a source file
 perf/perf_integral.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_integral.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_integral.cpp.i
 .PHONY : perf/perf_integral.cpp.i
 
 perf/perf_integral.s: perf/perf_integral.cpp.s
@@ -489,7 +479,7 @@ perf/perf_integral.s: perf/perf_integral.cpp.s
 
 # target to generate assembly for a file
 perf/perf_integral.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_integral.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_integral.cpp.s
 .PHONY : perf/perf_integral.cpp.s
 
 perf/perf_main.o: perf/perf_main.cpp.o
@@ -497,7 +487,7 @@ perf/perf_main.o: perf/perf_main.cpp.o
 
 # target to build an object file
 perf/perf_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_main.cpp.o
 .PHONY : perf/perf_main.cpp.o
 
 perf/perf_main.i: perf/perf_main.cpp.i
@@ -505,7 +495,7 @@ perf/perf_main.i: perf/perf_main.cpp.i
 
 # target to preprocess a source file
 perf/perf_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_main.cpp.i
 .PHONY : perf/perf_main.cpp.i
 
 perf/perf_main.s: perf/perf_main.cpp.s
@@ -513,7 +503,7 @@ perf/perf_main.s: perf/perf_main.cpp.s
 
 # target to generate assembly for a file
 perf/perf_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_main.cpp.s
 .PHONY : perf/perf_main.cpp.s
 
 perf/perf_matchTemplate.o: perf/perf_matchTemplate.cpp.o
@@ -521,7 +511,7 @@ perf/perf_matchTemplate.o: perf/perf_matchTemplate.cpp.o
 
 # target to build an object file
 perf/perf_matchTemplate.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_matchTemplate.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_matchTemplate.cpp.o
 .PHONY : perf/perf_matchTemplate.cpp.o
 
 perf/perf_matchTemplate.i: perf/perf_matchTemplate.cpp.i
@@ -529,7 +519,7 @@ perf/perf_matchTemplate.i: perf/perf_matchTemplate.cpp.i
 
 # target to preprocess a source file
 perf/perf_matchTemplate.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_matchTemplate.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_matchTemplate.cpp.i
 .PHONY : perf/perf_matchTemplate.cpp.i
 
 perf/perf_matchTemplate.s: perf/perf_matchTemplate.cpp.s
@@ -537,7 +527,7 @@ perf/perf_matchTemplate.s: perf/perf_matchTemplate.cpp.s
 
 # target to generate assembly for a file
 perf/perf_matchTemplate.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_matchTemplate.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_matchTemplate.cpp.s
 .PHONY : perf/perf_matchTemplate.cpp.s
 
 perf/perf_morph.o: perf/perf_morph.cpp.o
@@ -545,7 +535,7 @@ perf/perf_morph.o: perf/perf_morph.cpp.o
 
 # target to build an object file
 perf/perf_morph.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_morph.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_morph.cpp.o
 .PHONY : perf/perf_morph.cpp.o
 
 perf/perf_morph.i: perf/perf_morph.cpp.i
@@ -553,7 +543,7 @@ perf/perf_morph.i: perf/perf_morph.cpp.i
 
 # target to preprocess a source file
 perf/perf_morph.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_morph.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_morph.cpp.i
 .PHONY : perf/perf_morph.cpp.i
 
 perf/perf_morph.s: perf/perf_morph.cpp.s
@@ -561,7 +551,7 @@ perf/perf_morph.s: perf/perf_morph.cpp.s
 
 # target to generate assembly for a file
 perf/perf_morph.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_morph.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_morph.cpp.s
 .PHONY : perf/perf_morph.cpp.s
 
 perf/perf_pyramids.o: perf/perf_pyramids.cpp.o
@@ -569,7 +559,7 @@ perf/perf_pyramids.o: perf/perf_pyramids.cpp.o
 
 # target to build an object file
 perf/perf_pyramids.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_pyramids.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_pyramids.cpp.o
 .PHONY : perf/perf_pyramids.cpp.o
 
 perf/perf_pyramids.i: perf/perf_pyramids.cpp.i
@@ -577,7 +567,7 @@ perf/perf_pyramids.i: perf/perf_pyramids.cpp.i
 
 # target to preprocess a source file
 perf/perf_pyramids.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_pyramids.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_pyramids.cpp.i
 .PHONY : perf/perf_pyramids.cpp.i
 
 perf/perf_pyramids.s: perf/perf_pyramids.cpp.s
@@ -585,7 +575,7 @@ perf/perf_pyramids.s: perf/perf_pyramids.cpp.s
 
 # target to generate assembly for a file
 perf/perf_pyramids.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_pyramids.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_pyramids.cpp.s
 .PHONY : perf/perf_pyramids.cpp.s
 
 perf/perf_remap.o: perf/perf_remap.cpp.o
@@ -593,7 +583,7 @@ perf/perf_remap.o: perf/perf_remap.cpp.o
 
 # target to build an object file
 perf/perf_remap.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_remap.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_remap.cpp.o
 .PHONY : perf/perf_remap.cpp.o
 
 perf/perf_remap.i: perf/perf_remap.cpp.i
@@ -601,7 +591,7 @@ perf/perf_remap.i: perf/perf_remap.cpp.i
 
 # target to preprocess a source file
 perf/perf_remap.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_remap.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_remap.cpp.i
 .PHONY : perf/perf_remap.cpp.i
 
 perf/perf_remap.s: perf/perf_remap.cpp.s
@@ -609,7 +599,7 @@ perf/perf_remap.s: perf/perf_remap.cpp.s
 
 # target to generate assembly for a file
 perf/perf_remap.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_remap.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_remap.cpp.s
 .PHONY : perf/perf_remap.cpp.s
 
 perf/perf_resize.o: perf/perf_resize.cpp.o
@@ -617,7 +607,7 @@ perf/perf_resize.o: perf/perf_resize.cpp.o
 
 # target to build an object file
 perf/perf_resize.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_resize.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_resize.cpp.o
 .PHONY : perf/perf_resize.cpp.o
 
 perf/perf_resize.i: perf/perf_resize.cpp.i
@@ -625,7 +615,7 @@ perf/perf_resize.i: perf/perf_resize.cpp.i
 
 # target to preprocess a source file
 perf/perf_resize.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_resize.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_resize.cpp.i
 .PHONY : perf/perf_resize.cpp.i
 
 perf/perf_resize.s: perf/perf_resize.cpp.s
@@ -633,7 +623,7 @@ perf/perf_resize.s: perf/perf_resize.cpp.s
 
 # target to generate assembly for a file
 perf/perf_resize.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_resize.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_resize.cpp.s
 .PHONY : perf/perf_resize.cpp.s
 
 perf/perf_sepfilters.o: perf/perf_sepfilters.cpp.o
@@ -641,7 +631,7 @@ perf/perf_sepfilters.o: perf/perf_sepfilters.cpp.o
 
 # target to build an object file
 perf/perf_sepfilters.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_sepfilters.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_sepfilters.cpp.o
 .PHONY : perf/perf_sepfilters.cpp.o
 
 perf/perf_sepfilters.i: perf/perf_sepfilters.cpp.i
@@ -649,7 +639,7 @@ perf/perf_sepfilters.i: perf/perf_sepfilters.cpp.i
 
 # target to preprocess a source file
 perf/perf_sepfilters.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_sepfilters.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_sepfilters.cpp.i
 .PHONY : perf/perf_sepfilters.cpp.i
 
 perf/perf_sepfilters.s: perf/perf_sepfilters.cpp.s
@@ -657,7 +647,7 @@ perf/perf_sepfilters.s: perf/perf_sepfilters.cpp.s
 
 # target to generate assembly for a file
 perf/perf_sepfilters.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_sepfilters.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_sepfilters.cpp.s
 .PHONY : perf/perf_sepfilters.cpp.s
 
 perf/perf_threshold.o: perf/perf_threshold.cpp.o
@@ -665,7 +655,7 @@ perf/perf_threshold.o: perf/perf_threshold.cpp.o
 
 # target to build an object file
 perf/perf_threshold.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_threshold.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_threshold.cpp.o
 .PHONY : perf/perf_threshold.cpp.o
 
 perf/perf_threshold.i: perf/perf_threshold.cpp.i
@@ -673,7 +663,7 @@ perf/perf_threshold.i: perf/perf_threshold.cpp.i
 
 # target to preprocess a source file
 perf/perf_threshold.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_threshold.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_threshold.cpp.i
 .PHONY : perf/perf_threshold.cpp.i
 
 perf/perf_threshold.s: perf/perf_threshold.cpp.s
@@ -681,7 +671,7 @@ perf/perf_threshold.s: perf/perf_threshold.cpp.s
 
 # target to generate assembly for a file
 perf/perf_threshold.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_threshold.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_threshold.cpp.s
 .PHONY : perf/perf_threshold.cpp.s
 
 perf/perf_warp.o: perf/perf_warp.cpp.o
@@ -689,7 +679,7 @@ perf/perf_warp.o: perf/perf_warp.cpp.o
 
 # target to build an object file
 perf/perf_warp.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_warp.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_warp.cpp.o
 .PHONY : perf/perf_warp.cpp.o
 
 perf/perf_warp.i: perf/perf_warp.cpp.i
@@ -697,7 +687,7 @@ perf/perf_warp.i: perf/perf_warp.cpp.i
 
 # target to preprocess a source file
 perf/perf_warp.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_warp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_warp.cpp.i
 .PHONY : perf/perf_warp.cpp.i
 
 perf/perf_warp.s: perf/perf_warp.cpp.s
@@ -705,7 +695,7 @@ perf/perf_warp.s: perf/perf_warp.cpp.s
 
 # target to generate assembly for a file
 perf/perf_warp.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_warp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_warp.cpp.s
 .PHONY : perf/perf_warp.cpp.s
 
 src/accum.o: src/accum.cpp.o
@@ -713,7 +703,7 @@ src/accum.o: src/accum.cpp.o
 
 # target to build an object file
 src/accum.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o
 .PHONY : src/accum.cpp.o
 
 src/accum.i: src/accum.cpp.i
@@ -721,7 +711,7 @@ src/accum.i: src/accum.cpp.i
 
 # target to preprocess a source file
 src/accum.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.i
 .PHONY : src/accum.cpp.i
 
 src/accum.s: src/accum.cpp.s
@@ -729,7 +719,7 @@ src/accum.s: src/accum.cpp.s
 
 # target to generate assembly for a file
 src/accum.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.s
 .PHONY : src/accum.cpp.s
 
 src/approx.o: src/approx.cpp.o
@@ -737,7 +727,7 @@ src/approx.o: src/approx.cpp.o
 
 # target to build an object file
 src/approx.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.o
 .PHONY : src/approx.cpp.o
 
 src/approx.i: src/approx.cpp.i
@@ -745,7 +735,7 @@ src/approx.i: src/approx.cpp.i
 
 # target to preprocess a source file
 src/approx.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.i
 .PHONY : src/approx.cpp.i
 
 src/approx.s: src/approx.cpp.s
@@ -753,7 +743,7 @@ src/approx.s: src/approx.cpp.s
 
 # target to generate assembly for a file
 src/approx.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.s
 .PHONY : src/approx.cpp.s
 
 src/canny.o: src/canny.cpp.o
@@ -761,7 +751,7 @@ src/canny.o: src/canny.cpp.o
 
 # target to build an object file
 src/canny.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o
 .PHONY : src/canny.cpp.o
 
 src/canny.i: src/canny.cpp.i
@@ -769,7 +759,7 @@ src/canny.i: src/canny.cpp.i
 
 # target to preprocess a source file
 src/canny.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.i
 .PHONY : src/canny.cpp.i
 
 src/canny.s: src/canny.cpp.s
@@ -777,7 +767,7 @@ src/canny.s: src/canny.cpp.s
 
 # target to generate assembly for a file
 src/canny.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.s
 .PHONY : src/canny.cpp.s
 
 src/clahe.o: src/clahe.cpp.o
@@ -785,7 +775,7 @@ src/clahe.o: src/clahe.cpp.o
 
 # target to build an object file
 src/clahe.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o
 .PHONY : src/clahe.cpp.o
 
 src/clahe.i: src/clahe.cpp.i
@@ -793,7 +783,7 @@ src/clahe.i: src/clahe.cpp.i
 
 # target to preprocess a source file
 src/clahe.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.i
 .PHONY : src/clahe.cpp.i
 
 src/clahe.s: src/clahe.cpp.s
@@ -801,7 +791,7 @@ src/clahe.s: src/clahe.cpp.s
 
 # target to generate assembly for a file
 src/clahe.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.s
 .PHONY : src/clahe.cpp.s
 
 src/color.o: src/color.cpp.o
@@ -809,7 +799,7 @@ src/color.o: src/color.cpp.o
 
 # target to build an object file
 src/color.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o
 .PHONY : src/color.cpp.o
 
 src/color.i: src/color.cpp.i
@@ -817,7 +807,7 @@ src/color.i: src/color.cpp.i
 
 # target to preprocess a source file
 src/color.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.i
 .PHONY : src/color.cpp.i
 
 src/color.s: src/color.cpp.s
@@ -825,7 +815,7 @@ src/color.s: src/color.cpp.s
 
 # target to generate assembly for a file
 src/color.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.s
 .PHONY : src/color.cpp.s
 
 src/contours.o: src/contours.cpp.o
@@ -833,7 +823,7 @@ src/contours.o: src/contours.cpp.o
 
 # target to build an object file
 src/contours.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o
 .PHONY : src/contours.cpp.o
 
 src/contours.i: src/contours.cpp.i
@@ -841,7 +831,7 @@ src/contours.i: src/contours.cpp.i
 
 # target to preprocess a source file
 src/contours.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.i
 .PHONY : src/contours.cpp.i
 
 src/contours.s: src/contours.cpp.s
@@ -849,7 +839,7 @@ src/contours.s: src/contours.cpp.s
 
 # target to generate assembly for a file
 src/contours.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.s
 .PHONY : src/contours.cpp.s
 
 src/convhull.o: src/convhull.cpp.o
@@ -857,7 +847,7 @@ src/convhull.o: src/convhull.cpp.o
 
 # target to build an object file
 src/convhull.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o
 .PHONY : src/convhull.cpp.o
 
 src/convhull.i: src/convhull.cpp.i
@@ -865,7 +855,7 @@ src/convhull.i: src/convhull.cpp.i
 
 # target to preprocess a source file
 src/convhull.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.i
 .PHONY : src/convhull.cpp.i
 
 src/convhull.s: src/convhull.cpp.s
@@ -873,7 +863,7 @@ src/convhull.s: src/convhull.cpp.s
 
 # target to generate assembly for a file
 src/convhull.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.s
 .PHONY : src/convhull.cpp.s
 
 src/corner.o: src/corner.cpp.o
@@ -881,7 +871,7 @@ src/corner.o: src/corner.cpp.o
 
 # target to build an object file
 src/corner.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o
 .PHONY : src/corner.cpp.o
 
 src/corner.i: src/corner.cpp.i
@@ -889,7 +879,7 @@ src/corner.i: src/corner.cpp.i
 
 # target to preprocess a source file
 src/corner.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.i
 .PHONY : src/corner.cpp.i
 
 src/corner.s: src/corner.cpp.s
@@ -897,7 +887,7 @@ src/corner.s: src/corner.cpp.s
 
 # target to generate assembly for a file
 src/corner.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.s
 .PHONY : src/corner.cpp.s
 
 src/cornersubpix.o: src/cornersubpix.cpp.o
@@ -905,7 +895,7 @@ src/cornersubpix.o: src/cornersubpix.cpp.o
 
 # target to build an object file
 src/cornersubpix.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o
 .PHONY : src/cornersubpix.cpp.o
 
 src/cornersubpix.i: src/cornersubpix.cpp.i
@@ -913,7 +903,7 @@ src/cornersubpix.i: src/cornersubpix.cpp.i
 
 # target to preprocess a source file
 src/cornersubpix.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.i
 .PHONY : src/cornersubpix.cpp.i
 
 src/cornersubpix.s: src/cornersubpix.cpp.s
@@ -921,7 +911,7 @@ src/cornersubpix.s: src/cornersubpix.cpp.s
 
 # target to generate assembly for a file
 src/cornersubpix.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.s
 .PHONY : src/cornersubpix.cpp.s
 
 src/deriv.o: src/deriv.cpp.o
@@ -929,7 +919,7 @@ src/deriv.o: src/deriv.cpp.o
 
 # target to build an object file
 src/deriv.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o
 .PHONY : src/deriv.cpp.o
 
 src/deriv.i: src/deriv.cpp.i
@@ -937,7 +927,7 @@ src/deriv.i: src/deriv.cpp.i
 
 # target to preprocess a source file
 src/deriv.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.i
 .PHONY : src/deriv.cpp.i
 
 src/deriv.s: src/deriv.cpp.s
@@ -945,7 +935,7 @@ src/deriv.s: src/deriv.cpp.s
 
 # target to generate assembly for a file
 src/deriv.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.s
 .PHONY : src/deriv.cpp.s
 
 src/distransform.o: src/distransform.cpp.o
@@ -953,7 +943,7 @@ src/distransform.o: src/distransform.cpp.o
 
 # target to build an object file
 src/distransform.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o
 .PHONY : src/distransform.cpp.o
 
 src/distransform.i: src/distransform.cpp.i
@@ -961,7 +951,7 @@ src/distransform.i: src/distransform.cpp.i
 
 # target to preprocess a source file
 src/distransform.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.i
 .PHONY : src/distransform.cpp.i
 
 src/distransform.s: src/distransform.cpp.s
@@ -969,7 +959,7 @@ src/distransform.s: src/distransform.cpp.s
 
 # target to generate assembly for a file
 src/distransform.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.s
 .PHONY : src/distransform.cpp.s
 
 src/emd.o: src/emd.cpp.o
@@ -977,7 +967,7 @@ src/emd.o: src/emd.cpp.o
 
 # target to build an object file
 src/emd.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o
 .PHONY : src/emd.cpp.o
 
 src/emd.i: src/emd.cpp.i
@@ -985,7 +975,7 @@ src/emd.i: src/emd.cpp.i
 
 # target to preprocess a source file
 src/emd.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.i
 .PHONY : src/emd.cpp.i
 
 src/emd.s: src/emd.cpp.s
@@ -993,7 +983,7 @@ src/emd.s: src/emd.cpp.s
 
 # target to generate assembly for a file
 src/emd.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.s
 .PHONY : src/emd.cpp.s
 
 src/featureselect.o: src/featureselect.cpp.o
@@ -1001,7 +991,7 @@ src/featureselect.o: src/featureselect.cpp.o
 
 # target to build an object file
 src/featureselect.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o
 .PHONY : src/featureselect.cpp.o
 
 src/featureselect.i: src/featureselect.cpp.i
@@ -1009,7 +999,7 @@ src/featureselect.i: src/featureselect.cpp.i
 
 # target to preprocess a source file
 src/featureselect.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.i
 .PHONY : src/featureselect.cpp.i
 
 src/featureselect.s: src/featureselect.cpp.s
@@ -1017,7 +1007,7 @@ src/featureselect.s: src/featureselect.cpp.s
 
 # target to generate assembly for a file
 src/featureselect.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.s
 .PHONY : src/featureselect.cpp.s
 
 src/filter.o: src/filter.cpp.o
@@ -1025,7 +1015,7 @@ src/filter.o: src/filter.cpp.o
 
 # target to build an object file
 src/filter.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o
 .PHONY : src/filter.cpp.o
 
 src/filter.i: src/filter.cpp.i
@@ -1033,7 +1023,7 @@ src/filter.i: src/filter.cpp.i
 
 # target to preprocess a source file
 src/filter.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.i
 .PHONY : src/filter.cpp.i
 
 src/filter.s: src/filter.cpp.s
@@ -1041,7 +1031,7 @@ src/filter.s: src/filter.cpp.s
 
 # target to generate assembly for a file
 src/filter.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.s
 .PHONY : src/filter.cpp.s
 
 src/floodfill.o: src/floodfill.cpp.o
@@ -1049,7 +1039,7 @@ src/floodfill.o: src/floodfill.cpp.o
 
 # target to build an object file
 src/floodfill.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o
 .PHONY : src/floodfill.cpp.o
 
 src/floodfill.i: src/floodfill.cpp.i
@@ -1057,7 +1047,7 @@ src/floodfill.i: src/floodfill.cpp.i
 
 # target to preprocess a source file
 src/floodfill.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.i
 .PHONY : src/floodfill.cpp.i
 
 src/floodfill.s: src/floodfill.cpp.s
@@ -1065,7 +1055,7 @@ src/floodfill.s: src/floodfill.cpp.s
 
 # target to generate assembly for a file
 src/floodfill.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.s
 .PHONY : src/floodfill.cpp.s
 
 src/gabor.o: src/gabor.cpp.o
@@ -1073,7 +1063,7 @@ src/gabor.o: src/gabor.cpp.o
 
 # target to build an object file
 src/gabor.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o
 .PHONY : src/gabor.cpp.o
 
 src/gabor.i: src/gabor.cpp.i
@@ -1081,7 +1071,7 @@ src/gabor.i: src/gabor.cpp.i
 
 # target to preprocess a source file
 src/gabor.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.i
 .PHONY : src/gabor.cpp.i
 
 src/gabor.s: src/gabor.cpp.s
@@ -1089,7 +1079,7 @@ src/gabor.s: src/gabor.cpp.s
 
 # target to generate assembly for a file
 src/gabor.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.s
 .PHONY : src/gabor.cpp.s
 
 src/generalized_hough.o: src/generalized_hough.cpp.o
@@ -1097,7 +1087,7 @@ src/generalized_hough.o: src/generalized_hough.cpp.o
 
 # target to build an object file
 src/generalized_hough.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o
 .PHONY : src/generalized_hough.cpp.o
 
 src/generalized_hough.i: src/generalized_hough.cpp.i
@@ -1105,7 +1095,7 @@ src/generalized_hough.i: src/generalized_hough.cpp.i
 
 # target to preprocess a source file
 src/generalized_hough.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.i
 .PHONY : src/generalized_hough.cpp.i
 
 src/generalized_hough.s: src/generalized_hough.cpp.s
@@ -1113,7 +1103,7 @@ src/generalized_hough.s: src/generalized_hough.cpp.s
 
 # target to generate assembly for a file
 src/generalized_hough.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.s
 .PHONY : src/generalized_hough.cpp.s
 
 src/geometry.o: src/geometry.cpp.o
@@ -1121,7 +1111,7 @@ src/geometry.o: src/geometry.cpp.o
 
 # target to build an object file
 src/geometry.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o
 .PHONY : src/geometry.cpp.o
 
 src/geometry.i: src/geometry.cpp.i
@@ -1129,7 +1119,7 @@ src/geometry.i: src/geometry.cpp.i
 
 # target to preprocess a source file
 src/geometry.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.i
 .PHONY : src/geometry.cpp.i
 
 src/geometry.s: src/geometry.cpp.s
@@ -1137,7 +1127,7 @@ src/geometry.s: src/geometry.cpp.s
 
 # target to generate assembly for a file
 src/geometry.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.s
 .PHONY : src/geometry.cpp.s
 
 src/grabcut.o: src/grabcut.cpp.o
@@ -1145,7 +1135,7 @@ src/grabcut.o: src/grabcut.cpp.o
 
 # target to build an object file
 src/grabcut.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o
 .PHONY : src/grabcut.cpp.o
 
 src/grabcut.i: src/grabcut.cpp.i
@@ -1153,7 +1143,7 @@ src/grabcut.i: src/grabcut.cpp.i
 
 # target to preprocess a source file
 src/grabcut.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.i
 .PHONY : src/grabcut.cpp.i
 
 src/grabcut.s: src/grabcut.cpp.s
@@ -1161,7 +1151,7 @@ src/grabcut.s: src/grabcut.cpp.s
 
 # target to generate assembly for a file
 src/grabcut.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.s
 .PHONY : src/grabcut.cpp.s
 
 src/histogram.o: src/histogram.cpp.o
@@ -1169,7 +1159,7 @@ src/histogram.o: src/histogram.cpp.o
 
 # target to build an object file
 src/histogram.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o
 .PHONY : src/histogram.cpp.o
 
 src/histogram.i: src/histogram.cpp.i
@@ -1177,7 +1167,7 @@ src/histogram.i: src/histogram.cpp.i
 
 # target to preprocess a source file
 src/histogram.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.i
 .PHONY : src/histogram.cpp.i
 
 src/histogram.s: src/histogram.cpp.s
@@ -1185,7 +1175,7 @@ src/histogram.s: src/histogram.cpp.s
 
 # target to generate assembly for a file
 src/histogram.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.s
 .PHONY : src/histogram.cpp.s
 
 src/hough.o: src/hough.cpp.o
@@ -1193,7 +1183,7 @@ src/hough.o: src/hough.cpp.o
 
 # target to build an object file
 src/hough.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o
 .PHONY : src/hough.cpp.o
 
 src/hough.i: src/hough.cpp.i
@@ -1201,7 +1191,7 @@ src/hough.i: src/hough.cpp.i
 
 # target to preprocess a source file
 src/hough.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.i
 .PHONY : src/hough.cpp.i
 
 src/hough.s: src/hough.cpp.s
@@ -1209,7 +1199,7 @@ src/hough.s: src/hough.cpp.s
 
 # target to generate assembly for a file
 src/hough.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.s
 .PHONY : src/hough.cpp.s
 
 src/imgwarp.o: src/imgwarp.cpp.o
@@ -1217,7 +1207,7 @@ src/imgwarp.o: src/imgwarp.cpp.o
 
 # target to build an object file
 src/imgwarp.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o
 .PHONY : src/imgwarp.cpp.o
 
 src/imgwarp.i: src/imgwarp.cpp.i
@@ -1225,7 +1215,7 @@ src/imgwarp.i: src/imgwarp.cpp.i
 
 # target to preprocess a source file
 src/imgwarp.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.i
 .PHONY : src/imgwarp.cpp.i
 
 src/imgwarp.s: src/imgwarp.cpp.s
@@ -1233,7 +1223,7 @@ src/imgwarp.s: src/imgwarp.cpp.s
 
 # target to generate assembly for a file
 src/imgwarp.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.s
 .PHONY : src/imgwarp.cpp.s
 
 src/linefit.o: src/linefit.cpp.o
@@ -1241,7 +1231,7 @@ src/linefit.o: src/linefit.cpp.o
 
 # target to build an object file
 src/linefit.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o
 .PHONY : src/linefit.cpp.o
 
 src/linefit.i: src/linefit.cpp.i
@@ -1249,7 +1239,7 @@ src/linefit.i: src/linefit.cpp.i
 
 # target to preprocess a source file
 src/linefit.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.i
 .PHONY : src/linefit.cpp.i
 
 src/linefit.s: src/linefit.cpp.s
@@ -1257,7 +1247,7 @@ src/linefit.s: src/linefit.cpp.s
 
 # target to generate assembly for a file
 src/linefit.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.s
 .PHONY : src/linefit.cpp.s
 
 src/matchcontours.o: src/matchcontours.cpp.o
@@ -1265,7 +1255,7 @@ src/matchcontours.o: src/matchcontours.cpp.o
 
 # target to build an object file
 src/matchcontours.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o
 .PHONY : src/matchcontours.cpp.o
 
 src/matchcontours.i: src/matchcontours.cpp.i
@@ -1273,7 +1263,7 @@ src/matchcontours.i: src/matchcontours.cpp.i
 
 # target to preprocess a source file
 src/matchcontours.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.i
 .PHONY : src/matchcontours.cpp.i
 
 src/matchcontours.s: src/matchcontours.cpp.s
@@ -1281,7 +1271,7 @@ src/matchcontours.s: src/matchcontours.cpp.s
 
 # target to generate assembly for a file
 src/matchcontours.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.s
 .PHONY : src/matchcontours.cpp.s
 
 src/moments.o: src/moments.cpp.o
@@ -1289,7 +1279,7 @@ src/moments.o: src/moments.cpp.o
 
 # target to build an object file
 src/moments.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o
 .PHONY : src/moments.cpp.o
 
 src/moments.i: src/moments.cpp.i
@@ -1297,7 +1287,7 @@ src/moments.i: src/moments.cpp.i
 
 # target to preprocess a source file
 src/moments.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.i
 .PHONY : src/moments.cpp.i
 
 src/moments.s: src/moments.cpp.s
@@ -1305,7 +1295,7 @@ src/moments.s: src/moments.cpp.s
 
 # target to generate assembly for a file
 src/moments.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.s
 .PHONY : src/moments.cpp.s
 
 src/morph.o: src/morph.cpp.o
@@ -1313,7 +1303,7 @@ src/morph.o: src/morph.cpp.o
 
 # target to build an object file
 src/morph.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o
 .PHONY : src/morph.cpp.o
 
 src/morph.i: src/morph.cpp.i
@@ -1321,7 +1311,7 @@ src/morph.i: src/morph.cpp.i
 
 # target to preprocess a source file
 src/morph.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.i
 .PHONY : src/morph.cpp.i
 
 src/morph.s: src/morph.cpp.s
@@ -1329,7 +1319,7 @@ src/morph.s: src/morph.cpp.s
 
 # target to generate assembly for a file
 src/morph.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.s
 .PHONY : src/morph.cpp.s
 
 src/phasecorr.o: src/phasecorr.cpp.o
@@ -1337,7 +1327,7 @@ src/phasecorr.o: src/phasecorr.cpp.o
 
 # target to build an object file
 src/phasecorr.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o
 .PHONY : src/phasecorr.cpp.o
 
 src/phasecorr.i: src/phasecorr.cpp.i
@@ -1345,7 +1335,7 @@ src/phasecorr.i: src/phasecorr.cpp.i
 
 # target to preprocess a source file
 src/phasecorr.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.i
 .PHONY : src/phasecorr.cpp.i
 
 src/phasecorr.s: src/phasecorr.cpp.s
@@ -1353,7 +1343,7 @@ src/phasecorr.s: src/phasecorr.cpp.s
 
 # target to generate assembly for a file
 src/phasecorr.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.s
 .PHONY : src/phasecorr.cpp.s
 
 src/pyramids.o: src/pyramids.cpp.o
@@ -1361,7 +1351,7 @@ src/pyramids.o: src/pyramids.cpp.o
 
 # target to build an object file
 src/pyramids.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o
 .PHONY : src/pyramids.cpp.o
 
 src/pyramids.i: src/pyramids.cpp.i
@@ -1369,7 +1359,7 @@ src/pyramids.i: src/pyramids.cpp.i
 
 # target to preprocess a source file
 src/pyramids.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.i
 .PHONY : src/pyramids.cpp.i
 
 src/pyramids.s: src/pyramids.cpp.s
@@ -1377,7 +1367,7 @@ src/pyramids.s: src/pyramids.cpp.s
 
 # target to generate assembly for a file
 src/pyramids.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.s
 .PHONY : src/pyramids.cpp.s
 
 src/rotcalipers.o: src/rotcalipers.cpp.o
@@ -1385,7 +1375,7 @@ src/rotcalipers.o: src/rotcalipers.cpp.o
 
 # target to build an object file
 src/rotcalipers.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o
 .PHONY : src/rotcalipers.cpp.o
 
 src/rotcalipers.i: src/rotcalipers.cpp.i
@@ -1393,7 +1383,7 @@ src/rotcalipers.i: src/rotcalipers.cpp.i
 
 # target to preprocess a source file
 src/rotcalipers.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.i
 .PHONY : src/rotcalipers.cpp.i
 
 src/rotcalipers.s: src/rotcalipers.cpp.s
@@ -1401,7 +1391,7 @@ src/rotcalipers.s: src/rotcalipers.cpp.s
 
 # target to generate assembly for a file
 src/rotcalipers.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.s
 .PHONY : src/rotcalipers.cpp.s
 
 src/samplers.o: src/samplers.cpp.o
@@ -1409,7 +1399,7 @@ src/samplers.o: src/samplers.cpp.o
 
 # target to build an object file
 src/samplers.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o
 .PHONY : src/samplers.cpp.o
 
 src/samplers.i: src/samplers.cpp.i
@@ -1417,7 +1407,7 @@ src/samplers.i: src/samplers.cpp.i
 
 # target to preprocess a source file
 src/samplers.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.i
 .PHONY : src/samplers.cpp.i
 
 src/samplers.s: src/samplers.cpp.s
@@ -1425,7 +1415,7 @@ src/samplers.s: src/samplers.cpp.s
 
 # target to generate assembly for a file
 src/samplers.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.s
 .PHONY : src/samplers.cpp.s
 
 src/segmentation.o: src/segmentation.cpp.o
@@ -1433,7 +1423,7 @@ src/segmentation.o: src/segmentation.cpp.o
 
 # target to build an object file
 src/segmentation.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o
 .PHONY : src/segmentation.cpp.o
 
 src/segmentation.i: src/segmentation.cpp.i
@@ -1441,7 +1431,7 @@ src/segmentation.i: src/segmentation.cpp.i
 
 # target to preprocess a source file
 src/segmentation.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.i
 .PHONY : src/segmentation.cpp.i
 
 src/segmentation.s: src/segmentation.cpp.s
@@ -1449,7 +1439,7 @@ src/segmentation.s: src/segmentation.cpp.s
 
 # target to generate assembly for a file
 src/segmentation.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.s
 .PHONY : src/segmentation.cpp.s
 
 src/shapedescr.o: src/shapedescr.cpp.o
@@ -1457,7 +1447,7 @@ src/shapedescr.o: src/shapedescr.cpp.o
 
 # target to build an object file
 src/shapedescr.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o
 .PHONY : src/shapedescr.cpp.o
 
 src/shapedescr.i: src/shapedescr.cpp.i
@@ -1465,7 +1455,7 @@ src/shapedescr.i: src/shapedescr.cpp.i
 
 # target to preprocess a source file
 src/shapedescr.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.i
 .PHONY : src/shapedescr.cpp.i
 
 src/shapedescr.s: src/shapedescr.cpp.s
@@ -1473,7 +1463,7 @@ src/shapedescr.s: src/shapedescr.cpp.s
 
 # target to generate assembly for a file
 src/shapedescr.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.s
 .PHONY : src/shapedescr.cpp.s
 
 src/smooth.o: src/smooth.cpp.o
@@ -1481,7 +1471,7 @@ src/smooth.o: src/smooth.cpp.o
 
 # target to build an object file
 src/smooth.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o
 .PHONY : src/smooth.cpp.o
 
 src/smooth.i: src/smooth.cpp.i
@@ -1489,7 +1479,7 @@ src/smooth.i: src/smooth.cpp.i
 
 # target to preprocess a source file
 src/smooth.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.i
 .PHONY : src/smooth.cpp.i
 
 src/smooth.s: src/smooth.cpp.s
@@ -1497,7 +1487,7 @@ src/smooth.s: src/smooth.cpp.s
 
 # target to generate assembly for a file
 src/smooth.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.s
 .PHONY : src/smooth.cpp.s
 
 src/subdivision2d.o: src/subdivision2d.cpp.o
@@ -1505,7 +1495,7 @@ src/subdivision2d.o: src/subdivision2d.cpp.o
 
 # target to build an object file
 src/subdivision2d.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o
 .PHONY : src/subdivision2d.cpp.o
 
 src/subdivision2d.i: src/subdivision2d.cpp.i
@@ -1513,7 +1503,7 @@ src/subdivision2d.i: src/subdivision2d.cpp.i
 
 # target to preprocess a source file
 src/subdivision2d.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.i
 .PHONY : src/subdivision2d.cpp.i
 
 src/subdivision2d.s: src/subdivision2d.cpp.s
@@ -1521,7 +1511,7 @@ src/subdivision2d.s: src/subdivision2d.cpp.s
 
 # target to generate assembly for a file
 src/subdivision2d.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.s
 .PHONY : src/subdivision2d.cpp.s
 
 src/sumpixels.o: src/sumpixels.cpp.o
@@ -1529,7 +1519,7 @@ src/sumpixels.o: src/sumpixels.cpp.o
 
 # target to build an object file
 src/sumpixels.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o
 .PHONY : src/sumpixels.cpp.o
 
 src/sumpixels.i: src/sumpixels.cpp.i
@@ -1537,7 +1527,7 @@ src/sumpixels.i: src/sumpixels.cpp.i
 
 # target to preprocess a source file
 src/sumpixels.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.i
 .PHONY : src/sumpixels.cpp.i
 
 src/sumpixels.s: src/sumpixels.cpp.s
@@ -1545,7 +1535,7 @@ src/sumpixels.s: src/sumpixels.cpp.s
 
 # target to generate assembly for a file
 src/sumpixels.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.s
 .PHONY : src/sumpixels.cpp.s
 
 src/tables.o: src/tables.cpp.o
@@ -1553,7 +1543,7 @@ src/tables.o: src/tables.cpp.o
 
 # target to build an object file
 src/tables.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o
 .PHONY : src/tables.cpp.o
 
 src/tables.i: src/tables.cpp.i
@@ -1561,7 +1551,7 @@ src/tables.i: src/tables.cpp.i
 
 # target to preprocess a source file
 src/tables.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.i
 .PHONY : src/tables.cpp.i
 
 src/tables.s: src/tables.cpp.s
@@ -1569,7 +1559,7 @@ src/tables.s: src/tables.cpp.s
 
 # target to generate assembly for a file
 src/tables.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.s
 .PHONY : src/tables.cpp.s
 
 src/templmatch.o: src/templmatch.cpp.o
@@ -1577,7 +1567,7 @@ src/templmatch.o: src/templmatch.cpp.o
 
 # target to build an object file
 src/templmatch.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o
 .PHONY : src/templmatch.cpp.o
 
 src/templmatch.i: src/templmatch.cpp.i
@@ -1585,7 +1575,7 @@ src/templmatch.i: src/templmatch.cpp.i
 
 # target to preprocess a source file
 src/templmatch.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.i
 .PHONY : src/templmatch.cpp.i
 
 src/templmatch.s: src/templmatch.cpp.s
@@ -1593,7 +1583,7 @@ src/templmatch.s: src/templmatch.cpp.s
 
 # target to generate assembly for a file
 src/templmatch.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.s
 .PHONY : src/templmatch.cpp.s
 
 src/thresh.o: src/thresh.cpp.o
@@ -1601,7 +1591,7 @@ src/thresh.o: src/thresh.cpp.o
 
 # target to build an object file
 src/thresh.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o
 .PHONY : src/thresh.cpp.o
 
 src/thresh.i: src/thresh.cpp.i
@@ -1609,7 +1599,7 @@ src/thresh.i: src/thresh.cpp.i
 
 # target to preprocess a source file
 src/thresh.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.i
 .PHONY : src/thresh.cpp.i
 
 src/thresh.s: src/thresh.cpp.s
@@ -1617,7 +1607,7 @@ src/thresh.s: src/thresh.cpp.s
 
 # target to generate assembly for a file
 src/thresh.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.s
 .PHONY : src/thresh.cpp.s
 
 src/undistort.o: src/undistort.cpp.o
@@ -1625,7 +1615,7 @@ src/undistort.o: src/undistort.cpp.o
 
 # target to build an object file
 src/undistort.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o
 .PHONY : src/undistort.cpp.o
 
 src/undistort.i: src/undistort.cpp.i
@@ -1633,7 +1623,7 @@ src/undistort.i: src/undistort.cpp.i
 
 # target to preprocess a source file
 src/undistort.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.i
 .PHONY : src/undistort.cpp.i
 
 src/undistort.s: src/undistort.cpp.s
@@ -1641,7 +1631,7 @@ src/undistort.s: src/undistort.cpp.s
 
 # target to generate assembly for a file
 src/undistort.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.s
 .PHONY : src/undistort.cpp.s
 
 src/utils.o: src/utils.cpp.o
@@ -1649,7 +1639,7 @@ src/utils.o: src/utils.cpp.o
 
 # target to build an object file
 src/utils.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o
 .PHONY : src/utils.cpp.o
 
 src/utils.i: src/utils.cpp.i
@@ -1657,7 +1647,7 @@ src/utils.i: src/utils.cpp.i
 
 # target to preprocess a source file
 src/utils.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.i
 .PHONY : src/utils.cpp.i
 
 src/utils.s: src/utils.cpp.s
@@ -1665,7 +1655,7 @@ src/utils.s: src/utils.cpp.s
 
 # target to generate assembly for a file
 src/utils.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.s
 .PHONY : src/utils.cpp.s
 
 test/test_approxpoly.o: test/test_approxpoly.cpp.o
@@ -1673,7 +1663,7 @@ test/test_approxpoly.o: test/test_approxpoly.cpp.o
 
 # target to build an object file
 test/test_approxpoly.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.o
 .PHONY : test/test_approxpoly.cpp.o
 
 test/test_approxpoly.i: test/test_approxpoly.cpp.i
@@ -1681,7 +1671,7 @@ test/test_approxpoly.i: test/test_approxpoly.cpp.i
 
 # target to preprocess a source file
 test/test_approxpoly.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.i
 .PHONY : test/test_approxpoly.cpp.i
 
 test/test_approxpoly.s: test/test_approxpoly.cpp.s
@@ -1689,7 +1679,7 @@ test/test_approxpoly.s: test/test_approxpoly.cpp.s
 
 # target to generate assembly for a file
 test/test_approxpoly.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.s
 .PHONY : test/test_approxpoly.cpp.s
 
 test/test_bilateral_filter.o: test/test_bilateral_filter.cpp.o
@@ -1697,7 +1687,7 @@ test/test_bilateral_filter.o: test/test_bilateral_filter.cpp.o
 
 # target to build an object file
 test/test_bilateral_filter.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_bilateral_filter.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_bilateral_filter.cpp.o
 .PHONY : test/test_bilateral_filter.cpp.o
 
 test/test_bilateral_filter.i: test/test_bilateral_filter.cpp.i
@@ -1705,7 +1695,7 @@ test/test_bilateral_filter.i: test/test_bilateral_filter.cpp.i
 
 # target to preprocess a source file
 test/test_bilateral_filter.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_bilateral_filter.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_bilateral_filter.cpp.i
 .PHONY : test/test_bilateral_filter.cpp.i
 
 test/test_bilateral_filter.s: test/test_bilateral_filter.cpp.s
@@ -1713,7 +1703,7 @@ test/test_bilateral_filter.s: test/test_bilateral_filter.cpp.s
 
 # target to generate assembly for a file
 test/test_bilateral_filter.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_bilateral_filter.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_bilateral_filter.cpp.s
 .PHONY : test/test_bilateral_filter.cpp.s
 
 test/test_boundingrect.o: test/test_boundingrect.cpp.o
@@ -1721,7 +1711,7 @@ test/test_boundingrect.o: test/test_boundingrect.cpp.o
 
 # target to build an object file
 test/test_boundingrect.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_boundingrect.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_boundingrect.cpp.o
 .PHONY : test/test_boundingrect.cpp.o
 
 test/test_boundingrect.i: test/test_boundingrect.cpp.i
@@ -1729,7 +1719,7 @@ test/test_boundingrect.i: test/test_boundingrect.cpp.i
 
 # target to preprocess a source file
 test/test_boundingrect.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_boundingrect.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_boundingrect.cpp.i
 .PHONY : test/test_boundingrect.cpp.i
 
 test/test_boundingrect.s: test/test_boundingrect.cpp.s
@@ -1737,7 +1727,7 @@ test/test_boundingrect.s: test/test_boundingrect.cpp.s
 
 # target to generate assembly for a file
 test/test_boundingrect.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_boundingrect.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_boundingrect.cpp.s
 .PHONY : test/test_boundingrect.cpp.s
 
 test/test_canny.o: test/test_canny.cpp.o
@@ -1745,7 +1735,7 @@ test/test_canny.o: test/test_canny.cpp.o
 
 # target to build an object file
 test/test_canny.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_canny.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_canny.cpp.o
 .PHONY : test/test_canny.cpp.o
 
 test/test_canny.i: test/test_canny.cpp.i
@@ -1753,7 +1743,7 @@ test/test_canny.i: test/test_canny.cpp.i
 
 # target to preprocess a source file
 test/test_canny.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_canny.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_canny.cpp.i
 .PHONY : test/test_canny.cpp.i
 
 test/test_canny.s: test/test_canny.cpp.s
@@ -1761,7 +1751,7 @@ test/test_canny.s: test/test_canny.cpp.s
 
 # target to generate assembly for a file
 test/test_canny.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_canny.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_canny.cpp.s
 .PHONY : test/test_canny.cpp.s
 
 test/test_color.o: test/test_color.cpp.o
@@ -1769,7 +1759,7 @@ test/test_color.o: test/test_color.cpp.o
 
 # target to build an object file
 test/test_color.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_color.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_color.cpp.o
 .PHONY : test/test_color.cpp.o
 
 test/test_color.i: test/test_color.cpp.i
@@ -1777,7 +1767,7 @@ test/test_color.i: test/test_color.cpp.i
 
 # target to preprocess a source file
 test/test_color.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_color.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_color.cpp.i
 .PHONY : test/test_color.cpp.i
 
 test/test_color.s: test/test_color.cpp.s
@@ -1785,7 +1775,7 @@ test/test_color.s: test/test_color.cpp.s
 
 # target to generate assembly for a file
 test/test_color.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_color.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_color.cpp.s
 .PHONY : test/test_color.cpp.s
 
 test/test_contours.o: test/test_contours.cpp.o
@@ -1793,7 +1783,7 @@ test/test_contours.o: test/test_contours.cpp.o
 
 # target to build an object file
 test/test_contours.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_contours.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_contours.cpp.o
 .PHONY : test/test_contours.cpp.o
 
 test/test_contours.i: test/test_contours.cpp.i
@@ -1801,7 +1791,7 @@ test/test_contours.i: test/test_contours.cpp.i
 
 # target to preprocess a source file
 test/test_contours.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_contours.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_contours.cpp.i
 .PHONY : test/test_contours.cpp.i
 
 test/test_contours.s: test/test_contours.cpp.s
@@ -1809,7 +1799,7 @@ test/test_contours.s: test/test_contours.cpp.s
 
 # target to generate assembly for a file
 test/test_contours.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_contours.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_contours.cpp.s
 .PHONY : test/test_contours.cpp.s
 
 test/test_convhull.o: test/test_convhull.cpp.o
@@ -1817,7 +1807,7 @@ test/test_convhull.o: test/test_convhull.cpp.o
 
 # target to build an object file
 test/test_convhull.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_convhull.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_convhull.cpp.o
 .PHONY : test/test_convhull.cpp.o
 
 test/test_convhull.i: test/test_convhull.cpp.i
@@ -1825,7 +1815,7 @@ test/test_convhull.i: test/test_convhull.cpp.i
 
 # target to preprocess a source file
 test/test_convhull.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_convhull.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_convhull.cpp.i
 .PHONY : test/test_convhull.cpp.i
 
 test/test_convhull.s: test/test_convhull.cpp.s
@@ -1833,7 +1823,7 @@ test/test_convhull.s: test/test_convhull.cpp.s
 
 # target to generate assembly for a file
 test/test_convhull.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_convhull.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_convhull.cpp.s
 .PHONY : test/test_convhull.cpp.s
 
 test/test_cvtyuv.o: test/test_cvtyuv.cpp.o
@@ -1841,7 +1831,7 @@ test/test_cvtyuv.o: test/test_cvtyuv.cpp.o
 
 # target to build an object file
 test/test_cvtyuv.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_cvtyuv.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_cvtyuv.cpp.o
 .PHONY : test/test_cvtyuv.cpp.o
 
 test/test_cvtyuv.i: test/test_cvtyuv.cpp.i
@@ -1849,7 +1839,7 @@ test/test_cvtyuv.i: test/test_cvtyuv.cpp.i
 
 # target to preprocess a source file
 test/test_cvtyuv.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_cvtyuv.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_cvtyuv.cpp.i
 .PHONY : test/test_cvtyuv.cpp.i
 
 test/test_cvtyuv.s: test/test_cvtyuv.cpp.s
@@ -1857,7 +1847,7 @@ test/test_cvtyuv.s: test/test_cvtyuv.cpp.s
 
 # target to generate assembly for a file
 test/test_cvtyuv.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_cvtyuv.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_cvtyuv.cpp.s
 .PHONY : test/test_cvtyuv.cpp.s
 
 test/test_distancetransform.o: test/test_distancetransform.cpp.o
@@ -1865,7 +1855,7 @@ test/test_distancetransform.o: test/test_distancetransform.cpp.o
 
 # target to build an object file
 test/test_distancetransform.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_distancetransform.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_distancetransform.cpp.o
 .PHONY : test/test_distancetransform.cpp.o
 
 test/test_distancetransform.i: test/test_distancetransform.cpp.i
@@ -1873,7 +1863,7 @@ test/test_distancetransform.i: test/test_distancetransform.cpp.i
 
 # target to preprocess a source file
 test/test_distancetransform.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_distancetransform.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_distancetransform.cpp.i
 .PHONY : test/test_distancetransform.cpp.i
 
 test/test_distancetransform.s: test/test_distancetransform.cpp.s
@@ -1881,7 +1871,7 @@ test/test_distancetransform.s: test/test_distancetransform.cpp.s
 
 # target to generate assembly for a file
 test/test_distancetransform.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_distancetransform.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_distancetransform.cpp.s
 .PHONY : test/test_distancetransform.cpp.s
 
 test/test_emd.o: test/test_emd.cpp.o
@@ -1889,7 +1879,7 @@ test/test_emd.o: test/test_emd.cpp.o
 
 # target to build an object file
 test/test_emd.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_emd.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_emd.cpp.o
 .PHONY : test/test_emd.cpp.o
 
 test/test_emd.i: test/test_emd.cpp.i
@@ -1897,7 +1887,7 @@ test/test_emd.i: test/test_emd.cpp.i
 
 # target to preprocess a source file
 test/test_emd.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_emd.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_emd.cpp.i
 .PHONY : test/test_emd.cpp.i
 
 test/test_emd.s: test/test_emd.cpp.s
@@ -1905,7 +1895,7 @@ test/test_emd.s: test/test_emd.cpp.s
 
 # target to generate assembly for a file
 test/test_emd.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_emd.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_emd.cpp.s
 .PHONY : test/test_emd.cpp.s
 
 test/test_filter.o: test/test_filter.cpp.o
@@ -1913,7 +1903,7 @@ test/test_filter.o: test/test_filter.cpp.o
 
 # target to build an object file
 test/test_filter.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_filter.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_filter.cpp.o
 .PHONY : test/test_filter.cpp.o
 
 test/test_filter.i: test/test_filter.cpp.i
@@ -1921,7 +1911,7 @@ test/test_filter.i: test/test_filter.cpp.i
 
 # target to preprocess a source file
 test/test_filter.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_filter.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_filter.cpp.i
 .PHONY : test/test_filter.cpp.i
 
 test/test_filter.s: test/test_filter.cpp.s
@@ -1929,7 +1919,7 @@ test/test_filter.s: test/test_filter.cpp.s
 
 # target to generate assembly for a file
 test/test_filter.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_filter.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_filter.cpp.s
 .PHONY : test/test_filter.cpp.s
 
 test/test_floodfill.o: test/test_floodfill.cpp.o
@@ -1937,7 +1927,7 @@ test/test_floodfill.o: test/test_floodfill.cpp.o
 
 # target to build an object file
 test/test_floodfill.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_floodfill.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_floodfill.cpp.o
 .PHONY : test/test_floodfill.cpp.o
 
 test/test_floodfill.i: test/test_floodfill.cpp.i
@@ -1945,7 +1935,7 @@ test/test_floodfill.i: test/test_floodfill.cpp.i
 
 # target to preprocess a source file
 test/test_floodfill.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_floodfill.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_floodfill.cpp.i
 .PHONY : test/test_floodfill.cpp.i
 
 test/test_floodfill.s: test/test_floodfill.cpp.s
@@ -1953,7 +1943,7 @@ test/test_floodfill.s: test/test_floodfill.cpp.s
 
 # target to generate assembly for a file
 test/test_floodfill.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_floodfill.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_floodfill.cpp.s
 .PHONY : test/test_floodfill.cpp.s
 
 test/test_grabcut.o: test/test_grabcut.cpp.o
@@ -1961,7 +1951,7 @@ test/test_grabcut.o: test/test_grabcut.cpp.o
 
 # target to build an object file
 test/test_grabcut.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_grabcut.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_grabcut.cpp.o
 .PHONY : test/test_grabcut.cpp.o
 
 test/test_grabcut.i: test/test_grabcut.cpp.i
@@ -1969,7 +1959,7 @@ test/test_grabcut.i: test/test_grabcut.cpp.i
 
 # target to preprocess a source file
 test/test_grabcut.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_grabcut.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_grabcut.cpp.i
 .PHONY : test/test_grabcut.cpp.i
 
 test/test_grabcut.s: test/test_grabcut.cpp.s
@@ -1977,7 +1967,7 @@ test/test_grabcut.s: test/test_grabcut.cpp.s
 
 # target to generate assembly for a file
 test/test_grabcut.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_grabcut.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_grabcut.cpp.s
 .PHONY : test/test_grabcut.cpp.s
 
 test/test_histograms.o: test/test_histograms.cpp.o
@@ -1985,7 +1975,7 @@ test/test_histograms.o: test/test_histograms.cpp.o
 
 # target to build an object file
 test/test_histograms.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_histograms.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_histograms.cpp.o
 .PHONY : test/test_histograms.cpp.o
 
 test/test_histograms.i: test/test_histograms.cpp.i
@@ -1993,7 +1983,7 @@ test/test_histograms.i: test/test_histograms.cpp.i
 
 # target to preprocess a source file
 test/test_histograms.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_histograms.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_histograms.cpp.i
 .PHONY : test/test_histograms.cpp.i
 
 test/test_histograms.s: test/test_histograms.cpp.s
@@ -2001,7 +1991,7 @@ test/test_histograms.s: test/test_histograms.cpp.s
 
 # target to generate assembly for a file
 test/test_histograms.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_histograms.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_histograms.cpp.s
 .PHONY : test/test_histograms.cpp.s
 
 test/test_houghLines.o: test/test_houghLines.cpp.o
@@ -2009,7 +1999,7 @@ test/test_houghLines.o: test/test_houghLines.cpp.o
 
 # target to build an object file
 test/test_houghLines.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_houghLines.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_houghLines.cpp.o
 .PHONY : test/test_houghLines.cpp.o
 
 test/test_houghLines.i: test/test_houghLines.cpp.i
@@ -2017,7 +2007,7 @@ test/test_houghLines.i: test/test_houghLines.cpp.i
 
 # target to preprocess a source file
 test/test_houghLines.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_houghLines.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_houghLines.cpp.i
 .PHONY : test/test_houghLines.cpp.i
 
 test/test_houghLines.s: test/test_houghLines.cpp.s
@@ -2025,7 +2015,7 @@ test/test_houghLines.s: test/test_houghLines.cpp.s
 
 # target to generate assembly for a file
 test/test_houghLines.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_houghLines.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_houghLines.cpp.s
 .PHONY : test/test_houghLines.cpp.s
 
 test/test_imgwarp.o: test/test_imgwarp.cpp.o
@@ -2033,7 +2023,7 @@ test/test_imgwarp.o: test/test_imgwarp.cpp.o
 
 # target to build an object file
 test/test_imgwarp.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp.cpp.o
 .PHONY : test/test_imgwarp.cpp.o
 
 test/test_imgwarp.i: test/test_imgwarp.cpp.i
@@ -2041,7 +2031,7 @@ test/test_imgwarp.i: test/test_imgwarp.cpp.i
 
 # target to preprocess a source file
 test/test_imgwarp.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp.cpp.i
 .PHONY : test/test_imgwarp.cpp.i
 
 test/test_imgwarp.s: test/test_imgwarp.cpp.s
@@ -2049,7 +2039,7 @@ test/test_imgwarp.s: test/test_imgwarp.cpp.s
 
 # target to generate assembly for a file
 test/test_imgwarp.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp.cpp.s
 .PHONY : test/test_imgwarp.cpp.s
 
 test/test_imgwarp_strict.o: test/test_imgwarp_strict.cpp.o
@@ -2057,7 +2047,7 @@ test/test_imgwarp_strict.o: test/test_imgwarp_strict.cpp.o
 
 # target to build an object file
 test/test_imgwarp_strict.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp_strict.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp_strict.cpp.o
 .PHONY : test/test_imgwarp_strict.cpp.o
 
 test/test_imgwarp_strict.i: test/test_imgwarp_strict.cpp.i
@@ -2065,7 +2055,7 @@ test/test_imgwarp_strict.i: test/test_imgwarp_strict.cpp.i
 
 # target to preprocess a source file
 test/test_imgwarp_strict.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp_strict.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp_strict.cpp.i
 .PHONY : test/test_imgwarp_strict.cpp.i
 
 test/test_imgwarp_strict.s: test/test_imgwarp_strict.cpp.s
@@ -2073,7 +2063,7 @@ test/test_imgwarp_strict.s: test/test_imgwarp_strict.cpp.s
 
 # target to generate assembly for a file
 test/test_imgwarp_strict.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp_strict.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp_strict.cpp.s
 .PHONY : test/test_imgwarp_strict.cpp.s
 
 test/test_main.o: test/test_main.cpp.o
@@ -2081,7 +2071,7 @@ test/test_main.o: test/test_main.cpp.o
 
 # target to build an object file
 test/test_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_main.cpp.o
 .PHONY : test/test_main.cpp.o
 
 test/test_main.i: test/test_main.cpp.i
@@ -2089,7 +2079,7 @@ test/test_main.i: test/test_main.cpp.i
 
 # target to preprocess a source file
 test/test_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_main.cpp.i
 .PHONY : test/test_main.cpp.i
 
 test/test_main.s: test/test_main.cpp.s
@@ -2097,7 +2087,7 @@ test/test_main.s: test/test_main.cpp.s
 
 # target to generate assembly for a file
 test/test_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_main.cpp.s
 .PHONY : test/test_main.cpp.s
 
 test/test_moments.o: test/test_moments.cpp.o
@@ -2105,7 +2095,7 @@ test/test_moments.o: test/test_moments.cpp.o
 
 # target to build an object file
 test/test_moments.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_moments.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_moments.cpp.o
 .PHONY : test/test_moments.cpp.o
 
 test/test_moments.i: test/test_moments.cpp.i
@@ -2113,7 +2103,7 @@ test/test_moments.i: test/test_moments.cpp.i
 
 # target to preprocess a source file
 test/test_moments.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_moments.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_moments.cpp.i
 .PHONY : test/test_moments.cpp.i
 
 test/test_moments.s: test/test_moments.cpp.s
@@ -2121,7 +2111,7 @@ test/test_moments.s: test/test_moments.cpp.s
 
 # target to generate assembly for a file
 test/test_moments.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_moments.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_moments.cpp.s
 .PHONY : test/test_moments.cpp.s
 
 test/test_pc.o: test/test_pc.cpp.o
@@ -2129,7 +2119,7 @@ test/test_pc.o: test/test_pc.cpp.o
 
 # target to build an object file
 test/test_pc.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_pc.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_pc.cpp.o
 .PHONY : test/test_pc.cpp.o
 
 test/test_pc.i: test/test_pc.cpp.i
@@ -2137,7 +2127,7 @@ test/test_pc.i: test/test_pc.cpp.i
 
 # target to preprocess a source file
 test/test_pc.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_pc.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_pc.cpp.i
 .PHONY : test/test_pc.cpp.i
 
 test/test_pc.s: test/test_pc.cpp.s
@@ -2145,7 +2135,7 @@ test/test_pc.s: test/test_pc.cpp.s
 
 # target to generate assembly for a file
 test/test_pc.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_pc.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_pc.cpp.s
 .PHONY : test/test_pc.cpp.s
 
 test/test_templmatch.o: test/test_templmatch.cpp.o
@@ -2153,7 +2143,7 @@ test/test_templmatch.o: test/test_templmatch.cpp.o
 
 # target to build an object file
 test/test_templmatch.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_templmatch.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_templmatch.cpp.o
 .PHONY : test/test_templmatch.cpp.o
 
 test/test_templmatch.i: test/test_templmatch.cpp.i
@@ -2161,7 +2151,7 @@ test/test_templmatch.i: test/test_templmatch.cpp.i
 
 # target to preprocess a source file
 test/test_templmatch.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_templmatch.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_templmatch.cpp.i
 .PHONY : test/test_templmatch.cpp.i
 
 test/test_templmatch.s: test/test_templmatch.cpp.s
@@ -2169,7 +2159,7 @@ test/test_templmatch.s: test/test_templmatch.cpp.s
 
 # target to generate assembly for a file
 test/test_templmatch.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_templmatch.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_templmatch.cpp.s
 .PHONY : test/test_templmatch.cpp.s
 
 test/test_thresh.o: test/test_thresh.cpp.o
@@ -2177,7 +2167,7 @@ test/test_thresh.o: test/test_thresh.cpp.o
 
 # target to build an object file
 test/test_thresh.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_thresh.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_thresh.cpp.o
 .PHONY : test/test_thresh.cpp.o
 
 test/test_thresh.i: test/test_thresh.cpp.i
@@ -2185,7 +2175,7 @@ test/test_thresh.i: test/test_thresh.cpp.i
 
 # target to preprocess a source file
 test/test_thresh.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_thresh.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_thresh.cpp.i
 .PHONY : test/test_thresh.cpp.i
 
 test/test_thresh.s: test/test_thresh.cpp.s
@@ -2193,7 +2183,7 @@ test/test_thresh.s: test/test_thresh.cpp.s
 
 # target to generate assembly for a file
 test/test_thresh.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_thresh.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_thresh.cpp.s
 .PHONY : test/test_thresh.cpp.s
 
 test/test_watershed.o: test/test_watershed.cpp.o
@@ -2201,7 +2191,7 @@ test/test_watershed.o: test/test_watershed.cpp.o
 
 # target to build an object file
 test/test_watershed.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_watershed.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_watershed.cpp.o
 .PHONY : test/test_watershed.cpp.o
 
 test/test_watershed.i: test/test_watershed.cpp.i
@@ -2209,7 +2199,7 @@ test/test_watershed.i: test/test_watershed.cpp.i
 
 # target to preprocess a source file
 test/test_watershed.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_watershed.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_watershed.cpp.i
 .PHONY : test/test_watershed.cpp.i
 
 test/test_watershed.s: test/test_watershed.cpp.s
@@ -2217,7 +2207,7 @@ test/test_watershed.s: test/test_watershed.cpp.s
 
 # target to generate assembly for a file
 test/test_watershed.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_watershed.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_watershed.cpp.s
 .PHONY : test/test_watershed.cpp.s
 
 # Help Target
@@ -2229,7 +2219,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_imgproc"
 	@echo "... opencv_perf_imgproc"
@@ -2500,6 +2489,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

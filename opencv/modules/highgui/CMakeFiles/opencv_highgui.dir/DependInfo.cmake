@@ -4,25 +4,25 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/bitstrm.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap_ffmpeg.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap_images.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap_qtkit.mm" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_base.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_bmp.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_exr.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_imageio.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_jpeg.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_jpeg2000.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_png.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_pxm.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_sunras.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_tiff.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/loadsave.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/utils.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/utils.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/window.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/window_cocoa.mm" "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/bitstrm.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap_ffmpeg.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap_images.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap_qtkit.mm" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_base.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_bmp.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_exr.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_imageio.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_jpeg.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_jpeg2000.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_png.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_pxm.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_sunras.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_tiff.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/loadsave.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/utils.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/utils.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/window.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/src/window_cocoa.mm" "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "Clang")
 
@@ -33,21 +33,21 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Pairs of files generated by the same build rule.
 SET(CMAKE_MULTIPLE_OUTPUT_PAIRS
-  "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_highgui.2.4.dylib" "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_highgui.2.4.9.dylib"
-  "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_highgui.dylib" "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_highgui.2.4.9.dylib"
+  "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_highgui.2.4.dylib" "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_highgui.2.4.9.dylib"
+  "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_highgui.dylib" "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_highgui.2.4.9.dylib"
   )
 
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/core/CMakeFiles/opencv_core.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/CMakeFiles/opencv_imgproc.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/zlib/CMakeFiles/zlib.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libjpeg/CMakeFiles/libjpeg.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libpng/CMakeFiles/libpng.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/CMakeFiles/libtiff.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libjasper/CMakeFiles/libjasper.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/openexr/CMakeFiles/IlmImf.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/modules/core/CMakeFiles/opencv_core.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/modules/imgproc/CMakeFiles/opencv_imgproc.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/3rdparty/zlib/CMakeFiles/zlib.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/3rdparty/libjpeg/CMakeFiles/libjpeg.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/3rdparty/libpng/CMakeFiles/libpng.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/CMakeFiles/libtiff.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/3rdparty/libjasper/CMakeFiles/libjasper.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/3rdparty/openexr/CMakeFiles/IlmImf.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

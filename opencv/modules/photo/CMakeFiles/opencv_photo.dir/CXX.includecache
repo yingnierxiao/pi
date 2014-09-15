@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/arrays.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/arrays.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/denoising.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/denoising.cpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/precomp.hpp
 opencv2/photo/photo.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/opencv2/photo/photo.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/opencv2/photo/photo.hpp
 opencv2/imgproc/imgproc.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/opencv2/imgproc/imgproc.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/opencv2/imgproc/imgproc.hpp
 fast_nlmeans_denoising_invoker.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/fast_nlmeans_denoising_invoker.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/fast_nlmeans_denoising_invoker.hpp
 fast_nlmeans_multi_denoising_invoker.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/fast_nlmeans_multi_denoising_invoker.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/fast_nlmeans_multi_denoising_invoker.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/fast_nlmeans_denoising_invoker.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/fast_nlmeans_denoising_invoker.hpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/precomp.hpp
 opencv2/core/core.hpp
 -
 opencv2/core/internal.hpp
@@ -32,11 +32,11 @@ opencv2/imgproc/imgproc.hpp
 limits
 -
 fast_nlmeans_denoising_invoker_commons.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/fast_nlmeans_denoising_invoker_commons.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/fast_nlmeans_denoising_invoker_commons.hpp
 arrays.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/arrays.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/arrays.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/fast_nlmeans_denoising_invoker_commons.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/fast_nlmeans_denoising_invoker_commons.hpp
 opencv2/core/core.hpp
 -
 opencv2/core/internal.hpp
@@ -44,9 +44,9 @@ opencv2/core/internal.hpp
 opencv2/imgproc/imgproc.hpp
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/fast_nlmeans_multi_denoising_invoker.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/fast_nlmeans_multi_denoising_invoker.hpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/precomp.hpp
 opencv2/core/core.hpp
 -
 opencv2/core/internal.hpp
@@ -56,23 +56,23 @@ opencv2/imgproc/imgproc.hpp
 limits
 -
 fast_nlmeans_denoising_invoker_commons.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/fast_nlmeans_denoising_invoker_commons.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/fast_nlmeans_denoising_invoker_commons.hpp
 arrays.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/arrays.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/arrays.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/inpaint.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/inpaint.cpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/precomp.hpp
 opencv2/imgproc/imgproc_c.h
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/opencv2/imgproc/imgproc_c.h
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/opencv2/imgproc/imgproc_c.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/precomp.hpp
 cvconfig.h
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/cvconfig.h
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/cvconfig.h
 opencv2/photo/photo.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/opencv2/photo/photo.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/opencv2/photo/photo.hpp
 opencv2/photo/photo_tegra.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/src/opencv2/photo/photo_tegra.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/src/opencv2/photo/photo_tegra.hpp
 
 cvconfig.h
 

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc
+# Install script for directory: /Users/zj/Desktop/code/pi/opencv/modules/imgproc
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,9 +29,9 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libs")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_imgproc.2.4.9.dylib"
-    "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_imgproc.2.4.dylib"
-    "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_imgproc.dylib"
+    "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_imgproc.2.4.9.dylib"
+    "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_imgproc.2.4.dylib"
+    "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_imgproc.dylib"
     )
   FOREACH(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopencv_imgproc.2.4.9.dylib"
@@ -42,27 +42,24 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libs")
        NOT IS_SYMLINK "${file}")
       EXECUTE_PROCESS(COMMAND "/usr/bin/install_name_tool"
         -id "lib/libopencv_imgproc.2.4.dylib"
-        -change "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_core.2.4.dylib" "lib/libopencv_core.2.4.dylib"
+        -change "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_core.2.4.dylib" "lib/libopencv_core.2.4.dylib"
         "${file}")
       execute_process(COMMAND /usr/bin/install_name_tool
         -add_rpath "/usr/local/lib"
         "${file}")
-      IF(CMAKE_INSTALL_DO_STRIP)
-        EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "${file}")
-      ENDIF(CMAKE_INSTALL_DO_STRIP)
     ENDIF()
   ENDFOREACH()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libs")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc" TYPE FILE FILES "/Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/include/opencv2/imgproc/imgproc.hpp")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc" TYPE FILE FILES "/Users/zj/Desktop/code/pi/opencv/modules/imgproc/include/opencv2/imgproc/imgproc.hpp")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc" TYPE FILE FILES "/Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/include/opencv2/imgproc/imgproc_c.h")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc" TYPE FILE FILES "/Users/zj/Desktop/code/pi/opencv/modules/imgproc/include/opencv2/imgproc/imgproc_c.h")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc" TYPE FILE FILES "/Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/include/opencv2/imgproc/types_c.h")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc" TYPE FILE FILES "/Users/zj/Desktop/code/pi/opencv/modules/imgproc/include/opencv2/imgproc/types_c.h")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dev")
 

@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/performance.cpp
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/performance.cpp
 opencv2/core/core.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/opencv2/core/core.hpp
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/opencv2/core/core.hpp
 opencv2/core/internal.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/opencv2/core/internal.hpp
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/opencv2/core/internal.hpp
 cv.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cv.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cv.h
 highgui.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/highgui.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/highgui.h
 cstdio
 -
 cmath

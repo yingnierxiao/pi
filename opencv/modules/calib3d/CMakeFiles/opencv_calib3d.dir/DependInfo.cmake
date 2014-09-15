@@ -4,38 +4,38 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/calibinit.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/calibration.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/checkchessboard.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/circlesgrid.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/epnp.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/fundam.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/modelest.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/p3p.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/polynom_solver.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/posit.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/quadsubpix.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/solvepnp.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/stereobm.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/stereosgbm.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/triangulate.cpp" "/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/calibinit.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/calibration.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/checkchessboard.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/circlesgrid.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/epnp.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/fundam.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/modelest.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/p3p.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/polynom_solver.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/posit.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/quadsubpix.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/solvepnp.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/stereobm.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/stereosgbm.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o"
+  "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/triangulate.cpp" "/Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "Clang")
 
 # Pairs of files generated by the same build rule.
 SET(CMAKE_MULTIPLE_OUTPUT_PAIRS
-  "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_calib3d.2.4.dylib" "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_calib3d.2.4.9.dylib"
-  "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_calib3d.dylib" "/Users/zj/Desktop/code/opencv-2.4.9/lib/libopencv_calib3d.2.4.9.dylib"
+  "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_calib3d.2.4.dylib" "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_calib3d.2.4.9.dylib"
+  "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_calib3d.dylib" "/Users/zj/Desktop/code/pi/opencv/lib/libopencv_calib3d.2.4.9.dylib"
   )
 
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/core/CMakeFiles/opencv_core.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/flann/CMakeFiles/opencv_flann.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/CMakeFiles/opencv_imgproc.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/DependInfo.cmake"
-  "/Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/CMakeFiles/opencv_features2d.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/modules/core/CMakeFiles/opencv_core.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/modules/flann/CMakeFiles/opencv_flann.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/modules/imgproc/CMakeFiles/opencv_imgproc.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/DependInfo.cmake"
+  "/Users/zj/Desktop/code/pi/opencv/modules/features2d/CMakeFiles/opencv_features2d.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

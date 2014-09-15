@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/CMakeFiles/opencv_calib3d.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/CMakeFiles/opencv_calib3d.dir/rule
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/rule
 
 # Convenience name for target.
@@ -173,12 +163,12 @@ opencv_calib3d: modules/calib3d/CMakeFiles/opencv_calib3d.dir/rule
 
 # fast build rule for target.
 opencv_calib3d/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/build
 .PHONY : opencv_calib3d/fast
 
 # Convenience name for target.
 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/rule
 .PHONY : modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/rule
 
 # Convenience name for target.
@@ -187,12 +177,12 @@ opencv_perf_calib3d: modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/rule
 
 # fast build rule for target.
 opencv_perf_calib3d/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build
 .PHONY : opencv_perf_calib3d/fast
 
 # Convenience name for target.
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/rule
 .PHONY : modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/rule
 
 # Convenience name for target.
@@ -201,7 +191,7 @@ opencv_test_calib3d: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/rule
 
 # fast build rule for target.
 opencv_test_calib3d/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build
 .PHONY : opencv_test_calib3d/fast
 
 perf/perf_cicrlesGrid.o: perf/perf_cicrlesGrid.cpp.o
@@ -209,7 +199,7 @@ perf/perf_cicrlesGrid.o: perf/perf_cicrlesGrid.cpp.o
 
 # target to build an object file
 perf/perf_cicrlesGrid.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_cicrlesGrid.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_cicrlesGrid.cpp.o
 .PHONY : perf/perf_cicrlesGrid.cpp.o
 
 perf/perf_cicrlesGrid.i: perf/perf_cicrlesGrid.cpp.i
@@ -217,7 +207,7 @@ perf/perf_cicrlesGrid.i: perf/perf_cicrlesGrid.cpp.i
 
 # target to preprocess a source file
 perf/perf_cicrlesGrid.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_cicrlesGrid.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_cicrlesGrid.cpp.i
 .PHONY : perf/perf_cicrlesGrid.cpp.i
 
 perf/perf_cicrlesGrid.s: perf/perf_cicrlesGrid.cpp.s
@@ -225,7 +215,7 @@ perf/perf_cicrlesGrid.s: perf/perf_cicrlesGrid.cpp.s
 
 # target to generate assembly for a file
 perf/perf_cicrlesGrid.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_cicrlesGrid.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_cicrlesGrid.cpp.s
 .PHONY : perf/perf_cicrlesGrid.cpp.s
 
 perf/perf_main.o: perf/perf_main.cpp.o
@@ -233,7 +223,7 @@ perf/perf_main.o: perf/perf_main.cpp.o
 
 # target to build an object file
 perf/perf_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_main.cpp.o
 .PHONY : perf/perf_main.cpp.o
 
 perf/perf_main.i: perf/perf_main.cpp.i
@@ -241,7 +231,7 @@ perf/perf_main.i: perf/perf_main.cpp.i
 
 # target to preprocess a source file
 perf/perf_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_main.cpp.i
 .PHONY : perf/perf_main.cpp.i
 
 perf/perf_main.s: perf/perf_main.cpp.s
@@ -249,7 +239,7 @@ perf/perf_main.s: perf/perf_main.cpp.s
 
 # target to generate assembly for a file
 perf/perf_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_main.cpp.s
 .PHONY : perf/perf_main.cpp.s
 
 perf/perf_pnp.o: perf/perf_pnp.cpp.o
@@ -257,7 +247,7 @@ perf/perf_pnp.o: perf/perf_pnp.cpp.o
 
 # target to build an object file
 perf/perf_pnp.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_pnp.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_pnp.cpp.o
 .PHONY : perf/perf_pnp.cpp.o
 
 perf/perf_pnp.i: perf/perf_pnp.cpp.i
@@ -265,7 +255,7 @@ perf/perf_pnp.i: perf/perf_pnp.cpp.i
 
 # target to preprocess a source file
 perf/perf_pnp.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_pnp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_pnp.cpp.i
 .PHONY : perf/perf_pnp.cpp.i
 
 perf/perf_pnp.s: perf/perf_pnp.cpp.s
@@ -273,7 +263,7 @@ perf/perf_pnp.s: perf/perf_pnp.cpp.s
 
 # target to generate assembly for a file
 perf/perf_pnp.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_pnp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_pnp.cpp.s
 .PHONY : perf/perf_pnp.cpp.s
 
 src/calibinit.o: src/calibinit.cpp.o
@@ -281,7 +271,7 @@ src/calibinit.o: src/calibinit.cpp.o
 
 # target to build an object file
 src/calibinit.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.o
 .PHONY : src/calibinit.cpp.o
 
 src/calibinit.i: src/calibinit.cpp.i
@@ -289,7 +279,7 @@ src/calibinit.i: src/calibinit.cpp.i
 
 # target to preprocess a source file
 src/calibinit.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.i
 .PHONY : src/calibinit.cpp.i
 
 src/calibinit.s: src/calibinit.cpp.s
@@ -297,7 +287,7 @@ src/calibinit.s: src/calibinit.cpp.s
 
 # target to generate assembly for a file
 src/calibinit.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.s
 .PHONY : src/calibinit.cpp.s
 
 src/calibration.o: src/calibration.cpp.o
@@ -305,7 +295,7 @@ src/calibration.o: src/calibration.cpp.o
 
 # target to build an object file
 src/calibration.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.o
 .PHONY : src/calibration.cpp.o
 
 src/calibration.i: src/calibration.cpp.i
@@ -313,7 +303,7 @@ src/calibration.i: src/calibration.cpp.i
 
 # target to preprocess a source file
 src/calibration.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.i
 .PHONY : src/calibration.cpp.i
 
 src/calibration.s: src/calibration.cpp.s
@@ -321,7 +311,7 @@ src/calibration.s: src/calibration.cpp.s
 
 # target to generate assembly for a file
 src/calibration.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.s
 .PHONY : src/calibration.cpp.s
 
 src/checkchessboard.o: src/checkchessboard.cpp.o
@@ -329,7 +319,7 @@ src/checkchessboard.o: src/checkchessboard.cpp.o
 
 # target to build an object file
 src/checkchessboard.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.o
 .PHONY : src/checkchessboard.cpp.o
 
 src/checkchessboard.i: src/checkchessboard.cpp.i
@@ -337,7 +327,7 @@ src/checkchessboard.i: src/checkchessboard.cpp.i
 
 # target to preprocess a source file
 src/checkchessboard.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.i
 .PHONY : src/checkchessboard.cpp.i
 
 src/checkchessboard.s: src/checkchessboard.cpp.s
@@ -345,7 +335,7 @@ src/checkchessboard.s: src/checkchessboard.cpp.s
 
 # target to generate assembly for a file
 src/checkchessboard.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.s
 .PHONY : src/checkchessboard.cpp.s
 
 src/circlesgrid.o: src/circlesgrid.cpp.o
@@ -353,7 +343,7 @@ src/circlesgrid.o: src/circlesgrid.cpp.o
 
 # target to build an object file
 src/circlesgrid.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o
 .PHONY : src/circlesgrid.cpp.o
 
 src/circlesgrid.i: src/circlesgrid.cpp.i
@@ -361,7 +351,7 @@ src/circlesgrid.i: src/circlesgrid.cpp.i
 
 # target to preprocess a source file
 src/circlesgrid.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.i
 .PHONY : src/circlesgrid.cpp.i
 
 src/circlesgrid.s: src/circlesgrid.cpp.s
@@ -369,7 +359,7 @@ src/circlesgrid.s: src/circlesgrid.cpp.s
 
 # target to generate assembly for a file
 src/circlesgrid.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.s
 .PHONY : src/circlesgrid.cpp.s
 
 src/epnp.o: src/epnp.cpp.o
@@ -377,7 +367,7 @@ src/epnp.o: src/epnp.cpp.o
 
 # target to build an object file
 src/epnp.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o
 .PHONY : src/epnp.cpp.o
 
 src/epnp.i: src/epnp.cpp.i
@@ -385,7 +375,7 @@ src/epnp.i: src/epnp.cpp.i
 
 # target to preprocess a source file
 src/epnp.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.i
 .PHONY : src/epnp.cpp.i
 
 src/epnp.s: src/epnp.cpp.s
@@ -393,7 +383,7 @@ src/epnp.s: src/epnp.cpp.s
 
 # target to generate assembly for a file
 src/epnp.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.s
 .PHONY : src/epnp.cpp.s
 
 src/fundam.o: src/fundam.cpp.o
@@ -401,7 +391,7 @@ src/fundam.o: src/fundam.cpp.o
 
 # target to build an object file
 src/fundam.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o
 .PHONY : src/fundam.cpp.o
 
 src/fundam.i: src/fundam.cpp.i
@@ -409,7 +399,7 @@ src/fundam.i: src/fundam.cpp.i
 
 # target to preprocess a source file
 src/fundam.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.i
 .PHONY : src/fundam.cpp.i
 
 src/fundam.s: src/fundam.cpp.s
@@ -417,7 +407,7 @@ src/fundam.s: src/fundam.cpp.s
 
 # target to generate assembly for a file
 src/fundam.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.s
 .PHONY : src/fundam.cpp.s
 
 src/modelest.o: src/modelest.cpp.o
@@ -425,7 +415,7 @@ src/modelest.o: src/modelest.cpp.o
 
 # target to build an object file
 src/modelest.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.o
 .PHONY : src/modelest.cpp.o
 
 src/modelest.i: src/modelest.cpp.i
@@ -433,7 +423,7 @@ src/modelest.i: src/modelest.cpp.i
 
 # target to preprocess a source file
 src/modelest.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.i
 .PHONY : src/modelest.cpp.i
 
 src/modelest.s: src/modelest.cpp.s
@@ -441,7 +431,7 @@ src/modelest.s: src/modelest.cpp.s
 
 # target to generate assembly for a file
 src/modelest.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.s
 .PHONY : src/modelest.cpp.s
 
 src/p3p.o: src/p3p.cpp.o
@@ -449,7 +439,7 @@ src/p3p.o: src/p3p.cpp.o
 
 # target to build an object file
 src/p3p.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o
 .PHONY : src/p3p.cpp.o
 
 src/p3p.i: src/p3p.cpp.i
@@ -457,7 +447,7 @@ src/p3p.i: src/p3p.cpp.i
 
 # target to preprocess a source file
 src/p3p.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.i
 .PHONY : src/p3p.cpp.i
 
 src/p3p.s: src/p3p.cpp.s
@@ -465,7 +455,7 @@ src/p3p.s: src/p3p.cpp.s
 
 # target to generate assembly for a file
 src/p3p.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.s
 .PHONY : src/p3p.cpp.s
 
 src/polynom_solver.o: src/polynom_solver.cpp.o
@@ -473,7 +463,7 @@ src/polynom_solver.o: src/polynom_solver.cpp.o
 
 # target to build an object file
 src/polynom_solver.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o
 .PHONY : src/polynom_solver.cpp.o
 
 src/polynom_solver.i: src/polynom_solver.cpp.i
@@ -481,7 +471,7 @@ src/polynom_solver.i: src/polynom_solver.cpp.i
 
 # target to preprocess a source file
 src/polynom_solver.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.i
 .PHONY : src/polynom_solver.cpp.i
 
 src/polynom_solver.s: src/polynom_solver.cpp.s
@@ -489,7 +479,7 @@ src/polynom_solver.s: src/polynom_solver.cpp.s
 
 # target to generate assembly for a file
 src/polynom_solver.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.s
 .PHONY : src/polynom_solver.cpp.s
 
 src/posit.o: src/posit.cpp.o
@@ -497,7 +487,7 @@ src/posit.o: src/posit.cpp.o
 
 # target to build an object file
 src/posit.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o
 .PHONY : src/posit.cpp.o
 
 src/posit.i: src/posit.cpp.i
@@ -505,7 +495,7 @@ src/posit.i: src/posit.cpp.i
 
 # target to preprocess a source file
 src/posit.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.i
 .PHONY : src/posit.cpp.i
 
 src/posit.s: src/posit.cpp.s
@@ -513,7 +503,7 @@ src/posit.s: src/posit.cpp.s
 
 # target to generate assembly for a file
 src/posit.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.s
 .PHONY : src/posit.cpp.s
 
 src/quadsubpix.o: src/quadsubpix.cpp.o
@@ -521,7 +511,7 @@ src/quadsubpix.o: src/quadsubpix.cpp.o
 
 # target to build an object file
 src/quadsubpix.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o
 .PHONY : src/quadsubpix.cpp.o
 
 src/quadsubpix.i: src/quadsubpix.cpp.i
@@ -529,7 +519,7 @@ src/quadsubpix.i: src/quadsubpix.cpp.i
 
 # target to preprocess a source file
 src/quadsubpix.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.i
 .PHONY : src/quadsubpix.cpp.i
 
 src/quadsubpix.s: src/quadsubpix.cpp.s
@@ -537,7 +527,7 @@ src/quadsubpix.s: src/quadsubpix.cpp.s
 
 # target to generate assembly for a file
 src/quadsubpix.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.s
 .PHONY : src/quadsubpix.cpp.s
 
 src/solvepnp.o: src/solvepnp.cpp.o
@@ -545,7 +535,7 @@ src/solvepnp.o: src/solvepnp.cpp.o
 
 # target to build an object file
 src/solvepnp.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o
 .PHONY : src/solvepnp.cpp.o
 
 src/solvepnp.i: src/solvepnp.cpp.i
@@ -553,7 +543,7 @@ src/solvepnp.i: src/solvepnp.cpp.i
 
 # target to preprocess a source file
 src/solvepnp.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.i
 .PHONY : src/solvepnp.cpp.i
 
 src/solvepnp.s: src/solvepnp.cpp.s
@@ -561,7 +551,7 @@ src/solvepnp.s: src/solvepnp.cpp.s
 
 # target to generate assembly for a file
 src/solvepnp.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.s
 .PHONY : src/solvepnp.cpp.s
 
 src/stereobm.o: src/stereobm.cpp.o
@@ -569,7 +559,7 @@ src/stereobm.o: src/stereobm.cpp.o
 
 # target to build an object file
 src/stereobm.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o
 .PHONY : src/stereobm.cpp.o
 
 src/stereobm.i: src/stereobm.cpp.i
@@ -577,7 +567,7 @@ src/stereobm.i: src/stereobm.cpp.i
 
 # target to preprocess a source file
 src/stereobm.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.i
 .PHONY : src/stereobm.cpp.i
 
 src/stereobm.s: src/stereobm.cpp.s
@@ -585,7 +575,7 @@ src/stereobm.s: src/stereobm.cpp.s
 
 # target to generate assembly for a file
 src/stereobm.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.s
 .PHONY : src/stereobm.cpp.s
 
 src/stereosgbm.o: src/stereosgbm.cpp.o
@@ -593,7 +583,7 @@ src/stereosgbm.o: src/stereosgbm.cpp.o
 
 # target to build an object file
 src/stereosgbm.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o
 .PHONY : src/stereosgbm.cpp.o
 
 src/stereosgbm.i: src/stereosgbm.cpp.i
@@ -601,7 +591,7 @@ src/stereosgbm.i: src/stereosgbm.cpp.i
 
 # target to preprocess a source file
 src/stereosgbm.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.i
 .PHONY : src/stereosgbm.cpp.i
 
 src/stereosgbm.s: src/stereosgbm.cpp.s
@@ -609,7 +599,7 @@ src/stereosgbm.s: src/stereosgbm.cpp.s
 
 # target to generate assembly for a file
 src/stereosgbm.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.s
 .PHONY : src/stereosgbm.cpp.s
 
 src/triangulate.o: src/triangulate.cpp.o
@@ -617,7 +607,7 @@ src/triangulate.o: src/triangulate.cpp.o
 
 # target to build an object file
 src/triangulate.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o
 .PHONY : src/triangulate.cpp.o
 
 src/triangulate.i: src/triangulate.cpp.i
@@ -625,7 +615,7 @@ src/triangulate.i: src/triangulate.cpp.i
 
 # target to preprocess a source file
 src/triangulate.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.i
 .PHONY : src/triangulate.cpp.i
 
 src/triangulate.s: src/triangulate.cpp.s
@@ -633,7 +623,7 @@ src/triangulate.s: src/triangulate.cpp.s
 
 # target to generate assembly for a file
 src/triangulate.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.s
 .PHONY : src/triangulate.cpp.s
 
 test/test_affine3d_estimator.o: test/test_affine3d_estimator.cpp.o
@@ -641,7 +631,7 @@ test/test_affine3d_estimator.o: test/test_affine3d_estimator.cpp.o
 
 # target to build an object file
 test/test_affine3d_estimator.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_affine3d_estimator.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_affine3d_estimator.cpp.o
 .PHONY : test/test_affine3d_estimator.cpp.o
 
 test/test_affine3d_estimator.i: test/test_affine3d_estimator.cpp.i
@@ -649,7 +639,7 @@ test/test_affine3d_estimator.i: test/test_affine3d_estimator.cpp.i
 
 # target to preprocess a source file
 test/test_affine3d_estimator.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_affine3d_estimator.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_affine3d_estimator.cpp.i
 .PHONY : test/test_affine3d_estimator.cpp.i
 
 test/test_affine3d_estimator.s: test/test_affine3d_estimator.cpp.s
@@ -657,7 +647,7 @@ test/test_affine3d_estimator.s: test/test_affine3d_estimator.cpp.s
 
 # target to generate assembly for a file
 test/test_affine3d_estimator.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_affine3d_estimator.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_affine3d_estimator.cpp.s
 .PHONY : test/test_affine3d_estimator.cpp.s
 
 test/test_cameracalibration.o: test/test_cameracalibration.cpp.o
@@ -665,7 +655,7 @@ test/test_cameracalibration.o: test/test_cameracalibration.cpp.o
 
 # target to build an object file
 test/test_cameracalibration.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration.cpp.o
 .PHONY : test/test_cameracalibration.cpp.o
 
 test/test_cameracalibration.i: test/test_cameracalibration.cpp.i
@@ -673,7 +663,7 @@ test/test_cameracalibration.i: test/test_cameracalibration.cpp.i
 
 # target to preprocess a source file
 test/test_cameracalibration.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration.cpp.i
 .PHONY : test/test_cameracalibration.cpp.i
 
 test/test_cameracalibration.s: test/test_cameracalibration.cpp.s
@@ -681,7 +671,7 @@ test/test_cameracalibration.s: test/test_cameracalibration.cpp.s
 
 # target to generate assembly for a file
 test/test_cameracalibration.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration.cpp.s
 .PHONY : test/test_cameracalibration.cpp.s
 
 test/test_cameracalibration_artificial.o: test/test_cameracalibration_artificial.cpp.o
@@ -689,7 +679,7 @@ test/test_cameracalibration_artificial.o: test/test_cameracalibration_artificial
 
 # target to build an object file
 test/test_cameracalibration_artificial.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration_artificial.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration_artificial.cpp.o
 .PHONY : test/test_cameracalibration_artificial.cpp.o
 
 test/test_cameracalibration_artificial.i: test/test_cameracalibration_artificial.cpp.i
@@ -697,7 +687,7 @@ test/test_cameracalibration_artificial.i: test/test_cameracalibration_artificial
 
 # target to preprocess a source file
 test/test_cameracalibration_artificial.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration_artificial.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration_artificial.cpp.i
 .PHONY : test/test_cameracalibration_artificial.cpp.i
 
 test/test_cameracalibration_artificial.s: test/test_cameracalibration_artificial.cpp.s
@@ -705,7 +695,7 @@ test/test_cameracalibration_artificial.s: test/test_cameracalibration_artificial
 
 # target to generate assembly for a file
 test/test_cameracalibration_artificial.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration_artificial.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration_artificial.cpp.s
 .PHONY : test/test_cameracalibration_artificial.cpp.s
 
 test/test_cameracalibration_badarg.o: test/test_cameracalibration_badarg.cpp.o
@@ -713,7 +703,7 @@ test/test_cameracalibration_badarg.o: test/test_cameracalibration_badarg.cpp.o
 
 # target to build an object file
 test/test_cameracalibration_badarg.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration_badarg.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration_badarg.cpp.o
 .PHONY : test/test_cameracalibration_badarg.cpp.o
 
 test/test_cameracalibration_badarg.i: test/test_cameracalibration_badarg.cpp.i
@@ -721,7 +711,7 @@ test/test_cameracalibration_badarg.i: test/test_cameracalibration_badarg.cpp.i
 
 # target to preprocess a source file
 test/test_cameracalibration_badarg.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration_badarg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration_badarg.cpp.i
 .PHONY : test/test_cameracalibration_badarg.cpp.i
 
 test/test_cameracalibration_badarg.s: test/test_cameracalibration_badarg.cpp.s
@@ -729,7 +719,7 @@ test/test_cameracalibration_badarg.s: test/test_cameracalibration_badarg.cpp.s
 
 # target to generate assembly for a file
 test/test_cameracalibration_badarg.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration_badarg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cameracalibration_badarg.cpp.s
 .PHONY : test/test_cameracalibration_badarg.cpp.s
 
 test/test_chessboardgenerator.o: test/test_chessboardgenerator.cpp.o
@@ -737,7 +727,7 @@ test/test_chessboardgenerator.o: test/test_chessboardgenerator.cpp.o
 
 # target to build an object file
 test/test_chessboardgenerator.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chessboardgenerator.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chessboardgenerator.cpp.o
 .PHONY : test/test_chessboardgenerator.cpp.o
 
 test/test_chessboardgenerator.i: test/test_chessboardgenerator.cpp.i
@@ -745,7 +735,7 @@ test/test_chessboardgenerator.i: test/test_chessboardgenerator.cpp.i
 
 # target to preprocess a source file
 test/test_chessboardgenerator.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chessboardgenerator.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chessboardgenerator.cpp.i
 .PHONY : test/test_chessboardgenerator.cpp.i
 
 test/test_chessboardgenerator.s: test/test_chessboardgenerator.cpp.s
@@ -753,7 +743,7 @@ test/test_chessboardgenerator.s: test/test_chessboardgenerator.cpp.s
 
 # target to generate assembly for a file
 test/test_chessboardgenerator.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chessboardgenerator.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chessboardgenerator.cpp.s
 .PHONY : test/test_chessboardgenerator.cpp.s
 
 test/test_chesscorners.o: test/test_chesscorners.cpp.o
@@ -761,7 +751,7 @@ test/test_chesscorners.o: test/test_chesscorners.cpp.o
 
 # target to build an object file
 test/test_chesscorners.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners.cpp.o
 .PHONY : test/test_chesscorners.cpp.o
 
 test/test_chesscorners.i: test/test_chesscorners.cpp.i
@@ -769,7 +759,7 @@ test/test_chesscorners.i: test/test_chesscorners.cpp.i
 
 # target to preprocess a source file
 test/test_chesscorners.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners.cpp.i
 .PHONY : test/test_chesscorners.cpp.i
 
 test/test_chesscorners.s: test/test_chesscorners.cpp.s
@@ -777,7 +767,7 @@ test/test_chesscorners.s: test/test_chesscorners.cpp.s
 
 # target to generate assembly for a file
 test/test_chesscorners.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners.cpp.s
 .PHONY : test/test_chesscorners.cpp.s
 
 test/test_chesscorners_badarg.o: test/test_chesscorners_badarg.cpp.o
@@ -785,7 +775,7 @@ test/test_chesscorners_badarg.o: test/test_chesscorners_badarg.cpp.o
 
 # target to build an object file
 test/test_chesscorners_badarg.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_badarg.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_badarg.cpp.o
 .PHONY : test/test_chesscorners_badarg.cpp.o
 
 test/test_chesscorners_badarg.i: test/test_chesscorners_badarg.cpp.i
@@ -793,7 +783,7 @@ test/test_chesscorners_badarg.i: test/test_chesscorners_badarg.cpp.i
 
 # target to preprocess a source file
 test/test_chesscorners_badarg.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_badarg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_badarg.cpp.i
 .PHONY : test/test_chesscorners_badarg.cpp.i
 
 test/test_chesscorners_badarg.s: test/test_chesscorners_badarg.cpp.s
@@ -801,7 +791,7 @@ test/test_chesscorners_badarg.s: test/test_chesscorners_badarg.cpp.s
 
 # target to generate assembly for a file
 test/test_chesscorners_badarg.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_badarg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_badarg.cpp.s
 .PHONY : test/test_chesscorners_badarg.cpp.s
 
 test/test_chesscorners_timing.o: test/test_chesscorners_timing.cpp.o
@@ -809,7 +799,7 @@ test/test_chesscorners_timing.o: test/test_chesscorners_timing.cpp.o
 
 # target to build an object file
 test/test_chesscorners_timing.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_timing.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_timing.cpp.o
 .PHONY : test/test_chesscorners_timing.cpp.o
 
 test/test_chesscorners_timing.i: test/test_chesscorners_timing.cpp.i
@@ -817,7 +807,7 @@ test/test_chesscorners_timing.i: test/test_chesscorners_timing.cpp.i
 
 # target to preprocess a source file
 test/test_chesscorners_timing.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_timing.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_timing.cpp.i
 .PHONY : test/test_chesscorners_timing.cpp.i
 
 test/test_chesscorners_timing.s: test/test_chesscorners_timing.cpp.s
@@ -825,7 +815,7 @@ test/test_chesscorners_timing.s: test/test_chesscorners_timing.cpp.s
 
 # target to generate assembly for a file
 test/test_chesscorners_timing.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_timing.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_timing.cpp.s
 .PHONY : test/test_chesscorners_timing.cpp.s
 
 test/test_compose_rt.o: test/test_compose_rt.cpp.o
@@ -833,7 +823,7 @@ test/test_compose_rt.o: test/test_compose_rt.cpp.o
 
 # target to build an object file
 test/test_compose_rt.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_compose_rt.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_compose_rt.cpp.o
 .PHONY : test/test_compose_rt.cpp.o
 
 test/test_compose_rt.i: test/test_compose_rt.cpp.i
@@ -841,7 +831,7 @@ test/test_compose_rt.i: test/test_compose_rt.cpp.i
 
 # target to preprocess a source file
 test/test_compose_rt.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_compose_rt.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_compose_rt.cpp.i
 .PHONY : test/test_compose_rt.cpp.i
 
 test/test_compose_rt.s: test/test_compose_rt.cpp.s
@@ -849,7 +839,7 @@ test/test_compose_rt.s: test/test_compose_rt.cpp.s
 
 # target to generate assembly for a file
 test/test_compose_rt.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_compose_rt.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_compose_rt.cpp.s
 .PHONY : test/test_compose_rt.cpp.s
 
 test/test_cornerssubpix.o: test/test_cornerssubpix.cpp.o
@@ -857,7 +847,7 @@ test/test_cornerssubpix.o: test/test_cornerssubpix.cpp.o
 
 # target to build an object file
 test/test_cornerssubpix.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cornerssubpix.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cornerssubpix.cpp.o
 .PHONY : test/test_cornerssubpix.cpp.o
 
 test/test_cornerssubpix.i: test/test_cornerssubpix.cpp.i
@@ -865,7 +855,7 @@ test/test_cornerssubpix.i: test/test_cornerssubpix.cpp.i
 
 # target to preprocess a source file
 test/test_cornerssubpix.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cornerssubpix.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cornerssubpix.cpp.i
 .PHONY : test/test_cornerssubpix.cpp.i
 
 test/test_cornerssubpix.s: test/test_cornerssubpix.cpp.s
@@ -873,7 +863,7 @@ test/test_cornerssubpix.s: test/test_cornerssubpix.cpp.s
 
 # target to generate assembly for a file
 test/test_cornerssubpix.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cornerssubpix.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cornerssubpix.cpp.s
 .PHONY : test/test_cornerssubpix.cpp.s
 
 test/test_fundam.o: test/test_fundam.cpp.o
@@ -881,7 +871,7 @@ test/test_fundam.o: test/test_fundam.cpp.o
 
 # target to build an object file
 test/test_fundam.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fundam.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fundam.cpp.o
 .PHONY : test/test_fundam.cpp.o
 
 test/test_fundam.i: test/test_fundam.cpp.i
@@ -889,7 +879,7 @@ test/test_fundam.i: test/test_fundam.cpp.i
 
 # target to preprocess a source file
 test/test_fundam.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fundam.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fundam.cpp.i
 .PHONY : test/test_fundam.cpp.i
 
 test/test_fundam.s: test/test_fundam.cpp.s
@@ -897,7 +887,7 @@ test/test_fundam.s: test/test_fundam.cpp.s
 
 # target to generate assembly for a file
 test/test_fundam.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fundam.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fundam.cpp.s
 .PHONY : test/test_fundam.cpp.s
 
 test/test_homography.o: test/test_homography.cpp.o
@@ -905,7 +895,7 @@ test/test_homography.o: test/test_homography.cpp.o
 
 # target to build an object file
 test/test_homography.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.o
 .PHONY : test/test_homography.cpp.o
 
 test/test_homography.i: test/test_homography.cpp.i
@@ -913,7 +903,7 @@ test/test_homography.i: test/test_homography.cpp.i
 
 # target to preprocess a source file
 test/test_homography.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.i
 .PHONY : test/test_homography.cpp.i
 
 test/test_homography.s: test/test_homography.cpp.s
@@ -921,7 +911,7 @@ test/test_homography.s: test/test_homography.cpp.s
 
 # target to generate assembly for a file
 test/test_homography.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.s
 .PHONY : test/test_homography.cpp.s
 
 test/test_main.o: test/test_main.cpp.o
@@ -929,7 +919,7 @@ test/test_main.o: test/test_main.cpp.o
 
 # target to build an object file
 test/test_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_main.cpp.o
 .PHONY : test/test_main.cpp.o
 
 test/test_main.i: test/test_main.cpp.i
@@ -937,7 +927,7 @@ test/test_main.i: test/test_main.cpp.i
 
 # target to preprocess a source file
 test/test_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_main.cpp.i
 .PHONY : test/test_main.cpp.i
 
 test/test_main.s: test/test_main.cpp.s
@@ -945,7 +935,7 @@ test/test_main.s: test/test_main.cpp.s
 
 # target to generate assembly for a file
 test/test_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_main.cpp.s
 .PHONY : test/test_main.cpp.s
 
 test/test_modelest.o: test/test_modelest.cpp.o
@@ -953,7 +943,7 @@ test/test_modelest.o: test/test_modelest.cpp.o
 
 # target to build an object file
 test/test_modelest.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_modelest.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_modelest.cpp.o
 .PHONY : test/test_modelest.cpp.o
 
 test/test_modelest.i: test/test_modelest.cpp.i
@@ -961,7 +951,7 @@ test/test_modelest.i: test/test_modelest.cpp.i
 
 # target to preprocess a source file
 test/test_modelest.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_modelest.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_modelest.cpp.i
 .PHONY : test/test_modelest.cpp.i
 
 test/test_modelest.s: test/test_modelest.cpp.s
@@ -969,7 +959,7 @@ test/test_modelest.s: test/test_modelest.cpp.s
 
 # target to generate assembly for a file
 test/test_modelest.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_modelest.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_modelest.cpp.s
 .PHONY : test/test_modelest.cpp.s
 
 test/test_posit.o: test/test_posit.cpp.o
@@ -977,7 +967,7 @@ test/test_posit.o: test/test_posit.cpp.o
 
 # target to build an object file
 test/test_posit.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_posit.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_posit.cpp.o
 .PHONY : test/test_posit.cpp.o
 
 test/test_posit.i: test/test_posit.cpp.i
@@ -985,7 +975,7 @@ test/test_posit.i: test/test_posit.cpp.i
 
 # target to preprocess a source file
 test/test_posit.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_posit.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_posit.cpp.i
 .PHONY : test/test_posit.cpp.i
 
 test/test_posit.s: test/test_posit.cpp.s
@@ -993,7 +983,7 @@ test/test_posit.s: test/test_posit.cpp.s
 
 # target to generate assembly for a file
 test/test_posit.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_posit.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_posit.cpp.s
 .PHONY : test/test_posit.cpp.s
 
 test/test_reproject_image_to_3d.o: test/test_reproject_image_to_3d.cpp.o
@@ -1001,7 +991,7 @@ test/test_reproject_image_to_3d.o: test/test_reproject_image_to_3d.cpp.o
 
 # target to build an object file
 test/test_reproject_image_to_3d.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_reproject_image_to_3d.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_reproject_image_to_3d.cpp.o
 .PHONY : test/test_reproject_image_to_3d.cpp.o
 
 test/test_reproject_image_to_3d.i: test/test_reproject_image_to_3d.cpp.i
@@ -1009,7 +999,7 @@ test/test_reproject_image_to_3d.i: test/test_reproject_image_to_3d.cpp.i
 
 # target to preprocess a source file
 test/test_reproject_image_to_3d.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_reproject_image_to_3d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_reproject_image_to_3d.cpp.i
 .PHONY : test/test_reproject_image_to_3d.cpp.i
 
 test/test_reproject_image_to_3d.s: test/test_reproject_image_to_3d.cpp.s
@@ -1017,7 +1007,7 @@ test/test_reproject_image_to_3d.s: test/test_reproject_image_to_3d.cpp.s
 
 # target to generate assembly for a file
 test/test_reproject_image_to_3d.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_reproject_image_to_3d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_reproject_image_to_3d.cpp.s
 .PHONY : test/test_reproject_image_to_3d.cpp.s
 
 test/test_solvepnp_ransac.o: test/test_solvepnp_ransac.cpp.o
@@ -1025,7 +1015,7 @@ test/test_solvepnp_ransac.o: test/test_solvepnp_ransac.cpp.o
 
 # target to build an object file
 test/test_solvepnp_ransac.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_solvepnp_ransac.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_solvepnp_ransac.cpp.o
 .PHONY : test/test_solvepnp_ransac.cpp.o
 
 test/test_solvepnp_ransac.i: test/test_solvepnp_ransac.cpp.i
@@ -1033,7 +1023,7 @@ test/test_solvepnp_ransac.i: test/test_solvepnp_ransac.cpp.i
 
 # target to preprocess a source file
 test/test_solvepnp_ransac.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_solvepnp_ransac.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_solvepnp_ransac.cpp.i
 .PHONY : test/test_solvepnp_ransac.cpp.i
 
 test/test_solvepnp_ransac.s: test/test_solvepnp_ransac.cpp.s
@@ -1041,7 +1031,7 @@ test/test_solvepnp_ransac.s: test/test_solvepnp_ransac.cpp.s
 
 # target to generate assembly for a file
 test/test_solvepnp_ransac.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_solvepnp_ransac.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_solvepnp_ransac.cpp.s
 .PHONY : test/test_solvepnp_ransac.cpp.s
 
 test/test_stereomatching.o: test/test_stereomatching.cpp.o
@@ -1049,7 +1039,7 @@ test/test_stereomatching.o: test/test_stereomatching.cpp.o
 
 # target to build an object file
 test/test_stereomatching.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_stereomatching.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_stereomatching.cpp.o
 .PHONY : test/test_stereomatching.cpp.o
 
 test/test_stereomatching.i: test/test_stereomatching.cpp.i
@@ -1057,7 +1047,7 @@ test/test_stereomatching.i: test/test_stereomatching.cpp.i
 
 # target to preprocess a source file
 test/test_stereomatching.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_stereomatching.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_stereomatching.cpp.i
 .PHONY : test/test_stereomatching.cpp.i
 
 test/test_stereomatching.s: test/test_stereomatching.cpp.s
@@ -1065,7 +1055,7 @@ test/test_stereomatching.s: test/test_stereomatching.cpp.s
 
 # target to generate assembly for a file
 test/test_stereomatching.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_stereomatching.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_stereomatching.cpp.s
 .PHONY : test/test_stereomatching.cpp.s
 
 test/test_undistort.o: test/test_undistort.cpp.o
@@ -1073,7 +1063,7 @@ test/test_undistort.o: test/test_undistort.cpp.o
 
 # target to build an object file
 test/test_undistort.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort.cpp.o
 .PHONY : test/test_undistort.cpp.o
 
 test/test_undistort.i: test/test_undistort.cpp.i
@@ -1081,7 +1071,7 @@ test/test_undistort.i: test/test_undistort.cpp.i
 
 # target to preprocess a source file
 test/test_undistort.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort.cpp.i
 .PHONY : test/test_undistort.cpp.i
 
 test/test_undistort.s: test/test_undistort.cpp.s
@@ -1089,7 +1079,7 @@ test/test_undistort.s: test/test_undistort.cpp.s
 
 # target to generate assembly for a file
 test/test_undistort.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort.cpp.s
 .PHONY : test/test_undistort.cpp.s
 
 test/test_undistort_badarg.o: test/test_undistort_badarg.cpp.o
@@ -1097,7 +1087,7 @@ test/test_undistort_badarg.o: test/test_undistort_badarg.cpp.o
 
 # target to build an object file
 test/test_undistort_badarg.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_badarg.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_badarg.cpp.o
 .PHONY : test/test_undistort_badarg.cpp.o
 
 test/test_undistort_badarg.i: test/test_undistort_badarg.cpp.i
@@ -1105,7 +1095,7 @@ test/test_undistort_badarg.i: test/test_undistort_badarg.cpp.i
 
 # target to preprocess a source file
 test/test_undistort_badarg.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_badarg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_badarg.cpp.i
 .PHONY : test/test_undistort_badarg.cpp.i
 
 test/test_undistort_badarg.s: test/test_undistort_badarg.cpp.s
@@ -1113,7 +1103,7 @@ test/test_undistort_badarg.s: test/test_undistort_badarg.cpp.s
 
 # target to generate assembly for a file
 test/test_undistort_badarg.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_badarg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_badarg.cpp.s
 .PHONY : test/test_undistort_badarg.cpp.s
 
 test/test_undistort_points.o: test/test_undistort_points.cpp.o
@@ -1121,7 +1111,7 @@ test/test_undistort_points.o: test/test_undistort_points.cpp.o
 
 # target to build an object file
 test/test_undistort_points.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_points.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_points.cpp.o
 .PHONY : test/test_undistort_points.cpp.o
 
 test/test_undistort_points.i: test/test_undistort_points.cpp.i
@@ -1129,7 +1119,7 @@ test/test_undistort_points.i: test/test_undistort_points.cpp.i
 
 # target to preprocess a source file
 test/test_undistort_points.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_points.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_points.cpp.i
 .PHONY : test/test_undistort_points.cpp.i
 
 test/test_undistort_points.s: test/test_undistort_points.cpp.s
@@ -1137,7 +1127,7 @@ test/test_undistort_points.s: test/test_undistort_points.cpp.s
 
 # target to generate assembly for a file
 test/test_undistort_points.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_points.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_points.cpp.s
 .PHONY : test/test_undistort_points.cpp.s
 
 # Help Target
@@ -1149,7 +1139,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_calib3d"
 	@echo "... opencv_perf_calib3d"
@@ -1285,6 +1274,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

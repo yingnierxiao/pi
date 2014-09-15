@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/legacy/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/modules/legacy/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/legacy/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/legacy/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/legacy/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/legacy/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/legacy/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/legacy/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/legacy/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 modules/legacy/CMakeFiles/opencv_legacy.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/legacy/CMakeFiles/opencv_legacy.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/legacy/CMakeFiles/opencv_legacy.dir/rule
 .PHONY : modules/legacy/CMakeFiles/opencv_legacy.dir/rule
 
 # Convenience name for target.
@@ -173,12 +163,12 @@ opencv_legacy: modules/legacy/CMakeFiles/opencv_legacy.dir/rule
 
 # fast build rule for target.
 opencv_legacy/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/build
 .PHONY : opencv_legacy/fast
 
 # Convenience name for target.
 modules/legacy/CMakeFiles/opencv_test_legacy.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/legacy/CMakeFiles/opencv_test_legacy.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/legacy/CMakeFiles/opencv_test_legacy.dir/rule
 .PHONY : modules/legacy/CMakeFiles/opencv_test_legacy.dir/rule
 
 # Convenience name for target.
@@ -187,7 +177,7 @@ opencv_test_legacy: modules/legacy/CMakeFiles/opencv_test_legacy.dir/rule
 
 # fast build rule for target.
 opencv_test_legacy/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/build
 .PHONY : opencv_test_legacy/fast
 
 src/3dtracker.o: src/3dtracker.cpp.o
@@ -195,7 +185,7 @@ src/3dtracker.o: src/3dtracker.cpp.o
 
 # target to build an object file
 src/3dtracker.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/3dtracker.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/3dtracker.cpp.o
 .PHONY : src/3dtracker.cpp.o
 
 src/3dtracker.i: src/3dtracker.cpp.i
@@ -203,7 +193,7 @@ src/3dtracker.i: src/3dtracker.cpp.i
 
 # target to preprocess a source file
 src/3dtracker.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/3dtracker.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/3dtracker.cpp.i
 .PHONY : src/3dtracker.cpp.i
 
 src/3dtracker.s: src/3dtracker.cpp.s
@@ -211,7 +201,7 @@ src/3dtracker.s: src/3dtracker.cpp.s
 
 # target to generate assembly for a file
 src/3dtracker.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/3dtracker.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/3dtracker.cpp.s
 .PHONY : src/3dtracker.cpp.s
 
 src/auxutils.o: src/auxutils.cpp.o
@@ -219,7 +209,7 @@ src/auxutils.o: src/auxutils.cpp.o
 
 # target to build an object file
 src/auxutils.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/auxutils.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/auxutils.cpp.o
 .PHONY : src/auxutils.cpp.o
 
 src/auxutils.i: src/auxutils.cpp.i
@@ -227,7 +217,7 @@ src/auxutils.i: src/auxutils.cpp.i
 
 # target to preprocess a source file
 src/auxutils.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/auxutils.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/auxutils.cpp.i
 .PHONY : src/auxutils.cpp.i
 
 src/auxutils.s: src/auxutils.cpp.s
@@ -235,7 +225,7 @@ src/auxutils.s: src/auxutils.cpp.s
 
 # target to generate assembly for a file
 src/auxutils.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/auxutils.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/auxutils.cpp.s
 .PHONY : src/auxutils.cpp.s
 
 src/bgfg_acmmm2003.o: src/bgfg_acmmm2003.cpp.o
@@ -243,7 +233,7 @@ src/bgfg_acmmm2003.o: src/bgfg_acmmm2003.cpp.o
 
 # target to build an object file
 src/bgfg_acmmm2003.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_acmmm2003.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_acmmm2003.cpp.o
 .PHONY : src/bgfg_acmmm2003.cpp.o
 
 src/bgfg_acmmm2003.i: src/bgfg_acmmm2003.cpp.i
@@ -251,7 +241,7 @@ src/bgfg_acmmm2003.i: src/bgfg_acmmm2003.cpp.i
 
 # target to preprocess a source file
 src/bgfg_acmmm2003.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_acmmm2003.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_acmmm2003.cpp.i
 .PHONY : src/bgfg_acmmm2003.cpp.i
 
 src/bgfg_acmmm2003.s: src/bgfg_acmmm2003.cpp.s
@@ -259,7 +249,7 @@ src/bgfg_acmmm2003.s: src/bgfg_acmmm2003.cpp.s
 
 # target to generate assembly for a file
 src/bgfg_acmmm2003.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_acmmm2003.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_acmmm2003.cpp.s
 .PHONY : src/bgfg_acmmm2003.cpp.s
 
 src/bgfg_codebook.o: src/bgfg_codebook.cpp.o
@@ -267,7 +257,7 @@ src/bgfg_codebook.o: src/bgfg_codebook.cpp.o
 
 # target to build an object file
 src/bgfg_codebook.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_codebook.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_codebook.cpp.o
 .PHONY : src/bgfg_codebook.cpp.o
 
 src/bgfg_codebook.i: src/bgfg_codebook.cpp.i
@@ -275,7 +265,7 @@ src/bgfg_codebook.i: src/bgfg_codebook.cpp.i
 
 # target to preprocess a source file
 src/bgfg_codebook.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_codebook.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_codebook.cpp.i
 .PHONY : src/bgfg_codebook.cpp.i
 
 src/bgfg_codebook.s: src/bgfg_codebook.cpp.s
@@ -283,7 +273,7 @@ src/bgfg_codebook.s: src/bgfg_codebook.cpp.s
 
 # target to generate assembly for a file
 src/bgfg_codebook.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_codebook.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_codebook.cpp.s
 .PHONY : src/bgfg_codebook.cpp.s
 
 src/bgfg_common.o: src/bgfg_common.cpp.o
@@ -291,7 +281,7 @@ src/bgfg_common.o: src/bgfg_common.cpp.o
 
 # target to build an object file
 src/bgfg_common.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_common.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_common.cpp.o
 .PHONY : src/bgfg_common.cpp.o
 
 src/bgfg_common.i: src/bgfg_common.cpp.i
@@ -299,7 +289,7 @@ src/bgfg_common.i: src/bgfg_common.cpp.i
 
 # target to preprocess a source file
 src/bgfg_common.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_common.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_common.cpp.i
 .PHONY : src/bgfg_common.cpp.i
 
 src/bgfg_common.s: src/bgfg_common.cpp.s
@@ -307,7 +297,7 @@ src/bgfg_common.s: src/bgfg_common.cpp.s
 
 # target to generate assembly for a file
 src/bgfg_common.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_common.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_common.cpp.s
 .PHONY : src/bgfg_common.cpp.s
 
 src/bgfg_estimation.o: src/bgfg_estimation.cpp.o
@@ -315,7 +305,7 @@ src/bgfg_estimation.o: src/bgfg_estimation.cpp.o
 
 # target to build an object file
 src/bgfg_estimation.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_estimation.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_estimation.cpp.o
 .PHONY : src/bgfg_estimation.cpp.o
 
 src/bgfg_estimation.i: src/bgfg_estimation.cpp.i
@@ -323,7 +313,7 @@ src/bgfg_estimation.i: src/bgfg_estimation.cpp.i
 
 # target to preprocess a source file
 src/bgfg_estimation.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_estimation.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_estimation.cpp.i
 .PHONY : src/bgfg_estimation.cpp.i
 
 src/bgfg_estimation.s: src/bgfg_estimation.cpp.s
@@ -331,7 +321,7 @@ src/bgfg_estimation.s: src/bgfg_estimation.cpp.s
 
 # target to generate assembly for a file
 src/bgfg_estimation.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_estimation.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_estimation.cpp.s
 .PHONY : src/bgfg_estimation.cpp.s
 
 src/bgfg_gaussmix.o: src/bgfg_gaussmix.cpp.o
@@ -339,7 +329,7 @@ src/bgfg_gaussmix.o: src/bgfg_gaussmix.cpp.o
 
 # target to build an object file
 src/bgfg_gaussmix.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_gaussmix.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_gaussmix.cpp.o
 .PHONY : src/bgfg_gaussmix.cpp.o
 
 src/bgfg_gaussmix.i: src/bgfg_gaussmix.cpp.i
@@ -347,7 +337,7 @@ src/bgfg_gaussmix.i: src/bgfg_gaussmix.cpp.i
 
 # target to preprocess a source file
 src/bgfg_gaussmix.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_gaussmix.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_gaussmix.cpp.i
 .PHONY : src/bgfg_gaussmix.cpp.i
 
 src/bgfg_gaussmix.s: src/bgfg_gaussmix.cpp.s
@@ -355,7 +345,7 @@ src/bgfg_gaussmix.s: src/bgfg_gaussmix.cpp.s
 
 # target to generate assembly for a file
 src/bgfg_gaussmix.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_gaussmix.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/bgfg_gaussmix.cpp.s
 .PHONY : src/bgfg_gaussmix.cpp.s
 
 src/blobtrack.o: src/blobtrack.cpp.o
@@ -363,7 +353,7 @@ src/blobtrack.o: src/blobtrack.cpp.o
 
 # target to build an object file
 src/blobtrack.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrack.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrack.cpp.o
 .PHONY : src/blobtrack.cpp.o
 
 src/blobtrack.i: src/blobtrack.cpp.i
@@ -371,7 +361,7 @@ src/blobtrack.i: src/blobtrack.cpp.i
 
 # target to preprocess a source file
 src/blobtrack.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrack.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrack.cpp.i
 .PHONY : src/blobtrack.cpp.i
 
 src/blobtrack.s: src/blobtrack.cpp.s
@@ -379,7 +369,7 @@ src/blobtrack.s: src/blobtrack.cpp.s
 
 # target to generate assembly for a file
 src/blobtrack.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrack.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrack.cpp.s
 .PHONY : src/blobtrack.cpp.s
 
 src/blobtrackanalysis.o: src/blobtrackanalysis.cpp.o
@@ -387,7 +377,7 @@ src/blobtrackanalysis.o: src/blobtrackanalysis.cpp.o
 
 # target to build an object file
 src/blobtrackanalysis.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysis.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysis.cpp.o
 .PHONY : src/blobtrackanalysis.cpp.o
 
 src/blobtrackanalysis.i: src/blobtrackanalysis.cpp.i
@@ -395,7 +385,7 @@ src/blobtrackanalysis.i: src/blobtrackanalysis.cpp.i
 
 # target to preprocess a source file
 src/blobtrackanalysis.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysis.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysis.cpp.i
 .PHONY : src/blobtrackanalysis.cpp.i
 
 src/blobtrackanalysis.s: src/blobtrackanalysis.cpp.s
@@ -403,7 +393,7 @@ src/blobtrackanalysis.s: src/blobtrackanalysis.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackanalysis.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysis.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysis.cpp.s
 .PHONY : src/blobtrackanalysis.cpp.s
 
 src/blobtrackanalysishist.o: src/blobtrackanalysishist.cpp.o
@@ -411,7 +401,7 @@ src/blobtrackanalysishist.o: src/blobtrackanalysishist.cpp.o
 
 # target to build an object file
 src/blobtrackanalysishist.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysishist.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysishist.cpp.o
 .PHONY : src/blobtrackanalysishist.cpp.o
 
 src/blobtrackanalysishist.i: src/blobtrackanalysishist.cpp.i
@@ -419,7 +409,7 @@ src/blobtrackanalysishist.i: src/blobtrackanalysishist.cpp.i
 
 # target to preprocess a source file
 src/blobtrackanalysishist.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysishist.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysishist.cpp.i
 .PHONY : src/blobtrackanalysishist.cpp.i
 
 src/blobtrackanalysishist.s: src/blobtrackanalysishist.cpp.s
@@ -427,7 +417,7 @@ src/blobtrackanalysishist.s: src/blobtrackanalysishist.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackanalysishist.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysishist.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysishist.cpp.s
 .PHONY : src/blobtrackanalysishist.cpp.s
 
 src/blobtrackanalysisior.o: src/blobtrackanalysisior.cpp.o
@@ -435,7 +425,7 @@ src/blobtrackanalysisior.o: src/blobtrackanalysisior.cpp.o
 
 # target to build an object file
 src/blobtrackanalysisior.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysisior.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysisior.cpp.o
 .PHONY : src/blobtrackanalysisior.cpp.o
 
 src/blobtrackanalysisior.i: src/blobtrackanalysisior.cpp.i
@@ -443,7 +433,7 @@ src/blobtrackanalysisior.i: src/blobtrackanalysisior.cpp.i
 
 # target to preprocess a source file
 src/blobtrackanalysisior.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysisior.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysisior.cpp.i
 .PHONY : src/blobtrackanalysisior.cpp.i
 
 src/blobtrackanalysisior.s: src/blobtrackanalysisior.cpp.s
@@ -451,7 +441,7 @@ src/blobtrackanalysisior.s: src/blobtrackanalysisior.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackanalysisior.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysisior.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysisior.cpp.s
 .PHONY : src/blobtrackanalysisior.cpp.s
 
 src/blobtrackanalysistrackdist.o: src/blobtrackanalysistrackdist.cpp.o
@@ -459,7 +449,7 @@ src/blobtrackanalysistrackdist.o: src/blobtrackanalysistrackdist.cpp.o
 
 # target to build an object file
 src/blobtrackanalysistrackdist.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysistrackdist.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysistrackdist.cpp.o
 .PHONY : src/blobtrackanalysistrackdist.cpp.o
 
 src/blobtrackanalysistrackdist.i: src/blobtrackanalysistrackdist.cpp.i
@@ -467,7 +457,7 @@ src/blobtrackanalysistrackdist.i: src/blobtrackanalysistrackdist.cpp.i
 
 # target to preprocess a source file
 src/blobtrackanalysistrackdist.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysistrackdist.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysistrackdist.cpp.i
 .PHONY : src/blobtrackanalysistrackdist.cpp.i
 
 src/blobtrackanalysistrackdist.s: src/blobtrackanalysistrackdist.cpp.s
@@ -475,7 +465,7 @@ src/blobtrackanalysistrackdist.s: src/blobtrackanalysistrackdist.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackanalysistrackdist.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysistrackdist.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackanalysistrackdist.cpp.s
 .PHONY : src/blobtrackanalysistrackdist.cpp.s
 
 src/blobtrackgen1.o: src/blobtrackgen1.cpp.o
@@ -483,7 +473,7 @@ src/blobtrackgen1.o: src/blobtrackgen1.cpp.o
 
 # target to build an object file
 src/blobtrackgen1.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackgen1.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackgen1.cpp.o
 .PHONY : src/blobtrackgen1.cpp.o
 
 src/blobtrackgen1.i: src/blobtrackgen1.cpp.i
@@ -491,7 +481,7 @@ src/blobtrackgen1.i: src/blobtrackgen1.cpp.i
 
 # target to preprocess a source file
 src/blobtrackgen1.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackgen1.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackgen1.cpp.i
 .PHONY : src/blobtrackgen1.cpp.i
 
 src/blobtrackgen1.s: src/blobtrackgen1.cpp.s
@@ -499,7 +489,7 @@ src/blobtrackgen1.s: src/blobtrackgen1.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackgen1.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackgen1.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackgen1.cpp.s
 .PHONY : src/blobtrackgen1.cpp.s
 
 src/blobtrackgenyml.o: src/blobtrackgenyml.cpp.o
@@ -507,7 +497,7 @@ src/blobtrackgenyml.o: src/blobtrackgenyml.cpp.o
 
 # target to build an object file
 src/blobtrackgenyml.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackgenyml.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackgenyml.cpp.o
 .PHONY : src/blobtrackgenyml.cpp.o
 
 src/blobtrackgenyml.i: src/blobtrackgenyml.cpp.i
@@ -515,7 +505,7 @@ src/blobtrackgenyml.i: src/blobtrackgenyml.cpp.i
 
 # target to preprocess a source file
 src/blobtrackgenyml.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackgenyml.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackgenyml.cpp.i
 .PHONY : src/blobtrackgenyml.cpp.i
 
 src/blobtrackgenyml.s: src/blobtrackgenyml.cpp.s
@@ -523,7 +513,7 @@ src/blobtrackgenyml.s: src/blobtrackgenyml.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackgenyml.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackgenyml.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackgenyml.cpp.s
 .PHONY : src/blobtrackgenyml.cpp.s
 
 src/blobtrackingauto.o: src/blobtrackingauto.cpp.o
@@ -531,7 +521,7 @@ src/blobtrackingauto.o: src/blobtrackingauto.cpp.o
 
 # target to build an object file
 src/blobtrackingauto.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingauto.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingauto.cpp.o
 .PHONY : src/blobtrackingauto.cpp.o
 
 src/blobtrackingauto.i: src/blobtrackingauto.cpp.i
@@ -539,7 +529,7 @@ src/blobtrackingauto.i: src/blobtrackingauto.cpp.i
 
 # target to preprocess a source file
 src/blobtrackingauto.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingauto.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingauto.cpp.i
 .PHONY : src/blobtrackingauto.cpp.i
 
 src/blobtrackingauto.s: src/blobtrackingauto.cpp.s
@@ -547,7 +537,7 @@ src/blobtrackingauto.s: src/blobtrackingauto.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackingauto.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingauto.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingauto.cpp.s
 .PHONY : src/blobtrackingauto.cpp.s
 
 src/blobtrackingcc.o: src/blobtrackingcc.cpp.o
@@ -555,7 +545,7 @@ src/blobtrackingcc.o: src/blobtrackingcc.cpp.o
 
 # target to build an object file
 src/blobtrackingcc.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingcc.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingcc.cpp.o
 .PHONY : src/blobtrackingcc.cpp.o
 
 src/blobtrackingcc.i: src/blobtrackingcc.cpp.i
@@ -563,7 +553,7 @@ src/blobtrackingcc.i: src/blobtrackingcc.cpp.i
 
 # target to preprocess a source file
 src/blobtrackingcc.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingcc.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingcc.cpp.i
 .PHONY : src/blobtrackingcc.cpp.i
 
 src/blobtrackingcc.s: src/blobtrackingcc.cpp.s
@@ -571,7 +561,7 @@ src/blobtrackingcc.s: src/blobtrackingcc.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackingcc.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingcc.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingcc.cpp.s
 .PHONY : src/blobtrackingcc.cpp.s
 
 src/blobtrackingccwithcr.o: src/blobtrackingccwithcr.cpp.o
@@ -579,7 +569,7 @@ src/blobtrackingccwithcr.o: src/blobtrackingccwithcr.cpp.o
 
 # target to build an object file
 src/blobtrackingccwithcr.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingccwithcr.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingccwithcr.cpp.o
 .PHONY : src/blobtrackingccwithcr.cpp.o
 
 src/blobtrackingccwithcr.i: src/blobtrackingccwithcr.cpp.i
@@ -587,7 +577,7 @@ src/blobtrackingccwithcr.i: src/blobtrackingccwithcr.cpp.i
 
 # target to preprocess a source file
 src/blobtrackingccwithcr.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingccwithcr.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingccwithcr.cpp.i
 .PHONY : src/blobtrackingccwithcr.cpp.i
 
 src/blobtrackingccwithcr.s: src/blobtrackingccwithcr.cpp.s
@@ -595,7 +585,7 @@ src/blobtrackingccwithcr.s: src/blobtrackingccwithcr.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackingccwithcr.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingccwithcr.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingccwithcr.cpp.s
 .PHONY : src/blobtrackingccwithcr.cpp.s
 
 src/blobtrackinglist.o: src/blobtrackinglist.cpp.o
@@ -603,7 +593,7 @@ src/blobtrackinglist.o: src/blobtrackinglist.cpp.o
 
 # target to build an object file
 src/blobtrackinglist.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackinglist.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackinglist.cpp.o
 .PHONY : src/blobtrackinglist.cpp.o
 
 src/blobtrackinglist.i: src/blobtrackinglist.cpp.i
@@ -611,7 +601,7 @@ src/blobtrackinglist.i: src/blobtrackinglist.cpp.i
 
 # target to preprocess a source file
 src/blobtrackinglist.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackinglist.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackinglist.cpp.i
 .PHONY : src/blobtrackinglist.cpp.i
 
 src/blobtrackinglist.s: src/blobtrackinglist.cpp.s
@@ -619,7 +609,7 @@ src/blobtrackinglist.s: src/blobtrackinglist.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackinglist.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackinglist.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackinglist.cpp.s
 .PHONY : src/blobtrackinglist.cpp.s
 
 src/blobtrackingmsfg.o: src/blobtrackingmsfg.cpp.o
@@ -627,7 +617,7 @@ src/blobtrackingmsfg.o: src/blobtrackingmsfg.cpp.o
 
 # target to build an object file
 src/blobtrackingmsfg.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingmsfg.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingmsfg.cpp.o
 .PHONY : src/blobtrackingmsfg.cpp.o
 
 src/blobtrackingmsfg.i: src/blobtrackingmsfg.cpp.i
@@ -635,7 +625,7 @@ src/blobtrackingmsfg.i: src/blobtrackingmsfg.cpp.i
 
 # target to preprocess a source file
 src/blobtrackingmsfg.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingmsfg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingmsfg.cpp.i
 .PHONY : src/blobtrackingmsfg.cpp.i
 
 src/blobtrackingmsfg.s: src/blobtrackingmsfg.cpp.s
@@ -643,7 +633,7 @@ src/blobtrackingmsfg.s: src/blobtrackingmsfg.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackingmsfg.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingmsfg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingmsfg.cpp.s
 .PHONY : src/blobtrackingmsfg.cpp.s
 
 src/blobtrackingmsfgs.o: src/blobtrackingmsfgs.cpp.o
@@ -651,7 +641,7 @@ src/blobtrackingmsfgs.o: src/blobtrackingmsfgs.cpp.o
 
 # target to build an object file
 src/blobtrackingmsfgs.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingmsfgs.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingmsfgs.cpp.o
 .PHONY : src/blobtrackingmsfgs.cpp.o
 
 src/blobtrackingmsfgs.i: src/blobtrackingmsfgs.cpp.i
@@ -659,7 +649,7 @@ src/blobtrackingmsfgs.i: src/blobtrackingmsfgs.cpp.i
 
 # target to preprocess a source file
 src/blobtrackingmsfgs.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingmsfgs.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingmsfgs.cpp.i
 .PHONY : src/blobtrackingmsfgs.cpp.i
 
 src/blobtrackingmsfgs.s: src/blobtrackingmsfgs.cpp.s
@@ -667,7 +657,7 @@ src/blobtrackingmsfgs.s: src/blobtrackingmsfgs.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackingmsfgs.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingmsfgs.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackingmsfgs.cpp.s
 .PHONY : src/blobtrackingmsfgs.cpp.s
 
 src/blobtrackpostprockalman.o: src/blobtrackpostprockalman.cpp.o
@@ -675,7 +665,7 @@ src/blobtrackpostprockalman.o: src/blobtrackpostprockalman.cpp.o
 
 # target to build an object file
 src/blobtrackpostprockalman.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostprockalman.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostprockalman.cpp.o
 .PHONY : src/blobtrackpostprockalman.cpp.o
 
 src/blobtrackpostprockalman.i: src/blobtrackpostprockalman.cpp.i
@@ -683,7 +673,7 @@ src/blobtrackpostprockalman.i: src/blobtrackpostprockalman.cpp.i
 
 # target to preprocess a source file
 src/blobtrackpostprockalman.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostprockalman.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostprockalman.cpp.i
 .PHONY : src/blobtrackpostprockalman.cpp.i
 
 src/blobtrackpostprockalman.s: src/blobtrackpostprockalman.cpp.s
@@ -691,7 +681,7 @@ src/blobtrackpostprockalman.s: src/blobtrackpostprockalman.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackpostprockalman.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostprockalman.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostprockalman.cpp.s
 .PHONY : src/blobtrackpostprockalman.cpp.s
 
 src/blobtrackpostproclinear.o: src/blobtrackpostproclinear.cpp.o
@@ -699,7 +689,7 @@ src/blobtrackpostproclinear.o: src/blobtrackpostproclinear.cpp.o
 
 # target to build an object file
 src/blobtrackpostproclinear.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostproclinear.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostproclinear.cpp.o
 .PHONY : src/blobtrackpostproclinear.cpp.o
 
 src/blobtrackpostproclinear.i: src/blobtrackpostproclinear.cpp.i
@@ -707,7 +697,7 @@ src/blobtrackpostproclinear.i: src/blobtrackpostproclinear.cpp.i
 
 # target to preprocess a source file
 src/blobtrackpostproclinear.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostproclinear.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostproclinear.cpp.i
 .PHONY : src/blobtrackpostproclinear.cpp.i
 
 src/blobtrackpostproclinear.s: src/blobtrackpostproclinear.cpp.s
@@ -715,7 +705,7 @@ src/blobtrackpostproclinear.s: src/blobtrackpostproclinear.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackpostproclinear.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostproclinear.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostproclinear.cpp.s
 .PHONY : src/blobtrackpostproclinear.cpp.s
 
 src/blobtrackpostproclist.o: src/blobtrackpostproclist.cpp.o
@@ -723,7 +713,7 @@ src/blobtrackpostproclist.o: src/blobtrackpostproclist.cpp.o
 
 # target to build an object file
 src/blobtrackpostproclist.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostproclist.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostproclist.cpp.o
 .PHONY : src/blobtrackpostproclist.cpp.o
 
 src/blobtrackpostproclist.i: src/blobtrackpostproclist.cpp.i
@@ -731,7 +721,7 @@ src/blobtrackpostproclist.i: src/blobtrackpostproclist.cpp.i
 
 # target to preprocess a source file
 src/blobtrackpostproclist.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostproclist.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostproclist.cpp.i
 .PHONY : src/blobtrackpostproclist.cpp.i
 
 src/blobtrackpostproclist.s: src/blobtrackpostproclist.cpp.s
@@ -739,7 +729,7 @@ src/blobtrackpostproclist.s: src/blobtrackpostproclist.cpp.s
 
 # target to generate assembly for a file
 src/blobtrackpostproclist.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostproclist.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/blobtrackpostproclist.cpp.s
 .PHONY : src/blobtrackpostproclist.cpp.s
 
 src/calcimagehomography.o: src/calcimagehomography.cpp.o
@@ -747,7 +737,7 @@ src/calcimagehomography.o: src/calcimagehomography.cpp.o
 
 # target to build an object file
 src/calcimagehomography.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calcimagehomography.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calcimagehomography.cpp.o
 .PHONY : src/calcimagehomography.cpp.o
 
 src/calcimagehomography.i: src/calcimagehomography.cpp.i
@@ -755,7 +745,7 @@ src/calcimagehomography.i: src/calcimagehomography.cpp.i
 
 # target to preprocess a source file
 src/calcimagehomography.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calcimagehomography.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calcimagehomography.cpp.i
 .PHONY : src/calcimagehomography.cpp.i
 
 src/calcimagehomography.s: src/calcimagehomography.cpp.s
@@ -763,7 +753,7 @@ src/calcimagehomography.s: src/calcimagehomography.cpp.s
 
 # target to generate assembly for a file
 src/calcimagehomography.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calcimagehomography.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calcimagehomography.cpp.s
 .PHONY : src/calcimagehomography.cpp.s
 
 src/calibfilter.o: src/calibfilter.cpp.o
@@ -771,7 +761,7 @@ src/calibfilter.o: src/calibfilter.cpp.o
 
 # target to build an object file
 src/calibfilter.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calibfilter.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calibfilter.cpp.o
 .PHONY : src/calibfilter.cpp.o
 
 src/calibfilter.i: src/calibfilter.cpp.i
@@ -779,7 +769,7 @@ src/calibfilter.i: src/calibfilter.cpp.i
 
 # target to preprocess a source file
 src/calibfilter.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calibfilter.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calibfilter.cpp.i
 .PHONY : src/calibfilter.cpp.i
 
 src/calibfilter.s: src/calibfilter.cpp.s
@@ -787,7 +777,7 @@ src/calibfilter.s: src/calibfilter.cpp.s
 
 # target to generate assembly for a file
 src/calibfilter.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calibfilter.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calibfilter.cpp.s
 .PHONY : src/calibfilter.cpp.s
 
 src/calonder.o: src/calonder.cpp.o
@@ -795,7 +785,7 @@ src/calonder.o: src/calonder.cpp.o
 
 # target to build an object file
 src/calonder.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calonder.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calonder.cpp.o
 .PHONY : src/calonder.cpp.o
 
 src/calonder.i: src/calonder.cpp.i
@@ -803,7 +793,7 @@ src/calonder.i: src/calonder.cpp.i
 
 # target to preprocess a source file
 src/calonder.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calonder.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calonder.cpp.i
 .PHONY : src/calonder.cpp.i
 
 src/calonder.s: src/calonder.cpp.s
@@ -811,7 +801,7 @@ src/calonder.s: src/calonder.cpp.s
 
 # target to generate assembly for a file
 src/calonder.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calonder.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/calonder.cpp.s
 .PHONY : src/calonder.cpp.s
 
 src/camshift.o: src/camshift.cpp.o
@@ -819,7 +809,7 @@ src/camshift.o: src/camshift.cpp.o
 
 # target to build an object file
 src/camshift.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/camshift.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/camshift.cpp.o
 .PHONY : src/camshift.cpp.o
 
 src/camshift.i: src/camshift.cpp.i
@@ -827,7 +817,7 @@ src/camshift.i: src/camshift.cpp.i
 
 # target to preprocess a source file
 src/camshift.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/camshift.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/camshift.cpp.i
 .PHONY : src/camshift.cpp.i
 
 src/camshift.s: src/camshift.cpp.s
@@ -835,7 +825,7 @@ src/camshift.s: src/camshift.cpp.s
 
 # target to generate assembly for a file
 src/camshift.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/camshift.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/camshift.cpp.s
 .PHONY : src/camshift.cpp.s
 
 src/clique.o: src/clique.cpp.o
@@ -843,7 +833,7 @@ src/clique.o: src/clique.cpp.o
 
 # target to build an object file
 src/clique.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/clique.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/clique.cpp.o
 .PHONY : src/clique.cpp.o
 
 src/clique.i: src/clique.cpp.i
@@ -851,7 +841,7 @@ src/clique.i: src/clique.cpp.i
 
 # target to preprocess a source file
 src/clique.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/clique.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/clique.cpp.i
 .PHONY : src/clique.cpp.i
 
 src/clique.s: src/clique.cpp.s
@@ -859,7 +849,7 @@ src/clique.s: src/clique.cpp.s
 
 # target to generate assembly for a file
 src/clique.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/clique.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/clique.cpp.s
 .PHONY : src/clique.cpp.s
 
 src/compat.o: src/compat.cpp.o
@@ -867,7 +857,7 @@ src/compat.o: src/compat.cpp.o
 
 # target to build an object file
 src/compat.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/compat.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/compat.cpp.o
 .PHONY : src/compat.cpp.o
 
 src/compat.i: src/compat.cpp.i
@@ -875,7 +865,7 @@ src/compat.i: src/compat.cpp.i
 
 # target to preprocess a source file
 src/compat.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/compat.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/compat.cpp.i
 .PHONY : src/compat.cpp.i
 
 src/compat.s: src/compat.cpp.s
@@ -883,7 +873,7 @@ src/compat.s: src/compat.cpp.s
 
 # target to generate assembly for a file
 src/compat.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/compat.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/compat.cpp.s
 .PHONY : src/compat.cpp.s
 
 src/condens.o: src/condens.cpp.o
@@ -891,7 +881,7 @@ src/condens.o: src/condens.cpp.o
 
 # target to build an object file
 src/condens.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/condens.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/condens.cpp.o
 .PHONY : src/condens.cpp.o
 
 src/condens.i: src/condens.cpp.i
@@ -899,7 +889,7 @@ src/condens.i: src/condens.cpp.i
 
 # target to preprocess a source file
 src/condens.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/condens.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/condens.cpp.i
 .PHONY : src/condens.cpp.i
 
 src/condens.s: src/condens.cpp.s
@@ -907,7 +897,7 @@ src/condens.s: src/condens.cpp.s
 
 # target to generate assembly for a file
 src/condens.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/condens.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/condens.cpp.s
 .PHONY : src/condens.cpp.s
 
 src/contourtree.o: src/contourtree.cpp.o
@@ -915,7 +905,7 @@ src/contourtree.o: src/contourtree.cpp.o
 
 # target to build an object file
 src/contourtree.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/contourtree.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/contourtree.cpp.o
 .PHONY : src/contourtree.cpp.o
 
 src/contourtree.i: src/contourtree.cpp.i
@@ -923,7 +913,7 @@ src/contourtree.i: src/contourtree.cpp.i
 
 # target to preprocess a source file
 src/contourtree.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/contourtree.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/contourtree.cpp.i
 .PHONY : src/contourtree.cpp.i
 
 src/contourtree.s: src/contourtree.cpp.s
@@ -931,7 +921,7 @@ src/contourtree.s: src/contourtree.cpp.s
 
 # target to generate assembly for a file
 src/contourtree.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/contourtree.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/contourtree.cpp.s
 .PHONY : src/contourtree.cpp.s
 
 src/correspond.o: src/correspond.cpp.o
@@ -939,7 +929,7 @@ src/correspond.o: src/correspond.cpp.o
 
 # target to build an object file
 src/correspond.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/correspond.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/correspond.cpp.o
 .PHONY : src/correspond.cpp.o
 
 src/correspond.i: src/correspond.cpp.i
@@ -947,7 +937,7 @@ src/correspond.i: src/correspond.cpp.i
 
 # target to preprocess a source file
 src/correspond.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/correspond.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/correspond.cpp.i
 .PHONY : src/correspond.cpp.i
 
 src/correspond.s: src/correspond.cpp.s
@@ -955,7 +945,7 @@ src/correspond.s: src/correspond.cpp.s
 
 # target to generate assembly for a file
 src/correspond.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/correspond.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/correspond.cpp.s
 .PHONY : src/correspond.cpp.s
 
 src/corrimages.o: src/corrimages.cpp.o
@@ -963,7 +953,7 @@ src/corrimages.o: src/corrimages.cpp.o
 
 # target to build an object file
 src/corrimages.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/corrimages.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/corrimages.cpp.o
 .PHONY : src/corrimages.cpp.o
 
 src/corrimages.i: src/corrimages.cpp.i
@@ -971,7 +961,7 @@ src/corrimages.i: src/corrimages.cpp.i
 
 # target to preprocess a source file
 src/corrimages.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/corrimages.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/corrimages.cpp.i
 .PHONY : src/corrimages.cpp.i
 
 src/corrimages.s: src/corrimages.cpp.s
@@ -979,7 +969,7 @@ src/corrimages.s: src/corrimages.cpp.s
 
 # target to generate assembly for a file
 src/corrimages.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/corrimages.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/corrimages.cpp.s
 .PHONY : src/corrimages.cpp.s
 
 src/createhandmask.o: src/createhandmask.cpp.o
@@ -987,7 +977,7 @@ src/createhandmask.o: src/createhandmask.cpp.o
 
 # target to build an object file
 src/createhandmask.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/createhandmask.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/createhandmask.cpp.o
 .PHONY : src/createhandmask.cpp.o
 
 src/createhandmask.i: src/createhandmask.cpp.i
@@ -995,7 +985,7 @@ src/createhandmask.i: src/createhandmask.cpp.i
 
 # target to preprocess a source file
 src/createhandmask.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/createhandmask.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/createhandmask.cpp.i
 .PHONY : src/createhandmask.cpp.i
 
 src/createhandmask.s: src/createhandmask.cpp.s
@@ -1003,7 +993,7 @@ src/createhandmask.s: src/createhandmask.cpp.s
 
 # target to generate assembly for a file
 src/createhandmask.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/createhandmask.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/createhandmask.cpp.s
 .PHONY : src/createhandmask.cpp.s
 
 src/decomppoly.o: src/decomppoly.cpp.o
@@ -1011,7 +1001,7 @@ src/decomppoly.o: src/decomppoly.cpp.o
 
 # target to build an object file
 src/decomppoly.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/decomppoly.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/decomppoly.cpp.o
 .PHONY : src/decomppoly.cpp.o
 
 src/decomppoly.i: src/decomppoly.cpp.i
@@ -1019,7 +1009,7 @@ src/decomppoly.i: src/decomppoly.cpp.i
 
 # target to preprocess a source file
 src/decomppoly.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/decomppoly.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/decomppoly.cpp.i
 .PHONY : src/decomppoly.cpp.i
 
 src/decomppoly.s: src/decomppoly.cpp.s
@@ -1027,7 +1017,7 @@ src/decomppoly.s: src/decomppoly.cpp.s
 
 # target to generate assembly for a file
 src/decomppoly.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/decomppoly.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/decomppoly.cpp.s
 .PHONY : src/decomppoly.cpp.s
 
 src/dominants.o: src/dominants.cpp.o
@@ -1035,7 +1025,7 @@ src/dominants.o: src/dominants.cpp.o
 
 # target to build an object file
 src/dominants.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/dominants.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/dominants.cpp.o
 .PHONY : src/dominants.cpp.o
 
 src/dominants.i: src/dominants.cpp.i
@@ -1043,7 +1033,7 @@ src/dominants.i: src/dominants.cpp.i
 
 # target to preprocess a source file
 src/dominants.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/dominants.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/dominants.cpp.i
 .PHONY : src/dominants.cpp.i
 
 src/dominants.s: src/dominants.cpp.s
@@ -1051,7 +1041,7 @@ src/dominants.s: src/dominants.cpp.s
 
 # target to generate assembly for a file
 src/dominants.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/dominants.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/dominants.cpp.s
 .PHONY : src/dominants.cpp.s
 
 src/dpstereo.o: src/dpstereo.cpp.o
@@ -1059,7 +1049,7 @@ src/dpstereo.o: src/dpstereo.cpp.o
 
 # target to build an object file
 src/dpstereo.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/dpstereo.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/dpstereo.cpp.o
 .PHONY : src/dpstereo.cpp.o
 
 src/dpstereo.i: src/dpstereo.cpp.i
@@ -1067,7 +1057,7 @@ src/dpstereo.i: src/dpstereo.cpp.i
 
 # target to preprocess a source file
 src/dpstereo.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/dpstereo.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/dpstereo.cpp.i
 .PHONY : src/dpstereo.cpp.i
 
 src/dpstereo.s: src/dpstereo.cpp.s
@@ -1075,7 +1065,7 @@ src/dpstereo.s: src/dpstereo.cpp.s
 
 # target to generate assembly for a file
 src/dpstereo.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/dpstereo.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/dpstereo.cpp.s
 .PHONY : src/dpstereo.cpp.s
 
 src/eigenobjects.o: src/eigenobjects.cpp.o
@@ -1083,7 +1073,7 @@ src/eigenobjects.o: src/eigenobjects.cpp.o
 
 # target to build an object file
 src/eigenobjects.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/eigenobjects.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/eigenobjects.cpp.o
 .PHONY : src/eigenobjects.cpp.o
 
 src/eigenobjects.i: src/eigenobjects.cpp.i
@@ -1091,7 +1081,7 @@ src/eigenobjects.i: src/eigenobjects.cpp.i
 
 # target to preprocess a source file
 src/eigenobjects.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/eigenobjects.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/eigenobjects.cpp.i
 .PHONY : src/eigenobjects.cpp.i
 
 src/eigenobjects.s: src/eigenobjects.cpp.s
@@ -1099,7 +1089,7 @@ src/eigenobjects.s: src/eigenobjects.cpp.s
 
 # target to generate assembly for a file
 src/eigenobjects.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/eigenobjects.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/eigenobjects.cpp.s
 .PHONY : src/eigenobjects.cpp.s
 
 src/em.o: src/em.cpp.o
@@ -1107,7 +1097,7 @@ src/em.o: src/em.cpp.o
 
 # target to build an object file
 src/em.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/em.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/em.cpp.o
 .PHONY : src/em.cpp.o
 
 src/em.i: src/em.cpp.i
@@ -1115,7 +1105,7 @@ src/em.i: src/em.cpp.i
 
 # target to preprocess a source file
 src/em.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/em.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/em.cpp.i
 .PHONY : src/em.cpp.i
 
 src/em.s: src/em.cpp.s
@@ -1123,7 +1113,7 @@ src/em.s: src/em.cpp.s
 
 # target to generate assembly for a file
 src/em.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/em.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/em.cpp.s
 .PHONY : src/em.cpp.s
 
 src/enmin.o: src/enmin.cpp.o
@@ -1131,7 +1121,7 @@ src/enmin.o: src/enmin.cpp.o
 
 # target to build an object file
 src/enmin.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enmin.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enmin.cpp.o
 .PHONY : src/enmin.cpp.o
 
 src/enmin.i: src/enmin.cpp.i
@@ -1139,7 +1129,7 @@ src/enmin.i: src/enmin.cpp.i
 
 # target to preprocess a source file
 src/enmin.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enmin.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enmin.cpp.i
 .PHONY : src/enmin.cpp.i
 
 src/enmin.s: src/enmin.cpp.s
@@ -1147,7 +1137,7 @@ src/enmin.s: src/enmin.cpp.s
 
 # target to generate assembly for a file
 src/enmin.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enmin.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enmin.cpp.s
 .PHONY : src/enmin.cpp.s
 
 src/enteringblobdetection.o: src/enteringblobdetection.cpp.o
@@ -1155,7 +1145,7 @@ src/enteringblobdetection.o: src/enteringblobdetection.cpp.o
 
 # target to build an object file
 src/enteringblobdetection.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enteringblobdetection.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enteringblobdetection.cpp.o
 .PHONY : src/enteringblobdetection.cpp.o
 
 src/enteringblobdetection.i: src/enteringblobdetection.cpp.i
@@ -1163,7 +1153,7 @@ src/enteringblobdetection.i: src/enteringblobdetection.cpp.i
 
 # target to preprocess a source file
 src/enteringblobdetection.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enteringblobdetection.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enteringblobdetection.cpp.i
 .PHONY : src/enteringblobdetection.cpp.i
 
 src/enteringblobdetection.s: src/enteringblobdetection.cpp.s
@@ -1171,7 +1161,7 @@ src/enteringblobdetection.s: src/enteringblobdetection.cpp.s
 
 # target to generate assembly for a file
 src/enteringblobdetection.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enteringblobdetection.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enteringblobdetection.cpp.s
 .PHONY : src/enteringblobdetection.cpp.s
 
 src/enteringblobdetectionreal.o: src/enteringblobdetectionreal.cpp.o
@@ -1179,7 +1169,7 @@ src/enteringblobdetectionreal.o: src/enteringblobdetectionreal.cpp.o
 
 # target to build an object file
 src/enteringblobdetectionreal.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enteringblobdetectionreal.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enteringblobdetectionreal.cpp.o
 .PHONY : src/enteringblobdetectionreal.cpp.o
 
 src/enteringblobdetectionreal.i: src/enteringblobdetectionreal.cpp.i
@@ -1187,7 +1177,7 @@ src/enteringblobdetectionreal.i: src/enteringblobdetectionreal.cpp.i
 
 # target to preprocess a source file
 src/enteringblobdetectionreal.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enteringblobdetectionreal.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enteringblobdetectionreal.cpp.i
 .PHONY : src/enteringblobdetectionreal.cpp.i
 
 src/enteringblobdetectionreal.s: src/enteringblobdetectionreal.cpp.s
@@ -1195,7 +1185,7 @@ src/enteringblobdetectionreal.s: src/enteringblobdetectionreal.cpp.s
 
 # target to generate assembly for a file
 src/enteringblobdetectionreal.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enteringblobdetectionreal.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/enteringblobdetectionreal.cpp.s
 .PHONY : src/enteringblobdetectionreal.cpp.s
 
 src/epilines.o: src/epilines.cpp.o
@@ -1203,7 +1193,7 @@ src/epilines.o: src/epilines.cpp.o
 
 # target to build an object file
 src/epilines.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/epilines.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/epilines.cpp.o
 .PHONY : src/epilines.cpp.o
 
 src/epilines.i: src/epilines.cpp.i
@@ -1211,7 +1201,7 @@ src/epilines.i: src/epilines.cpp.i
 
 # target to preprocess a source file
 src/epilines.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/epilines.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/epilines.cpp.i
 .PHONY : src/epilines.cpp.i
 
 src/epilines.s: src/epilines.cpp.s
@@ -1219,7 +1209,7 @@ src/epilines.s: src/epilines.cpp.s
 
 # target to generate assembly for a file
 src/epilines.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/epilines.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/epilines.cpp.s
 .PHONY : src/epilines.cpp.s
 
 src/extendededges.o: src/extendededges.cpp.o
@@ -1227,7 +1217,7 @@ src/extendededges.o: src/extendededges.cpp.o
 
 # target to build an object file
 src/extendededges.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/extendededges.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/extendededges.cpp.o
 .PHONY : src/extendededges.cpp.o
 
 src/extendededges.i: src/extendededges.cpp.i
@@ -1235,7 +1225,7 @@ src/extendededges.i: src/extendededges.cpp.i
 
 # target to preprocess a source file
 src/extendededges.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/extendededges.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/extendededges.cpp.i
 .PHONY : src/extendededges.cpp.i
 
 src/extendededges.s: src/extendededges.cpp.s
@@ -1243,7 +1233,7 @@ src/extendededges.s: src/extendededges.cpp.s
 
 # target to generate assembly for a file
 src/extendededges.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/extendededges.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/extendededges.cpp.s
 .PHONY : src/extendededges.cpp.s
 
 src/face.o: src/face.cpp.o
@@ -1251,7 +1241,7 @@ src/face.o: src/face.cpp.o
 
 # target to build an object file
 src/face.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/face.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/face.cpp.o
 .PHONY : src/face.cpp.o
 
 src/face.i: src/face.cpp.i
@@ -1259,7 +1249,7 @@ src/face.i: src/face.cpp.i
 
 # target to preprocess a source file
 src/face.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/face.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/face.cpp.i
 .PHONY : src/face.cpp.i
 
 src/face.s: src/face.cpp.s
@@ -1267,7 +1257,7 @@ src/face.s: src/face.cpp.s
 
 # target to generate assembly for a file
 src/face.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/face.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/face.cpp.s
 .PHONY : src/face.cpp.s
 
 src/facedetection.o: src/facedetection.cpp.o
@@ -1275,7 +1265,7 @@ src/facedetection.o: src/facedetection.cpp.o
 
 # target to build an object file
 src/facedetection.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/facedetection.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/facedetection.cpp.o
 .PHONY : src/facedetection.cpp.o
 
 src/facedetection.i: src/facedetection.cpp.i
@@ -1283,7 +1273,7 @@ src/facedetection.i: src/facedetection.cpp.i
 
 # target to preprocess a source file
 src/facedetection.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/facedetection.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/facedetection.cpp.i
 .PHONY : src/facedetection.cpp.i
 
 src/facedetection.s: src/facedetection.cpp.s
@@ -1291,7 +1281,7 @@ src/facedetection.s: src/facedetection.cpp.s
 
 # target to generate assembly for a file
 src/facedetection.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/facedetection.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/facedetection.cpp.s
 .PHONY : src/facedetection.cpp.s
 
 src/facetemplate.o: src/facetemplate.cpp.o
@@ -1299,7 +1289,7 @@ src/facetemplate.o: src/facetemplate.cpp.o
 
 # target to build an object file
 src/facetemplate.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/facetemplate.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/facetemplate.cpp.o
 .PHONY : src/facetemplate.cpp.o
 
 src/facetemplate.i: src/facetemplate.cpp.i
@@ -1307,7 +1297,7 @@ src/facetemplate.i: src/facetemplate.cpp.i
 
 # target to preprocess a source file
 src/facetemplate.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/facetemplate.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/facetemplate.cpp.i
 .PHONY : src/facetemplate.cpp.i
 
 src/facetemplate.s: src/facetemplate.cpp.s
@@ -1315,7 +1305,7 @@ src/facetemplate.s: src/facetemplate.cpp.s
 
 # target to generate assembly for a file
 src/facetemplate.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/facetemplate.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/facetemplate.cpp.s
 .PHONY : src/facetemplate.cpp.s
 
 src/features2d.o: src/features2d.cpp.o
@@ -1323,7 +1313,7 @@ src/features2d.o: src/features2d.cpp.o
 
 # target to build an object file
 src/features2d.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/features2d.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/features2d.cpp.o
 .PHONY : src/features2d.cpp.o
 
 src/features2d.i: src/features2d.cpp.i
@@ -1331,7 +1321,7 @@ src/features2d.i: src/features2d.cpp.i
 
 # target to preprocess a source file
 src/features2d.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/features2d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/features2d.cpp.i
 .PHONY : src/features2d.cpp.i
 
 src/features2d.s: src/features2d.cpp.s
@@ -1339,7 +1329,7 @@ src/features2d.s: src/features2d.cpp.s
 
 # target to generate assembly for a file
 src/features2d.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/features2d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/features2d.cpp.s
 .PHONY : src/features2d.cpp.s
 
 src/featuretree.o: src/featuretree.cpp.o
@@ -1347,7 +1337,7 @@ src/featuretree.o: src/featuretree.cpp.o
 
 # target to build an object file
 src/featuretree.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/featuretree.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/featuretree.cpp.o
 .PHONY : src/featuretree.cpp.o
 
 src/featuretree.i: src/featuretree.cpp.i
@@ -1355,7 +1345,7 @@ src/featuretree.i: src/featuretree.cpp.i
 
 # target to preprocess a source file
 src/featuretree.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/featuretree.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/featuretree.cpp.i
 .PHONY : src/featuretree.cpp.i
 
 src/featuretree.s: src/featuretree.cpp.s
@@ -1363,7 +1353,7 @@ src/featuretree.s: src/featuretree.cpp.s
 
 # target to generate assembly for a file
 src/featuretree.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/featuretree.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/featuretree.cpp.s
 .PHONY : src/featuretree.cpp.s
 
 src/findface.o: src/findface.cpp.o
@@ -1371,7 +1361,7 @@ src/findface.o: src/findface.cpp.o
 
 # target to build an object file
 src/findface.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/findface.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/findface.cpp.o
 .PHONY : src/findface.cpp.o
 
 src/findface.i: src/findface.cpp.i
@@ -1379,7 +1369,7 @@ src/findface.i: src/findface.cpp.i
 
 # target to preprocess a source file
 src/findface.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/findface.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/findface.cpp.i
 .PHONY : src/findface.cpp.i
 
 src/findface.s: src/findface.cpp.s
@@ -1387,7 +1377,7 @@ src/findface.s: src/findface.cpp.s
 
 # target to generate assembly for a file
 src/findface.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/findface.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/findface.cpp.s
 .PHONY : src/findface.cpp.s
 
 src/findhandregion.o: src/findhandregion.cpp.o
@@ -1395,7 +1385,7 @@ src/findhandregion.o: src/findhandregion.cpp.o
 
 # target to build an object file
 src/findhandregion.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/findhandregion.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/findhandregion.cpp.o
 .PHONY : src/findhandregion.cpp.o
 
 src/findhandregion.i: src/findhandregion.cpp.i
@@ -1403,7 +1393,7 @@ src/findhandregion.i: src/findhandregion.cpp.i
 
 # target to preprocess a source file
 src/findhandregion.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/findhandregion.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/findhandregion.cpp.i
 .PHONY : src/findhandregion.cpp.i
 
 src/findhandregion.s: src/findhandregion.cpp.s
@@ -1411,7 +1401,7 @@ src/findhandregion.s: src/findhandregion.cpp.s
 
 # target to generate assembly for a file
 src/findhandregion.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/findhandregion.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/findhandregion.cpp.s
 .PHONY : src/findhandregion.cpp.s
 
 src/hmm.o: src/hmm.cpp.o
@@ -1419,7 +1409,7 @@ src/hmm.o: src/hmm.cpp.o
 
 # target to build an object file
 src/hmm.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmm.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmm.cpp.o
 .PHONY : src/hmm.cpp.o
 
 src/hmm.i: src/hmm.cpp.i
@@ -1427,7 +1417,7 @@ src/hmm.i: src/hmm.cpp.i
 
 # target to preprocess a source file
 src/hmm.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmm.cpp.i
 .PHONY : src/hmm.cpp.i
 
 src/hmm.s: src/hmm.cpp.s
@@ -1435,7 +1425,7 @@ src/hmm.s: src/hmm.cpp.s
 
 # target to generate assembly for a file
 src/hmm.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmm.cpp.s
 .PHONY : src/hmm.cpp.s
 
 src/hmm1d.o: src/hmm1d.cpp.o
@@ -1443,7 +1433,7 @@ src/hmm1d.o: src/hmm1d.cpp.o
 
 # target to build an object file
 src/hmm1d.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmm1d.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmm1d.cpp.o
 .PHONY : src/hmm1d.cpp.o
 
 src/hmm1d.i: src/hmm1d.cpp.i
@@ -1451,7 +1441,7 @@ src/hmm1d.i: src/hmm1d.cpp.i
 
 # target to preprocess a source file
 src/hmm1d.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmm1d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmm1d.cpp.i
 .PHONY : src/hmm1d.cpp.i
 
 src/hmm1d.s: src/hmm1d.cpp.s
@@ -1459,7 +1449,7 @@ src/hmm1d.s: src/hmm1d.cpp.s
 
 # target to generate assembly for a file
 src/hmm1d.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmm1d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmm1d.cpp.s
 .PHONY : src/hmm1d.cpp.s
 
 src/hmmobs.o: src/hmmobs.cpp.o
@@ -1467,7 +1457,7 @@ src/hmmobs.o: src/hmmobs.cpp.o
 
 # target to build an object file
 src/hmmobs.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmmobs.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmmobs.cpp.o
 .PHONY : src/hmmobs.cpp.o
 
 src/hmmobs.i: src/hmmobs.cpp.i
@@ -1475,7 +1465,7 @@ src/hmmobs.i: src/hmmobs.cpp.i
 
 # target to preprocess a source file
 src/hmmobs.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmmobs.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmmobs.cpp.i
 .PHONY : src/hmmobs.cpp.i
 
 src/hmmobs.s: src/hmmobs.cpp.s
@@ -1483,7 +1473,7 @@ src/hmmobs.s: src/hmmobs.cpp.s
 
 # target to generate assembly for a file
 src/hmmobs.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmmobs.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/hmmobs.cpp.s
 .PHONY : src/hmmobs.cpp.s
 
 src/image.o: src/image.cpp.o
@@ -1491,7 +1481,7 @@ src/image.o: src/image.cpp.o
 
 # target to build an object file
 src/image.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/image.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/image.cpp.o
 .PHONY : src/image.cpp.o
 
 src/image.i: src/image.cpp.i
@@ -1499,7 +1489,7 @@ src/image.i: src/image.cpp.i
 
 # target to preprocess a source file
 src/image.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/image.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/image.cpp.i
 .PHONY : src/image.cpp.i
 
 src/image.s: src/image.cpp.s
@@ -1507,7 +1497,7 @@ src/image.s: src/image.cpp.s
 
 # target to generate assembly for a file
 src/image.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/image.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/image.cpp.s
 .PHONY : src/image.cpp.s
 
 src/kdtree.o: src/kdtree.cpp.o
@@ -1515,7 +1505,7 @@ src/kdtree.o: src/kdtree.cpp.o
 
 # target to build an object file
 src/kdtree.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/kdtree.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/kdtree.cpp.o
 .PHONY : src/kdtree.cpp.o
 
 src/kdtree.i: src/kdtree.cpp.i
@@ -1523,7 +1513,7 @@ src/kdtree.i: src/kdtree.cpp.i
 
 # target to preprocess a source file
 src/kdtree.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/kdtree.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/kdtree.cpp.i
 .PHONY : src/kdtree.cpp.i
 
 src/kdtree.s: src/kdtree.cpp.s
@@ -1531,7 +1521,7 @@ src/kdtree.s: src/kdtree.cpp.s
 
 # target to generate assembly for a file
 src/kdtree.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/kdtree.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/kdtree.cpp.s
 .PHONY : src/kdtree.cpp.s
 
 src/lcm.o: src/lcm.cpp.o
@@ -1539,7 +1529,7 @@ src/lcm.o: src/lcm.cpp.o
 
 # target to build an object file
 src/lcm.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lcm.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lcm.cpp.o
 .PHONY : src/lcm.cpp.o
 
 src/lcm.i: src/lcm.cpp.i
@@ -1547,7 +1537,7 @@ src/lcm.i: src/lcm.cpp.i
 
 # target to preprocess a source file
 src/lcm.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lcm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lcm.cpp.i
 .PHONY : src/lcm.cpp.i
 
 src/lcm.s: src/lcm.cpp.s
@@ -1555,7 +1545,7 @@ src/lcm.s: src/lcm.cpp.s
 
 # target to generate assembly for a file
 src/lcm.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lcm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lcm.cpp.s
 .PHONY : src/lcm.cpp.s
 
 src/lee.o: src/lee.cpp.o
@@ -1563,7 +1553,7 @@ src/lee.o: src/lee.cpp.o
 
 # target to build an object file
 src/lee.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lee.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lee.cpp.o
 .PHONY : src/lee.cpp.o
 
 src/lee.i: src/lee.cpp.i
@@ -1571,7 +1561,7 @@ src/lee.i: src/lee.cpp.i
 
 # target to preprocess a source file
 src/lee.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lee.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lee.cpp.i
 .PHONY : src/lee.cpp.i
 
 src/lee.s: src/lee.cpp.s
@@ -1579,7 +1569,7 @@ src/lee.s: src/lee.cpp.s
 
 # target to generate assembly for a file
 src/lee.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lee.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lee.cpp.s
 .PHONY : src/lee.cpp.s
 
 src/levmar.o: src/levmar.cpp.o
@@ -1587,7 +1577,7 @@ src/levmar.o: src/levmar.cpp.o
 
 # target to build an object file
 src/levmar.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmar.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmar.cpp.o
 .PHONY : src/levmar.cpp.o
 
 src/levmar.i: src/levmar.cpp.i
@@ -1595,7 +1585,7 @@ src/levmar.i: src/levmar.cpp.i
 
 # target to preprocess a source file
 src/levmar.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmar.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmar.cpp.i
 .PHONY : src/levmar.cpp.i
 
 src/levmar.s: src/levmar.cpp.s
@@ -1603,7 +1593,7 @@ src/levmar.s: src/levmar.cpp.s
 
 # target to generate assembly for a file
 src/levmar.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmar.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmar.cpp.s
 .PHONY : src/levmar.cpp.s
 
 src/levmarprojbandle.o: src/levmarprojbandle.cpp.o
@@ -1611,7 +1601,7 @@ src/levmarprojbandle.o: src/levmarprojbandle.cpp.o
 
 # target to build an object file
 src/levmarprojbandle.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmarprojbandle.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmarprojbandle.cpp.o
 .PHONY : src/levmarprojbandle.cpp.o
 
 src/levmarprojbandle.i: src/levmarprojbandle.cpp.i
@@ -1619,7 +1609,7 @@ src/levmarprojbandle.i: src/levmarprojbandle.cpp.i
 
 # target to preprocess a source file
 src/levmarprojbandle.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmarprojbandle.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmarprojbandle.cpp.i
 .PHONY : src/levmarprojbandle.cpp.i
 
 src/levmarprojbandle.s: src/levmarprojbandle.cpp.s
@@ -1627,7 +1617,7 @@ src/levmarprojbandle.s: src/levmarprojbandle.cpp.s
 
 # target to generate assembly for a file
 src/levmarprojbandle.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmarprojbandle.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmarprojbandle.cpp.s
 .PHONY : src/levmarprojbandle.cpp.s
 
 src/levmartrif.o: src/levmartrif.cpp.o
@@ -1635,7 +1625,7 @@ src/levmartrif.o: src/levmartrif.cpp.o
 
 # target to build an object file
 src/levmartrif.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmartrif.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmartrif.cpp.o
 .PHONY : src/levmartrif.cpp.o
 
 src/levmartrif.i: src/levmartrif.cpp.i
@@ -1643,7 +1633,7 @@ src/levmartrif.i: src/levmartrif.cpp.i
 
 # target to preprocess a source file
 src/levmartrif.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmartrif.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmartrif.cpp.i
 .PHONY : src/levmartrif.cpp.i
 
 src/levmartrif.s: src/levmartrif.cpp.s
@@ -1651,7 +1641,7 @@ src/levmartrif.s: src/levmartrif.cpp.s
 
 # target to generate assembly for a file
 src/levmartrif.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmartrif.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/levmartrif.cpp.s
 .PHONY : src/levmartrif.cpp.s
 
 src/lines.o: src/lines.cpp.o
@@ -1659,7 +1649,7 @@ src/lines.o: src/lines.cpp.o
 
 # target to build an object file
 src/lines.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lines.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lines.cpp.o
 .PHONY : src/lines.cpp.o
 
 src/lines.i: src/lines.cpp.i
@@ -1667,7 +1657,7 @@ src/lines.i: src/lines.cpp.i
 
 # target to preprocess a source file
 src/lines.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lines.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lines.cpp.i
 .PHONY : src/lines.cpp.i
 
 src/lines.s: src/lines.cpp.s
@@ -1675,7 +1665,7 @@ src/lines.s: src/lines.cpp.s
 
 # target to generate assembly for a file
 src/lines.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lines.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lines.cpp.s
 .PHONY : src/lines.cpp.s
 
 src/lmeds.o: src/lmeds.cpp.o
@@ -1683,7 +1673,7 @@ src/lmeds.o: src/lmeds.cpp.o
 
 # target to build an object file
 src/lmeds.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lmeds.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lmeds.cpp.o
 .PHONY : src/lmeds.cpp.o
 
 src/lmeds.i: src/lmeds.cpp.i
@@ -1691,7 +1681,7 @@ src/lmeds.i: src/lmeds.cpp.i
 
 # target to preprocess a source file
 src/lmeds.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lmeds.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lmeds.cpp.i
 .PHONY : src/lmeds.cpp.i
 
 src/lmeds.s: src/lmeds.cpp.s
@@ -1699,7 +1689,7 @@ src/lmeds.s: src/lmeds.cpp.s
 
 # target to generate assembly for a file
 src/lmeds.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lmeds.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lmeds.cpp.s
 .PHONY : src/lmeds.cpp.s
 
 src/lsh.o: src/lsh.cpp.o
@@ -1707,7 +1697,7 @@ src/lsh.o: src/lsh.cpp.o
 
 # target to build an object file
 src/lsh.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lsh.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lsh.cpp.o
 .PHONY : src/lsh.cpp.o
 
 src/lsh.i: src/lsh.cpp.i
@@ -1715,7 +1705,7 @@ src/lsh.i: src/lsh.cpp.i
 
 # target to preprocess a source file
 src/lsh.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lsh.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lsh.cpp.i
 .PHONY : src/lsh.cpp.i
 
 src/lsh.s: src/lsh.cpp.s
@@ -1723,7 +1713,7 @@ src/lsh.s: src/lsh.cpp.s
 
 # target to generate assembly for a file
 src/lsh.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lsh.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/lsh.cpp.s
 .PHONY : src/lsh.cpp.s
 
 src/morphcontours.o: src/morphcontours.cpp.o
@@ -1731,7 +1721,7 @@ src/morphcontours.o: src/morphcontours.cpp.o
 
 # target to build an object file
 src/morphcontours.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/morphcontours.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/morphcontours.cpp.o
 .PHONY : src/morphcontours.cpp.o
 
 src/morphcontours.i: src/morphcontours.cpp.i
@@ -1739,7 +1729,7 @@ src/morphcontours.i: src/morphcontours.cpp.i
 
 # target to preprocess a source file
 src/morphcontours.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/morphcontours.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/morphcontours.cpp.i
 .PHONY : src/morphcontours.cpp.i
 
 src/morphcontours.s: src/morphcontours.cpp.s
@@ -1747,7 +1737,7 @@ src/morphcontours.s: src/morphcontours.cpp.s
 
 # target to generate assembly for a file
 src/morphcontours.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/morphcontours.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/morphcontours.cpp.s
 .PHONY : src/morphcontours.cpp.s
 
 src/morphing.o: src/morphing.cpp.o
@@ -1755,7 +1745,7 @@ src/morphing.o: src/morphing.cpp.o
 
 # target to build an object file
 src/morphing.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/morphing.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/morphing.cpp.o
 .PHONY : src/morphing.cpp.o
 
 src/morphing.i: src/morphing.cpp.i
@@ -1763,7 +1753,7 @@ src/morphing.i: src/morphing.cpp.i
 
 # target to preprocess a source file
 src/morphing.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/morphing.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/morphing.cpp.i
 .PHONY : src/morphing.cpp.i
 
 src/morphing.s: src/morphing.cpp.s
@@ -1771,7 +1761,7 @@ src/morphing.s: src/morphing.cpp.s
 
 # target to generate assembly for a file
 src/morphing.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/morphing.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/morphing.cpp.s
 .PHONY : src/morphing.cpp.s
 
 src/oneway.o: src/oneway.cpp.o
@@ -1779,7 +1769,7 @@ src/oneway.o: src/oneway.cpp.o
 
 # target to build an object file
 src/oneway.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/oneway.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/oneway.cpp.o
 .PHONY : src/oneway.cpp.o
 
 src/oneway.i: src/oneway.cpp.i
@@ -1787,7 +1777,7 @@ src/oneway.i: src/oneway.cpp.i
 
 # target to preprocess a source file
 src/oneway.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/oneway.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/oneway.cpp.i
 .PHONY : src/oneway.cpp.i
 
 src/oneway.s: src/oneway.cpp.s
@@ -1795,7 +1785,7 @@ src/oneway.s: src/oneway.cpp.s
 
 # target to generate assembly for a file
 src/oneway.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/oneway.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/oneway.cpp.s
 .PHONY : src/oneway.cpp.s
 
 src/optflowbm.o: src/optflowbm.cpp.o
@@ -1803,7 +1793,7 @@ src/optflowbm.o: src/optflowbm.cpp.o
 
 # target to build an object file
 src/optflowbm.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowbm.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowbm.cpp.o
 .PHONY : src/optflowbm.cpp.o
 
 src/optflowbm.i: src/optflowbm.cpp.i
@@ -1811,7 +1801,7 @@ src/optflowbm.i: src/optflowbm.cpp.i
 
 # target to preprocess a source file
 src/optflowbm.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowbm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowbm.cpp.i
 .PHONY : src/optflowbm.cpp.i
 
 src/optflowbm.s: src/optflowbm.cpp.s
@@ -1819,7 +1809,7 @@ src/optflowbm.s: src/optflowbm.cpp.s
 
 # target to generate assembly for a file
 src/optflowbm.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowbm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowbm.cpp.s
 .PHONY : src/optflowbm.cpp.s
 
 src/optflowhs.o: src/optflowhs.cpp.o
@@ -1827,7 +1817,7 @@ src/optflowhs.o: src/optflowhs.cpp.o
 
 # target to build an object file
 src/optflowhs.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowhs.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowhs.cpp.o
 .PHONY : src/optflowhs.cpp.o
 
 src/optflowhs.i: src/optflowhs.cpp.i
@@ -1835,7 +1825,7 @@ src/optflowhs.i: src/optflowhs.cpp.i
 
 # target to preprocess a source file
 src/optflowhs.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowhs.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowhs.cpp.i
 .PHONY : src/optflowhs.cpp.i
 
 src/optflowhs.s: src/optflowhs.cpp.s
@@ -1843,7 +1833,7 @@ src/optflowhs.s: src/optflowhs.cpp.s
 
 # target to generate assembly for a file
 src/optflowhs.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowhs.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowhs.cpp.s
 .PHONY : src/optflowhs.cpp.s
 
 src/optflowlk.o: src/optflowlk.cpp.o
@@ -1851,7 +1841,7 @@ src/optflowlk.o: src/optflowlk.cpp.o
 
 # target to build an object file
 src/optflowlk.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowlk.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowlk.cpp.o
 .PHONY : src/optflowlk.cpp.o
 
 src/optflowlk.i: src/optflowlk.cpp.i
@@ -1859,7 +1849,7 @@ src/optflowlk.i: src/optflowlk.cpp.i
 
 # target to preprocess a source file
 src/optflowlk.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowlk.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowlk.cpp.i
 .PHONY : src/optflowlk.cpp.i
 
 src/optflowlk.s: src/optflowlk.cpp.s
@@ -1867,7 +1857,7 @@ src/optflowlk.s: src/optflowlk.cpp.s
 
 # target to generate assembly for a file
 src/optflowlk.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowlk.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/optflowlk.cpp.s
 .PHONY : src/optflowlk.cpp.s
 
 src/pgh.o: src/pgh.cpp.o
@@ -1875,7 +1865,7 @@ src/pgh.o: src/pgh.cpp.o
 
 # target to build an object file
 src/pgh.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/pgh.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/pgh.cpp.o
 .PHONY : src/pgh.cpp.o
 
 src/pgh.i: src/pgh.cpp.i
@@ -1883,7 +1873,7 @@ src/pgh.i: src/pgh.cpp.i
 
 # target to preprocess a source file
 src/pgh.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/pgh.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/pgh.cpp.i
 .PHONY : src/pgh.cpp.i
 
 src/pgh.s: src/pgh.cpp.s
@@ -1891,7 +1881,7 @@ src/pgh.s: src/pgh.cpp.s
 
 # target to generate assembly for a file
 src/pgh.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/pgh.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/pgh.cpp.s
 .PHONY : src/pgh.cpp.s
 
 src/planardetect.o: src/planardetect.cpp.o
@@ -1899,7 +1889,7 @@ src/planardetect.o: src/planardetect.cpp.o
 
 # target to build an object file
 src/planardetect.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/planardetect.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/planardetect.cpp.o
 .PHONY : src/planardetect.cpp.o
 
 src/planardetect.i: src/planardetect.cpp.i
@@ -1907,7 +1897,7 @@ src/planardetect.i: src/planardetect.cpp.i
 
 # target to preprocess a source file
 src/planardetect.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/planardetect.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/planardetect.cpp.i
 .PHONY : src/planardetect.cpp.i
 
 src/planardetect.s: src/planardetect.cpp.s
@@ -1915,7 +1905,7 @@ src/planardetect.s: src/planardetect.cpp.s
 
 # target to generate assembly for a file
 src/planardetect.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/planardetect.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/planardetect.cpp.s
 .PHONY : src/planardetect.cpp.s
 
 src/prewarp.o: src/prewarp.cpp.o
@@ -1923,7 +1913,7 @@ src/prewarp.o: src/prewarp.cpp.o
 
 # target to build an object file
 src/prewarp.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/prewarp.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/prewarp.cpp.o
 .PHONY : src/prewarp.cpp.o
 
 src/prewarp.i: src/prewarp.cpp.i
@@ -1931,7 +1921,7 @@ src/prewarp.i: src/prewarp.cpp.i
 
 # target to preprocess a source file
 src/prewarp.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/prewarp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/prewarp.cpp.i
 .PHONY : src/prewarp.cpp.i
 
 src/prewarp.s: src/prewarp.cpp.s
@@ -1939,7 +1929,7 @@ src/prewarp.s: src/prewarp.cpp.s
 
 # target to generate assembly for a file
 src/prewarp.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/prewarp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/prewarp.cpp.s
 .PHONY : src/prewarp.cpp.s
 
 src/pyrsegmentation.o: src/pyrsegmentation.cpp.o
@@ -1947,7 +1937,7 @@ src/pyrsegmentation.o: src/pyrsegmentation.cpp.o
 
 # target to build an object file
 src/pyrsegmentation.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/pyrsegmentation.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/pyrsegmentation.cpp.o
 .PHONY : src/pyrsegmentation.cpp.o
 
 src/pyrsegmentation.i: src/pyrsegmentation.cpp.i
@@ -1955,7 +1945,7 @@ src/pyrsegmentation.i: src/pyrsegmentation.cpp.i
 
 # target to preprocess a source file
 src/pyrsegmentation.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/pyrsegmentation.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/pyrsegmentation.cpp.i
 .PHONY : src/pyrsegmentation.cpp.i
 
 src/pyrsegmentation.s: src/pyrsegmentation.cpp.s
@@ -1963,7 +1953,7 @@ src/pyrsegmentation.s: src/pyrsegmentation.cpp.s
 
 # target to generate assembly for a file
 src/pyrsegmentation.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/pyrsegmentation.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/pyrsegmentation.cpp.s
 .PHONY : src/pyrsegmentation.cpp.s
 
 src/scanlines.o: src/scanlines.cpp.o
@@ -1971,7 +1961,7 @@ src/scanlines.o: src/scanlines.cpp.o
 
 # target to build an object file
 src/scanlines.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/scanlines.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/scanlines.cpp.o
 .PHONY : src/scanlines.cpp.o
 
 src/scanlines.i: src/scanlines.cpp.i
@@ -1979,7 +1969,7 @@ src/scanlines.i: src/scanlines.cpp.i
 
 # target to preprocess a source file
 src/scanlines.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/scanlines.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/scanlines.cpp.i
 .PHONY : src/scanlines.cpp.i
 
 src/scanlines.s: src/scanlines.cpp.s
@@ -1987,7 +1977,7 @@ src/scanlines.s: src/scanlines.cpp.s
 
 # target to generate assembly for a file
 src/scanlines.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/scanlines.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/scanlines.cpp.s
 .PHONY : src/scanlines.cpp.s
 
 src/segment.o: src/segment.cpp.o
@@ -1995,7 +1985,7 @@ src/segment.o: src/segment.cpp.o
 
 # target to build an object file
 src/segment.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/segment.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/segment.cpp.o
 .PHONY : src/segment.cpp.o
 
 src/segment.i: src/segment.cpp.i
@@ -2003,7 +1993,7 @@ src/segment.i: src/segment.cpp.i
 
 # target to preprocess a source file
 src/segment.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/segment.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/segment.cpp.i
 .PHONY : src/segment.cpp.i
 
 src/segment.s: src/segment.cpp.s
@@ -2011,7 +2001,7 @@ src/segment.s: src/segment.cpp.s
 
 # target to generate assembly for a file
 src/segment.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/segment.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/segment.cpp.s
 .PHONY : src/segment.cpp.s
 
 src/snakes.o: src/snakes.cpp.o
@@ -2019,7 +2009,7 @@ src/snakes.o: src/snakes.cpp.o
 
 # target to build an object file
 src/snakes.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/snakes.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/snakes.cpp.o
 .PHONY : src/snakes.cpp.o
 
 src/snakes.i: src/snakes.cpp.i
@@ -2027,7 +2017,7 @@ src/snakes.i: src/snakes.cpp.i
 
 # target to preprocess a source file
 src/snakes.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/snakes.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/snakes.cpp.i
 .PHONY : src/snakes.cpp.i
 
 src/snakes.s: src/snakes.cpp.s
@@ -2035,7 +2025,7 @@ src/snakes.s: src/snakes.cpp.s
 
 # target to generate assembly for a file
 src/snakes.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/snakes.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/snakes.cpp.s
 .PHONY : src/snakes.cpp.s
 
 src/spilltree.o: src/spilltree.cpp.o
@@ -2043,7 +2033,7 @@ src/spilltree.o: src/spilltree.cpp.o
 
 # target to build an object file
 src/spilltree.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/spilltree.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/spilltree.cpp.o
 .PHONY : src/spilltree.cpp.o
 
 src/spilltree.i: src/spilltree.cpp.i
@@ -2051,7 +2041,7 @@ src/spilltree.i: src/spilltree.cpp.i
 
 # target to preprocess a source file
 src/spilltree.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/spilltree.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/spilltree.cpp.i
 .PHONY : src/spilltree.cpp.i
 
 src/spilltree.s: src/spilltree.cpp.s
@@ -2059,7 +2049,7 @@ src/spilltree.s: src/spilltree.cpp.s
 
 # target to generate assembly for a file
 src/spilltree.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/spilltree.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/spilltree.cpp.s
 .PHONY : src/spilltree.cpp.s
 
 src/stereogc.o: src/stereogc.cpp.o
@@ -2067,7 +2057,7 @@ src/stereogc.o: src/stereogc.cpp.o
 
 # target to build an object file
 src/stereogc.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/stereogc.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/stereogc.cpp.o
 .PHONY : src/stereogc.cpp.o
 
 src/stereogc.i: src/stereogc.cpp.i
@@ -2075,7 +2065,7 @@ src/stereogc.i: src/stereogc.cpp.i
 
 # target to preprocess a source file
 src/stereogc.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/stereogc.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/stereogc.cpp.i
 .PHONY : src/stereogc.cpp.i
 
 src/stereogc.s: src/stereogc.cpp.s
@@ -2083,7 +2073,7 @@ src/stereogc.s: src/stereogc.cpp.s
 
 # target to generate assembly for a file
 src/stereogc.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/stereogc.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/stereogc.cpp.s
 .PHONY : src/stereogc.cpp.s
 
 src/subdiv2.o: src/subdiv2.cpp.o
@@ -2091,7 +2081,7 @@ src/subdiv2.o: src/subdiv2.cpp.o
 
 # target to build an object file
 src/subdiv2.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/subdiv2.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/subdiv2.cpp.o
 .PHONY : src/subdiv2.cpp.o
 
 src/subdiv2.i: src/subdiv2.cpp.i
@@ -2099,7 +2089,7 @@ src/subdiv2.i: src/subdiv2.cpp.i
 
 # target to preprocess a source file
 src/subdiv2.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/subdiv2.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/subdiv2.cpp.i
 .PHONY : src/subdiv2.cpp.i
 
 src/subdiv2.s: src/subdiv2.cpp.s
@@ -2107,7 +2097,7 @@ src/subdiv2.s: src/subdiv2.cpp.s
 
 # target to generate assembly for a file
 src/subdiv2.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/subdiv2.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/subdiv2.cpp.s
 .PHONY : src/subdiv2.cpp.s
 
 src/testseq.o: src/testseq.cpp.o
@@ -2115,7 +2105,7 @@ src/testseq.o: src/testseq.cpp.o
 
 # target to build an object file
 src/testseq.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/testseq.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/testseq.cpp.o
 .PHONY : src/testseq.cpp.o
 
 src/testseq.i: src/testseq.cpp.i
@@ -2123,7 +2113,7 @@ src/testseq.i: src/testseq.cpp.i
 
 # target to preprocess a source file
 src/testseq.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/testseq.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/testseq.cpp.i
 .PHONY : src/testseq.cpp.i
 
 src/testseq.s: src/testseq.cpp.s
@@ -2131,7 +2121,7 @@ src/testseq.s: src/testseq.cpp.s
 
 # target to generate assembly for a file
 src/testseq.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/testseq.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/testseq.cpp.s
 .PHONY : src/testseq.cpp.s
 
 src/texture.o: src/texture.cpp.o
@@ -2139,7 +2129,7 @@ src/texture.o: src/texture.cpp.o
 
 # target to build an object file
 src/texture.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/texture.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/texture.cpp.o
 .PHONY : src/texture.cpp.o
 
 src/texture.i: src/texture.cpp.i
@@ -2147,7 +2137,7 @@ src/texture.i: src/texture.cpp.i
 
 # target to preprocess a source file
 src/texture.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/texture.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/texture.cpp.i
 .PHONY : src/texture.cpp.i
 
 src/texture.s: src/texture.cpp.s
@@ -2155,7 +2145,7 @@ src/texture.s: src/texture.cpp.s
 
 # target to generate assembly for a file
 src/texture.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/texture.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/texture.cpp.s
 .PHONY : src/texture.cpp.s
 
 src/trifocal.o: src/trifocal.cpp.o
@@ -2163,7 +2153,7 @@ src/trifocal.o: src/trifocal.cpp.o
 
 # target to build an object file
 src/trifocal.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/trifocal.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/trifocal.cpp.o
 .PHONY : src/trifocal.cpp.o
 
 src/trifocal.i: src/trifocal.cpp.i
@@ -2171,7 +2161,7 @@ src/trifocal.i: src/trifocal.cpp.i
 
 # target to preprocess a source file
 src/trifocal.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/trifocal.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/trifocal.cpp.i
 .PHONY : src/trifocal.cpp.i
 
 src/trifocal.s: src/trifocal.cpp.s
@@ -2179,7 +2169,7 @@ src/trifocal.s: src/trifocal.cpp.s
 
 # target to generate assembly for a file
 src/trifocal.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/trifocal.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/trifocal.cpp.s
 .PHONY : src/trifocal.cpp.s
 
 src/vecfacetracking.o: src/vecfacetracking.cpp.o
@@ -2187,7 +2177,7 @@ src/vecfacetracking.o: src/vecfacetracking.cpp.o
 
 # target to build an object file
 src/vecfacetracking.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/vecfacetracking.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/vecfacetracking.cpp.o
 .PHONY : src/vecfacetracking.cpp.o
 
 src/vecfacetracking.i: src/vecfacetracking.cpp.i
@@ -2195,7 +2185,7 @@ src/vecfacetracking.i: src/vecfacetracking.cpp.i
 
 # target to preprocess a source file
 src/vecfacetracking.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/vecfacetracking.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/vecfacetracking.cpp.i
 .PHONY : src/vecfacetracking.cpp.i
 
 src/vecfacetracking.s: src/vecfacetracking.cpp.s
@@ -2203,7 +2193,7 @@ src/vecfacetracking.s: src/vecfacetracking.cpp.s
 
 # target to generate assembly for a file
 src/vecfacetracking.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/vecfacetracking.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/vecfacetracking.cpp.s
 .PHONY : src/vecfacetracking.cpp.s
 
 src/video.o: src/video.cpp.o
@@ -2211,7 +2201,7 @@ src/video.o: src/video.cpp.o
 
 # target to build an object file
 src/video.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/video.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/video.cpp.o
 .PHONY : src/video.cpp.o
 
 src/video.i: src/video.cpp.i
@@ -2219,7 +2209,7 @@ src/video.i: src/video.cpp.i
 
 # target to preprocess a source file
 src/video.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/video.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/video.cpp.i
 .PHONY : src/video.cpp.i
 
 src/video.s: src/video.cpp.s
@@ -2227,7 +2217,7 @@ src/video.s: src/video.cpp.s
 
 # target to generate assembly for a file
 src/video.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/video.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_legacy.dir/src/video.cpp.s
 .PHONY : src/video.cpp.s
 
 test/test_bruteforcematcher.o: test/test_bruteforcematcher.cpp.o
@@ -2235,7 +2225,7 @@ test/test_bruteforcematcher.o: test/test_bruteforcematcher.cpp.o
 
 # target to build an object file
 test/test_bruteforcematcher.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.o
 .PHONY : test/test_bruteforcematcher.cpp.o
 
 test/test_bruteforcematcher.i: test/test_bruteforcematcher.cpp.i
@@ -2243,7 +2233,7 @@ test/test_bruteforcematcher.i: test/test_bruteforcematcher.cpp.i
 
 # target to preprocess a source file
 test/test_bruteforcematcher.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.i
 .PHONY : test/test_bruteforcematcher.cpp.i
 
 test/test_bruteforcematcher.s: test/test_bruteforcematcher.cpp.s
@@ -2251,7 +2241,7 @@ test/test_bruteforcematcher.s: test/test_bruteforcematcher.cpp.s
 
 # target to generate assembly for a file
 test/test_bruteforcematcher.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_bruteforcematcher.cpp.s
 .PHONY : test/test_bruteforcematcher.cpp.s
 
 test/test_em.o: test/test_em.cpp.o
@@ -2259,7 +2249,7 @@ test/test_em.o: test/test_em.cpp.o
 
 # target to build an object file
 test/test_em.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.o
 .PHONY : test/test_em.cpp.o
 
 test/test_em.i: test/test_em.cpp.i
@@ -2267,7 +2257,7 @@ test/test_em.i: test/test_em.cpp.i
 
 # target to preprocess a source file
 test/test_em.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.i
 .PHONY : test/test_em.cpp.i
 
 test/test_em.s: test/test_em.cpp.s
@@ -2275,7 +2265,7 @@ test/test_em.s: test/test_em.cpp.s
 
 # target to generate assembly for a file
 test/test_em.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_em.cpp.s
 .PHONY : test/test_em.cpp.s
 
 test/test_main.o: test/test_main.cpp.o
@@ -2283,7 +2273,7 @@ test/test_main.o: test/test_main.cpp.o
 
 # target to build an object file
 test/test_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.o
 .PHONY : test/test_main.cpp.o
 
 test/test_main.i: test/test_main.cpp.i
@@ -2291,7 +2281,7 @@ test/test_main.i: test/test_main.cpp.i
 
 # target to preprocess a source file
 test/test_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.i
 .PHONY : test/test_main.cpp.i
 
 test/test_main.s: test/test_main.cpp.s
@@ -2299,7 +2289,7 @@ test/test_main.s: test/test_main.cpp.s
 
 # target to generate assembly for a file
 test/test_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_main.cpp.s
 .PHONY : test/test_main.cpp.s
 
 test/test_nearestneighbors.o: test/test_nearestneighbors.cpp.o
@@ -2307,7 +2297,7 @@ test/test_nearestneighbors.o: test/test_nearestneighbors.cpp.o
 
 # target to build an object file
 test/test_nearestneighbors.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.o
 .PHONY : test/test_nearestneighbors.cpp.o
 
 test/test_nearestneighbors.i: test/test_nearestneighbors.cpp.i
@@ -2315,7 +2305,7 @@ test/test_nearestneighbors.i: test/test_nearestneighbors.cpp.i
 
 # target to preprocess a source file
 test/test_nearestneighbors.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.i
 .PHONY : test/test_nearestneighbors.cpp.i
 
 test/test_nearestneighbors.s: test/test_nearestneighbors.cpp.s
@@ -2323,7 +2313,7 @@ test/test_nearestneighbors.s: test/test_nearestneighbors.cpp.s
 
 # target to generate assembly for a file
 test/test_nearestneighbors.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_nearestneighbors.cpp.s
 .PHONY : test/test_nearestneighbors.cpp.s
 
 test/test_optflow.o: test/test_optflow.cpp.o
@@ -2331,7 +2321,7 @@ test/test_optflow.o: test/test_optflow.cpp.o
 
 # target to build an object file
 test/test_optflow.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.o
 .PHONY : test/test_optflow.cpp.o
 
 test/test_optflow.i: test/test_optflow.cpp.i
@@ -2339,7 +2329,7 @@ test/test_optflow.i: test/test_optflow.cpp.i
 
 # target to preprocess a source file
 test/test_optflow.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.i
 .PHONY : test/test_optflow.cpp.i
 
 test/test_optflow.s: test/test_optflow.cpp.s
@@ -2347,7 +2337,7 @@ test/test_optflow.s: test/test_optflow.cpp.s
 
 # target to generate assembly for a file
 test/test_optflow.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_optflow.cpp.s
 .PHONY : test/test_optflow.cpp.s
 
 test/test_pyrsegmentation.o: test/test_pyrsegmentation.cpp.o
@@ -2355,7 +2345,7 @@ test/test_pyrsegmentation.o: test/test_pyrsegmentation.cpp.o
 
 # target to build an object file
 test/test_pyrsegmentation.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.o
 .PHONY : test/test_pyrsegmentation.cpp.o
 
 test/test_pyrsegmentation.i: test/test_pyrsegmentation.cpp.i
@@ -2363,7 +2353,7 @@ test/test_pyrsegmentation.i: test/test_pyrsegmentation.cpp.i
 
 # target to preprocess a source file
 test/test_pyrsegmentation.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.i
 .PHONY : test/test_pyrsegmentation.cpp.i
 
 test/test_pyrsegmentation.s: test/test_pyrsegmentation.cpp.s
@@ -2371,7 +2361,7 @@ test/test_pyrsegmentation.s: test/test_pyrsegmentation.cpp.s
 
 # target to generate assembly for a file
 test/test_pyrsegmentation.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_pyrsegmentation.cpp.s
 .PHONY : test/test_pyrsegmentation.cpp.s
 
 test/test_stereomatching.o: test/test_stereomatching.cpp.o
@@ -2379,7 +2369,7 @@ test/test_stereomatching.o: test/test_stereomatching.cpp.o
 
 # target to build an object file
 test/test_stereomatching.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.o
 .PHONY : test/test_stereomatching.cpp.o
 
 test/test_stereomatching.i: test/test_stereomatching.cpp.i
@@ -2387,7 +2377,7 @@ test/test_stereomatching.i: test/test_stereomatching.cpp.i
 
 # target to preprocess a source file
 test/test_stereomatching.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.i
 .PHONY : test/test_stereomatching.cpp.i
 
 test/test_stereomatching.s: test/test_stereomatching.cpp.s
@@ -2395,7 +2385,7 @@ test/test_stereomatching.s: test/test_stereomatching.cpp.s
 
 # target to generate assembly for a file
 test/test_stereomatching.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_stereomatching.cpp.s
 .PHONY : test/test_stereomatching.cpp.s
 
 test/test_subdivisions.o: test/test_subdivisions.cpp.o
@@ -2403,7 +2393,7 @@ test/test_subdivisions.o: test/test_subdivisions.cpp.o
 
 # target to build an object file
 test/test_subdivisions.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.o
 .PHONY : test/test_subdivisions.cpp.o
 
 test/test_subdivisions.i: test/test_subdivisions.cpp.i
@@ -2411,7 +2401,7 @@ test/test_subdivisions.i: test/test_subdivisions.cpp.i
 
 # target to preprocess a source file
 test/test_subdivisions.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.i
 .PHONY : test/test_subdivisions.cpp.i
 
 test/test_subdivisions.s: test/test_subdivisions.cpp.s
@@ -2419,7 +2409,7 @@ test/test_subdivisions.s: test/test_subdivisions.cpp.s
 
 # target to generate assembly for a file
 test/test_subdivisions.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/legacy/CMakeFiles/opencv_test_legacy.dir/build.make modules/legacy/CMakeFiles/opencv_test_legacy.dir/test/test_subdivisions.cpp.s
 .PHONY : test/test_subdivisions.cpp.s
 
 # Help Target
@@ -2431,7 +2421,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_legacy"
 	@echo "... opencv_test_legacy"
@@ -2728,6 +2717,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

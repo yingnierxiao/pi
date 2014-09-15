@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/modules/objdetect/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/CMakeFiles/opencv_objdetect.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/CMakeFiles/opencv_objdetect.dir/rule
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/rule
 
 # Convenience name for target.
@@ -173,12 +163,12 @@ opencv_objdetect: modules/objdetect/CMakeFiles/opencv_objdetect.dir/rule
 
 # fast build rule for target.
 opencv_objdetect/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/build
 .PHONY : opencv_objdetect/fast
 
 # Convenience name for target.
 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/rule
 .PHONY : modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/rule
 
 # Convenience name for target.
@@ -187,12 +177,12 @@ opencv_perf_objdetect: modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/ru
 
 # fast build rule for target.
 opencv_perf_objdetect/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build
 .PHONY : opencv_perf_objdetect/fast
 
 # Convenience name for target.
 modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/rule
 .PHONY : modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/rule
 
 # Convenience name for target.
@@ -201,7 +191,7 @@ opencv_test_objdetect: modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/ru
 
 # fast build rule for target.
 opencv_test_objdetect/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build
 .PHONY : opencv_test_objdetect/fast
 
 perf/perf_cascadeclassifier.o: perf/perf_cascadeclassifier.cpp.o
@@ -209,7 +199,7 @@ perf/perf_cascadeclassifier.o: perf/perf_cascadeclassifier.cpp.o
 
 # target to build an object file
 perf/perf_cascadeclassifier.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.o
 .PHONY : perf/perf_cascadeclassifier.cpp.o
 
 perf/perf_cascadeclassifier.i: perf/perf_cascadeclassifier.cpp.i
@@ -217,7 +207,7 @@ perf/perf_cascadeclassifier.i: perf/perf_cascadeclassifier.cpp.i
 
 # target to preprocess a source file
 perf/perf_cascadeclassifier.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.i
 .PHONY : perf/perf_cascadeclassifier.cpp.i
 
 perf/perf_cascadeclassifier.s: perf/perf_cascadeclassifier.cpp.s
@@ -225,7 +215,7 @@ perf/perf_cascadeclassifier.s: perf/perf_cascadeclassifier.cpp.s
 
 # target to generate assembly for a file
 perf/perf_cascadeclassifier.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_cascadeclassifier.cpp.s
 .PHONY : perf/perf_cascadeclassifier.cpp.s
 
 perf/perf_main.o: perf/perf_main.cpp.o
@@ -233,7 +223,7 @@ perf/perf_main.o: perf/perf_main.cpp.o
 
 # target to build an object file
 perf/perf_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.o
 .PHONY : perf/perf_main.cpp.o
 
 perf/perf_main.i: perf/perf_main.cpp.i
@@ -241,7 +231,7 @@ perf/perf_main.i: perf/perf_main.cpp.i
 
 # target to preprocess a source file
 perf/perf_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.i
 .PHONY : perf/perf_main.cpp.i
 
 perf/perf_main.s: perf/perf_main.cpp.s
@@ -249,7 +239,7 @@ perf/perf_main.s: perf/perf_main.cpp.s
 
 # target to generate assembly for a file
 perf/perf_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/perf/perf_main.cpp.s
 .PHONY : perf/perf_main.cpp.s
 
 src/cascadedetect.o: src/cascadedetect.cpp.o
@@ -257,7 +247,7 @@ src/cascadedetect.o: src/cascadedetect.cpp.o
 
 # target to build an object file
 src/cascadedetect.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o
 .PHONY : src/cascadedetect.cpp.o
 
 src/cascadedetect.i: src/cascadedetect.cpp.i
@@ -265,7 +255,7 @@ src/cascadedetect.i: src/cascadedetect.cpp.i
 
 # target to preprocess a source file
 src/cascadedetect.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.i
 .PHONY : src/cascadedetect.cpp.i
 
 src/cascadedetect.s: src/cascadedetect.cpp.s
@@ -273,7 +263,7 @@ src/cascadedetect.s: src/cascadedetect.cpp.s
 
 # target to generate assembly for a file
 src/cascadedetect.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.s
 .PHONY : src/cascadedetect.cpp.s
 
 src/datamatrix.o: src/datamatrix.cpp.o
@@ -281,7 +271,7 @@ src/datamatrix.o: src/datamatrix.cpp.o
 
 # target to build an object file
 src/datamatrix.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.o
 .PHONY : src/datamatrix.cpp.o
 
 src/datamatrix.i: src/datamatrix.cpp.i
@@ -289,7 +279,7 @@ src/datamatrix.i: src/datamatrix.cpp.i
 
 # target to preprocess a source file
 src/datamatrix.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.i
 .PHONY : src/datamatrix.cpp.i
 
 src/datamatrix.s: src/datamatrix.cpp.s
@@ -297,7 +287,7 @@ src/datamatrix.s: src/datamatrix.cpp.s
 
 # target to generate assembly for a file
 src/datamatrix.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/datamatrix.cpp.s
 .PHONY : src/datamatrix.cpp.s
 
 src/distancetransform.o: src/distancetransform.cpp.o
@@ -305,7 +295,7 @@ src/distancetransform.o: src/distancetransform.cpp.o
 
 # target to build an object file
 src/distancetransform.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.o
 .PHONY : src/distancetransform.cpp.o
 
 src/distancetransform.i: src/distancetransform.cpp.i
@@ -313,7 +303,7 @@ src/distancetransform.i: src/distancetransform.cpp.i
 
 # target to preprocess a source file
 src/distancetransform.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.i
 .PHONY : src/distancetransform.cpp.i
 
 src/distancetransform.s: src/distancetransform.cpp.s
@@ -321,7 +311,7 @@ src/distancetransform.s: src/distancetransform.cpp.s
 
 # target to generate assembly for a file
 src/distancetransform.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/distancetransform.cpp.s
 .PHONY : src/distancetransform.cpp.s
 
 src/featurepyramid.o: src/featurepyramid.cpp.o
@@ -329,7 +319,7 @@ src/featurepyramid.o: src/featurepyramid.cpp.o
 
 # target to build an object file
 src/featurepyramid.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.o
 .PHONY : src/featurepyramid.cpp.o
 
 src/featurepyramid.i: src/featurepyramid.cpp.i
@@ -337,7 +327,7 @@ src/featurepyramid.i: src/featurepyramid.cpp.i
 
 # target to preprocess a source file
 src/featurepyramid.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.i
 .PHONY : src/featurepyramid.cpp.i
 
 src/featurepyramid.s: src/featurepyramid.cpp.s
@@ -345,7 +335,7 @@ src/featurepyramid.s: src/featurepyramid.cpp.s
 
 # target to generate assembly for a file
 src/featurepyramid.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/featurepyramid.cpp.s
 .PHONY : src/featurepyramid.cpp.s
 
 src/fft.o: src/fft.cpp.o
@@ -353,7 +343,7 @@ src/fft.o: src/fft.cpp.o
 
 # target to build an object file
 src/fft.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/fft.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/fft.cpp.o
 .PHONY : src/fft.cpp.o
 
 src/fft.i: src/fft.cpp.i
@@ -361,7 +351,7 @@ src/fft.i: src/fft.cpp.i
 
 # target to preprocess a source file
 src/fft.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/fft.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/fft.cpp.i
 .PHONY : src/fft.cpp.i
 
 src/fft.s: src/fft.cpp.s
@@ -369,7 +359,7 @@ src/fft.s: src/fft.cpp.s
 
 # target to generate assembly for a file
 src/fft.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/fft.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/fft.cpp.s
 .PHONY : src/fft.cpp.s
 
 src/haar.o: src/haar.cpp.o
@@ -377,7 +367,7 @@ src/haar.o: src/haar.cpp.o
 
 # target to build an object file
 src/haar.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o
 .PHONY : src/haar.cpp.o
 
 src/haar.i: src/haar.cpp.i
@@ -385,7 +375,7 @@ src/haar.i: src/haar.cpp.i
 
 # target to preprocess a source file
 src/haar.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.i
 .PHONY : src/haar.cpp.i
 
 src/haar.s: src/haar.cpp.s
@@ -393,7 +383,7 @@ src/haar.s: src/haar.cpp.s
 
 # target to generate assembly for a file
 src/haar.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.s
 .PHONY : src/haar.cpp.s
 
 src/hog.o: src/hog.cpp.o
@@ -401,7 +391,7 @@ src/hog.o: src/hog.cpp.o
 
 # target to build an object file
 src/hog.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o
 .PHONY : src/hog.cpp.o
 
 src/hog.i: src/hog.cpp.i
@@ -409,7 +399,7 @@ src/hog.i: src/hog.cpp.i
 
 # target to preprocess a source file
 src/hog.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.i
 .PHONY : src/hog.cpp.i
 
 src/hog.s: src/hog.cpp.s
@@ -417,7 +407,7 @@ src/hog.s: src/hog.cpp.s
 
 # target to generate assembly for a file
 src/hog.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.s
 .PHONY : src/hog.cpp.s
 
 src/latentsvm.o: src/latentsvm.cpp.o
@@ -425,7 +415,7 @@ src/latentsvm.o: src/latentsvm.cpp.o
 
 # target to build an object file
 src/latentsvm.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.o
 .PHONY : src/latentsvm.cpp.o
 
 src/latentsvm.i: src/latentsvm.cpp.i
@@ -433,7 +423,7 @@ src/latentsvm.i: src/latentsvm.cpp.i
 
 # target to preprocess a source file
 src/latentsvm.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.i
 .PHONY : src/latentsvm.cpp.i
 
 src/latentsvm.s: src/latentsvm.cpp.s
@@ -441,7 +431,7 @@ src/latentsvm.s: src/latentsvm.cpp.s
 
 # target to generate assembly for a file
 src/latentsvm.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvm.cpp.s
 .PHONY : src/latentsvm.cpp.s
 
 src/latentsvmdetector.o: src/latentsvmdetector.cpp.o
@@ -449,7 +439,7 @@ src/latentsvmdetector.o: src/latentsvmdetector.cpp.o
 
 # target to build an object file
 src/latentsvmdetector.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.o
 .PHONY : src/latentsvmdetector.cpp.o
 
 src/latentsvmdetector.i: src/latentsvmdetector.cpp.i
@@ -457,7 +447,7 @@ src/latentsvmdetector.i: src/latentsvmdetector.cpp.i
 
 # target to preprocess a source file
 src/latentsvmdetector.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.i
 .PHONY : src/latentsvmdetector.cpp.i
 
 src/latentsvmdetector.s: src/latentsvmdetector.cpp.s
@@ -465,7 +455,7 @@ src/latentsvmdetector.s: src/latentsvmdetector.cpp.s
 
 # target to generate assembly for a file
 src/latentsvmdetector.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/latentsvmdetector.cpp.s
 .PHONY : src/latentsvmdetector.cpp.s
 
 src/linemod.o: src/linemod.cpp.o
@@ -473,7 +463,7 @@ src/linemod.o: src/linemod.cpp.o
 
 # target to build an object file
 src/linemod.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o
 .PHONY : src/linemod.cpp.o
 
 src/linemod.i: src/linemod.cpp.i
@@ -481,7 +471,7 @@ src/linemod.i: src/linemod.cpp.i
 
 # target to preprocess a source file
 src/linemod.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.i
 .PHONY : src/linemod.cpp.i
 
 src/linemod.s: src/linemod.cpp.s
@@ -489,7 +479,7 @@ src/linemod.s: src/linemod.cpp.s
 
 # target to generate assembly for a file
 src/linemod.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.s
 .PHONY : src/linemod.cpp.s
 
 src/lsvmparser.o: src/lsvmparser.cpp.o
@@ -497,7 +487,7 @@ src/lsvmparser.o: src/lsvmparser.cpp.o
 
 # target to build an object file
 src/lsvmparser.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.o
 .PHONY : src/lsvmparser.cpp.o
 
 src/lsvmparser.i: src/lsvmparser.cpp.i
@@ -505,7 +495,7 @@ src/lsvmparser.i: src/lsvmparser.cpp.i
 
 # target to preprocess a source file
 src/lsvmparser.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.i
 .PHONY : src/lsvmparser.cpp.i
 
 src/lsvmparser.s: src/lsvmparser.cpp.s
@@ -513,7 +503,7 @@ src/lsvmparser.s: src/lsvmparser.cpp.s
 
 # target to generate assembly for a file
 src/lsvmparser.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmparser.cpp.s
 .PHONY : src/lsvmparser.cpp.s
 
 src/lsvmtbbversion.o: src/lsvmtbbversion.cpp.o
@@ -521,7 +511,7 @@ src/lsvmtbbversion.o: src/lsvmtbbversion.cpp.o
 
 # target to build an object file
 src/lsvmtbbversion.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.o
 .PHONY : src/lsvmtbbversion.cpp.o
 
 src/lsvmtbbversion.i: src/lsvmtbbversion.cpp.i
@@ -529,7 +519,7 @@ src/lsvmtbbversion.i: src/lsvmtbbversion.cpp.i
 
 # target to preprocess a source file
 src/lsvmtbbversion.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.i
 .PHONY : src/lsvmtbbversion.cpp.i
 
 src/lsvmtbbversion.s: src/lsvmtbbversion.cpp.s
@@ -537,7 +527,7 @@ src/lsvmtbbversion.s: src/lsvmtbbversion.cpp.s
 
 # target to generate assembly for a file
 src/lsvmtbbversion.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/lsvmtbbversion.cpp.s
 .PHONY : src/lsvmtbbversion.cpp.s
 
 src/matching.o: src/matching.cpp.o
@@ -545,7 +535,7 @@ src/matching.o: src/matching.cpp.o
 
 # target to build an object file
 src/matching.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/matching.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/matching.cpp.o
 .PHONY : src/matching.cpp.o
 
 src/matching.i: src/matching.cpp.i
@@ -553,7 +543,7 @@ src/matching.i: src/matching.cpp.i
 
 # target to preprocess a source file
 src/matching.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/matching.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/matching.cpp.i
 .PHONY : src/matching.cpp.i
 
 src/matching.s: src/matching.cpp.s
@@ -561,7 +551,7 @@ src/matching.s: src/matching.cpp.s
 
 # target to generate assembly for a file
 src/matching.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/matching.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/matching.cpp.s
 .PHONY : src/matching.cpp.s
 
 src/objdetect_init.o: src/objdetect_init.cpp.o
@@ -569,7 +559,7 @@ src/objdetect_init.o: src/objdetect_init.cpp.o
 
 # target to build an object file
 src/objdetect_init.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.o
 .PHONY : src/objdetect_init.cpp.o
 
 src/objdetect_init.i: src/objdetect_init.cpp.i
@@ -577,7 +567,7 @@ src/objdetect_init.i: src/objdetect_init.cpp.i
 
 # target to preprocess a source file
 src/objdetect_init.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.i
 .PHONY : src/objdetect_init.cpp.i
 
 src/objdetect_init.s: src/objdetect_init.cpp.s
@@ -585,7 +575,7 @@ src/objdetect_init.s: src/objdetect_init.cpp.s
 
 # target to generate assembly for a file
 src/objdetect_init.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/objdetect_init.cpp.s
 .PHONY : src/objdetect_init.cpp.s
 
 src/resizeimg.o: src/resizeimg.cpp.o
@@ -593,7 +583,7 @@ src/resizeimg.o: src/resizeimg.cpp.o
 
 # target to build an object file
 src/resizeimg.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.o
 .PHONY : src/resizeimg.cpp.o
 
 src/resizeimg.i: src/resizeimg.cpp.i
@@ -601,7 +591,7 @@ src/resizeimg.i: src/resizeimg.cpp.i
 
 # target to preprocess a source file
 src/resizeimg.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.i
 .PHONY : src/resizeimg.cpp.i
 
 src/resizeimg.s: src/resizeimg.cpp.s
@@ -609,7 +599,7 @@ src/resizeimg.s: src/resizeimg.cpp.s
 
 # target to generate assembly for a file
 src/resizeimg.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/resizeimg.cpp.s
 .PHONY : src/resizeimg.cpp.s
 
 src/routine.o: src/routine.cpp.o
@@ -617,7 +607,7 @@ src/routine.o: src/routine.cpp.o
 
 # target to build an object file
 src/routine.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/routine.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/routine.cpp.o
 .PHONY : src/routine.cpp.o
 
 src/routine.i: src/routine.cpp.i
@@ -625,7 +615,7 @@ src/routine.i: src/routine.cpp.i
 
 # target to preprocess a source file
 src/routine.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/routine.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/routine.cpp.i
 .PHONY : src/routine.cpp.i
 
 src/routine.s: src/routine.cpp.s
@@ -633,7 +623,7 @@ src/routine.s: src/routine.cpp.s
 
 # target to generate assembly for a file
 src/routine.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/routine.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/routine.cpp.s
 .PHONY : src/routine.cpp.s
 
 test/test_cascadeandhog.o: test/test_cascadeandhog.cpp.o
@@ -641,7 +631,7 @@ test/test_cascadeandhog.o: test/test_cascadeandhog.cpp.o
 
 # target to build an object file
 test/test_cascadeandhog.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_cascadeandhog.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_cascadeandhog.cpp.o
 .PHONY : test/test_cascadeandhog.cpp.o
 
 test/test_cascadeandhog.i: test/test_cascadeandhog.cpp.i
@@ -649,7 +639,7 @@ test/test_cascadeandhog.i: test/test_cascadeandhog.cpp.i
 
 # target to preprocess a source file
 test/test_cascadeandhog.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_cascadeandhog.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_cascadeandhog.cpp.i
 .PHONY : test/test_cascadeandhog.cpp.i
 
 test/test_cascadeandhog.s: test/test_cascadeandhog.cpp.s
@@ -657,7 +647,7 @@ test/test_cascadeandhog.s: test/test_cascadeandhog.cpp.s
 
 # target to generate assembly for a file
 test/test_cascadeandhog.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_cascadeandhog.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_cascadeandhog.cpp.s
 .PHONY : test/test_cascadeandhog.cpp.s
 
 test/test_latentsvmdetector.o: test/test_latentsvmdetector.cpp.o
@@ -665,7 +655,7 @@ test/test_latentsvmdetector.o: test/test_latentsvmdetector.cpp.o
 
 # target to build an object file
 test/test_latentsvmdetector.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_latentsvmdetector.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_latentsvmdetector.cpp.o
 .PHONY : test/test_latentsvmdetector.cpp.o
 
 test/test_latentsvmdetector.i: test/test_latentsvmdetector.cpp.i
@@ -673,7 +663,7 @@ test/test_latentsvmdetector.i: test/test_latentsvmdetector.cpp.i
 
 # target to preprocess a source file
 test/test_latentsvmdetector.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_latentsvmdetector.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_latentsvmdetector.cpp.i
 .PHONY : test/test_latentsvmdetector.cpp.i
 
 test/test_latentsvmdetector.s: test/test_latentsvmdetector.cpp.s
@@ -681,7 +671,7 @@ test/test_latentsvmdetector.s: test/test_latentsvmdetector.cpp.s
 
 # target to generate assembly for a file
 test/test_latentsvmdetector.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_latentsvmdetector.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_latentsvmdetector.cpp.s
 .PHONY : test/test_latentsvmdetector.cpp.s
 
 test/test_main.o: test/test_main.cpp.o
@@ -689,7 +679,7 @@ test/test_main.o: test/test_main.cpp.o
 
 # target to build an object file
 test/test_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_main.cpp.o
 .PHONY : test/test_main.cpp.o
 
 test/test_main.i: test/test_main.cpp.i
@@ -697,7 +687,7 @@ test/test_main.i: test/test_main.cpp.i
 
 # target to preprocess a source file
 test/test_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_main.cpp.i
 .PHONY : test/test_main.cpp.i
 
 test/test_main.s: test/test_main.cpp.s
@@ -705,7 +695,7 @@ test/test_main.s: test/test_main.cpp.s
 
 # target to generate assembly for a file
 test/test_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/test/test_main.cpp.s
 .PHONY : test/test_main.cpp.s
 
 # Help Target
@@ -717,7 +707,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_objdetect"
 	@echo "... opencv_perf_objdetect"
@@ -799,6 +788,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

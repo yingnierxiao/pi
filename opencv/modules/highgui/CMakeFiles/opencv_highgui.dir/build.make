@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/highgui/CMakeFiles/opencv_highgui.dir/depend.make
@@ -54,17 +54,17 @@ include modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap.cpp.o: modules/highgui/src/cap.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/cap.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/cap.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/cap.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap.cpp > CMakeFiles/opencv_highgui.dir/src/cap.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap.cpp > CMakeFiles/opencv_highgui.dir/src/cap.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/cap.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap.cpp -o CMakeFiles/opencv_highgui.dir/src/cap.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap.cpp -o CMakeFiles/opencv_highgui.dir/src/cap.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap.cpp.o.requires
@@ -77,17 +77,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap.cpp.o.provides.build: modu
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.o: modules/highgui/src/cap_images.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap_images.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap_images.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap_images.cpp > CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap_images.cpp > CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap_images.cpp -o CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap_images.cpp -o CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.o.requires
@@ -100,17 +100,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_images.cpp.o.provides.buil
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.o: modules/highgui/src/cap_ffmpeg.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap_ffmpeg.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap_ffmpeg.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap_ffmpeg.cpp > CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap_ffmpeg.cpp > CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap_ffmpeg.cpp -o CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap_ffmpeg.cpp -o CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.o.requires
@@ -123,17 +123,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_ffmpeg.cpp.o.provides.buil
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.o: modules/highgui/src/loadsave.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/loadsave.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/loadsave.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/loadsave.cpp > CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/loadsave.cpp > CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/loadsave.cpp -o CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/loadsave.cpp -o CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.o.requires
@@ -146,17 +146,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/loadsave.cpp.o.provides.build:
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/utils.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/utils.cpp.o: modules/highgui/src/utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/utils.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/utils.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/utils.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/utils.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/utils.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/utils.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/utils.cpp > CMakeFiles/opencv_highgui.dir/src/utils.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/utils.cpp > CMakeFiles/opencv_highgui.dir/src/utils.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/utils.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/utils.cpp -o CMakeFiles/opencv_highgui.dir/src/utils.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/utils.cpp -o CMakeFiles/opencv_highgui.dir/src/utils.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/utils.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/utils.cpp.o.requires
@@ -169,17 +169,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/utils.cpp.o.provides.build: mo
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o: modules/highgui/src/window.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/window.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/window.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/window.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/window.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/window.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/window.cpp > CMakeFiles/opencv_highgui.dir/src/window.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/window.cpp > CMakeFiles/opencv_highgui.dir/src/window.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/window.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/window.cpp -o CMakeFiles/opencv_highgui.dir/src/window.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/window.cpp -o CMakeFiles/opencv_highgui.dir/src/window.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o.requires
@@ -192,17 +192,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o.provides.build: m
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.o: modules/highgui/src/window_cocoa.mm
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -fobjc-exceptions -o CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/window_cocoa.mm
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -fobjc-exceptions -o CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/window_cocoa.mm
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -fobjc-exceptions -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/window_cocoa.mm > CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -fobjc-exceptions -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/window_cocoa.mm > CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -fobjc-exceptions -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/window_cocoa.mm -o CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -fobjc-exceptions -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/window_cocoa.mm -o CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.o.requires
@@ -215,17 +215,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/window_cocoa.mm.o.provides.bui
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.o: modules/highgui/src/cap_qtkit.mm
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -fobjc-exceptions -o CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap_qtkit.mm
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -fobjc-exceptions -o CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap_qtkit.mm
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -fobjc-exceptions -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap_qtkit.mm > CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -fobjc-exceptions -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap_qtkit.mm > CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -fobjc-exceptions -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/cap_qtkit.mm -o CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -fobjc-exceptions -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/cap_qtkit.mm -o CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.o.requires
@@ -238,17 +238,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/cap_qtkit.mm.o.provides.build:
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.o: modules/highgui/src/grfmt_base.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_base.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_base.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_base.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_base.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_base.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_base.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.o.requires
@@ -261,17 +261,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_base.cpp.o.provides.buil
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.o: modules/highgui/src/grfmt_bmp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_bmp.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_bmp.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_bmp.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_bmp.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_bmp.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_bmp.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.o.requires
@@ -284,17 +284,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_bmp.cpp.o.provides.build
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.o: modules/highgui/src/grfmt_exr.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_exr.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_exr.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_exr.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_exr.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_exr.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_exr.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.o.requires
@@ -307,17 +307,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_exr.cpp.o.provides.build
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.o: modules/highgui/src/grfmt_imageio.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_imageio.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_imageio.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_imageio.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_imageio.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_imageio.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_imageio.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.o.requires
@@ -330,17 +330,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_imageio.cpp.o.provides.b
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.o: modules/highgui/src/grfmt_jpeg.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_jpeg.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_jpeg.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_jpeg.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_jpeg.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_jpeg.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_jpeg.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.o.requires
@@ -353,17 +353,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg.cpp.o.provides.buil
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.o: modules/highgui/src/grfmt_jpeg2000.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_jpeg2000.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_jpeg2000.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_jpeg2000.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_jpeg2000.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_jpeg2000.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_jpeg2000.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.o.requires
@@ -376,17 +376,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_jpeg2000.cpp.o.provides.
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.o: modules/highgui/src/grfmt_png.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_png.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_png.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_png.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_png.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_png.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_png.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.o.requires
@@ -399,17 +399,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_png.cpp.o.provides.build
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.o: modules/highgui/src/grfmt_pxm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_pxm.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_pxm.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_pxm.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_pxm.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_pxm.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_pxm.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.o.requires
@@ -422,17 +422,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_pxm.cpp.o.provides.build
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.o: modules/highgui/src/grfmt_sunras.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_sunras.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_sunras.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_sunras.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_sunras.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_sunras.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_sunras.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.o.requires
@@ -445,17 +445,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_sunras.cpp.o.provides.bu
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.o: modules/highgui/src/grfmt_tiff.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_tiff.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_tiff.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_tiff.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_tiff.cpp > CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/grfmt_tiff.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/grfmt_tiff.cpp -o CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.o.requires
@@ -468,17 +468,17 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/grfmt_tiff.cpp.o.provides.buil
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.o: modules/highgui/CMakeFiles/opencv_highgui.dir/flags.make
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.o: modules/highgui/src/bitstrm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/bitstrm.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/bitstrm.cpp
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/bitstrm.cpp > CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/bitstrm.cpp > CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.i
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/src/bitstrm.cpp -o CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/highgui/src/bitstrm.cpp -o CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.s
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.o.requires:
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/src/bitstrm.cpp.o.requires
@@ -546,8 +546,8 @@ lib/libopencv_highgui.2.4.9.dylib: lib/libopencv_core.2.4.9.dylib
 lib/libopencv_highgui.2.4.9.dylib: 3rdparty/lib/libzlib.a
 lib/libopencv_highgui.2.4.9.dylib: modules/highgui/CMakeFiles/opencv_highgui.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../lib/libopencv_highgui.dylib"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_highgui.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && $(CMAKE_COMMAND) -E cmake_symlink_library ../../lib/libopencv_highgui.2.4.9.dylib ../../lib/libopencv_highgui.2.4.dylib ../../lib/libopencv_highgui.dylib
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_highgui.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && $(CMAKE_COMMAND) -E cmake_symlink_library ../../lib/libopencv_highgui.2.4.9.dylib ../../lib/libopencv_highgui.2.4.dylib ../../lib/libopencv_highgui.dylib
 
 lib/libopencv_highgui.2.4.dylib: lib/libopencv_highgui.2.4.9.dylib
 
@@ -579,10 +579,10 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/requires: modules/highgui/CMakeFil
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/requires
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui && $(CMAKE_COMMAND) -P CMakeFiles/opencv_highgui.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/highgui && $(CMAKE_COMMAND) -P CMakeFiles/opencv_highgui.dir/cmake_clean.cmake
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/clean
 
 modules/highgui/CMakeFiles/opencv_highgui.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/CMakeFiles/opencv_highgui.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/highgui /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/highgui /Users/zj/Desktop/code/pi/opencv/modules/highgui/CMakeFiles/opencv_highgui.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/highgui/CMakeFiles/opencv_highgui.dir/depend
 

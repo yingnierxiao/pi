@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/flann/CMakeFiles/opencv_flann.dir/depend.make
@@ -54,17 +54,17 @@ include modules/flann/CMakeFiles/opencv_flann.dir/flags.make
 
 modules/flann/CMakeFiles/opencv_flann.dir/src/flann.cpp.o: modules/flann/CMakeFiles/opencv_flann.dir/flags.make
 modules/flann/CMakeFiles/opencv_flann.dir/src/flann.cpp.o: modules/flann/src/flann.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/flann/CMakeFiles/opencv_flann.dir/src/flann.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/flann && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_flann.dir/src/flann.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/flann/src/flann.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/flann && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_flann.dir/src/flann.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/flann/src/flann.cpp
 
 modules/flann/CMakeFiles/opencv_flann.dir/src/flann.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_flann.dir/src/flann.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/flann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/flann/src/flann.cpp > CMakeFiles/opencv_flann.dir/src/flann.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/flann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/flann/src/flann.cpp > CMakeFiles/opencv_flann.dir/src/flann.cpp.i
 
 modules/flann/CMakeFiles/opencv_flann.dir/src/flann.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_flann.dir/src/flann.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/flann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/flann/src/flann.cpp -o CMakeFiles/opencv_flann.dir/src/flann.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/flann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/flann/src/flann.cpp -o CMakeFiles/opencv_flann.dir/src/flann.cpp.s
 
 modules/flann/CMakeFiles/opencv_flann.dir/src/flann.cpp.o.requires:
 .PHONY : modules/flann/CMakeFiles/opencv_flann.dir/src/flann.cpp.o.requires
@@ -77,17 +77,17 @@ modules/flann/CMakeFiles/opencv_flann.dir/src/flann.cpp.o.provides.build: module
 
 modules/flann/CMakeFiles/opencv_flann.dir/src/miniflann.cpp.o: modules/flann/CMakeFiles/opencv_flann.dir/flags.make
 modules/flann/CMakeFiles/opencv_flann.dir/src/miniflann.cpp.o: modules/flann/src/miniflann.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/flann/CMakeFiles/opencv_flann.dir/src/miniflann.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/flann && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_flann.dir/src/miniflann.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/flann/src/miniflann.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/flann && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_flann.dir/src/miniflann.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/flann/src/miniflann.cpp
 
 modules/flann/CMakeFiles/opencv_flann.dir/src/miniflann.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_flann.dir/src/miniflann.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/flann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/flann/src/miniflann.cpp > CMakeFiles/opencv_flann.dir/src/miniflann.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/flann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/flann/src/miniflann.cpp > CMakeFiles/opencv_flann.dir/src/miniflann.cpp.i
 
 modules/flann/CMakeFiles/opencv_flann.dir/src/miniflann.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_flann.dir/src/miniflann.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/flann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/flann/src/miniflann.cpp -o CMakeFiles/opencv_flann.dir/src/miniflann.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/flann && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/flann/src/miniflann.cpp -o CMakeFiles/opencv_flann.dir/src/miniflann.cpp.s
 
 modules/flann/CMakeFiles/opencv_flann.dir/src/miniflann.cpp.o.requires:
 .PHONY : modules/flann/CMakeFiles/opencv_flann.dir/src/miniflann.cpp.o.requires
@@ -112,8 +112,8 @@ lib/libopencv_flann.2.4.9.dylib: modules/flann/CMakeFiles/opencv_flann.dir/build
 lib/libopencv_flann.2.4.9.dylib: lib/libopencv_core.2.4.9.dylib
 lib/libopencv_flann.2.4.9.dylib: modules/flann/CMakeFiles/opencv_flann.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../lib/libopencv_flann.dylib"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/flann && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_flann.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/flann && $(CMAKE_COMMAND) -E cmake_symlink_library ../../lib/libopencv_flann.2.4.9.dylib ../../lib/libopencv_flann.2.4.dylib ../../lib/libopencv_flann.dylib
+	cd /Users/zj/Desktop/code/pi/opencv/modules/flann && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_flann.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/flann && $(CMAKE_COMMAND) -E cmake_symlink_library ../../lib/libopencv_flann.2.4.9.dylib ../../lib/libopencv_flann.2.4.dylib ../../lib/libopencv_flann.dylib
 
 lib/libopencv_flann.2.4.dylib: lib/libopencv_flann.2.4.9.dylib
 
@@ -128,10 +128,10 @@ modules/flann/CMakeFiles/opencv_flann.dir/requires: modules/flann/CMakeFiles/ope
 .PHONY : modules/flann/CMakeFiles/opencv_flann.dir/requires
 
 modules/flann/CMakeFiles/opencv_flann.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/flann && $(CMAKE_COMMAND) -P CMakeFiles/opencv_flann.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/flann && $(CMAKE_COMMAND) -P CMakeFiles/opencv_flann.dir/cmake_clean.cmake
 .PHONY : modules/flann/CMakeFiles/opencv_flann.dir/clean
 
 modules/flann/CMakeFiles/opencv_flann.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/flann /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/flann /Users/zj/Desktop/code/opencv-2.4.9/modules/flann/CMakeFiles/opencv_flann.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/flann /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/flann /Users/zj/Desktop/code/pi/opencv/modules/flann/CMakeFiles/opencv_flann.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/flann/CMakeFiles/opencv_flann.dir/depend
 

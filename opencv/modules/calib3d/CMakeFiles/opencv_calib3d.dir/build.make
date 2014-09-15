@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/calib3d/CMakeFiles/opencv_calib3d.dir/depend.make
@@ -54,17 +54,17 @@ include modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.o: modules/calib3d/src/calibinit.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/calibinit.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/calibinit.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/calibinit.cpp > CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/calibinit.cpp > CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/calibinit.cpp -o CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/calibinit.cpp -o CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.o.requires
@@ -77,17 +77,17 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.o.provides.build
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.o: modules/calib3d/src/calibration.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/calibration.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/calibration.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/calibration.cpp > CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/calibration.cpp > CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/calibration.cpp -o CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/calibration.cpp -o CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.o.requires
@@ -100,17 +100,17 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.o.provides.bui
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.o: modules/calib3d/src/checkchessboard.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/checkchessboard.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/checkchessboard.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/checkchessboard.cpp > CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/checkchessboard.cpp > CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/checkchessboard.cpp -o CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/checkchessboard.cpp -o CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.o.requires
@@ -123,17 +123,17 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.o.provides
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o: modules/calib3d/src/circlesgrid.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/circlesgrid.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/circlesgrid.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/circlesgrid.cpp > CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/circlesgrid.cpp > CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/circlesgrid.cpp -o CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/circlesgrid.cpp -o CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o.requires
@@ -146,17 +146,17 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o.provides.bui
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o: modules/calib3d/src/epnp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/epnp.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/epnp.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/epnp.cpp > CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/epnp.cpp > CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/epnp.cpp -o CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/epnp.cpp -o CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o.requires
@@ -169,17 +169,17 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o.provides.build: mod
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o: modules/calib3d/src/fundam.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/fundam.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/fundam.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/fundam.cpp > CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/fundam.cpp > CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/fundam.cpp -o CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/fundam.cpp -o CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o.requires
@@ -192,17 +192,17 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o.provides.build: m
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.o: modules/calib3d/src/modelest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/modelest.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/modelest.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/modelest.cpp > CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/modelest.cpp > CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/modelest.cpp -o CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/modelest.cpp -o CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.o.requires
@@ -215,17 +215,17 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/modelest.cpp.o.provides.build:
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o: modules/calib3d/src/p3p.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/p3p.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/p3p.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/p3p.cpp > CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/p3p.cpp > CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/p3p.cpp -o CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/p3p.cpp -o CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o.requires
@@ -238,17 +238,17 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o.provides.build: modu
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o: modules/calib3d/src/polynom_solver.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/polynom_solver.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/polynom_solver.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/polynom_solver.cpp > CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/polynom_solver.cpp > CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/polynom_solver.cpp -o CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/polynom_solver.cpp -o CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o.requires
@@ -261,17 +261,17 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o.provides.
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o: modules/calib3d/src/posit.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/posit.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/posit.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/posit.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/posit.cpp > CMakeFiles/opencv_calib3d.dir/src/posit.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/posit.cpp > CMakeFiles/opencv_calib3d.dir/src/posit.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/posit.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/posit.cpp -o CMakeFiles/opencv_calib3d.dir/src/posit.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/posit.cpp -o CMakeFiles/opencv_calib3d.dir/src/posit.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o.requires
@@ -284,17 +284,17 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o.provides.build: mo
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o: modules/calib3d/src/quadsubpix.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/quadsubpix.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/quadsubpix.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/quadsubpix.cpp > CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/quadsubpix.cpp > CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/quadsubpix.cpp -o CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/quadsubpix.cpp -o CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o.requires
@@ -307,17 +307,17 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o.provides.buil
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o: modules/calib3d/src/solvepnp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/solvepnp.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/solvepnp.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/solvepnp.cpp > CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/solvepnp.cpp > CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/solvepnp.cpp -o CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/solvepnp.cpp -o CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o.requires
@@ -330,17 +330,17 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o.provides.build:
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o: modules/calib3d/src/stereobm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/stereobm.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/stereobm.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/stereobm.cpp > CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/stereobm.cpp > CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/stereobm.cpp -o CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/stereobm.cpp -o CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o.requires
@@ -353,17 +353,17 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o.provides.build:
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o: modules/calib3d/src/stereosgbm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/stereosgbm.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/stereosgbm.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/stereosgbm.cpp > CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/stereosgbm.cpp > CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/stereosgbm.cpp -o CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/stereosgbm.cpp -o CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o.requires
@@ -376,17 +376,17 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o.provides.buil
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o: modules/calib3d/src/triangulate.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/triangulate.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/triangulate.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/triangulate.cpp > CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/triangulate.cpp > CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.i
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/src/triangulate.cpp -o CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/calib3d/src/triangulate.cpp -o CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.s
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o.requires:
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o.requires
@@ -445,8 +445,8 @@ lib/libopencv_calib3d.2.4.9.dylib: lib/libopencv_imgproc.2.4.9.dylib
 lib/libopencv_calib3d.2.4.9.dylib: lib/libopencv_core.2.4.9.dylib
 lib/libopencv_calib3d.2.4.9.dylib: modules/calib3d/CMakeFiles/opencv_calib3d.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../lib/libopencv_calib3d.dylib"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_calib3d.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && $(CMAKE_COMMAND) -E cmake_symlink_library ../../lib/libopencv_calib3d.2.4.9.dylib ../../lib/libopencv_calib3d.2.4.dylib ../../lib/libopencv_calib3d.dylib
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_calib3d.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && $(CMAKE_COMMAND) -E cmake_symlink_library ../../lib/libopencv_calib3d.2.4.9.dylib ../../lib/libopencv_calib3d.2.4.dylib ../../lib/libopencv_calib3d.dylib
 
 lib/libopencv_calib3d.2.4.dylib: lib/libopencv_calib3d.2.4.9.dylib
 
@@ -474,10 +474,10 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFil
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d && $(CMAKE_COMMAND) -P CMakeFiles/opencv_calib3d.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/calib3d && $(CMAKE_COMMAND) -P CMakeFiles/opencv_calib3d.dir/cmake_clean.cmake
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/clean
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/CMakeFiles/opencv_calib3d.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/calib3d /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/calib3d /Users/zj/Desktop/code/pi/opencv/modules/calib3d/CMakeFiles/opencv_calib3d.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/depend
 

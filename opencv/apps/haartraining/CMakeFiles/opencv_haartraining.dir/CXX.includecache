@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvhaartraining.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvhaartraining.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/haartraining.cpp
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/haartraining.cpp
 cstdio
 -
 cstring
@@ -16,5 +16,5 @@ cstring
 cstdlib
 -
 cvhaartraining.h
-/Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvhaartraining.h
+/Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvhaartraining.h
 

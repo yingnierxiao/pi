@@ -6,125 +6,125 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/t4.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/t4.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_aux.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_aux.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 tif_predict.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_predict.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_predict.h
 math.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_close.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_close.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 string.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_codec.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_codec.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_color.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_color.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 math.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_compress.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_compress.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_config.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_config.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_dir.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_dir.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_dir.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_dir.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_dirinfo.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_dirinfo.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 stdlib.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_dirread.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_dirread.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_dirwrite.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_dirwrite.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_dumpmode.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_dumpmode.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_error.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_error.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_extension.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_extension.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_fax3.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_fax3.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 tif_fax3.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_fax3.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_fax3.h
 t4.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/t4.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/t4.h
 stdio.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_fax3.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_fax3.h
 tiff.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiff.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiff.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_fax3sm.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_fax3sm.c
 tiff.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiff.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiff.h
 tif_fax3.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_fax3.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_fax3.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_flush.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_flush.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_getimage.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_getimage.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 stdio.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_jbig.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_jbig.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 jbig.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/jbig.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/jbig.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_jpeg.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_jpeg.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 setjmp.h
 -
 jpeglib.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/jpeglib.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/jpeglib.h
 jerror.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/jerror.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/jerror.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_jpeg_12.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_jpeg_12.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 tif_jpeg.c
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_jpeg.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_jpeg.c
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_luv.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_luv.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 stdio.h
 -
 stdlib.h
@@ -132,57 +132,57 @@ stdlib.h
 math.h
 -
 uvcode.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/uvcode.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/uvcode.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_lzma.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_lzma.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 tif_predict.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_predict.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_predict.h
 lzma.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/lzma.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/lzma.h
 stdio.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_lzw.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_lzw.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 tif_predict.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_predict.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_predict.h
 stdio.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_next.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_next.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_ojpeg.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_ojpeg.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 setjmp.h
 -
 jpeglib.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/jpeglib.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/jpeglib.h
 jerror.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/jerror.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/jerror.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_open.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_open.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_packbits.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_packbits.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 stdio.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_pixarlog.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_pixarlog.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 tif_predict.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_predict.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_predict.h
 zlib.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/zlib.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/zlib.h
 stdio.h
 -
 stdlib.h
@@ -190,49 +190,49 @@ stdlib.h
 math.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_predict.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_predict.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 tif_predict.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_predict.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_predict.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_predict.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_predict.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_print.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_print.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 stdio.h
 -
 ctype.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_read.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_read.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 stdio.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_strip.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_strip.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_swab.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_swab.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_thunder.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_thunder.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 assert.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_tile.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_tile.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_unix.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_unix.c
 tif_config.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_config.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_config.h
 sys/types.h
 -
 errno.h
@@ -250,45 +250,45 @@ fcntl.h
 io.h
 -
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 sys/mman.h
 -
 windows.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_version.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_version.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_warning.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_warning.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_write.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_write.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 stdio.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_zip.c
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_zip.c
 tiffiop.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 tif_predict.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_predict.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_predict.h
 zlib.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/zlib.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/zlib.h
 stdio.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiff.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiff.h
 tif_config.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_config.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_config.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffio.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffio.h
 tiff.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiff.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiff.h
 tiffvers.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffvers.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffvers.h
 windows.h
 -
 stdio.h
@@ -296,9 +296,9 @@ stdio.h
 stdarg.h
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffiop.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffiop.h
 tif_config.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_config.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_config.h
 fcntl.h
 -
 sys/types.h
@@ -310,13 +310,13 @@ assert.h
 search.h
 -
 tiffio.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffio.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffio.h
 tif_dir.h
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tif_dir.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tif_dir.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/tiffvers.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/tiffvers.h
 
-/Users/zj/Desktop/code/opencv-2.4.9/3rdparty/libtiff/uvcode.h
+/Users/zj/Desktop/code/pi/opencv/3rdparty/libtiff/uvcode.h
 
 3rdparty/zlib/zconf.h
 windows.h

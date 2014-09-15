@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Utility rule file for opencv_test_java_properties.
 
@@ -49,7 +49,7 @@ CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
 include modules/java/test/CMakeFiles/opencv_test_java_properties.dir/progress.make
 
 modules/java/test/CMakeFiles/opencv_test_java_properties:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java/test && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E echo "opencv.lib.path = /Users/zj/Desktop/code/opencv-2.4.9/lib" > /Users/zj/Desktop/code/opencv-2.4.9/modules/java/test/.build/ant-Release.properties
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java/test && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E echo "opencv.lib.path = /Users/zj/Desktop/code/pi/opencv/lib" > /Users/zj/Desktop/code/pi/opencv/modules/java/test/.build/ant-Release.properties
 
 opencv_test_java_properties: modules/java/test/CMakeFiles/opencv_test_java_properties
 opencv_test_java_properties: modules/java/test/CMakeFiles/opencv_test_java_properties.dir/build.make
@@ -60,10 +60,10 @@ modules/java/test/CMakeFiles/opencv_test_java_properties.dir/build: opencv_test_
 .PHONY : modules/java/test/CMakeFiles/opencv_test_java_properties.dir/build
 
 modules/java/test/CMakeFiles/opencv_test_java_properties.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java/test && $(CMAKE_COMMAND) -P CMakeFiles/opencv_test_java_properties.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java/test && $(CMAKE_COMMAND) -P CMakeFiles/opencv_test_java_properties.dir/cmake_clean.cmake
 .PHONY : modules/java/test/CMakeFiles/opencv_test_java_properties.dir/clean
 
 modules/java/test/CMakeFiles/opencv_test_java_properties.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/java/test /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/java/test /Users/zj/Desktop/code/opencv-2.4.9/modules/java/test/CMakeFiles/opencv_test_java_properties.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/java/test /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/java/test /Users/zj/Desktop/code/pi/opencv/modules/java/test/CMakeFiles/opencv_test_java_properties.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/java/test/CMakeFiles/opencv_test_java_properties.dir/depend
 

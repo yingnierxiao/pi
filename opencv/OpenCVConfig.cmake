@@ -93,7 +93,7 @@ set(OpenCV_HAVE_ANDROID_CAMERA OFF)
 # ======================================================
 
 # Provide the include directories to the caller
-set(OpenCV_INCLUDE_DIRS "/Users/zj/Desktop/code/opencv-2.4.9" "/Users/zj/Desktop/code/opencv-2.4.9/include" "/Users/zj/Desktop/code/opencv-2.4.9/include/opencv")
+set(OpenCV_INCLUDE_DIRS "/Users/zj/Desktop/code/pi/opencv" "/Users/zj/Desktop/code/pi/opencv/include" "/Users/zj/Desktop/code/pi/opencv/include/opencv")
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 # ======================================================
@@ -125,7 +125,7 @@ SET(OpenCV_LIB_COMPONENTS opencv_videostab;opencv_video;opencv_ts;opencv_superre
 # ==============================================================
 #  Extra include directories, needed by OpenCV 2 new structure
 # ==============================================================
-SET(OpenCV2_INCLUDE_DIRS /Users/zj/Desktop/code/opencv-2.4.9/modules/core/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/flann/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/video/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/legacy/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/ocl/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/contrib/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/stitching/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/superres/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/ts/include;/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/include)
+SET(OpenCV2_INCLUDE_DIRS /Users/zj/Desktop/code/pi/opencv/modules/core/include;/Users/zj/Desktop/code/pi/opencv/modules/flann/include;/Users/zj/Desktop/code/pi/opencv/modules/imgproc/include;/Users/zj/Desktop/code/pi/opencv/modules/highgui/include;/Users/zj/Desktop/code/pi/opencv/modules/features2d/include;/Users/zj/Desktop/code/pi/opencv/modules/calib3d/include;/Users/zj/Desktop/code/pi/opencv/modules/ml/include;/Users/zj/Desktop/code/pi/opencv/modules/video/include;/Users/zj/Desktop/code/pi/opencv/modules/legacy/include;/Users/zj/Desktop/code/pi/opencv/modules/objdetect/include;/Users/zj/Desktop/code/pi/opencv/modules/photo/include;/Users/zj/Desktop/code/pi/opencv/modules/gpu/include;/Users/zj/Desktop/code/pi/opencv/modules/ocl/include;/Users/zj/Desktop/code/pi/opencv/modules/nonfree/include;/Users/zj/Desktop/code/pi/opencv/modules/contrib/include;/Users/zj/Desktop/code/pi/opencv/modules/stitching/include;/Users/zj/Desktop/code/pi/opencv/modules/superres/include;/Users/zj/Desktop/code/pi/opencv/modules/ts/include;/Users/zj/Desktop/code/pi/opencv/modules/videostab/include)
 if(OpenCV2_INCLUDE_DIRS)
   include_directories(${OpenCV2_INCLUDE_DIRS})
   list(APPEND OpenCV_INCLUDE_DIRS ${OpenCV2_INCLUDE_DIRS})

@@ -6,93 +6,93 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/deblurring.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/deblurring.cpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/precomp.hpp
 opencv2/videostab/deblurring.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/videostab/deblurring.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/videostab/deblurring.hpp
 opencv2/videostab/global_motion.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/videostab/global_motion.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/videostab/global_motion.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/fast_marching.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/fast_marching.cpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/precomp.hpp
 opencv2/videostab/fast_marching.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/videostab/fast_marching.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/videostab/fast_marching.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/frame_source.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/frame_source.cpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/precomp.hpp
 opencv2/videostab/frame_source.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/videostab/frame_source.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/videostab/frame_source.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/global_motion.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/global_motion.cpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/precomp.hpp
 opencv2/highgui/highgui.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/highgui/highgui.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/highgui/highgui.hpp
 opencv2/videostab/global_motion.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/videostab/global_motion.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/videostab/global_motion.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/inpainting.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/inpainting.cpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/precomp.hpp
 queue
 -
 opencv2/videostab/inpainting.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/videostab/inpainting.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/videostab/inpainting.hpp
 opencv2/videostab/global_motion.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/videostab/global_motion.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/videostab/global_motion.hpp
 opencv2/videostab/fast_marching.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/videostab/fast_marching.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/videostab/fast_marching.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/log.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/log.cpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/precomp.hpp
 cstdio
 -
 cstdarg
 -
 opencv2/videostab/log.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/videostab/log.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/videostab/log.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/motion_stabilizing.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/motion_stabilizing.cpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/precomp.hpp
 opencv2/videostab/motion_stabilizing.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/videostab/motion_stabilizing.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/videostab/motion_stabilizing.hpp
 opencv2/videostab/global_motion.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/videostab/global_motion.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/videostab/global_motion.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/optical_flow.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/optical_flow.cpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/precomp.hpp
 opencv2/video/video.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/video/video.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/video/video.hpp
 opencv2/videostab/optical_flow.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/videostab/optical_flow.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/videostab/optical_flow.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/precomp.hpp
 cvconfig.h
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/cvconfig.h
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/cvconfig.h
 stdexcept
 -
 iostream
 -
 opencv2/core/core.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/core/core.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/core/core.hpp
 opencv2/imgproc/imgproc.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/imgproc/imgproc.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/imgproc/imgproc.hpp
 opencv2/video/video.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/video/video.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/video/video.hpp
 opencv2/features2d/features2d.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/features2d/features2d.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/features2d/features2d.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/stabilizer.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/stabilizer.cpp
 precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/precomp.hpp
 opencv2/videostab/stabilizer.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/videostab/src/opencv2/videostab/stabilizer.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/videostab/src/opencv2/videostab/stabilizer.hpp
 
 cvconfig.h
 

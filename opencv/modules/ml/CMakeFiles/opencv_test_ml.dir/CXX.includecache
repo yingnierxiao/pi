@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/test_emknearestkmeans.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/test_emknearestkmeans.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/test_gbttest.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/test_gbttest.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/test_precomp.hpp
 string
 -
 fstream
@@ -20,33 +20,33 @@ fstream
 iostream
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/test_main.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/test_main.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/test_mltests.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/test_mltests.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/test_mltests2.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/test_mltests2.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/test_precomp.hpp
 opencv2/ts/ts.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/opencv2/ts/ts.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/opencv2/ts/ts.hpp
 opencv2/ml/ml.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/opencv2/ml/ml.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/opencv2/ml/ml.hpp
 opencv2/core/core_c.h
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/opencv2/core/core_c.h
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/opencv2/core/core_c.h
 iostream
 -
 map
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/test_save_load.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/test_save_load.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/ml/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/ml/test/test_precomp.hpp
 iostream
 -
 fstream

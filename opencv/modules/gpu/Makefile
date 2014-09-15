@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,16 +82,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"dev\" \"java\" \"libs\" \"python\""
@@ -104,7 +94,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -114,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/opencv-2.4.9/CPackSourceConfig.cmake
+	cd /Users/zj/Desktop/code/pi/opencv && /usr/local/Cellar/cmake/2.8.12.1/bin/cpack --config ./CPackSourceConfig.cmake /Users/zj/Desktop/code/pi/opencv/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -133,14 +123,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles /Users/zj/Desktop/code/opencv-2.4.9/modules/gpu/CMakeFiles/progress.marks
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/gpu/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles /Users/zj/Desktop/code/pi/opencv/modules/gpu/CMakeFiles/progress.marks
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/gpu/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zj/Desktop/code/pi/opencv/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/gpu/clean
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/gpu/clean
 .PHONY : clean
 
 # The main clean target
@@ -149,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/gpu/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/gpu/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/gpu/preinstall
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/gpu/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 modules/gpu/CMakeFiles/opencv_gpu.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/gpu/CMakeFiles/opencv_gpu.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/gpu/CMakeFiles/opencv_gpu.dir/rule
 .PHONY : modules/gpu/CMakeFiles/opencv_gpu.dir/rule
 
 # Convenience name for target.
@@ -173,12 +163,12 @@ opencv_gpu: modules/gpu/CMakeFiles/opencv_gpu.dir/rule
 
 # fast build rule for target.
 opencv_gpu/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/build
 .PHONY : opencv_gpu/fast
 
 # Convenience name for target.
 modules/gpu/CMakeFiles/opencv_perf_gpu.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/gpu/CMakeFiles/opencv_perf_gpu.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/gpu/CMakeFiles/opencv_perf_gpu.dir/rule
 .PHONY : modules/gpu/CMakeFiles/opencv_perf_gpu.dir/rule
 
 # Convenience name for target.
@@ -187,12 +177,12 @@ opencv_perf_gpu: modules/gpu/CMakeFiles/opencv_perf_gpu.dir/rule
 
 # fast build rule for target.
 opencv_perf_gpu/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build
 .PHONY : opencv_perf_gpu/fast
 
 # Convenience name for target.
 modules/gpu/CMakeFiles/opencv_test_gpu.dir/rule:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f CMakeFiles/Makefile2 modules/gpu/CMakeFiles/opencv_test_gpu.dir/rule
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f CMakeFiles/Makefile2 modules/gpu/CMakeFiles/opencv_test_gpu.dir/rule
 .PHONY : modules/gpu/CMakeFiles/opencv_test_gpu.dir/rule
 
 # Convenience name for target.
@@ -201,7 +191,7 @@ opencv_test_gpu: modules/gpu/CMakeFiles/opencv_test_gpu.dir/rule
 
 # fast build rule for target.
 opencv_test_gpu/fast:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/build
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/build
 .PHONY : opencv_test_gpu/fast
 
 perf/perf_calib3d.o: perf/perf_calib3d.cpp.o
@@ -209,7 +199,7 @@ perf/perf_calib3d.o: perf/perf_calib3d.cpp.o
 
 # target to build an object file
 perf/perf_calib3d.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_calib3d.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_calib3d.cpp.o
 .PHONY : perf/perf_calib3d.cpp.o
 
 perf/perf_calib3d.i: perf/perf_calib3d.cpp.i
@@ -217,7 +207,7 @@ perf/perf_calib3d.i: perf/perf_calib3d.cpp.i
 
 # target to preprocess a source file
 perf/perf_calib3d.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_calib3d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_calib3d.cpp.i
 .PHONY : perf/perf_calib3d.cpp.i
 
 perf/perf_calib3d.s: perf/perf_calib3d.cpp.s
@@ -225,7 +215,7 @@ perf/perf_calib3d.s: perf/perf_calib3d.cpp.s
 
 # target to generate assembly for a file
 perf/perf_calib3d.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_calib3d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_calib3d.cpp.s
 .PHONY : perf/perf_calib3d.cpp.s
 
 perf/perf_core.o: perf/perf_core.cpp.o
@@ -233,7 +223,7 @@ perf/perf_core.o: perf/perf_core.cpp.o
 
 # target to build an object file
 perf/perf_core.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_core.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_core.cpp.o
 .PHONY : perf/perf_core.cpp.o
 
 perf/perf_core.i: perf/perf_core.cpp.i
@@ -241,7 +231,7 @@ perf/perf_core.i: perf/perf_core.cpp.i
 
 # target to preprocess a source file
 perf/perf_core.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_core.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_core.cpp.i
 .PHONY : perf/perf_core.cpp.i
 
 perf/perf_core.s: perf/perf_core.cpp.s
@@ -249,7 +239,7 @@ perf/perf_core.s: perf/perf_core.cpp.s
 
 # target to generate assembly for a file
 perf/perf_core.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_core.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_core.cpp.s
 .PHONY : perf/perf_core.cpp.s
 
 perf/perf_denoising.o: perf/perf_denoising.cpp.o
@@ -257,7 +247,7 @@ perf/perf_denoising.o: perf/perf_denoising.cpp.o
 
 # target to build an object file
 perf/perf_denoising.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_denoising.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_denoising.cpp.o
 .PHONY : perf/perf_denoising.cpp.o
 
 perf/perf_denoising.i: perf/perf_denoising.cpp.i
@@ -265,7 +255,7 @@ perf/perf_denoising.i: perf/perf_denoising.cpp.i
 
 # target to preprocess a source file
 perf/perf_denoising.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_denoising.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_denoising.cpp.i
 .PHONY : perf/perf_denoising.cpp.i
 
 perf/perf_denoising.s: perf/perf_denoising.cpp.s
@@ -273,7 +263,7 @@ perf/perf_denoising.s: perf/perf_denoising.cpp.s
 
 # target to generate assembly for a file
 perf/perf_denoising.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_denoising.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_denoising.cpp.s
 .PHONY : perf/perf_denoising.cpp.s
 
 perf/perf_features2d.o: perf/perf_features2d.cpp.o
@@ -281,7 +271,7 @@ perf/perf_features2d.o: perf/perf_features2d.cpp.o
 
 # target to build an object file
 perf/perf_features2d.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_features2d.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_features2d.cpp.o
 .PHONY : perf/perf_features2d.cpp.o
 
 perf/perf_features2d.i: perf/perf_features2d.cpp.i
@@ -289,7 +279,7 @@ perf/perf_features2d.i: perf/perf_features2d.cpp.i
 
 # target to preprocess a source file
 perf/perf_features2d.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_features2d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_features2d.cpp.i
 .PHONY : perf/perf_features2d.cpp.i
 
 perf/perf_features2d.s: perf/perf_features2d.cpp.s
@@ -297,7 +287,7 @@ perf/perf_features2d.s: perf/perf_features2d.cpp.s
 
 # target to generate assembly for a file
 perf/perf_features2d.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_features2d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_features2d.cpp.s
 .PHONY : perf/perf_features2d.cpp.s
 
 perf/perf_filters.o: perf/perf_filters.cpp.o
@@ -305,7 +295,7 @@ perf/perf_filters.o: perf/perf_filters.cpp.o
 
 # target to build an object file
 perf/perf_filters.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_filters.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_filters.cpp.o
 .PHONY : perf/perf_filters.cpp.o
 
 perf/perf_filters.i: perf/perf_filters.cpp.i
@@ -313,7 +303,7 @@ perf/perf_filters.i: perf/perf_filters.cpp.i
 
 # target to preprocess a source file
 perf/perf_filters.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_filters.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_filters.cpp.i
 .PHONY : perf/perf_filters.cpp.i
 
 perf/perf_filters.s: perf/perf_filters.cpp.s
@@ -321,7 +311,7 @@ perf/perf_filters.s: perf/perf_filters.cpp.s
 
 # target to generate assembly for a file
 perf/perf_filters.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_filters.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_filters.cpp.s
 .PHONY : perf/perf_filters.cpp.s
 
 perf/perf_imgproc.o: perf/perf_imgproc.cpp.o
@@ -329,7 +319,7 @@ perf/perf_imgproc.o: perf/perf_imgproc.cpp.o
 
 # target to build an object file
 perf/perf_imgproc.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_imgproc.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_imgproc.cpp.o
 .PHONY : perf/perf_imgproc.cpp.o
 
 perf/perf_imgproc.i: perf/perf_imgproc.cpp.i
@@ -337,7 +327,7 @@ perf/perf_imgproc.i: perf/perf_imgproc.cpp.i
 
 # target to preprocess a source file
 perf/perf_imgproc.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_imgproc.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_imgproc.cpp.i
 .PHONY : perf/perf_imgproc.cpp.i
 
 perf/perf_imgproc.s: perf/perf_imgproc.cpp.s
@@ -345,7 +335,7 @@ perf/perf_imgproc.s: perf/perf_imgproc.cpp.s
 
 # target to generate assembly for a file
 perf/perf_imgproc.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_imgproc.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_imgproc.cpp.s
 .PHONY : perf/perf_imgproc.cpp.s
 
 perf/perf_labeling.o: perf/perf_labeling.cpp.o
@@ -353,7 +343,7 @@ perf/perf_labeling.o: perf/perf_labeling.cpp.o
 
 # target to build an object file
 perf/perf_labeling.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_labeling.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_labeling.cpp.o
 .PHONY : perf/perf_labeling.cpp.o
 
 perf/perf_labeling.i: perf/perf_labeling.cpp.i
@@ -361,7 +351,7 @@ perf/perf_labeling.i: perf/perf_labeling.cpp.i
 
 # target to preprocess a source file
 perf/perf_labeling.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_labeling.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_labeling.cpp.i
 .PHONY : perf/perf_labeling.cpp.i
 
 perf/perf_labeling.s: perf/perf_labeling.cpp.s
@@ -369,7 +359,7 @@ perf/perf_labeling.s: perf/perf_labeling.cpp.s
 
 # target to generate assembly for a file
 perf/perf_labeling.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_labeling.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_labeling.cpp.s
 .PHONY : perf/perf_labeling.cpp.s
 
 perf/perf_main.o: perf/perf_main.cpp.o
@@ -377,7 +367,7 @@ perf/perf_main.o: perf/perf_main.cpp.o
 
 # target to build an object file
 perf/perf_main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_main.cpp.o
 .PHONY : perf/perf_main.cpp.o
 
 perf/perf_main.i: perf/perf_main.cpp.i
@@ -385,7 +375,7 @@ perf/perf_main.i: perf/perf_main.cpp.i
 
 # target to preprocess a source file
 perf/perf_main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_main.cpp.i
 .PHONY : perf/perf_main.cpp.i
 
 perf/perf_main.s: perf/perf_main.cpp.s
@@ -393,7 +383,7 @@ perf/perf_main.s: perf/perf_main.cpp.s
 
 # target to generate assembly for a file
 perf/perf_main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_main.cpp.s
 .PHONY : perf/perf_main.cpp.s
 
 perf/perf_matop.o: perf/perf_matop.cpp.o
@@ -401,7 +391,7 @@ perf/perf_matop.o: perf/perf_matop.cpp.o
 
 # target to build an object file
 perf/perf_matop.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_matop.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_matop.cpp.o
 .PHONY : perf/perf_matop.cpp.o
 
 perf/perf_matop.i: perf/perf_matop.cpp.i
@@ -409,7 +399,7 @@ perf/perf_matop.i: perf/perf_matop.cpp.i
 
 # target to preprocess a source file
 perf/perf_matop.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_matop.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_matop.cpp.i
 .PHONY : perf/perf_matop.cpp.i
 
 perf/perf_matop.s: perf/perf_matop.cpp.s
@@ -417,7 +407,7 @@ perf/perf_matop.s: perf/perf_matop.cpp.s
 
 # target to generate assembly for a file
 perf/perf_matop.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_matop.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_matop.cpp.s
 .PHONY : perf/perf_matop.cpp.s
 
 perf/perf_objdetect.o: perf/perf_objdetect.cpp.o
@@ -425,7 +415,7 @@ perf/perf_objdetect.o: perf/perf_objdetect.cpp.o
 
 # target to build an object file
 perf/perf_objdetect.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_objdetect.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_objdetect.cpp.o
 .PHONY : perf/perf_objdetect.cpp.o
 
 perf/perf_objdetect.i: perf/perf_objdetect.cpp.i
@@ -433,7 +423,7 @@ perf/perf_objdetect.i: perf/perf_objdetect.cpp.i
 
 # target to preprocess a source file
 perf/perf_objdetect.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_objdetect.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_objdetect.cpp.i
 .PHONY : perf/perf_objdetect.cpp.i
 
 perf/perf_objdetect.s: perf/perf_objdetect.cpp.s
@@ -441,7 +431,7 @@ perf/perf_objdetect.s: perf/perf_objdetect.cpp.s
 
 # target to generate assembly for a file
 perf/perf_objdetect.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_objdetect.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_objdetect.cpp.s
 .PHONY : perf/perf_objdetect.cpp.s
 
 perf/perf_video.o: perf/perf_video.cpp.o
@@ -449,7 +439,7 @@ perf/perf_video.o: perf/perf_video.cpp.o
 
 # target to build an object file
 perf/perf_video.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_video.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_video.cpp.o
 .PHONY : perf/perf_video.cpp.o
 
 perf/perf_video.i: perf/perf_video.cpp.i
@@ -457,7 +447,7 @@ perf/perf_video.i: perf/perf_video.cpp.i
 
 # target to preprocess a source file
 perf/perf_video.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_video.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_video.cpp.i
 .PHONY : perf/perf_video.cpp.i
 
 perf/perf_video.s: perf/perf_video.cpp.s
@@ -465,7 +455,7 @@ perf/perf_video.s: perf/perf_video.cpp.s
 
 # target to generate assembly for a file
 perf/perf_video.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_video.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_perf_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_perf_gpu.dir/perf/perf_video.cpp.s
 .PHONY : perf/perf_video.cpp.s
 
 src/arithm.o: src/arithm.cpp.o
@@ -473,7 +463,7 @@ src/arithm.o: src/arithm.cpp.o
 
 # target to build an object file
 src/arithm.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/arithm.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/arithm.cpp.o
 .PHONY : src/arithm.cpp.o
 
 src/arithm.i: src/arithm.cpp.i
@@ -481,7 +471,7 @@ src/arithm.i: src/arithm.cpp.i
 
 # target to preprocess a source file
 src/arithm.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/arithm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/arithm.cpp.i
 .PHONY : src/arithm.cpp.i
 
 src/arithm.s: src/arithm.cpp.s
@@ -489,7 +479,7 @@ src/arithm.s: src/arithm.cpp.s
 
 # target to generate assembly for a file
 src/arithm.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/arithm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/arithm.cpp.s
 .PHONY : src/arithm.cpp.s
 
 src/bgfg_gmg.o: src/bgfg_gmg.cpp.o
@@ -497,7 +487,7 @@ src/bgfg_gmg.o: src/bgfg_gmg.cpp.o
 
 # target to build an object file
 src/bgfg_gmg.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bgfg_gmg.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bgfg_gmg.cpp.o
 .PHONY : src/bgfg_gmg.cpp.o
 
 src/bgfg_gmg.i: src/bgfg_gmg.cpp.i
@@ -505,7 +495,7 @@ src/bgfg_gmg.i: src/bgfg_gmg.cpp.i
 
 # target to preprocess a source file
 src/bgfg_gmg.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bgfg_gmg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bgfg_gmg.cpp.i
 .PHONY : src/bgfg_gmg.cpp.i
 
 src/bgfg_gmg.s: src/bgfg_gmg.cpp.s
@@ -513,7 +503,7 @@ src/bgfg_gmg.s: src/bgfg_gmg.cpp.s
 
 # target to generate assembly for a file
 src/bgfg_gmg.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bgfg_gmg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bgfg_gmg.cpp.s
 .PHONY : src/bgfg_gmg.cpp.s
 
 src/bgfg_mog.o: src/bgfg_mog.cpp.o
@@ -521,7 +511,7 @@ src/bgfg_mog.o: src/bgfg_mog.cpp.o
 
 # target to build an object file
 src/bgfg_mog.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bgfg_mog.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bgfg_mog.cpp.o
 .PHONY : src/bgfg_mog.cpp.o
 
 src/bgfg_mog.i: src/bgfg_mog.cpp.i
@@ -529,7 +519,7 @@ src/bgfg_mog.i: src/bgfg_mog.cpp.i
 
 # target to preprocess a source file
 src/bgfg_mog.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bgfg_mog.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bgfg_mog.cpp.i
 .PHONY : src/bgfg_mog.cpp.i
 
 src/bgfg_mog.s: src/bgfg_mog.cpp.s
@@ -537,7 +527,7 @@ src/bgfg_mog.s: src/bgfg_mog.cpp.s
 
 # target to generate assembly for a file
 src/bgfg_mog.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bgfg_mog.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bgfg_mog.cpp.s
 .PHONY : src/bgfg_mog.cpp.s
 
 src/bilateral_filter.o: src/bilateral_filter.cpp.o
@@ -545,7 +535,7 @@ src/bilateral_filter.o: src/bilateral_filter.cpp.o
 
 # target to build an object file
 src/bilateral_filter.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bilateral_filter.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bilateral_filter.cpp.o
 .PHONY : src/bilateral_filter.cpp.o
 
 src/bilateral_filter.i: src/bilateral_filter.cpp.i
@@ -553,7 +543,7 @@ src/bilateral_filter.i: src/bilateral_filter.cpp.i
 
 # target to preprocess a source file
 src/bilateral_filter.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bilateral_filter.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bilateral_filter.cpp.i
 .PHONY : src/bilateral_filter.cpp.i
 
 src/bilateral_filter.s: src/bilateral_filter.cpp.s
@@ -561,7 +551,7 @@ src/bilateral_filter.s: src/bilateral_filter.cpp.s
 
 # target to generate assembly for a file
 src/bilateral_filter.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bilateral_filter.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/bilateral_filter.cpp.s
 .PHONY : src/bilateral_filter.cpp.s
 
 src/blend.o: src/blend.cpp.o
@@ -569,7 +559,7 @@ src/blend.o: src/blend.cpp.o
 
 # target to build an object file
 src/blend.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/blend.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/blend.cpp.o
 .PHONY : src/blend.cpp.o
 
 src/blend.i: src/blend.cpp.i
@@ -577,7 +567,7 @@ src/blend.i: src/blend.cpp.i
 
 # target to preprocess a source file
 src/blend.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/blend.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/blend.cpp.i
 .PHONY : src/blend.cpp.i
 
 src/blend.s: src/blend.cpp.s
@@ -585,7 +575,7 @@ src/blend.s: src/blend.cpp.s
 
 # target to generate assembly for a file
 src/blend.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/blend.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/blend.cpp.s
 .PHONY : src/blend.cpp.s
 
 src/brute_force_matcher.o: src/brute_force_matcher.cpp.o
@@ -593,7 +583,7 @@ src/brute_force_matcher.o: src/brute_force_matcher.cpp.o
 
 # target to build an object file
 src/brute_force_matcher.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/brute_force_matcher.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/brute_force_matcher.cpp.o
 .PHONY : src/brute_force_matcher.cpp.o
 
 src/brute_force_matcher.i: src/brute_force_matcher.cpp.i
@@ -601,7 +591,7 @@ src/brute_force_matcher.i: src/brute_force_matcher.cpp.i
 
 # target to preprocess a source file
 src/brute_force_matcher.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/brute_force_matcher.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/brute_force_matcher.cpp.i
 .PHONY : src/brute_force_matcher.cpp.i
 
 src/brute_force_matcher.s: src/brute_force_matcher.cpp.s
@@ -609,7 +599,7 @@ src/brute_force_matcher.s: src/brute_force_matcher.cpp.s
 
 # target to generate assembly for a file
 src/brute_force_matcher.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/brute_force_matcher.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/brute_force_matcher.cpp.s
 .PHONY : src/brute_force_matcher.cpp.s
 
 src/calib3d.o: src/calib3d.cpp.o
@@ -617,7 +607,7 @@ src/calib3d.o: src/calib3d.cpp.o
 
 # target to build an object file
 src/calib3d.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/calib3d.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/calib3d.cpp.o
 .PHONY : src/calib3d.cpp.o
 
 src/calib3d.i: src/calib3d.cpp.i
@@ -625,7 +615,7 @@ src/calib3d.i: src/calib3d.cpp.i
 
 # target to preprocess a source file
 src/calib3d.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/calib3d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/calib3d.cpp.i
 .PHONY : src/calib3d.cpp.i
 
 src/calib3d.s: src/calib3d.cpp.s
@@ -633,7 +623,7 @@ src/calib3d.s: src/calib3d.cpp.s
 
 # target to generate assembly for a file
 src/calib3d.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/calib3d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/calib3d.cpp.s
 .PHONY : src/calib3d.cpp.s
 
 src/cascadeclassifier.o: src/cascadeclassifier.cpp.o
@@ -641,7 +631,7 @@ src/cascadeclassifier.o: src/cascadeclassifier.cpp.o
 
 # target to build an object file
 src/cascadeclassifier.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cascadeclassifier.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cascadeclassifier.cpp.o
 .PHONY : src/cascadeclassifier.cpp.o
 
 src/cascadeclassifier.i: src/cascadeclassifier.cpp.i
@@ -649,7 +639,7 @@ src/cascadeclassifier.i: src/cascadeclassifier.cpp.i
 
 # target to preprocess a source file
 src/cascadeclassifier.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cascadeclassifier.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cascadeclassifier.cpp.i
 .PHONY : src/cascadeclassifier.cpp.i
 
 src/cascadeclassifier.s: src/cascadeclassifier.cpp.s
@@ -657,7 +647,7 @@ src/cascadeclassifier.s: src/cascadeclassifier.cpp.s
 
 # target to generate assembly for a file
 src/cascadeclassifier.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cascadeclassifier.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cascadeclassifier.cpp.s
 .PHONY : src/cascadeclassifier.cpp.s
 
 src/color.o: src/color.cpp.o
@@ -665,7 +655,7 @@ src/color.o: src/color.cpp.o
 
 # target to build an object file
 src/color.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/color.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/color.cpp.o
 .PHONY : src/color.cpp.o
 
 src/color.i: src/color.cpp.i
@@ -673,7 +663,7 @@ src/color.i: src/color.cpp.i
 
 # target to preprocess a source file
 src/color.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/color.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/color.cpp.i
 .PHONY : src/color.cpp.i
 
 src/color.s: src/color.cpp.s
@@ -681,7 +671,7 @@ src/color.s: src/color.cpp.s
 
 # target to generate assembly for a file
 src/color.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/color.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/color.cpp.s
 .PHONY : src/color.cpp.s
 
 src/cu_safe_call.o: src/cu_safe_call.cpp.o
@@ -689,7 +679,7 @@ src/cu_safe_call.o: src/cu_safe_call.cpp.o
 
 # target to build an object file
 src/cu_safe_call.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cu_safe_call.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cu_safe_call.cpp.o
 .PHONY : src/cu_safe_call.cpp.o
 
 src/cu_safe_call.i: src/cu_safe_call.cpp.i
@@ -697,7 +687,7 @@ src/cu_safe_call.i: src/cu_safe_call.cpp.i
 
 # target to preprocess a source file
 src/cu_safe_call.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cu_safe_call.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cu_safe_call.cpp.i
 .PHONY : src/cu_safe_call.cpp.i
 
 src/cu_safe_call.s: src/cu_safe_call.cpp.s
@@ -705,7 +695,7 @@ src/cu_safe_call.s: src/cu_safe_call.cpp.s
 
 # target to generate assembly for a file
 src/cu_safe_call.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cu_safe_call.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cu_safe_call.cpp.s
 .PHONY : src/cu_safe_call.cpp.s
 
 src/cudastream.o: src/cudastream.cpp.o
@@ -713,7 +703,7 @@ src/cudastream.o: src/cudastream.cpp.o
 
 # target to build an object file
 src/cudastream.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cudastream.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cudastream.cpp.o
 .PHONY : src/cudastream.cpp.o
 
 src/cudastream.i: src/cudastream.cpp.i
@@ -721,7 +711,7 @@ src/cudastream.i: src/cudastream.cpp.i
 
 # target to preprocess a source file
 src/cudastream.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cudastream.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cudastream.cpp.i
 .PHONY : src/cudastream.cpp.i
 
 src/cudastream.s: src/cudastream.cpp.s
@@ -729,7 +719,7 @@ src/cudastream.s: src/cudastream.cpp.s
 
 # target to generate assembly for a file
 src/cudastream.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cudastream.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cudastream.cpp.s
 .PHONY : src/cudastream.cpp.s
 
 src/cuvid_video_source.o: src/cuvid_video_source.cpp.o
@@ -737,7 +727,7 @@ src/cuvid_video_source.o: src/cuvid_video_source.cpp.o
 
 # target to build an object file
 src/cuvid_video_source.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cuvid_video_source.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cuvid_video_source.cpp.o
 .PHONY : src/cuvid_video_source.cpp.o
 
 src/cuvid_video_source.i: src/cuvid_video_source.cpp.i
@@ -745,7 +735,7 @@ src/cuvid_video_source.i: src/cuvid_video_source.cpp.i
 
 # target to preprocess a source file
 src/cuvid_video_source.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cuvid_video_source.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cuvid_video_source.cpp.i
 .PHONY : src/cuvid_video_source.cpp.i
 
 src/cuvid_video_source.s: src/cuvid_video_source.cpp.s
@@ -753,7 +743,7 @@ src/cuvid_video_source.s: src/cuvid_video_source.cpp.s
 
 # target to generate assembly for a file
 src/cuvid_video_source.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cuvid_video_source.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/cuvid_video_source.cpp.s
 .PHONY : src/cuvid_video_source.cpp.s
 
 src/denoising.o: src/denoising.cpp.o
@@ -761,7 +751,7 @@ src/denoising.o: src/denoising.cpp.o
 
 # target to build an object file
 src/denoising.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/denoising.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/denoising.cpp.o
 .PHONY : src/denoising.cpp.o
 
 src/denoising.i: src/denoising.cpp.i
@@ -769,7 +759,7 @@ src/denoising.i: src/denoising.cpp.i
 
 # target to preprocess a source file
 src/denoising.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/denoising.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/denoising.cpp.i
 .PHONY : src/denoising.cpp.i
 
 src/denoising.s: src/denoising.cpp.s
@@ -777,7 +767,7 @@ src/denoising.s: src/denoising.cpp.s
 
 # target to generate assembly for a file
 src/denoising.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/denoising.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/denoising.cpp.s
 .PHONY : src/denoising.cpp.s
 
 src/element_operations.o: src/element_operations.cpp.o
@@ -785,7 +775,7 @@ src/element_operations.o: src/element_operations.cpp.o
 
 # target to build an object file
 src/element_operations.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/element_operations.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/element_operations.cpp.o
 .PHONY : src/element_operations.cpp.o
 
 src/element_operations.i: src/element_operations.cpp.i
@@ -793,7 +783,7 @@ src/element_operations.i: src/element_operations.cpp.i
 
 # target to preprocess a source file
 src/element_operations.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/element_operations.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/element_operations.cpp.i
 .PHONY : src/element_operations.cpp.i
 
 src/element_operations.s: src/element_operations.cpp.s
@@ -801,7 +791,7 @@ src/element_operations.s: src/element_operations.cpp.s
 
 # target to generate assembly for a file
 src/element_operations.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/element_operations.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/element_operations.cpp.s
 .PHONY : src/element_operations.cpp.s
 
 src/error.o: src/error.cpp.o
@@ -809,7 +799,7 @@ src/error.o: src/error.cpp.o
 
 # target to build an object file
 src/error.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/error.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/error.cpp.o
 .PHONY : src/error.cpp.o
 
 src/error.i: src/error.cpp.i
@@ -817,7 +807,7 @@ src/error.i: src/error.cpp.i
 
 # target to preprocess a source file
 src/error.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/error.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/error.cpp.i
 .PHONY : src/error.cpp.i
 
 src/error.s: src/error.cpp.s
@@ -825,7 +815,7 @@ src/error.s: src/error.cpp.s
 
 # target to generate assembly for a file
 src/error.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/error.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/error.cpp.s
 .PHONY : src/error.cpp.s
 
 src/fast.o: src/fast.cpp.o
@@ -833,7 +823,7 @@ src/fast.o: src/fast.cpp.o
 
 # target to build an object file
 src/fast.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/fast.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/fast.cpp.o
 .PHONY : src/fast.cpp.o
 
 src/fast.i: src/fast.cpp.i
@@ -841,7 +831,7 @@ src/fast.i: src/fast.cpp.i
 
 # target to preprocess a source file
 src/fast.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/fast.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/fast.cpp.i
 .PHONY : src/fast.cpp.i
 
 src/fast.s: src/fast.cpp.s
@@ -849,7 +839,7 @@ src/fast.s: src/fast.cpp.s
 
 # target to generate assembly for a file
 src/fast.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/fast.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/fast.cpp.s
 .PHONY : src/fast.cpp.s
 
 src/ffmpeg_video_source.o: src/ffmpeg_video_source.cpp.o
@@ -857,7 +847,7 @@ src/ffmpeg_video_source.o: src/ffmpeg_video_source.cpp.o
 
 # target to build an object file
 src/ffmpeg_video_source.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/ffmpeg_video_source.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/ffmpeg_video_source.cpp.o
 .PHONY : src/ffmpeg_video_source.cpp.o
 
 src/ffmpeg_video_source.i: src/ffmpeg_video_source.cpp.i
@@ -865,7 +855,7 @@ src/ffmpeg_video_source.i: src/ffmpeg_video_source.cpp.i
 
 # target to preprocess a source file
 src/ffmpeg_video_source.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/ffmpeg_video_source.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/ffmpeg_video_source.cpp.i
 .PHONY : src/ffmpeg_video_source.cpp.i
 
 src/ffmpeg_video_source.s: src/ffmpeg_video_source.cpp.s
@@ -873,7 +863,7 @@ src/ffmpeg_video_source.s: src/ffmpeg_video_source.cpp.s
 
 # target to generate assembly for a file
 src/ffmpeg_video_source.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/ffmpeg_video_source.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/ffmpeg_video_source.cpp.s
 .PHONY : src/ffmpeg_video_source.cpp.s
 
 src/fgd_bgfg.o: src/fgd_bgfg.cpp.o
@@ -881,7 +871,7 @@ src/fgd_bgfg.o: src/fgd_bgfg.cpp.o
 
 # target to build an object file
 src/fgd_bgfg.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/fgd_bgfg.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/fgd_bgfg.cpp.o
 .PHONY : src/fgd_bgfg.cpp.o
 
 src/fgd_bgfg.i: src/fgd_bgfg.cpp.i
@@ -889,7 +879,7 @@ src/fgd_bgfg.i: src/fgd_bgfg.cpp.i
 
 # target to preprocess a source file
 src/fgd_bgfg.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/fgd_bgfg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/fgd_bgfg.cpp.i
 .PHONY : src/fgd_bgfg.cpp.i
 
 src/fgd_bgfg.s: src/fgd_bgfg.cpp.s
@@ -897,7 +887,7 @@ src/fgd_bgfg.s: src/fgd_bgfg.cpp.s
 
 # target to generate assembly for a file
 src/fgd_bgfg.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/fgd_bgfg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/fgd_bgfg.cpp.s
 .PHONY : src/fgd_bgfg.cpp.s
 
 src/filtering.o: src/filtering.cpp.o
@@ -905,7 +895,7 @@ src/filtering.o: src/filtering.cpp.o
 
 # target to build an object file
 src/filtering.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/filtering.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/filtering.cpp.o
 .PHONY : src/filtering.cpp.o
 
 src/filtering.i: src/filtering.cpp.i
@@ -913,7 +903,7 @@ src/filtering.i: src/filtering.cpp.i
 
 # target to preprocess a source file
 src/filtering.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/filtering.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/filtering.cpp.i
 .PHONY : src/filtering.cpp.i
 
 src/filtering.s: src/filtering.cpp.s
@@ -921,7 +911,7 @@ src/filtering.s: src/filtering.cpp.s
 
 # target to generate assembly for a file
 src/filtering.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/filtering.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/filtering.cpp.s
 .PHONY : src/filtering.cpp.s
 
 src/frame_queue.o: src/frame_queue.cpp.o
@@ -929,7 +919,7 @@ src/frame_queue.o: src/frame_queue.cpp.o
 
 # target to build an object file
 src/frame_queue.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/frame_queue.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/frame_queue.cpp.o
 .PHONY : src/frame_queue.cpp.o
 
 src/frame_queue.i: src/frame_queue.cpp.i
@@ -937,7 +927,7 @@ src/frame_queue.i: src/frame_queue.cpp.i
 
 # target to preprocess a source file
 src/frame_queue.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/frame_queue.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/frame_queue.cpp.i
 .PHONY : src/frame_queue.cpp.i
 
 src/frame_queue.s: src/frame_queue.cpp.s
@@ -945,7 +935,7 @@ src/frame_queue.s: src/frame_queue.cpp.s
 
 # target to generate assembly for a file
 src/frame_queue.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/frame_queue.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/frame_queue.cpp.s
 .PHONY : src/frame_queue.cpp.s
 
 src/generalized_hough.o: src/generalized_hough.cpp.o
@@ -953,7 +943,7 @@ src/generalized_hough.o: src/generalized_hough.cpp.o
 
 # target to build an object file
 src/generalized_hough.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/generalized_hough.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/generalized_hough.cpp.o
 .PHONY : src/generalized_hough.cpp.o
 
 src/generalized_hough.i: src/generalized_hough.cpp.i
@@ -961,7 +951,7 @@ src/generalized_hough.i: src/generalized_hough.cpp.i
 
 # target to preprocess a source file
 src/generalized_hough.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/generalized_hough.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/generalized_hough.cpp.i
 .PHONY : src/generalized_hough.cpp.i
 
 src/generalized_hough.s: src/generalized_hough.cpp.s
@@ -969,7 +959,7 @@ src/generalized_hough.s: src/generalized_hough.cpp.s
 
 # target to generate assembly for a file
 src/generalized_hough.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/generalized_hough.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/generalized_hough.cpp.s
 .PHONY : src/generalized_hough.cpp.s
 
 src/gftt.o: src/gftt.cpp.o
@@ -977,7 +967,7 @@ src/gftt.o: src/gftt.cpp.o
 
 # target to build an object file
 src/gftt.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/gftt.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/gftt.cpp.o
 .PHONY : src/gftt.cpp.o
 
 src/gftt.i: src/gftt.cpp.i
@@ -985,7 +975,7 @@ src/gftt.i: src/gftt.cpp.i
 
 # target to preprocess a source file
 src/gftt.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/gftt.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/gftt.cpp.i
 .PHONY : src/gftt.cpp.i
 
 src/gftt.s: src/gftt.cpp.s
@@ -993,7 +983,7 @@ src/gftt.s: src/gftt.cpp.s
 
 # target to generate assembly for a file
 src/gftt.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/gftt.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/gftt.cpp.s
 .PHONY : src/gftt.cpp.s
 
 src/global_motion.o: src/global_motion.cpp.o
@@ -1001,7 +991,7 @@ src/global_motion.o: src/global_motion.cpp.o
 
 # target to build an object file
 src/global_motion.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/global_motion.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/global_motion.cpp.o
 .PHONY : src/global_motion.cpp.o
 
 src/global_motion.i: src/global_motion.cpp.i
@@ -1009,7 +999,7 @@ src/global_motion.i: src/global_motion.cpp.i
 
 # target to preprocess a source file
 src/global_motion.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/global_motion.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/global_motion.cpp.i
 .PHONY : src/global_motion.cpp.i
 
 src/global_motion.s: src/global_motion.cpp.s
@@ -1017,7 +1007,7 @@ src/global_motion.s: src/global_motion.cpp.s
 
 # target to generate assembly for a file
 src/global_motion.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/global_motion.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/global_motion.cpp.s
 .PHONY : src/global_motion.cpp.s
 
 src/graphcuts.o: src/graphcuts.cpp.o
@@ -1025,7 +1015,7 @@ src/graphcuts.o: src/graphcuts.cpp.o
 
 # target to build an object file
 src/graphcuts.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/graphcuts.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/graphcuts.cpp.o
 .PHONY : src/graphcuts.cpp.o
 
 src/graphcuts.i: src/graphcuts.cpp.i
@@ -1033,7 +1023,7 @@ src/graphcuts.i: src/graphcuts.cpp.i
 
 # target to preprocess a source file
 src/graphcuts.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/graphcuts.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/graphcuts.cpp.i
 .PHONY : src/graphcuts.cpp.i
 
 src/graphcuts.s: src/graphcuts.cpp.s
@@ -1041,7 +1031,7 @@ src/graphcuts.s: src/graphcuts.cpp.s
 
 # target to generate assembly for a file
 src/graphcuts.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/graphcuts.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/graphcuts.cpp.s
 .PHONY : src/graphcuts.cpp.s
 
 src/hog.o: src/hog.cpp.o
@@ -1049,7 +1039,7 @@ src/hog.o: src/hog.cpp.o
 
 # target to build an object file
 src/hog.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hog.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hog.cpp.o
 .PHONY : src/hog.cpp.o
 
 src/hog.i: src/hog.cpp.i
@@ -1057,7 +1047,7 @@ src/hog.i: src/hog.cpp.i
 
 # target to preprocess a source file
 src/hog.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hog.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hog.cpp.i
 .PHONY : src/hog.cpp.i
 
 src/hog.s: src/hog.cpp.s
@@ -1065,7 +1055,7 @@ src/hog.s: src/hog.cpp.s
 
 # target to generate assembly for a file
 src/hog.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hog.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hog.cpp.s
 .PHONY : src/hog.cpp.s
 
 src/hough_circles.o: src/hough_circles.cpp.o
@@ -1073,7 +1063,7 @@ src/hough_circles.o: src/hough_circles.cpp.o
 
 # target to build an object file
 src/hough_circles.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_circles.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_circles.cpp.o
 .PHONY : src/hough_circles.cpp.o
 
 src/hough_circles.i: src/hough_circles.cpp.i
@@ -1081,7 +1071,7 @@ src/hough_circles.i: src/hough_circles.cpp.i
 
 # target to preprocess a source file
 src/hough_circles.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_circles.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_circles.cpp.i
 .PHONY : src/hough_circles.cpp.i
 
 src/hough_circles.s: src/hough_circles.cpp.s
@@ -1089,7 +1079,7 @@ src/hough_circles.s: src/hough_circles.cpp.s
 
 # target to generate assembly for a file
 src/hough_circles.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_circles.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_circles.cpp.s
 .PHONY : src/hough_circles.cpp.s
 
 src/hough_lines.o: src/hough_lines.cpp.o
@@ -1097,7 +1087,7 @@ src/hough_lines.o: src/hough_lines.cpp.o
 
 # target to build an object file
 src/hough_lines.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_lines.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_lines.cpp.o
 .PHONY : src/hough_lines.cpp.o
 
 src/hough_lines.i: src/hough_lines.cpp.i
@@ -1105,7 +1095,7 @@ src/hough_lines.i: src/hough_lines.cpp.i
 
 # target to preprocess a source file
 src/hough_lines.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_lines.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_lines.cpp.i
 .PHONY : src/hough_lines.cpp.i
 
 src/hough_lines.s: src/hough_lines.cpp.s
@@ -1113,7 +1103,7 @@ src/hough_lines.s: src/hough_lines.cpp.s
 
 # target to generate assembly for a file
 src/hough_lines.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_lines.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_lines.cpp.s
 .PHONY : src/hough_lines.cpp.s
 
 src/hough_segments.o: src/hough_segments.cpp.o
@@ -1121,7 +1111,7 @@ src/hough_segments.o: src/hough_segments.cpp.o
 
 # target to build an object file
 src/hough_segments.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_segments.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_segments.cpp.o
 .PHONY : src/hough_segments.cpp.o
 
 src/hough_segments.i: src/hough_segments.cpp.i
@@ -1129,7 +1119,7 @@ src/hough_segments.i: src/hough_segments.cpp.i
 
 # target to preprocess a source file
 src/hough_segments.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_segments.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_segments.cpp.i
 .PHONY : src/hough_segments.cpp.i
 
 src/hough_segments.s: src/hough_segments.cpp.s
@@ -1137,7 +1127,7 @@ src/hough_segments.s: src/hough_segments.cpp.s
 
 # target to generate assembly for a file
 src/hough_segments.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_segments.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/hough_segments.cpp.s
 .PHONY : src/hough_segments.cpp.s
 
 src/imgproc.o: src/imgproc.cpp.o
@@ -1145,7 +1135,7 @@ src/imgproc.o: src/imgproc.cpp.o
 
 # target to build an object file
 src/imgproc.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/imgproc.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/imgproc.cpp.o
 .PHONY : src/imgproc.cpp.o
 
 src/imgproc.i: src/imgproc.cpp.i
@@ -1153,7 +1143,7 @@ src/imgproc.i: src/imgproc.cpp.i
 
 # target to preprocess a source file
 src/imgproc.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/imgproc.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/imgproc.cpp.i
 .PHONY : src/imgproc.cpp.i
 
 src/imgproc.s: src/imgproc.cpp.s
@@ -1161,7 +1151,7 @@ src/imgproc.s: src/imgproc.cpp.s
 
 # target to generate assembly for a file
 src/imgproc.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/imgproc.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/imgproc.cpp.s
 .PHONY : src/imgproc.cpp.s
 
 src/match_template.o: src/match_template.cpp.o
@@ -1169,7 +1159,7 @@ src/match_template.o: src/match_template.cpp.o
 
 # target to build an object file
 src/match_template.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/match_template.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/match_template.cpp.o
 .PHONY : src/match_template.cpp.o
 
 src/match_template.i: src/match_template.cpp.i
@@ -1177,7 +1167,7 @@ src/match_template.i: src/match_template.cpp.i
 
 # target to preprocess a source file
 src/match_template.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/match_template.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/match_template.cpp.i
 .PHONY : src/match_template.cpp.i
 
 src/match_template.s: src/match_template.cpp.s
@@ -1185,7 +1175,7 @@ src/match_template.s: src/match_template.cpp.s
 
 # target to generate assembly for a file
 src/match_template.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/match_template.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/match_template.cpp.s
 .PHONY : src/match_template.cpp.s
 
 src/matrix_operations.o: src/matrix_operations.cpp.o
@@ -1193,7 +1183,7 @@ src/matrix_operations.o: src/matrix_operations.cpp.o
 
 # target to build an object file
 src/matrix_operations.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/matrix_operations.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/matrix_operations.cpp.o
 .PHONY : src/matrix_operations.cpp.o
 
 src/matrix_operations.i: src/matrix_operations.cpp.i
@@ -1201,7 +1191,7 @@ src/matrix_operations.i: src/matrix_operations.cpp.i
 
 # target to preprocess a source file
 src/matrix_operations.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/matrix_operations.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/matrix_operations.cpp.i
 .PHONY : src/matrix_operations.cpp.i
 
 src/matrix_operations.s: src/matrix_operations.cpp.s
@@ -1209,7 +1199,7 @@ src/matrix_operations.s: src/matrix_operations.cpp.s
 
 # target to generate assembly for a file
 src/matrix_operations.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/matrix_operations.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/matrix_operations.cpp.s
 .PHONY : src/matrix_operations.cpp.s
 
 src/matrix_reductions.o: src/matrix_reductions.cpp.o
@@ -1217,7 +1207,7 @@ src/matrix_reductions.o: src/matrix_reductions.cpp.o
 
 # target to build an object file
 src/matrix_reductions.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/matrix_reductions.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/matrix_reductions.cpp.o
 .PHONY : src/matrix_reductions.cpp.o
 
 src/matrix_reductions.i: src/matrix_reductions.cpp.i
@@ -1225,7 +1215,7 @@ src/matrix_reductions.i: src/matrix_reductions.cpp.i
 
 # target to preprocess a source file
 src/matrix_reductions.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/matrix_reductions.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/matrix_reductions.cpp.i
 .PHONY : src/matrix_reductions.cpp.i
 
 src/matrix_reductions.s: src/matrix_reductions.cpp.s
@@ -1233,7 +1223,7 @@ src/matrix_reductions.s: src/matrix_reductions.cpp.s
 
 # target to generate assembly for a file
 src/matrix_reductions.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/matrix_reductions.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/matrix_reductions.cpp.s
 .PHONY : src/matrix_reductions.cpp.s
 
 src/mssegmentation.o: src/mssegmentation.cpp.o
@@ -1241,7 +1231,7 @@ src/mssegmentation.o: src/mssegmentation.cpp.o
 
 # target to build an object file
 src/mssegmentation.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/mssegmentation.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/mssegmentation.cpp.o
 .PHONY : src/mssegmentation.cpp.o
 
 src/mssegmentation.i: src/mssegmentation.cpp.i
@@ -1249,7 +1239,7 @@ src/mssegmentation.i: src/mssegmentation.cpp.i
 
 # target to preprocess a source file
 src/mssegmentation.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/mssegmentation.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/mssegmentation.cpp.i
 .PHONY : src/mssegmentation.cpp.i
 
 src/mssegmentation.s: src/mssegmentation.cpp.s
@@ -1257,7 +1247,7 @@ src/mssegmentation.s: src/mssegmentation.cpp.s
 
 # target to generate assembly for a file
 src/mssegmentation.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/mssegmentation.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/mssegmentation.cpp.s
 .PHONY : src/mssegmentation.cpp.s
 
 src/optflowbm.o: src/optflowbm.cpp.o
@@ -1265,7 +1255,7 @@ src/optflowbm.o: src/optflowbm.cpp.o
 
 # target to build an object file
 src/optflowbm.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optflowbm.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optflowbm.cpp.o
 .PHONY : src/optflowbm.cpp.o
 
 src/optflowbm.i: src/optflowbm.cpp.i
@@ -1273,7 +1263,7 @@ src/optflowbm.i: src/optflowbm.cpp.i
 
 # target to preprocess a source file
 src/optflowbm.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optflowbm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optflowbm.cpp.i
 .PHONY : src/optflowbm.cpp.i
 
 src/optflowbm.s: src/optflowbm.cpp.s
@@ -1281,7 +1271,7 @@ src/optflowbm.s: src/optflowbm.cpp.s
 
 # target to generate assembly for a file
 src/optflowbm.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optflowbm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optflowbm.cpp.s
 .PHONY : src/optflowbm.cpp.s
 
 src/optical_flow.o: src/optical_flow.cpp.o
@@ -1289,7 +1279,7 @@ src/optical_flow.o: src/optical_flow.cpp.o
 
 # target to build an object file
 src/optical_flow.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optical_flow.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optical_flow.cpp.o
 .PHONY : src/optical_flow.cpp.o
 
 src/optical_flow.i: src/optical_flow.cpp.i
@@ -1297,7 +1287,7 @@ src/optical_flow.i: src/optical_flow.cpp.i
 
 # target to preprocess a source file
 src/optical_flow.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optical_flow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optical_flow.cpp.i
 .PHONY : src/optical_flow.cpp.i
 
 src/optical_flow.s: src/optical_flow.cpp.s
@@ -1305,7 +1295,7 @@ src/optical_flow.s: src/optical_flow.cpp.s
 
 # target to generate assembly for a file
 src/optical_flow.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optical_flow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optical_flow.cpp.s
 .PHONY : src/optical_flow.cpp.s
 
 src/optical_flow_farneback.o: src/optical_flow_farneback.cpp.o
@@ -1313,7 +1303,7 @@ src/optical_flow_farneback.o: src/optical_flow_farneback.cpp.o
 
 # target to build an object file
 src/optical_flow_farneback.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optical_flow_farneback.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optical_flow_farneback.cpp.o
 .PHONY : src/optical_flow_farneback.cpp.o
 
 src/optical_flow_farneback.i: src/optical_flow_farneback.cpp.i
@@ -1321,7 +1311,7 @@ src/optical_flow_farneback.i: src/optical_flow_farneback.cpp.i
 
 # target to preprocess a source file
 src/optical_flow_farneback.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optical_flow_farneback.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optical_flow_farneback.cpp.i
 .PHONY : src/optical_flow_farneback.cpp.i
 
 src/optical_flow_farneback.s: src/optical_flow_farneback.cpp.s
@@ -1329,7 +1319,7 @@ src/optical_flow_farneback.s: src/optical_flow_farneback.cpp.s
 
 # target to generate assembly for a file
 src/optical_flow_farneback.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optical_flow_farneback.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/optical_flow_farneback.cpp.s
 .PHONY : src/optical_flow_farneback.cpp.s
 
 src/orb.o: src/orb.cpp.o
@@ -1337,7 +1327,7 @@ src/orb.o: src/orb.cpp.o
 
 # target to build an object file
 src/orb.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/orb.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/orb.cpp.o
 .PHONY : src/orb.cpp.o
 
 src/orb.i: src/orb.cpp.i
@@ -1345,7 +1335,7 @@ src/orb.i: src/orb.cpp.i
 
 # target to preprocess a source file
 src/orb.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/orb.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/orb.cpp.i
 .PHONY : src/orb.cpp.i
 
 src/orb.s: src/orb.cpp.s
@@ -1353,7 +1343,7 @@ src/orb.s: src/orb.cpp.s
 
 # target to generate assembly for a file
 src/orb.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/orb.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/orb.cpp.s
 .PHONY : src/orb.cpp.s
 
 src/precomp.o: src/precomp.cpp.o
@@ -1361,7 +1351,7 @@ src/precomp.o: src/precomp.cpp.o
 
 # target to build an object file
 src/precomp.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/precomp.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/precomp.cpp.o
 .PHONY : src/precomp.cpp.o
 
 src/precomp.i: src/precomp.cpp.i
@@ -1369,7 +1359,7 @@ src/precomp.i: src/precomp.cpp.i
 
 # target to preprocess a source file
 src/precomp.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/precomp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/precomp.cpp.i
 .PHONY : src/precomp.cpp.i
 
 src/precomp.s: src/precomp.cpp.s
@@ -1377,7 +1367,7 @@ src/precomp.s: src/precomp.cpp.s
 
 # target to generate assembly for a file
 src/precomp.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/precomp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/precomp.cpp.s
 .PHONY : src/precomp.cpp.s
 
 src/pyramids.o: src/pyramids.cpp.o
@@ -1385,7 +1375,7 @@ src/pyramids.o: src/pyramids.cpp.o
 
 # target to build an object file
 src/pyramids.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/pyramids.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/pyramids.cpp.o
 .PHONY : src/pyramids.cpp.o
 
 src/pyramids.i: src/pyramids.cpp.i
@@ -1393,7 +1383,7 @@ src/pyramids.i: src/pyramids.cpp.i
 
 # target to preprocess a source file
 src/pyramids.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/pyramids.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/pyramids.cpp.i
 .PHONY : src/pyramids.cpp.i
 
 src/pyramids.s: src/pyramids.cpp.s
@@ -1401,7 +1391,7 @@ src/pyramids.s: src/pyramids.cpp.s
 
 # target to generate assembly for a file
 src/pyramids.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/pyramids.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/pyramids.cpp.s
 .PHONY : src/pyramids.cpp.s
 
 src/pyrlk.o: src/pyrlk.cpp.o
@@ -1409,7 +1399,7 @@ src/pyrlk.o: src/pyrlk.cpp.o
 
 # target to build an object file
 src/pyrlk.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/pyrlk.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/pyrlk.cpp.o
 .PHONY : src/pyrlk.cpp.o
 
 src/pyrlk.i: src/pyrlk.cpp.i
@@ -1417,7 +1407,7 @@ src/pyrlk.i: src/pyrlk.cpp.i
 
 # target to preprocess a source file
 src/pyrlk.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/pyrlk.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/pyrlk.cpp.i
 .PHONY : src/pyrlk.cpp.i
 
 src/pyrlk.s: src/pyrlk.cpp.s
@@ -1425,7 +1415,7 @@ src/pyrlk.s: src/pyrlk.cpp.s
 
 # target to generate assembly for a file
 src/pyrlk.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/pyrlk.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/pyrlk.cpp.s
 .PHONY : src/pyrlk.cpp.s
 
 src/remap.o: src/remap.cpp.o
@@ -1433,7 +1423,7 @@ src/remap.o: src/remap.cpp.o
 
 # target to build an object file
 src/remap.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/remap.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/remap.cpp.o
 .PHONY : src/remap.cpp.o
 
 src/remap.i: src/remap.cpp.i
@@ -1441,7 +1431,7 @@ src/remap.i: src/remap.cpp.i
 
 # target to preprocess a source file
 src/remap.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/remap.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/remap.cpp.i
 .PHONY : src/remap.cpp.i
 
 src/remap.s: src/remap.cpp.s
@@ -1449,7 +1439,7 @@ src/remap.s: src/remap.cpp.s
 
 # target to generate assembly for a file
 src/remap.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/remap.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/remap.cpp.s
 .PHONY : src/remap.cpp.s
 
 src/resize.o: src/resize.cpp.o
@@ -1457,7 +1447,7 @@ src/resize.o: src/resize.cpp.o
 
 # target to build an object file
 src/resize.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/resize.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/resize.cpp.o
 .PHONY : src/resize.cpp.o
 
 src/resize.i: src/resize.cpp.i
@@ -1465,7 +1455,7 @@ src/resize.i: src/resize.cpp.i
 
 # target to preprocess a source file
 src/resize.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/resize.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/resize.cpp.i
 .PHONY : src/resize.cpp.i
 
 src/resize.s: src/resize.cpp.s
@@ -1473,7 +1463,7 @@ src/resize.s: src/resize.cpp.s
 
 # target to generate assembly for a file
 src/resize.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/resize.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/resize.cpp.s
 .PHONY : src/resize.cpp.s
 
 src/speckle_filtering.o: src/speckle_filtering.cpp.o
@@ -1481,7 +1471,7 @@ src/speckle_filtering.o: src/speckle_filtering.cpp.o
 
 # target to build an object file
 src/speckle_filtering.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/speckle_filtering.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/speckle_filtering.cpp.o
 .PHONY : src/speckle_filtering.cpp.o
 
 src/speckle_filtering.i: src/speckle_filtering.cpp.i
@@ -1489,7 +1479,7 @@ src/speckle_filtering.i: src/speckle_filtering.cpp.i
 
 # target to preprocess a source file
 src/speckle_filtering.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/speckle_filtering.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/speckle_filtering.cpp.i
 .PHONY : src/speckle_filtering.cpp.i
 
 src/speckle_filtering.s: src/speckle_filtering.cpp.s
@@ -1497,7 +1487,7 @@ src/speckle_filtering.s: src/speckle_filtering.cpp.s
 
 # target to generate assembly for a file
 src/speckle_filtering.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/speckle_filtering.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/speckle_filtering.cpp.s
 .PHONY : src/speckle_filtering.cpp.s
 
 src/split_merge.o: src/split_merge.cpp.o
@@ -1505,7 +1495,7 @@ src/split_merge.o: src/split_merge.cpp.o
 
 # target to build an object file
 src/split_merge.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/split_merge.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/split_merge.cpp.o
 .PHONY : src/split_merge.cpp.o
 
 src/split_merge.i: src/split_merge.cpp.i
@@ -1513,7 +1503,7 @@ src/split_merge.i: src/split_merge.cpp.i
 
 # target to preprocess a source file
 src/split_merge.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/split_merge.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/split_merge.cpp.i
 .PHONY : src/split_merge.cpp.i
 
 src/split_merge.s: src/split_merge.cpp.s
@@ -1521,7 +1511,7 @@ src/split_merge.s: src/split_merge.cpp.s
 
 # target to generate assembly for a file
 src/split_merge.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/split_merge.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/split_merge.cpp.s
 .PHONY : src/split_merge.cpp.s
 
 src/stereobm.o: src/stereobm.cpp.o
@@ -1529,7 +1519,7 @@ src/stereobm.o: src/stereobm.cpp.o
 
 # target to build an object file
 src/stereobm.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereobm.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereobm.cpp.o
 .PHONY : src/stereobm.cpp.o
 
 src/stereobm.i: src/stereobm.cpp.i
@@ -1537,7 +1527,7 @@ src/stereobm.i: src/stereobm.cpp.i
 
 # target to preprocess a source file
 src/stereobm.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereobm.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereobm.cpp.i
 .PHONY : src/stereobm.cpp.i
 
 src/stereobm.s: src/stereobm.cpp.s
@@ -1545,7 +1535,7 @@ src/stereobm.s: src/stereobm.cpp.s
 
 # target to generate assembly for a file
 src/stereobm.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereobm.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereobm.cpp.s
 .PHONY : src/stereobm.cpp.s
 
 src/stereobp.o: src/stereobp.cpp.o
@@ -1553,7 +1543,7 @@ src/stereobp.o: src/stereobp.cpp.o
 
 # target to build an object file
 src/stereobp.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereobp.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereobp.cpp.o
 .PHONY : src/stereobp.cpp.o
 
 src/stereobp.i: src/stereobp.cpp.i
@@ -1561,7 +1551,7 @@ src/stereobp.i: src/stereobp.cpp.i
 
 # target to preprocess a source file
 src/stereobp.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereobp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereobp.cpp.i
 .PHONY : src/stereobp.cpp.i
 
 src/stereobp.s: src/stereobp.cpp.s
@@ -1569,7 +1559,7 @@ src/stereobp.s: src/stereobp.cpp.s
 
 # target to generate assembly for a file
 src/stereobp.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereobp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereobp.cpp.s
 .PHONY : src/stereobp.cpp.s
 
 src/stereocsbp.o: src/stereocsbp.cpp.o
@@ -1577,7 +1567,7 @@ src/stereocsbp.o: src/stereocsbp.cpp.o
 
 # target to build an object file
 src/stereocsbp.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereocsbp.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereocsbp.cpp.o
 .PHONY : src/stereocsbp.cpp.o
 
 src/stereocsbp.i: src/stereocsbp.cpp.i
@@ -1585,7 +1575,7 @@ src/stereocsbp.i: src/stereocsbp.cpp.i
 
 # target to preprocess a source file
 src/stereocsbp.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereocsbp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereocsbp.cpp.i
 .PHONY : src/stereocsbp.cpp.i
 
 src/stereocsbp.s: src/stereocsbp.cpp.s
@@ -1593,7 +1583,7 @@ src/stereocsbp.s: src/stereocsbp.cpp.s
 
 # target to generate assembly for a file
 src/stereocsbp.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereocsbp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/stereocsbp.cpp.s
 .PHONY : src/stereocsbp.cpp.s
 
 src/thread_wrappers.o: src/thread_wrappers.cpp.o
@@ -1601,7 +1591,7 @@ src/thread_wrappers.o: src/thread_wrappers.cpp.o
 
 # target to build an object file
 src/thread_wrappers.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/thread_wrappers.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/thread_wrappers.cpp.o
 .PHONY : src/thread_wrappers.cpp.o
 
 src/thread_wrappers.i: src/thread_wrappers.cpp.i
@@ -1609,7 +1599,7 @@ src/thread_wrappers.i: src/thread_wrappers.cpp.i
 
 # target to preprocess a source file
 src/thread_wrappers.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/thread_wrappers.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/thread_wrappers.cpp.i
 .PHONY : src/thread_wrappers.cpp.i
 
 src/thread_wrappers.s: src/thread_wrappers.cpp.s
@@ -1617,7 +1607,7 @@ src/thread_wrappers.s: src/thread_wrappers.cpp.s
 
 # target to generate assembly for a file
 src/thread_wrappers.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/thread_wrappers.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/thread_wrappers.cpp.s
 .PHONY : src/thread_wrappers.cpp.s
 
 src/tvl1flow.o: src/tvl1flow.cpp.o
@@ -1625,7 +1615,7 @@ src/tvl1flow.o: src/tvl1flow.cpp.o
 
 # target to build an object file
 src/tvl1flow.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/tvl1flow.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/tvl1flow.cpp.o
 .PHONY : src/tvl1flow.cpp.o
 
 src/tvl1flow.i: src/tvl1flow.cpp.i
@@ -1633,7 +1623,7 @@ src/tvl1flow.i: src/tvl1flow.cpp.i
 
 # target to preprocess a source file
 src/tvl1flow.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/tvl1flow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/tvl1flow.cpp.i
 .PHONY : src/tvl1flow.cpp.i
 
 src/tvl1flow.s: src/tvl1flow.cpp.s
@@ -1641,7 +1631,7 @@ src/tvl1flow.s: src/tvl1flow.cpp.s
 
 # target to generate assembly for a file
 src/tvl1flow.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/tvl1flow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/tvl1flow.cpp.s
 .PHONY : src/tvl1flow.cpp.s
 
 src/video_decoder.o: src/video_decoder.cpp.o
@@ -1649,7 +1639,7 @@ src/video_decoder.o: src/video_decoder.cpp.o
 
 # target to build an object file
 src/video_decoder.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_decoder.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_decoder.cpp.o
 .PHONY : src/video_decoder.cpp.o
 
 src/video_decoder.i: src/video_decoder.cpp.i
@@ -1657,7 +1647,7 @@ src/video_decoder.i: src/video_decoder.cpp.i
 
 # target to preprocess a source file
 src/video_decoder.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_decoder.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_decoder.cpp.i
 .PHONY : src/video_decoder.cpp.i
 
 src/video_decoder.s: src/video_decoder.cpp.s
@@ -1665,7 +1655,7 @@ src/video_decoder.s: src/video_decoder.cpp.s
 
 # target to generate assembly for a file
 src/video_decoder.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_decoder.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_decoder.cpp.s
 .PHONY : src/video_decoder.cpp.s
 
 src/video_parser.o: src/video_parser.cpp.o
@@ -1673,7 +1663,7 @@ src/video_parser.o: src/video_parser.cpp.o
 
 # target to build an object file
 src/video_parser.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_parser.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_parser.cpp.o
 .PHONY : src/video_parser.cpp.o
 
 src/video_parser.i: src/video_parser.cpp.i
@@ -1681,7 +1671,7 @@ src/video_parser.i: src/video_parser.cpp.i
 
 # target to preprocess a source file
 src/video_parser.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_parser.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_parser.cpp.i
 .PHONY : src/video_parser.cpp.i
 
 src/video_parser.s: src/video_parser.cpp.s
@@ -1689,7 +1679,7 @@ src/video_parser.s: src/video_parser.cpp.s
 
 # target to generate assembly for a file
 src/video_parser.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_parser.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_parser.cpp.s
 .PHONY : src/video_parser.cpp.s
 
 src/video_reader.o: src/video_reader.cpp.o
@@ -1697,7 +1687,7 @@ src/video_reader.o: src/video_reader.cpp.o
 
 # target to build an object file
 src/video_reader.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_reader.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_reader.cpp.o
 .PHONY : src/video_reader.cpp.o
 
 src/video_reader.i: src/video_reader.cpp.i
@@ -1705,7 +1695,7 @@ src/video_reader.i: src/video_reader.cpp.i
 
 # target to preprocess a source file
 src/video_reader.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_reader.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_reader.cpp.i
 .PHONY : src/video_reader.cpp.i
 
 src/video_reader.s: src/video_reader.cpp.s
@@ -1713,7 +1703,7 @@ src/video_reader.s: src/video_reader.cpp.s
 
 # target to generate assembly for a file
 src/video_reader.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_reader.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_reader.cpp.s
 .PHONY : src/video_reader.cpp.s
 
 src/video_writer.o: src/video_writer.cpp.o
@@ -1721,7 +1711,7 @@ src/video_writer.o: src/video_writer.cpp.o
 
 # target to build an object file
 src/video_writer.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_writer.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_writer.cpp.o
 .PHONY : src/video_writer.cpp.o
 
 src/video_writer.i: src/video_writer.cpp.i
@@ -1729,7 +1719,7 @@ src/video_writer.i: src/video_writer.cpp.i
 
 # target to preprocess a source file
 src/video_writer.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_writer.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_writer.cpp.i
 .PHONY : src/video_writer.cpp.i
 
 src/video_writer.s: src/video_writer.cpp.s
@@ -1737,7 +1727,7 @@ src/video_writer.s: src/video_writer.cpp.s
 
 # target to generate assembly for a file
 src/video_writer.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_writer.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/video_writer.cpp.s
 .PHONY : src/video_writer.cpp.s
 
 src/warp.o: src/warp.cpp.o
@@ -1745,7 +1735,7 @@ src/warp.o: src/warp.cpp.o
 
 # target to build an object file
 src/warp.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/warp.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/warp.cpp.o
 .PHONY : src/warp.cpp.o
 
 src/warp.i: src/warp.cpp.i
@@ -1753,7 +1743,7 @@ src/warp.i: src/warp.cpp.i
 
 # target to preprocess a source file
 src/warp.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/warp.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/warp.cpp.i
 .PHONY : src/warp.cpp.i
 
 src/warp.s: src/warp.cpp.s
@@ -1761,7 +1751,7 @@ src/warp.s: src/warp.cpp.s
 
 # target to generate assembly for a file
 src/warp.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/warp.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_gpu.dir/src/warp.cpp.s
 .PHONY : src/warp.cpp.s
 
 test/main.o: test/main.cpp.o
@@ -1769,7 +1759,7 @@ test/main.o: test/main.cpp.o
 
 # target to build an object file
 test/main.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/main.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/main.cpp.o
 .PHONY : test/main.cpp.o
 
 test/main.i: test/main.cpp.i
@@ -1777,7 +1767,7 @@ test/main.i: test/main.cpp.i
 
 # target to preprocess a source file
 test/main.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/main.cpp.i
 .PHONY : test/main.cpp.i
 
 test/main.s: test/main.cpp.s
@@ -1785,7 +1775,7 @@ test/main.s: test/main.cpp.s
 
 # target to generate assembly for a file
 test/main.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/main.cpp.s
 .PHONY : test/main.cpp.s
 
 test/test_bgfg.o: test/test_bgfg.cpp.o
@@ -1793,7 +1783,7 @@ test/test_bgfg.o: test/test_bgfg.cpp.o
 
 # target to build an object file
 test/test_bgfg.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.o
 .PHONY : test/test_bgfg.cpp.o
 
 test/test_bgfg.i: test/test_bgfg.cpp.i
@@ -1801,7 +1791,7 @@ test/test_bgfg.i: test/test_bgfg.cpp.i
 
 # target to preprocess a source file
 test/test_bgfg.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.i
 .PHONY : test/test_bgfg.cpp.i
 
 test/test_bgfg.s: test/test_bgfg.cpp.s
@@ -1809,7 +1799,7 @@ test/test_bgfg.s: test/test_bgfg.cpp.s
 
 # target to generate assembly for a file
 test/test_bgfg.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_bgfg.cpp.s
 .PHONY : test/test_bgfg.cpp.s
 
 test/test_calib3d.o: test/test_calib3d.cpp.o
@@ -1817,7 +1807,7 @@ test/test_calib3d.o: test/test_calib3d.cpp.o
 
 # target to build an object file
 test/test_calib3d.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.o
 .PHONY : test/test_calib3d.cpp.o
 
 test/test_calib3d.i: test/test_calib3d.cpp.i
@@ -1825,7 +1815,7 @@ test/test_calib3d.i: test/test_calib3d.cpp.i
 
 # target to preprocess a source file
 test/test_calib3d.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.i
 .PHONY : test/test_calib3d.cpp.i
 
 test/test_calib3d.s: test/test_calib3d.cpp.s
@@ -1833,7 +1823,7 @@ test/test_calib3d.s: test/test_calib3d.cpp.s
 
 # target to generate assembly for a file
 test/test_calib3d.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_calib3d.cpp.s
 .PHONY : test/test_calib3d.cpp.s
 
 test/test_color.o: test/test_color.cpp.o
@@ -1841,7 +1831,7 @@ test/test_color.o: test/test_color.cpp.o
 
 # target to build an object file
 test/test_color.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.o
 .PHONY : test/test_color.cpp.o
 
 test/test_color.i: test/test_color.cpp.i
@@ -1849,7 +1839,7 @@ test/test_color.i: test/test_color.cpp.i
 
 # target to preprocess a source file
 test/test_color.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.i
 .PHONY : test/test_color.cpp.i
 
 test/test_color.s: test/test_color.cpp.s
@@ -1857,7 +1847,7 @@ test/test_color.s: test/test_color.cpp.s
 
 # target to generate assembly for a file
 test/test_color.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_color.cpp.s
 .PHONY : test/test_color.cpp.s
 
 test/test_copy_make_border.o: test/test_copy_make_border.cpp.o
@@ -1865,7 +1855,7 @@ test/test_copy_make_border.o: test/test_copy_make_border.cpp.o
 
 # target to build an object file
 test/test_copy_make_border.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.o
 .PHONY : test/test_copy_make_border.cpp.o
 
 test/test_copy_make_border.i: test/test_copy_make_border.cpp.i
@@ -1873,7 +1863,7 @@ test/test_copy_make_border.i: test/test_copy_make_border.cpp.i
 
 # target to preprocess a source file
 test/test_copy_make_border.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.i
 .PHONY : test/test_copy_make_border.cpp.i
 
 test/test_copy_make_border.s: test/test_copy_make_border.cpp.s
@@ -1881,7 +1871,7 @@ test/test_copy_make_border.s: test/test_copy_make_border.cpp.s
 
 # target to generate assembly for a file
 test/test_copy_make_border.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_copy_make_border.cpp.s
 .PHONY : test/test_copy_make_border.cpp.s
 
 test/test_core.o: test/test_core.cpp.o
@@ -1889,7 +1879,7 @@ test/test_core.o: test/test_core.cpp.o
 
 # target to build an object file
 test/test_core.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.o
 .PHONY : test/test_core.cpp.o
 
 test/test_core.i: test/test_core.cpp.i
@@ -1897,7 +1887,7 @@ test/test_core.i: test/test_core.cpp.i
 
 # target to preprocess a source file
 test/test_core.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.i
 .PHONY : test/test_core.cpp.i
 
 test/test_core.s: test/test_core.cpp.s
@@ -1905,7 +1895,7 @@ test/test_core.s: test/test_core.cpp.s
 
 # target to generate assembly for a file
 test/test_core.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_core.cpp.s
 .PHONY : test/test_core.cpp.s
 
 test/test_denoising.o: test/test_denoising.cpp.o
@@ -1913,7 +1903,7 @@ test/test_denoising.o: test/test_denoising.cpp.o
 
 # target to build an object file
 test/test_denoising.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.o
 .PHONY : test/test_denoising.cpp.o
 
 test/test_denoising.i: test/test_denoising.cpp.i
@@ -1921,7 +1911,7 @@ test/test_denoising.i: test/test_denoising.cpp.i
 
 # target to preprocess a source file
 test/test_denoising.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.i
 .PHONY : test/test_denoising.cpp.i
 
 test/test_denoising.s: test/test_denoising.cpp.s
@@ -1929,7 +1919,7 @@ test/test_denoising.s: test/test_denoising.cpp.s
 
 # target to generate assembly for a file
 test/test_denoising.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_denoising.cpp.s
 .PHONY : test/test_denoising.cpp.s
 
 test/test_features2d.o: test/test_features2d.cpp.o
@@ -1937,7 +1927,7 @@ test/test_features2d.o: test/test_features2d.cpp.o
 
 # target to build an object file
 test/test_features2d.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.o
 .PHONY : test/test_features2d.cpp.o
 
 test/test_features2d.i: test/test_features2d.cpp.i
@@ -1945,7 +1935,7 @@ test/test_features2d.i: test/test_features2d.cpp.i
 
 # target to preprocess a source file
 test/test_features2d.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.i
 .PHONY : test/test_features2d.cpp.i
 
 test/test_features2d.s: test/test_features2d.cpp.s
@@ -1953,7 +1943,7 @@ test/test_features2d.s: test/test_features2d.cpp.s
 
 # target to generate assembly for a file
 test/test_features2d.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_features2d.cpp.s
 .PHONY : test/test_features2d.cpp.s
 
 test/test_filters.o: test/test_filters.cpp.o
@@ -1961,7 +1951,7 @@ test/test_filters.o: test/test_filters.cpp.o
 
 # target to build an object file
 test/test_filters.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.o
 .PHONY : test/test_filters.cpp.o
 
 test/test_filters.i: test/test_filters.cpp.i
@@ -1969,7 +1959,7 @@ test/test_filters.i: test/test_filters.cpp.i
 
 # target to preprocess a source file
 test/test_filters.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.i
 .PHONY : test/test_filters.cpp.i
 
 test/test_filters.s: test/test_filters.cpp.s
@@ -1977,7 +1967,7 @@ test/test_filters.s: test/test_filters.cpp.s
 
 # target to generate assembly for a file
 test/test_filters.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_filters.cpp.s
 .PHONY : test/test_filters.cpp.s
 
 test/test_global_motion.o: test/test_global_motion.cpp.o
@@ -1985,7 +1975,7 @@ test/test_global_motion.o: test/test_global_motion.cpp.o
 
 # target to build an object file
 test/test_global_motion.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.o
 .PHONY : test/test_global_motion.cpp.o
 
 test/test_global_motion.i: test/test_global_motion.cpp.i
@@ -1993,7 +1983,7 @@ test/test_global_motion.i: test/test_global_motion.cpp.i
 
 # target to preprocess a source file
 test/test_global_motion.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.i
 .PHONY : test/test_global_motion.cpp.i
 
 test/test_global_motion.s: test/test_global_motion.cpp.s
@@ -2001,7 +1991,7 @@ test/test_global_motion.s: test/test_global_motion.cpp.s
 
 # target to generate assembly for a file
 test/test_global_motion.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_global_motion.cpp.s
 .PHONY : test/test_global_motion.cpp.s
 
 test/test_gpumat.o: test/test_gpumat.cpp.o
@@ -2009,7 +1999,7 @@ test/test_gpumat.o: test/test_gpumat.cpp.o
 
 # target to build an object file
 test/test_gpumat.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.o
 .PHONY : test/test_gpumat.cpp.o
 
 test/test_gpumat.i: test/test_gpumat.cpp.i
@@ -2017,7 +2007,7 @@ test/test_gpumat.i: test/test_gpumat.cpp.i
 
 # target to preprocess a source file
 test/test_gpumat.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.i
 .PHONY : test/test_gpumat.cpp.i
 
 test/test_gpumat.s: test/test_gpumat.cpp.s
@@ -2025,7 +2015,7 @@ test/test_gpumat.s: test/test_gpumat.cpp.s
 
 # target to generate assembly for a file
 test/test_gpumat.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_gpumat.cpp.s
 .PHONY : test/test_gpumat.cpp.s
 
 test/test_hough.o: test/test_hough.cpp.o
@@ -2033,7 +2023,7 @@ test/test_hough.o: test/test_hough.cpp.o
 
 # target to build an object file
 test/test_hough.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.o
 .PHONY : test/test_hough.cpp.o
 
 test/test_hough.i: test/test_hough.cpp.i
@@ -2041,7 +2031,7 @@ test/test_hough.i: test/test_hough.cpp.i
 
 # target to preprocess a source file
 test/test_hough.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.i
 .PHONY : test/test_hough.cpp.i
 
 test/test_hough.s: test/test_hough.cpp.s
@@ -2049,7 +2039,7 @@ test/test_hough.s: test/test_hough.cpp.s
 
 # target to generate assembly for a file
 test/test_hough.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_hough.cpp.s
 .PHONY : test/test_hough.cpp.s
 
 test/test_imgproc.o: test/test_imgproc.cpp.o
@@ -2057,7 +2047,7 @@ test/test_imgproc.o: test/test_imgproc.cpp.o
 
 # target to build an object file
 test/test_imgproc.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.o
 .PHONY : test/test_imgproc.cpp.o
 
 test/test_imgproc.i: test/test_imgproc.cpp.i
@@ -2065,7 +2055,7 @@ test/test_imgproc.i: test/test_imgproc.cpp.i
 
 # target to preprocess a source file
 test/test_imgproc.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.i
 .PHONY : test/test_imgproc.cpp.i
 
 test/test_imgproc.s: test/test_imgproc.cpp.s
@@ -2073,7 +2063,7 @@ test/test_imgproc.s: test/test_imgproc.cpp.s
 
 # target to generate assembly for a file
 test/test_imgproc.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_imgproc.cpp.s
 .PHONY : test/test_imgproc.cpp.s
 
 test/test_labeling.o: test/test_labeling.cpp.o
@@ -2081,7 +2071,7 @@ test/test_labeling.o: test/test_labeling.cpp.o
 
 # target to build an object file
 test/test_labeling.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.o
 .PHONY : test/test_labeling.cpp.o
 
 test/test_labeling.i: test/test_labeling.cpp.i
@@ -2089,7 +2079,7 @@ test/test_labeling.i: test/test_labeling.cpp.i
 
 # target to preprocess a source file
 test/test_labeling.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.i
 .PHONY : test/test_labeling.cpp.i
 
 test/test_labeling.s: test/test_labeling.cpp.s
@@ -2097,7 +2087,7 @@ test/test_labeling.s: test/test_labeling.cpp.s
 
 # target to generate assembly for a file
 test/test_labeling.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_labeling.cpp.s
 .PHONY : test/test_labeling.cpp.s
 
 test/test_nvidia.o: test/test_nvidia.cpp.o
@@ -2105,7 +2095,7 @@ test/test_nvidia.o: test/test_nvidia.cpp.o
 
 # target to build an object file
 test/test_nvidia.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.o
 .PHONY : test/test_nvidia.cpp.o
 
 test/test_nvidia.i: test/test_nvidia.cpp.i
@@ -2113,7 +2103,7 @@ test/test_nvidia.i: test/test_nvidia.cpp.i
 
 # target to preprocess a source file
 test/test_nvidia.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.i
 .PHONY : test/test_nvidia.cpp.i
 
 test/test_nvidia.s: test/test_nvidia.cpp.s
@@ -2121,7 +2111,7 @@ test/test_nvidia.s: test/test_nvidia.cpp.s
 
 # target to generate assembly for a file
 test/test_nvidia.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_nvidia.cpp.s
 .PHONY : test/test_nvidia.cpp.s
 
 test/test_objdetect.o: test/test_objdetect.cpp.o
@@ -2129,7 +2119,7 @@ test/test_objdetect.o: test/test_objdetect.cpp.o
 
 # target to build an object file
 test/test_objdetect.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.o
 .PHONY : test/test_objdetect.cpp.o
 
 test/test_objdetect.i: test/test_objdetect.cpp.i
@@ -2137,7 +2127,7 @@ test/test_objdetect.i: test/test_objdetect.cpp.i
 
 # target to preprocess a source file
 test/test_objdetect.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.i
 .PHONY : test/test_objdetect.cpp.i
 
 test/test_objdetect.s: test/test_objdetect.cpp.s
@@ -2145,7 +2135,7 @@ test/test_objdetect.s: test/test_objdetect.cpp.s
 
 # target to generate assembly for a file
 test/test_objdetect.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_objdetect.cpp.s
 .PHONY : test/test_objdetect.cpp.s
 
 test/test_opengl.o: test/test_opengl.cpp.o
@@ -2153,7 +2143,7 @@ test/test_opengl.o: test/test_opengl.cpp.o
 
 # target to build an object file
 test/test_opengl.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.o
 .PHONY : test/test_opengl.cpp.o
 
 test/test_opengl.i: test/test_opengl.cpp.i
@@ -2161,7 +2151,7 @@ test/test_opengl.i: test/test_opengl.cpp.i
 
 # target to preprocess a source file
 test/test_opengl.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.i
 .PHONY : test/test_opengl.cpp.i
 
 test/test_opengl.s: test/test_opengl.cpp.s
@@ -2169,7 +2159,7 @@ test/test_opengl.s: test/test_opengl.cpp.s
 
 # target to generate assembly for a file
 test/test_opengl.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_opengl.cpp.s
 .PHONY : test/test_opengl.cpp.s
 
 test/test_optflow.o: test/test_optflow.cpp.o
@@ -2177,7 +2167,7 @@ test/test_optflow.o: test/test_optflow.cpp.o
 
 # target to build an object file
 test/test_optflow.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.o
 .PHONY : test/test_optflow.cpp.o
 
 test/test_optflow.i: test/test_optflow.cpp.i
@@ -2185,7 +2175,7 @@ test/test_optflow.i: test/test_optflow.cpp.i
 
 # target to preprocess a source file
 test/test_optflow.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.i
 .PHONY : test/test_optflow.cpp.i
 
 test/test_optflow.s: test/test_optflow.cpp.s
@@ -2193,7 +2183,7 @@ test/test_optflow.s: test/test_optflow.cpp.s
 
 # target to generate assembly for a file
 test/test_optflow.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_optflow.cpp.s
 .PHONY : test/test_optflow.cpp.s
 
 test/test_pyramids.o: test/test_pyramids.cpp.o
@@ -2201,7 +2191,7 @@ test/test_pyramids.o: test/test_pyramids.cpp.o
 
 # target to build an object file
 test/test_pyramids.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.o
 .PHONY : test/test_pyramids.cpp.o
 
 test/test_pyramids.i: test/test_pyramids.cpp.i
@@ -2209,7 +2199,7 @@ test/test_pyramids.i: test/test_pyramids.cpp.i
 
 # target to preprocess a source file
 test/test_pyramids.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.i
 .PHONY : test/test_pyramids.cpp.i
 
 test/test_pyramids.s: test/test_pyramids.cpp.s
@@ -2217,7 +2207,7 @@ test/test_pyramids.s: test/test_pyramids.cpp.s
 
 # target to generate assembly for a file
 test/test_pyramids.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_pyramids.cpp.s
 .PHONY : test/test_pyramids.cpp.s
 
 test/test_remap.o: test/test_remap.cpp.o
@@ -2225,7 +2215,7 @@ test/test_remap.o: test/test_remap.cpp.o
 
 # target to build an object file
 test/test_remap.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.o
 .PHONY : test/test_remap.cpp.o
 
 test/test_remap.i: test/test_remap.cpp.i
@@ -2233,7 +2223,7 @@ test/test_remap.i: test/test_remap.cpp.i
 
 # target to preprocess a source file
 test/test_remap.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.i
 .PHONY : test/test_remap.cpp.i
 
 test/test_remap.s: test/test_remap.cpp.s
@@ -2241,7 +2231,7 @@ test/test_remap.s: test/test_remap.cpp.s
 
 # target to generate assembly for a file
 test/test_remap.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_remap.cpp.s
 .PHONY : test/test_remap.cpp.s
 
 test/test_resize.o: test/test_resize.cpp.o
@@ -2249,7 +2239,7 @@ test/test_resize.o: test/test_resize.cpp.o
 
 # target to build an object file
 test/test_resize.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.o
 .PHONY : test/test_resize.cpp.o
 
 test/test_resize.i: test/test_resize.cpp.i
@@ -2257,7 +2247,7 @@ test/test_resize.i: test/test_resize.cpp.i
 
 # target to preprocess a source file
 test/test_resize.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.i
 .PHONY : test/test_resize.cpp.i
 
 test/test_resize.s: test/test_resize.cpp.s
@@ -2265,7 +2255,7 @@ test/test_resize.s: test/test_resize.cpp.s
 
 # target to generate assembly for a file
 test/test_resize.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_resize.cpp.s
 .PHONY : test/test_resize.cpp.s
 
 test/test_stream.o: test/test_stream.cpp.o
@@ -2273,7 +2263,7 @@ test/test_stream.o: test/test_stream.cpp.o
 
 # target to build an object file
 test/test_stream.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.o
 .PHONY : test/test_stream.cpp.o
 
 test/test_stream.i: test/test_stream.cpp.i
@@ -2281,7 +2271,7 @@ test/test_stream.i: test/test_stream.cpp.i
 
 # target to preprocess a source file
 test/test_stream.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.i
 .PHONY : test/test_stream.cpp.i
 
 test/test_stream.s: test/test_stream.cpp.s
@@ -2289,7 +2279,7 @@ test/test_stream.s: test/test_stream.cpp.s
 
 # target to generate assembly for a file
 test/test_stream.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_stream.cpp.s
 .PHONY : test/test_stream.cpp.s
 
 test/test_threshold.o: test/test_threshold.cpp.o
@@ -2297,7 +2287,7 @@ test/test_threshold.o: test/test_threshold.cpp.o
 
 # target to build an object file
 test/test_threshold.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.o
 .PHONY : test/test_threshold.cpp.o
 
 test/test_threshold.i: test/test_threshold.cpp.i
@@ -2305,7 +2295,7 @@ test/test_threshold.i: test/test_threshold.cpp.i
 
 # target to preprocess a source file
 test/test_threshold.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.i
 .PHONY : test/test_threshold.cpp.i
 
 test/test_threshold.s: test/test_threshold.cpp.s
@@ -2313,7 +2303,7 @@ test/test_threshold.s: test/test_threshold.cpp.s
 
 # target to generate assembly for a file
 test/test_threshold.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_threshold.cpp.s
 .PHONY : test/test_threshold.cpp.s
 
 test/test_video.o: test/test_video.cpp.o
@@ -2321,7 +2311,7 @@ test/test_video.o: test/test_video.cpp.o
 
 # target to build an object file
 test/test_video.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.o
 .PHONY : test/test_video.cpp.o
 
 test/test_video.i: test/test_video.cpp.i
@@ -2329,7 +2319,7 @@ test/test_video.i: test/test_video.cpp.i
 
 # target to preprocess a source file
 test/test_video.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.i
 .PHONY : test/test_video.cpp.i
 
 test/test_video.s: test/test_video.cpp.s
@@ -2337,7 +2327,7 @@ test/test_video.s: test/test_video.cpp.s
 
 # target to generate assembly for a file
 test/test_video.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_video.cpp.s
 .PHONY : test/test_video.cpp.s
 
 test/test_warp_affine.o: test/test_warp_affine.cpp.o
@@ -2345,7 +2335,7 @@ test/test_warp_affine.o: test/test_warp_affine.cpp.o
 
 # target to build an object file
 test/test_warp_affine.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.o
 .PHONY : test/test_warp_affine.cpp.o
 
 test/test_warp_affine.i: test/test_warp_affine.cpp.i
@@ -2353,7 +2343,7 @@ test/test_warp_affine.i: test/test_warp_affine.cpp.i
 
 # target to preprocess a source file
 test/test_warp_affine.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.i
 .PHONY : test/test_warp_affine.cpp.i
 
 test/test_warp_affine.s: test/test_warp_affine.cpp.s
@@ -2361,7 +2351,7 @@ test/test_warp_affine.s: test/test_warp_affine.cpp.s
 
 # target to generate assembly for a file
 test/test_warp_affine.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_affine.cpp.s
 .PHONY : test/test_warp_affine.cpp.s
 
 test/test_warp_perspective.o: test/test_warp_perspective.cpp.o
@@ -2369,7 +2359,7 @@ test/test_warp_perspective.o: test/test_warp_perspective.cpp.o
 
 # target to build an object file
 test/test_warp_perspective.cpp.o:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.o
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.o
 .PHONY : test/test_warp_perspective.cpp.o
 
 test/test_warp_perspective.i: test/test_warp_perspective.cpp.i
@@ -2377,7 +2367,7 @@ test/test_warp_perspective.i: test/test_warp_perspective.cpp.i
 
 # target to preprocess a source file
 test/test_warp_perspective.cpp.i:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.i
 .PHONY : test/test_warp_perspective.cpp.i
 
 test/test_warp_perspective.s: test/test_warp_perspective.cpp.s
@@ -2385,7 +2375,7 @@ test/test_warp_perspective.s: test/test_warp_perspective.cpp.s
 
 # target to generate assembly for a file
 test/test_warp_perspective.cpp.s:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv && $(MAKE) -f modules/gpu/CMakeFiles/opencv_test_gpu.dir/build.make modules/gpu/CMakeFiles/opencv_test_gpu.dir/test/test_warp_perspective.cpp.s
 .PHONY : test/test_warp_perspective.cpp.s
 
 # Help Target
@@ -2397,7 +2387,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... opencv_gpu"
 	@echo "... opencv_perf_gpu"
@@ -2689,6 +2678,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/depend.make
@@ -54,17 +54,17 @@ include modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/flags.make
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.o: modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/flags.make
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.o: modules/nonfree/perf/perf_gpu.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_gpu.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/nonfree && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_gpu.cpp
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_gpu.cpp > CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_gpu.cpp > CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.i
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_gpu.cpp -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_gpu.cpp -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.s
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.o.requires:
 .PHONY : modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.o.requires
@@ -77,17 +77,17 @@ modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_gpu.cpp.o.provides.
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.o: modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/flags.make
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.o: modules/nonfree/perf/perf_main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_main.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/nonfree && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_main.cpp
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_main.cpp > CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_main.cpp > CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.i
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_main.cpp -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_main.cpp -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.s
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.o.requires:
 .PHONY : modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.o.requires
@@ -100,17 +100,17 @@ modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_main.cpp.o.provides
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.o: modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/flags.make
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.o: modules/nonfree/perf/perf_surf.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_surf.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/nonfree && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_surf.cpp
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_surf.cpp > CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_surf.cpp > CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.i
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_surf.cpp -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_surf.cpp -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.s
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.o.requires:
 .PHONY : modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.o.requires
@@ -123,17 +123,17 @@ modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf.cpp.o.provides
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.o: modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/flags.make
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.o: modules/nonfree/perf/perf_surf_ocl.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_surf_ocl.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/nonfree && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_surf_ocl.cpp
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_surf_ocl.cpp > CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_surf_ocl.cpp > CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.i
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/perf/perf_surf_ocl.cpp -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/nonfree && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/nonfree/perf/perf_surf_ocl.cpp -o CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.s
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.o.requires:
 .PHONY : modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/perf/perf_surf_ocl.cpp.o.requires
@@ -195,7 +195,7 @@ bin/opencv_perf_nonfree: lib/libopencv_imgproc.2.4.9.dylib
 bin/opencv_perf_nonfree: lib/libopencv_core.2.4.9.dylib
 bin/opencv_perf_nonfree: modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../bin/opencv_perf_nonfree"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_perf_nonfree.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/nonfree && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_perf_nonfree.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build: bin/opencv_perf_nonfree
@@ -208,10 +208,10 @@ modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/requires: modules/nonfree/CMa
 .PHONY : modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/requires
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree && $(CMAKE_COMMAND) -P CMakeFiles/opencv_perf_nonfree.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/nonfree && $(CMAKE_COMMAND) -P CMakeFiles/opencv_perf_nonfree.dir/cmake_clean.cmake
 .PHONY : modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/clean
 
 modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree /Users/zj/Desktop/code/opencv-2.4.9/modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/nonfree /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/nonfree /Users/zj/Desktop/code/pi/opencv/modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/depend
 

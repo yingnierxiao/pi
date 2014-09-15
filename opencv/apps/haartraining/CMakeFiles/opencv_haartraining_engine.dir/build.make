@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/depend.make
@@ -54,17 +54,17 @@ include apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/flags.make
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.o: apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/flags.make
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.o: apps/haartraining/cvboost.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvboost.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.o -c /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvboost.cpp
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvboost.cpp > CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvboost.cpp > CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.i
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvboost.cpp -o CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvboost.cpp -o CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.s
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.o.requires:
 .PHONY : apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.o.requires
@@ -77,17 +77,17 @@ apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvboost.cpp.o.provid
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.o: apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/flags.make
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.o: apps/haartraining/cvcommon.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvcommon.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.o -c /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvcommon.cpp
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvcommon.cpp > CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvcommon.cpp > CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.i
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvcommon.cpp -o CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvcommon.cpp -o CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.s
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.o.requires:
 .PHONY : apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.o.requires
@@ -100,17 +100,17 @@ apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvcommon.cpp.o.provi
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.o: apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/flags.make
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.o: apps/haartraining/cvhaarclassifier.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvhaarclassifier.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.o -c /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvhaarclassifier.cpp
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvhaarclassifier.cpp > CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvhaarclassifier.cpp > CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.i
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvhaarclassifier.cpp -o CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvhaarclassifier.cpp -o CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.s
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.o.requires:
 .PHONY : apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp.o.requires
@@ -123,17 +123,17 @@ apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaarclassifier.cpp
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.o: apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/flags.make
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.o: apps/haartraining/cvhaartraining.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvhaartraining.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.o -c /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvhaartraining.cpp
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvhaartraining.cpp > CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvhaartraining.cpp > CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.i
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvhaartraining.cpp -o CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvhaartraining.cpp -o CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.s
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.o.requires:
 .PHONY : apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.o.requires
@@ -146,17 +146,17 @@ apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvhaartraining.cpp.o
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.o: apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/flags.make
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.o: apps/haartraining/cvsamples.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvsamples.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.o -c /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvsamples.cpp
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvsamples.cpp > CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvsamples.cpp > CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.i
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/cvsamples.cpp -o CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/apps/haartraining/cvsamples.cpp -o CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.s
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.o.requires:
 .PHONY : apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/cvsamples.cpp.o.requires
@@ -186,8 +186,8 @@ lib/libopencv_haartraining_engine.a: apps/haartraining/CMakeFiles/opencv_haartra
 lib/libopencv_haartraining_engine.a: apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build.make
 lib/libopencv_haartraining_engine.a: apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library ../../lib/libopencv_haartraining_engine.a"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && $(CMAKE_COMMAND) -P CMakeFiles/opencv_haartraining_engine.dir/cmake_clean_target.cmake
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_haartraining_engine.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && $(CMAKE_COMMAND) -P CMakeFiles/opencv_haartraining_engine.dir/cmake_clean_target.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_haartraining_engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/build: lib/libopencv_haartraining_engine.a
@@ -201,10 +201,10 @@ apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/requires: apps/haart
 .PHONY : apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/requires
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining && $(CMAKE_COMMAND) -P CMakeFiles/opencv_haartraining_engine.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/apps/haartraining && $(CMAKE_COMMAND) -P CMakeFiles/opencv_haartraining_engine.dir/cmake_clean.cmake
 .PHONY : apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/clean
 
 apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining /Users/zj/Desktop/code/opencv-2.4.9/apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/apps/haartraining /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/apps/haartraining /Users/zj/Desktop/code/pi/opencv/apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apps/haartraining/CMakeFiles/opencv_haartraining_engine.dir/depend
 

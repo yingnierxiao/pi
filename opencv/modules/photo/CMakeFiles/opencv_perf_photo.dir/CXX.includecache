@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/perf/perf_inpaint.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/perf/perf_inpaint.cpp
 perf_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/perf/perf_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/perf/perf_main.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/perf/perf_main.cpp
 perf_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/perf/perf_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/perf/perf_precomp.hpp
 opencv2/ts/ts.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/perf/opencv2/ts/ts.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/perf/opencv2/ts/ts.hpp
 opencv2/photo/photo.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/perf/opencv2/photo/photo.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/perf/opencv2/photo/photo.hpp
 opencv2/highgui/highgui.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/photo/perf/opencv2/highgui/highgui.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/photo/perf/opencv2/highgui/highgui.hpp
 
 modules/core/include/opencv2/core/core.hpp
 opencv2/core/types_c.h

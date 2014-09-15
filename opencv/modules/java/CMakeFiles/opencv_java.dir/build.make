@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/java/CMakeFiles/opencv_java.dir/depend.make
@@ -56,9 +56,9 @@ modules/java/core+Algorithm.java: modules/java/generator/gen_java.py
 modules/java/core+Algorithm.java: modules/java/../python/src2/hdr_parser.py
 modules/java/core+Algorithm.java: modules/core/include/opencv2/core/core.hpp
 modules/java/core+Algorithm.java: modules/core/../java/generator/src/cpp/core_manual.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating core+Algorithm.java, core+Core.java, core.cpp"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/python /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/gen_java.py /Users/zj/Desktop/code/opencv-2.4.9/modules/java/../python/src2/hdr_parser.py core /Users/zj/Desktop/code/opencv-2.4.9/modules/core/include/opencv2/core/core.hpp /Users/zj/Desktop/code/opencv-2.4.9/modules/core/../java/generator/src/cpp/core_manual.hpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/python /Users/zj/Desktop/code/pi/opencv/modules/java/generator/gen_java.py /Users/zj/Desktop/code/pi/opencv/modules/java/../python/src2/hdr_parser.py core /Users/zj/Desktop/code/pi/opencv/modules/core/include/opencv2/core/core.hpp /Users/zj/Desktop/code/pi/opencv/modules/core/../java/generator/src/cpp/core_manual.hpp
 
 modules/java/core+Core.java: modules/java/core+Algorithm.java
 
@@ -69,9 +69,9 @@ modules/java/imgproc+CLAHE.java: modules/java/../python/src2/hdr_parser.py
 modules/java/imgproc+CLAHE.java: modules/imgproc/include/opencv2/imgproc/imgproc_c.h
 modules/java/imgproc+CLAHE.java: modules/imgproc/include/opencv2/imgproc/types_c.h
 modules/java/imgproc+CLAHE.java: modules/imgproc/include/opencv2/imgproc/imgproc.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating imgproc+CLAHE.java, imgproc+Imgproc.java, imgproc+Moments.java, imgproc+Subdiv2D.java, imgproc.cpp"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/python /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/gen_java.py /Users/zj/Desktop/code/opencv-2.4.9/modules/java/../python/src2/hdr_parser.py imgproc /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/include/opencv2/imgproc/imgproc_c.h /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/include/opencv2/imgproc/types_c.h /Users/zj/Desktop/code/opencv-2.4.9/modules/imgproc/include/opencv2/imgproc/imgproc.hpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/python /Users/zj/Desktop/code/pi/opencv/modules/java/generator/gen_java.py /Users/zj/Desktop/code/pi/opencv/modules/java/../python/src2/hdr_parser.py imgproc /Users/zj/Desktop/code/pi/opencv/modules/imgproc/include/opencv2/imgproc/imgproc_c.h /Users/zj/Desktop/code/pi/opencv/modules/imgproc/include/opencv2/imgproc/types_c.h /Users/zj/Desktop/code/pi/opencv/modules/imgproc/include/opencv2/imgproc/imgproc.hpp
 
 modules/java/imgproc+Imgproc.java: modules/java/imgproc+CLAHE.java
 
@@ -84,9 +84,9 @@ modules/java/imgproc.cpp: modules/java/imgproc+CLAHE.java
 modules/java/objdetect+CascadeClassifier.java: modules/java/generator/gen_java.py
 modules/java/objdetect+CascadeClassifier.java: modules/java/../python/src2/hdr_parser.py
 modules/java/objdetect+CascadeClassifier.java: modules/objdetect/include/opencv2/objdetect/objdetect.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating objdetect+CascadeClassifier.java, objdetect+HOGDescriptor.java, objdetect+Objdetect.java, objdetect.cpp"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/python /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/gen_java.py /Users/zj/Desktop/code/opencv-2.4.9/modules/java/../python/src2/hdr_parser.py objdetect /Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/include/opencv2/objdetect/objdetect.hpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/python /Users/zj/Desktop/code/pi/opencv/modules/java/generator/gen_java.py /Users/zj/Desktop/code/pi/opencv/modules/java/../python/src2/hdr_parser.py objdetect /Users/zj/Desktop/code/pi/opencv/modules/objdetect/include/opencv2/objdetect/objdetect.hpp
 
 modules/java/objdetect+HOGDescriptor.java: modules/java/objdetect+CascadeClassifier.java
 
@@ -97,9 +97,9 @@ modules/java/objdetect.cpp: modules/java/objdetect+CascadeClassifier.java
 modules/java/features2d+DescriptorExtractor.java: modules/java/generator/gen_java.py
 modules/java/features2d+DescriptorExtractor.java: modules/java/../python/src2/hdr_parser.py
 modules/java/features2d+DescriptorExtractor.java: modules/features2d/../java/generator/src/cpp/features2d_manual.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating features2d+DescriptorExtractor.java, features2d+DescriptorMatcher.java, features2d+FeatureDetector.java, features2d+Features2d.java, features2d+GenericDescriptorMatcher.java, features2d.cpp"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/python /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/gen_java.py /Users/zj/Desktop/code/opencv-2.4.9/modules/java/../python/src2/hdr_parser.py features2d /Users/zj/Desktop/code/opencv-2.4.9/modules/features2d/../java/generator/src/cpp/features2d_manual.hpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/python /Users/zj/Desktop/code/pi/opencv/modules/java/generator/gen_java.py /Users/zj/Desktop/code/pi/opencv/modules/java/../python/src2/hdr_parser.py features2d /Users/zj/Desktop/code/pi/opencv/modules/features2d/../java/generator/src/cpp/features2d_manual.hpp
 
 modules/java/features2d+DescriptorMatcher.java: modules/java/features2d+DescriptorExtractor.java
 
@@ -116,9 +116,9 @@ modules/java/video+BackgroundSubtractor.java: modules/java/../python/src2/hdr_pa
 modules/java/video+BackgroundSubtractor.java: modules/video/include/opencv2/video/background_segm.hpp
 modules/java/video+BackgroundSubtractor.java: modules/video/include/opencv2/video/tracking.hpp
 modules/java/video+BackgroundSubtractor.java: modules/video/include/opencv2/video/video.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating video+BackgroundSubtractor.java, video+BackgroundSubtractorMOG.java, video+BackgroundSubtractorMOG2.java, video+KalmanFilter.java, video+Video.java, video.cpp"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/python /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/gen_java.py /Users/zj/Desktop/code/opencv-2.4.9/modules/java/../python/src2/hdr_parser.py video /Users/zj/Desktop/code/opencv-2.4.9/modules/video/include/opencv2/video/background_segm.hpp /Users/zj/Desktop/code/opencv-2.4.9/modules/video/include/opencv2/video/tracking.hpp /Users/zj/Desktop/code/opencv-2.4.9/modules/video/include/opencv2/video/video.hpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/python /Users/zj/Desktop/code/pi/opencv/modules/java/generator/gen_java.py /Users/zj/Desktop/code/pi/opencv/modules/java/../python/src2/hdr_parser.py video /Users/zj/Desktop/code/pi/opencv/modules/video/include/opencv2/video/background_segm.hpp /Users/zj/Desktop/code/pi/opencv/modules/video/include/opencv2/video/tracking.hpp /Users/zj/Desktop/code/pi/opencv/modules/video/include/opencv2/video/video.hpp
 
 modules/java/video+BackgroundSubtractorMOG.java: modules/java/video+BackgroundSubtractor.java
 
@@ -136,9 +136,9 @@ modules/java/highgui+Highgui.java: modules/highgui/include/opencv2/highgui/cap_i
 modules/java/highgui+Highgui.java: modules/highgui/include/opencv2/highgui/highgui_c.h
 modules/java/highgui+Highgui.java: modules/highgui/include/opencv2/highgui/ios.h
 modules/java/highgui+Highgui.java: modules/highgui/include/opencv2/highgui/highgui.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating highgui+Highgui.java, highgui+VideoCapture.java, highgui.cpp"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/python /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/gen_java.py /Users/zj/Desktop/code/opencv-2.4.9/modules/java/../python/src2/hdr_parser.py highgui /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/include/opencv2/highgui/cap_ios.h /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/include/opencv2/highgui/highgui_c.h /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/include/opencv2/highgui/ios.h /Users/zj/Desktop/code/opencv-2.4.9/modules/highgui/include/opencv2/highgui/highgui.hpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/python /Users/zj/Desktop/code/pi/opencv/modules/java/generator/gen_java.py /Users/zj/Desktop/code/pi/opencv/modules/java/../python/src2/hdr_parser.py highgui /Users/zj/Desktop/code/pi/opencv/modules/highgui/include/opencv2/highgui/cap_ios.h /Users/zj/Desktop/code/pi/opencv/modules/highgui/include/opencv2/highgui/highgui_c.h /Users/zj/Desktop/code/pi/opencv/modules/highgui/include/opencv2/highgui/ios.h /Users/zj/Desktop/code/pi/opencv/modules/highgui/include/opencv2/highgui/highgui.hpp
 
 modules/java/highgui+VideoCapture.java: modules/java/highgui+Highgui.java
 
@@ -147,9 +147,9 @@ modules/java/highgui.cpp: modules/java/highgui+Highgui.java
 modules/java/ml+CvANN_MLP.java: modules/java/generator/gen_java.py
 modules/java/ml+CvANN_MLP.java: modules/java/../python/src2/hdr_parser.py
 modules/java/ml+CvANN_MLP.java: modules/ml/include/opencv2/ml/ml.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ml+CvANN_MLP.java, ml+CvANN_MLP_TrainParams.java, ml+CvBoost.java, ml+CvBoostParams.java, ml+CvDTree.java, ml+CvDTreeParams.java, ml+CvERTrees.java, ml+CvGBTrees.java, ml+CvGBTreesParams.java, ml+CvKNearest.java, ml+CvNormalBayesClassifier.java, ml+CvParamGrid.java, ml+CvRTParams.java, ml+CvRTrees.java, ml+CvStatModel.java, ml+CvSVM.java, ml+CvSVMParams.java, ml+EM.java, ml+Ml.java, ml.cpp"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/python /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/gen_java.py /Users/zj/Desktop/code/opencv-2.4.9/modules/java/../python/src2/hdr_parser.py ml /Users/zj/Desktop/code/opencv-2.4.9/modules/ml/include/opencv2/ml/ml.hpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/python /Users/zj/Desktop/code/pi/opencv/modules/java/generator/gen_java.py /Users/zj/Desktop/code/pi/opencv/modules/java/../python/src2/hdr_parser.py ml /Users/zj/Desktop/code/pi/opencv/modules/ml/include/opencv2/ml/ml.hpp
 
 modules/java/ml+CvANN_MLP_TrainParams.java: modules/java/ml+CvANN_MLP.java
 
@@ -192,9 +192,9 @@ modules/java/ml.cpp: modules/java/ml+CvANN_MLP.java
 modules/java/calib3d+Calib3d.java: modules/java/generator/gen_java.py
 modules/java/calib3d+Calib3d.java: modules/java/../python/src2/hdr_parser.py
 modules/java/calib3d+Calib3d.java: modules/calib3d/include/opencv2/calib3d/calib3d.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating calib3d+Calib3d.java, calib3d+StereoBM.java, calib3d+StereoSGBM.java, calib3d.cpp"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/python /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/gen_java.py /Users/zj/Desktop/code/opencv-2.4.9/modules/java/../python/src2/hdr_parser.py calib3d /Users/zj/Desktop/code/opencv-2.4.9/modules/calib3d/include/opencv2/calib3d/calib3d.hpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/python /Users/zj/Desktop/code/pi/opencv/modules/java/generator/gen_java.py /Users/zj/Desktop/code/pi/opencv/modules/java/../python/src2/hdr_parser.py calib3d /Users/zj/Desktop/code/pi/opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp
 
 modules/java/calib3d+StereoBM.java: modules/java/calib3d+Calib3d.java
 
@@ -206,9 +206,9 @@ modules/java/photo+Photo.java: modules/java/generator/gen_java.py
 modules/java/photo+Photo.java: modules/java/../python/src2/hdr_parser.py
 modules/java/photo+Photo.java: modules/photo/include/opencv2/photo/photo_c.h
 modules/java/photo+Photo.java: modules/photo/include/opencv2/photo/photo.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating photo+Photo.java, photo.cpp"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/python /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/gen_java.py /Users/zj/Desktop/code/opencv-2.4.9/modules/java/../python/src2/hdr_parser.py photo /Users/zj/Desktop/code/opencv-2.4.9/modules/photo/include/opencv2/photo/photo_c.h /Users/zj/Desktop/code/opencv-2.4.9/modules/photo/include/opencv2/photo/photo.hpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/python /Users/zj/Desktop/code/pi/opencv/modules/java/generator/gen_java.py /Users/zj/Desktop/code/pi/opencv/modules/java/../python/src2/hdr_parser.py photo /Users/zj/Desktop/code/pi/opencv/modules/photo/include/opencv2/photo/photo_c.h /Users/zj/Desktop/code/pi/opencv/modules/photo/include/opencv2/photo/photo.hpp
 
 modules/java/photo.cpp: modules/java/photo+Photo.java
 
@@ -219,9 +219,9 @@ modules/java/contrib+Contrib.java: modules/contrib/include/opencv2/contrib/detec
 modules/java/contrib+Contrib.java: modules/contrib/include/opencv2/contrib/hybridtracker.hpp
 modules/java/contrib+Contrib.java: modules/contrib/include/opencv2/contrib/openfabmap.hpp
 modules/java/contrib+Contrib.java: modules/contrib/include/opencv2/contrib/retina.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating contrib+Contrib.java, contrib+FaceRecognizer.java, contrib+StereoVar.java, contrib.cpp"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/python /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/gen_java.py /Users/zj/Desktop/code/opencv-2.4.9/modules/java/../python/src2/hdr_parser.py contrib /Users/zj/Desktop/code/opencv-2.4.9/modules/contrib/include/opencv2/contrib/contrib.hpp /Users/zj/Desktop/code/opencv-2.4.9/modules/contrib/include/opencv2/contrib/detection_based_tracker.hpp /Users/zj/Desktop/code/opencv-2.4.9/modules/contrib/include/opencv2/contrib/hybridtracker.hpp /Users/zj/Desktop/code/opencv-2.4.9/modules/contrib/include/opencv2/contrib/openfabmap.hpp /Users/zj/Desktop/code/opencv-2.4.9/modules/contrib/include/opencv2/contrib/retina.hpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/python /Users/zj/Desktop/code/pi/opencv/modules/java/generator/gen_java.py /Users/zj/Desktop/code/pi/opencv/modules/java/../python/src2/hdr_parser.py contrib /Users/zj/Desktop/code/pi/opencv/modules/contrib/include/opencv2/contrib/contrib.hpp /Users/zj/Desktop/code/pi/opencv/modules/contrib/include/opencv2/contrib/detection_based_tracker.hpp /Users/zj/Desktop/code/pi/opencv/modules/contrib/include/opencv2/contrib/hybridtracker.hpp /Users/zj/Desktop/code/pi/opencv/modules/contrib/include/opencv2/contrib/openfabmap.hpp /Users/zj/Desktop/code/pi/opencv/modules/contrib/include/opencv2/contrib/retina.hpp
 
 modules/java/contrib+FaceRecognizer.java: modules/java/contrib+Contrib.java
 
@@ -403,9 +403,9 @@ src/org/opencv/core/Algorithm.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/core/Algorithm.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/Algorithm.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/Algorithm.java: modules/java/core+Algorithm-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/Algorithm.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+Algorithm-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/Algorithm.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+Algorithm-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/Algorithm.java
 
 src/org/opencv/core/Core.java: modules/java/generator/gen_java.py
 src/org/opencv/core/Core.java: modules/java/../python/src2/hdr_parser.py
@@ -581,9 +581,9 @@ src/org/opencv/core/Core.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/core/Core.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/Core.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/Core.java: modules/java/core+Core-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/Core.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+Core-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/Core.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+Core-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/Core.java
 
 src/org/opencv/imgproc/CLAHE.java: modules/java/generator/gen_java.py
 src/org/opencv/imgproc/CLAHE.java: modules/java/../python/src2/hdr_parser.py
@@ -759,9 +759,9 @@ src/org/opencv/imgproc/CLAHE.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/imgproc/CLAHE.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/imgproc/CLAHE.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/imgproc/CLAHE.java: modules/java/imgproc+CLAHE-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/imgproc/CLAHE.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/imgproc+CLAHE-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/imgproc/CLAHE.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/imgproc+CLAHE-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/imgproc/CLAHE.java
 
 src/org/opencv/imgproc/Imgproc.java: modules/java/generator/gen_java.py
 src/org/opencv/imgproc/Imgproc.java: modules/java/../python/src2/hdr_parser.py
@@ -937,9 +937,9 @@ src/org/opencv/imgproc/Imgproc.java: modules/java/generator/src/java/gpu+Gpu.jav
 src/org/opencv/imgproc/Imgproc.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/imgproc/Imgproc.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/imgproc/Imgproc.java: modules/java/imgproc+Imgproc-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/imgproc/Imgproc.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/imgproc+Imgproc-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/imgproc/Imgproc.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/imgproc+Imgproc-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/imgproc/Imgproc.java
 
 src/org/opencv/imgproc/Moments.java: modules/java/generator/gen_java.py
 src/org/opencv/imgproc/Moments.java: modules/java/../python/src2/hdr_parser.py
@@ -1115,9 +1115,9 @@ src/org/opencv/imgproc/Moments.java: modules/java/generator/src/java/gpu+Gpu.jav
 src/org/opencv/imgproc/Moments.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/imgproc/Moments.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/imgproc/Moments.java: modules/java/imgproc+Moments-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/imgproc/Moments.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/imgproc+Moments-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/imgproc/Moments.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/imgproc+Moments-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/imgproc/Moments.java
 
 src/org/opencv/imgproc/Subdiv2D.java: modules/java/generator/gen_java.py
 src/org/opencv/imgproc/Subdiv2D.java: modules/java/../python/src2/hdr_parser.py
@@ -1293,9 +1293,9 @@ src/org/opencv/imgproc/Subdiv2D.java: modules/java/generator/src/java/gpu+Gpu.ja
 src/org/opencv/imgproc/Subdiv2D.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/imgproc/Subdiv2D.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/imgproc/Subdiv2D.java: modules/java/imgproc+Subdiv2D-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/imgproc/Subdiv2D.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/imgproc+Subdiv2D-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/imgproc/Subdiv2D.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/imgproc+Subdiv2D-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/imgproc/Subdiv2D.java
 
 src/org/opencv/objdetect/CascadeClassifier.java: modules/java/generator/gen_java.py
 src/org/opencv/objdetect/CascadeClassifier.java: modules/java/../python/src2/hdr_parser.py
@@ -1471,9 +1471,9 @@ src/org/opencv/objdetect/CascadeClassifier.java: modules/java/generator/src/java
 src/org/opencv/objdetect/CascadeClassifier.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/objdetect/CascadeClassifier.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/objdetect/CascadeClassifier.java: modules/java/objdetect+CascadeClassifier-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/objdetect/CascadeClassifier.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/objdetect+CascadeClassifier-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/objdetect/CascadeClassifier.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/objdetect+CascadeClassifier-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/objdetect/CascadeClassifier.java
 
 src/org/opencv/objdetect/HOGDescriptor.java: modules/java/generator/gen_java.py
 src/org/opencv/objdetect/HOGDescriptor.java: modules/java/../python/src2/hdr_parser.py
@@ -1649,9 +1649,9 @@ src/org/opencv/objdetect/HOGDescriptor.java: modules/java/generator/src/java/gpu
 src/org/opencv/objdetect/HOGDescriptor.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/objdetect/HOGDescriptor.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/objdetect/HOGDescriptor.java: modules/java/objdetect+HOGDescriptor-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/objdetect/HOGDescriptor.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/objdetect+HOGDescriptor-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/objdetect/HOGDescriptor.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/objdetect+HOGDescriptor-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/objdetect/HOGDescriptor.java
 
 src/org/opencv/objdetect/Objdetect.java: modules/java/generator/gen_java.py
 src/org/opencv/objdetect/Objdetect.java: modules/java/../python/src2/hdr_parser.py
@@ -1827,9 +1827,9 @@ src/org/opencv/objdetect/Objdetect.java: modules/java/generator/src/java/gpu+Gpu
 src/org/opencv/objdetect/Objdetect.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/objdetect/Objdetect.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/objdetect/Objdetect.java: modules/java/objdetect+Objdetect-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/objdetect/Objdetect.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/objdetect+Objdetect-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/objdetect/Objdetect.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/objdetect+Objdetect-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/objdetect/Objdetect.java
 
 src/org/opencv/features2d/DescriptorExtractor.java: modules/java/generator/gen_java.py
 src/org/opencv/features2d/DescriptorExtractor.java: modules/java/../python/src2/hdr_parser.py
@@ -2005,9 +2005,9 @@ src/org/opencv/features2d/DescriptorExtractor.java: modules/java/generator/src/j
 src/org/opencv/features2d/DescriptorExtractor.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/features2d/DescriptorExtractor.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/features2d/DescriptorExtractor.java: modules/java/features2d+DescriptorExtractor-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/features2d/DescriptorExtractor.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/features2d+DescriptorExtractor-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/features2d/DescriptorExtractor.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/features2d+DescriptorExtractor-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/features2d/DescriptorExtractor.java
 
 src/org/opencv/features2d/DescriptorMatcher.java: modules/java/generator/gen_java.py
 src/org/opencv/features2d/DescriptorMatcher.java: modules/java/../python/src2/hdr_parser.py
@@ -2183,9 +2183,9 @@ src/org/opencv/features2d/DescriptorMatcher.java: modules/java/generator/src/jav
 src/org/opencv/features2d/DescriptorMatcher.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/features2d/DescriptorMatcher.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/features2d/DescriptorMatcher.java: modules/java/features2d+DescriptorMatcher-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/features2d/DescriptorMatcher.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/features2d+DescriptorMatcher-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/features2d/DescriptorMatcher.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/features2d+DescriptorMatcher-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/features2d/DescriptorMatcher.java
 
 src/org/opencv/features2d/FeatureDetector.java: modules/java/generator/gen_java.py
 src/org/opencv/features2d/FeatureDetector.java: modules/java/../python/src2/hdr_parser.py
@@ -2361,9 +2361,9 @@ src/org/opencv/features2d/FeatureDetector.java: modules/java/generator/src/java/
 src/org/opencv/features2d/FeatureDetector.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/features2d/FeatureDetector.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/features2d/FeatureDetector.java: modules/java/features2d+FeatureDetector-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/features2d/FeatureDetector.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/features2d+FeatureDetector-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/features2d/FeatureDetector.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/features2d+FeatureDetector-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/features2d/FeatureDetector.java
 
 src/org/opencv/features2d/Features2d.java: modules/java/generator/gen_java.py
 src/org/opencv/features2d/Features2d.java: modules/java/../python/src2/hdr_parser.py
@@ -2539,9 +2539,9 @@ src/org/opencv/features2d/Features2d.java: modules/java/generator/src/java/gpu+G
 src/org/opencv/features2d/Features2d.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/features2d/Features2d.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/features2d/Features2d.java: modules/java/features2d+Features2d-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/features2d/Features2d.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/features2d+Features2d-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/features2d/Features2d.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/features2d+Features2d-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/features2d/Features2d.java
 
 src/org/opencv/features2d/GenericDescriptorMatcher.java: modules/java/generator/gen_java.py
 src/org/opencv/features2d/GenericDescriptorMatcher.java: modules/java/../python/src2/hdr_parser.py
@@ -2717,9 +2717,9 @@ src/org/opencv/features2d/GenericDescriptorMatcher.java: modules/java/generator/
 src/org/opencv/features2d/GenericDescriptorMatcher.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/features2d/GenericDescriptorMatcher.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/features2d/GenericDescriptorMatcher.java: modules/java/features2d+GenericDescriptorMatcher-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/features2d/GenericDescriptorMatcher.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/features2d+GenericDescriptorMatcher-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/features2d/GenericDescriptorMatcher.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/features2d+GenericDescriptorMatcher-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/features2d/GenericDescriptorMatcher.java
 
 src/org/opencv/video/BackgroundSubtractor.java: modules/java/generator/gen_java.py
 src/org/opencv/video/BackgroundSubtractor.java: modules/java/../python/src2/hdr_parser.py
@@ -2895,9 +2895,9 @@ src/org/opencv/video/BackgroundSubtractor.java: modules/java/generator/src/java/
 src/org/opencv/video/BackgroundSubtractor.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/video/BackgroundSubtractor.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/video/BackgroundSubtractor.java: modules/java/video+BackgroundSubtractor-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/video/BackgroundSubtractor.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/video+BackgroundSubtractor-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/video/BackgroundSubtractor.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/video+BackgroundSubtractor-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/video/BackgroundSubtractor.java
 
 src/org/opencv/video/BackgroundSubtractorMOG.java: modules/java/generator/gen_java.py
 src/org/opencv/video/BackgroundSubtractorMOG.java: modules/java/../python/src2/hdr_parser.py
@@ -3073,9 +3073,9 @@ src/org/opencv/video/BackgroundSubtractorMOG.java: modules/java/generator/src/ja
 src/org/opencv/video/BackgroundSubtractorMOG.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/video/BackgroundSubtractorMOG.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/video/BackgroundSubtractorMOG.java: modules/java/video+BackgroundSubtractorMOG-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/video/BackgroundSubtractorMOG.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/video+BackgroundSubtractorMOG-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/video/BackgroundSubtractorMOG.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/video+BackgroundSubtractorMOG-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/video/BackgroundSubtractorMOG.java
 
 src/org/opencv/video/BackgroundSubtractorMOG2.java: modules/java/generator/gen_java.py
 src/org/opencv/video/BackgroundSubtractorMOG2.java: modules/java/../python/src2/hdr_parser.py
@@ -3251,9 +3251,9 @@ src/org/opencv/video/BackgroundSubtractorMOG2.java: modules/java/generator/src/j
 src/org/opencv/video/BackgroundSubtractorMOG2.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/video/BackgroundSubtractorMOG2.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/video/BackgroundSubtractorMOG2.java: modules/java/video+BackgroundSubtractorMOG2-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/video/BackgroundSubtractorMOG2.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/video+BackgroundSubtractorMOG2-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/video/BackgroundSubtractorMOG2.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/video+BackgroundSubtractorMOG2-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/video/BackgroundSubtractorMOG2.java
 
 src/org/opencv/video/KalmanFilter.java: modules/java/generator/gen_java.py
 src/org/opencv/video/KalmanFilter.java: modules/java/../python/src2/hdr_parser.py
@@ -3429,9 +3429,9 @@ src/org/opencv/video/KalmanFilter.java: modules/java/generator/src/java/gpu+Gpu.
 src/org/opencv/video/KalmanFilter.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/video/KalmanFilter.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/video/KalmanFilter.java: modules/java/video+KalmanFilter-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/video/KalmanFilter.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/video+KalmanFilter-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/video/KalmanFilter.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/video+KalmanFilter-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/video/KalmanFilter.java
 
 src/org/opencv/video/Video.java: modules/java/generator/gen_java.py
 src/org/opencv/video/Video.java: modules/java/../python/src2/hdr_parser.py
@@ -3607,9 +3607,9 @@ src/org/opencv/video/Video.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/video/Video.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/video/Video.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/video/Video.java: modules/java/video+Video-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/video/Video.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/video+Video-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/video/Video.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/video+Video-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/video/Video.java
 
 src/org/opencv/highgui/Highgui.java: modules/java/generator/gen_java.py
 src/org/opencv/highgui/Highgui.java: modules/java/../python/src2/hdr_parser.py
@@ -3785,9 +3785,9 @@ src/org/opencv/highgui/Highgui.java: modules/java/generator/src/java/gpu+Gpu.jav
 src/org/opencv/highgui/Highgui.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/highgui/Highgui.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/highgui/Highgui.java: modules/java/highgui+Highgui-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/highgui/Highgui.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/highgui+Highgui-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/highgui/Highgui.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/highgui+Highgui-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/highgui/Highgui.java
 
 src/org/opencv/highgui/VideoCapture.java: modules/java/generator/gen_java.py
 src/org/opencv/highgui/VideoCapture.java: modules/java/../python/src2/hdr_parser.py
@@ -3963,9 +3963,9 @@ src/org/opencv/highgui/VideoCapture.java: modules/java/generator/src/java/gpu+Gp
 src/org/opencv/highgui/VideoCapture.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/highgui/VideoCapture.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/highgui/VideoCapture.java: modules/java/highgui+VideoCapture-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/highgui/VideoCapture.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/highgui+VideoCapture-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/highgui/VideoCapture.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/highgui+VideoCapture-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/highgui/VideoCapture.java
 
 src/org/opencv/ml/CvANN_MLP.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvANN_MLP.java: modules/java/../python/src2/hdr_parser.py
@@ -4141,9 +4141,9 @@ src/org/opencv/ml/CvANN_MLP.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/ml/CvANN_MLP.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvANN_MLP.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvANN_MLP.java: modules/java/ml+CvANN_MLP-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvANN_MLP.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvANN_MLP-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvANN_MLP.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvANN_MLP-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvANN_MLP.java
 
 src/org/opencv/ml/CvANN_MLP_TrainParams.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvANN_MLP_TrainParams.java: modules/java/../python/src2/hdr_parser.py
@@ -4319,9 +4319,9 @@ src/org/opencv/ml/CvANN_MLP_TrainParams.java: modules/java/generator/src/java/gp
 src/org/opencv/ml/CvANN_MLP_TrainParams.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvANN_MLP_TrainParams.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvANN_MLP_TrainParams.java: modules/java/ml+CvANN_MLP_TrainParams-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvANN_MLP_TrainParams.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvANN_MLP_TrainParams-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvANN_MLP_TrainParams.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvANN_MLP_TrainParams-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvANN_MLP_TrainParams.java
 
 src/org/opencv/ml/CvBoost.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvBoost.java: modules/java/../python/src2/hdr_parser.py
@@ -4497,9 +4497,9 @@ src/org/opencv/ml/CvBoost.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/ml/CvBoost.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvBoost.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvBoost.java: modules/java/ml+CvBoost-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvBoost.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvBoost-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvBoost.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvBoost-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvBoost.java
 
 src/org/opencv/ml/CvBoostParams.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvBoostParams.java: modules/java/../python/src2/hdr_parser.py
@@ -4675,9 +4675,9 @@ src/org/opencv/ml/CvBoostParams.java: modules/java/generator/src/java/gpu+Gpu.ja
 src/org/opencv/ml/CvBoostParams.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvBoostParams.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvBoostParams.java: modules/java/ml+CvBoostParams-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvBoostParams.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvBoostParams-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvBoostParams.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvBoostParams-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvBoostParams.java
 
 src/org/opencv/ml/CvDTree.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvDTree.java: modules/java/../python/src2/hdr_parser.py
@@ -4853,9 +4853,9 @@ src/org/opencv/ml/CvDTree.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/ml/CvDTree.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvDTree.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvDTree.java: modules/java/ml+CvDTree-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvDTree.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvDTree-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvDTree.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvDTree-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvDTree.java
 
 src/org/opencv/ml/CvDTreeParams.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvDTreeParams.java: modules/java/../python/src2/hdr_parser.py
@@ -5031,9 +5031,9 @@ src/org/opencv/ml/CvDTreeParams.java: modules/java/generator/src/java/gpu+Gpu.ja
 src/org/opencv/ml/CvDTreeParams.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvDTreeParams.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvDTreeParams.java: modules/java/ml+CvDTreeParams-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvDTreeParams.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvDTreeParams-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvDTreeParams.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvDTreeParams-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvDTreeParams.java
 
 src/org/opencv/ml/CvERTrees.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvERTrees.java: modules/java/../python/src2/hdr_parser.py
@@ -5209,9 +5209,9 @@ src/org/opencv/ml/CvERTrees.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/ml/CvERTrees.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvERTrees.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvERTrees.java: modules/java/ml+CvERTrees-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvERTrees.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvERTrees-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvERTrees.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvERTrees-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvERTrees.java
 
 src/org/opencv/ml/CvGBTrees.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvGBTrees.java: modules/java/../python/src2/hdr_parser.py
@@ -5387,9 +5387,9 @@ src/org/opencv/ml/CvGBTrees.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/ml/CvGBTrees.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvGBTrees.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvGBTrees.java: modules/java/ml+CvGBTrees-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvGBTrees.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvGBTrees-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvGBTrees.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvGBTrees-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvGBTrees.java
 
 src/org/opencv/ml/CvGBTreesParams.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvGBTreesParams.java: modules/java/../python/src2/hdr_parser.py
@@ -5565,9 +5565,9 @@ src/org/opencv/ml/CvGBTreesParams.java: modules/java/generator/src/java/gpu+Gpu.
 src/org/opencv/ml/CvGBTreesParams.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvGBTreesParams.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvGBTreesParams.java: modules/java/ml+CvGBTreesParams-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvGBTreesParams.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvGBTreesParams-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvGBTreesParams.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvGBTreesParams-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvGBTreesParams.java
 
 src/org/opencv/ml/CvKNearest.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvKNearest.java: modules/java/../python/src2/hdr_parser.py
@@ -5743,9 +5743,9 @@ src/org/opencv/ml/CvKNearest.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/ml/CvKNearest.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvKNearest.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvKNearest.java: modules/java/ml+CvKNearest-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvKNearest.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvKNearest-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvKNearest.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvKNearest-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvKNearest.java
 
 src/org/opencv/ml/CvNormalBayesClassifier.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvNormalBayesClassifier.java: modules/java/../python/src2/hdr_parser.py
@@ -5921,9 +5921,9 @@ src/org/opencv/ml/CvNormalBayesClassifier.java: modules/java/generator/src/java/
 src/org/opencv/ml/CvNormalBayesClassifier.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvNormalBayesClassifier.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvNormalBayesClassifier.java: modules/java/ml+CvNormalBayesClassifier-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvNormalBayesClassifier.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvNormalBayesClassifier-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvNormalBayesClassifier.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvNormalBayesClassifier-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvNormalBayesClassifier.java
 
 src/org/opencv/ml/CvParamGrid.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvParamGrid.java: modules/java/../python/src2/hdr_parser.py
@@ -6099,9 +6099,9 @@ src/org/opencv/ml/CvParamGrid.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/ml/CvParamGrid.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvParamGrid.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvParamGrid.java: modules/java/ml+CvParamGrid-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvParamGrid.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvParamGrid-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvParamGrid.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvParamGrid-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvParamGrid.java
 
 src/org/opencv/ml/CvRTParams.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvRTParams.java: modules/java/../python/src2/hdr_parser.py
@@ -6277,9 +6277,9 @@ src/org/opencv/ml/CvRTParams.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/ml/CvRTParams.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvRTParams.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvRTParams.java: modules/java/ml+CvRTParams-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_44)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvRTParams.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvRTParams-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvRTParams.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvRTParams-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvRTParams.java
 
 src/org/opencv/ml/CvRTrees.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvRTrees.java: modules/java/../python/src2/hdr_parser.py
@@ -6455,9 +6455,9 @@ src/org/opencv/ml/CvRTrees.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/ml/CvRTrees.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvRTrees.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvRTrees.java: modules/java/ml+CvRTrees-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_45)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvRTrees.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvRTrees-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvRTrees.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvRTrees-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvRTrees.java
 
 src/org/opencv/ml/CvStatModel.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvStatModel.java: modules/java/../python/src2/hdr_parser.py
@@ -6633,9 +6633,9 @@ src/org/opencv/ml/CvStatModel.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/ml/CvStatModel.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvStatModel.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvStatModel.java: modules/java/ml+CvStatModel-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_46)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvStatModel.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvStatModel-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvStatModel.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvStatModel-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvStatModel.java
 
 src/org/opencv/ml/CvSVM.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvSVM.java: modules/java/../python/src2/hdr_parser.py
@@ -6811,9 +6811,9 @@ src/org/opencv/ml/CvSVM.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/ml/CvSVM.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvSVM.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvSVM.java: modules/java/ml+CvSVM-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_47)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvSVM.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvSVM-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvSVM.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvSVM-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvSVM.java
 
 src/org/opencv/ml/CvSVMParams.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/CvSVMParams.java: modules/java/../python/src2/hdr_parser.py
@@ -6989,9 +6989,9 @@ src/org/opencv/ml/CvSVMParams.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/ml/CvSVMParams.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/CvSVMParams.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/CvSVMParams.java: modules/java/ml+CvSVMParams-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/CvSVMParams.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+CvSVMParams-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/CvSVMParams.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+CvSVMParams-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/CvSVMParams.java
 
 src/org/opencv/ml/EM.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/EM.java: modules/java/../python/src2/hdr_parser.py
@@ -7167,9 +7167,9 @@ src/org/opencv/ml/EM.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/ml/EM.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/EM.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/EM.java: modules/java/ml+EM-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_49)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/EM.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+EM-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/EM.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+EM-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/EM.java
 
 src/org/opencv/ml/Ml.java: modules/java/generator/gen_java.py
 src/org/opencv/ml/Ml.java: modules/java/../python/src2/hdr_parser.py
@@ -7345,9 +7345,9 @@ src/org/opencv/ml/Ml.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/ml/Ml.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/ml/Ml.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/ml/Ml.java: modules/java/ml+Ml-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_50)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/ml/Ml.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml+Ml-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/ml/Ml.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/ml+Ml-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/ml/Ml.java
 
 src/org/opencv/calib3d/Calib3d.java: modules/java/generator/gen_java.py
 src/org/opencv/calib3d/Calib3d.java: modules/java/../python/src2/hdr_parser.py
@@ -7523,9 +7523,9 @@ src/org/opencv/calib3d/Calib3d.java: modules/java/generator/src/java/gpu+Gpu.jav
 src/org/opencv/calib3d/Calib3d.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/calib3d/Calib3d.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/calib3d/Calib3d.java: modules/java/calib3d+Calib3d-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_51)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_51)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/calib3d/Calib3d.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/calib3d+Calib3d-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/calib3d/Calib3d.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/calib3d+Calib3d-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/calib3d/Calib3d.java
 
 src/org/opencv/calib3d/StereoBM.java: modules/java/generator/gen_java.py
 src/org/opencv/calib3d/StereoBM.java: modules/java/../python/src2/hdr_parser.py
@@ -7701,9 +7701,9 @@ src/org/opencv/calib3d/StereoBM.java: modules/java/generator/src/java/gpu+Gpu.ja
 src/org/opencv/calib3d/StereoBM.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/calib3d/StereoBM.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/calib3d/StereoBM.java: modules/java/calib3d+StereoBM-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/calib3d/StereoBM.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/calib3d+StereoBM-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/calib3d/StereoBM.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/calib3d+StereoBM-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/calib3d/StereoBM.java
 
 src/org/opencv/calib3d/StereoSGBM.java: modules/java/generator/gen_java.py
 src/org/opencv/calib3d/StereoSGBM.java: modules/java/../python/src2/hdr_parser.py
@@ -7879,9 +7879,9 @@ src/org/opencv/calib3d/StereoSGBM.java: modules/java/generator/src/java/gpu+Gpu.
 src/org/opencv/calib3d/StereoSGBM.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/calib3d/StereoSGBM.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/calib3d/StereoSGBM.java: modules/java/calib3d+StereoSGBM-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_53)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/calib3d/StereoSGBM.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/calib3d+StereoSGBM-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/calib3d/StereoSGBM.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/calib3d+StereoSGBM-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/calib3d/StereoSGBM.java
 
 src/org/opencv/photo/Photo.java: modules/java/generator/gen_java.py
 src/org/opencv/photo/Photo.java: modules/java/../python/src2/hdr_parser.py
@@ -8057,9 +8057,9 @@ src/org/opencv/photo/Photo.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/photo/Photo.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/photo/Photo.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/photo/Photo.java: modules/java/photo+Photo-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_54)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/photo/Photo.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/photo+Photo-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/photo/Photo.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/photo+Photo-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/photo/Photo.java
 
 src/org/opencv/contrib/Contrib.java: modules/java/generator/gen_java.py
 src/org/opencv/contrib/Contrib.java: modules/java/../python/src2/hdr_parser.py
@@ -8235,9 +8235,9 @@ src/org/opencv/contrib/Contrib.java: modules/java/generator/src/java/gpu+Gpu.jav
 src/org/opencv/contrib/Contrib.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/contrib/Contrib.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/contrib/Contrib.java: modules/java/contrib+Contrib-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_55)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/contrib/Contrib.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/contrib+Contrib-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/contrib/Contrib.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/contrib+Contrib-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/contrib/Contrib.java
 
 src/org/opencv/contrib/FaceRecognizer.java: modules/java/generator/gen_java.py
 src/org/opencv/contrib/FaceRecognizer.java: modules/java/../python/src2/hdr_parser.py
@@ -8413,9 +8413,9 @@ src/org/opencv/contrib/FaceRecognizer.java: modules/java/generator/src/java/gpu+
 src/org/opencv/contrib/FaceRecognizer.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/contrib/FaceRecognizer.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/contrib/FaceRecognizer.java: modules/java/contrib+FaceRecognizer-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/contrib/FaceRecognizer.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/contrib+FaceRecognizer-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/contrib/FaceRecognizer.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/contrib+FaceRecognizer-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/contrib/FaceRecognizer.java
 
 src/org/opencv/contrib/StereoVar.java: modules/java/generator/gen_java.py
 src/org/opencv/contrib/StereoVar.java: modules/java/../python/src2/hdr_parser.py
@@ -8591,9 +8591,9 @@ src/org/opencv/contrib/StereoVar.java: modules/java/generator/src/java/gpu+Gpu.j
 src/org/opencv/contrib/StereoVar.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/contrib/StereoVar.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/contrib/StereoVar.java: modules/java/contrib+StereoVar-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/contrib/StereoVar.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/contrib+StereoVar-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/contrib/StereoVar.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/contrib+StereoVar-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/contrib/StereoVar.java
 
 src/org/opencv/core/CvException.java: modules/java/generator/gen_java.py
 src/org/opencv/core/CvException.java: modules/java/../python/src2/hdr_parser.py
@@ -8769,9 +8769,9 @@ src/org/opencv/core/CvException.java: modules/java/generator/src/java/gpu+Gpu.ja
 src/org/opencv/core/CvException.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/CvException.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/CvException.java: modules/java/core+CvException-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_58)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/CvException.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+CvException-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/CvException.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+CvException-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/CvException.java
 
 src/org/opencv/core/CvType.java: modules/java/generator/gen_java.py
 src/org/opencv/core/CvType.java: modules/java/../python/src2/hdr_parser.py
@@ -8947,9 +8947,9 @@ src/org/opencv/core/CvType.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/core/CvType.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/CvType.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/CvType.java: modules/java/core+CvType-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_59)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_59)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/CvType.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+CvType-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/CvType.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+CvType-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/CvType.java
 
 src/org/opencv/core/Mat.java: modules/java/generator/gen_java.py
 src/org/opencv/core/Mat.java: modules/java/../python/src2/hdr_parser.py
@@ -9125,9 +9125,9 @@ src/org/opencv/core/Mat.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/core/Mat.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/Mat.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/Mat.java: modules/java/core+Mat-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_60)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_60)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/Mat.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+Mat-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/Mat.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+Mat-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/Mat.java
 
 src/org/opencv/core/MatOfByte.java: modules/java/generator/gen_java.py
 src/org/opencv/core/MatOfByte.java: modules/java/../python/src2/hdr_parser.py
@@ -9303,9 +9303,9 @@ src/org/opencv/core/MatOfByte.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/core/MatOfByte.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/MatOfByte.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/MatOfByte.java: modules/java/core+MatOfByte-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_61)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_61)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/MatOfByte.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+MatOfByte-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/MatOfByte.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+MatOfByte-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/MatOfByte.java
 
 src/org/opencv/core/MatOfDMatch.java: modules/java/generator/gen_java.py
 src/org/opencv/core/MatOfDMatch.java: modules/java/../python/src2/hdr_parser.py
@@ -9481,9 +9481,9 @@ src/org/opencv/core/MatOfDMatch.java: modules/java/generator/src/java/gpu+Gpu.ja
 src/org/opencv/core/MatOfDMatch.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/MatOfDMatch.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/MatOfDMatch.java: modules/java/core+MatOfDMatch-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_62)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_62)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/MatOfDMatch.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+MatOfDMatch-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/MatOfDMatch.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+MatOfDMatch-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/MatOfDMatch.java
 
 src/org/opencv/core/MatOfDouble.java: modules/java/generator/gen_java.py
 src/org/opencv/core/MatOfDouble.java: modules/java/../python/src2/hdr_parser.py
@@ -9659,9 +9659,9 @@ src/org/opencv/core/MatOfDouble.java: modules/java/generator/src/java/gpu+Gpu.ja
 src/org/opencv/core/MatOfDouble.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/MatOfDouble.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/MatOfDouble.java: modules/java/core+MatOfDouble-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_63)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_63)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/MatOfDouble.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+MatOfDouble-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/MatOfDouble.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+MatOfDouble-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/MatOfDouble.java
 
 src/org/opencv/core/MatOfFloat.java: modules/java/generator/gen_java.py
 src/org/opencv/core/MatOfFloat.java: modules/java/../python/src2/hdr_parser.py
@@ -9837,9 +9837,9 @@ src/org/opencv/core/MatOfFloat.java: modules/java/generator/src/java/gpu+Gpu.jav
 src/org/opencv/core/MatOfFloat.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/MatOfFloat.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/MatOfFloat.java: modules/java/core+MatOfFloat-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_64)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_64)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/MatOfFloat.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+MatOfFloat-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/MatOfFloat.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+MatOfFloat-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/MatOfFloat.java
 
 src/org/opencv/core/MatOfFloat4.java: modules/java/generator/gen_java.py
 src/org/opencv/core/MatOfFloat4.java: modules/java/../python/src2/hdr_parser.py
@@ -10015,9 +10015,9 @@ src/org/opencv/core/MatOfFloat4.java: modules/java/generator/src/java/gpu+Gpu.ja
 src/org/opencv/core/MatOfFloat4.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/MatOfFloat4.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/MatOfFloat4.java: modules/java/core+MatOfFloat4-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_65)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_65)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/MatOfFloat4.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+MatOfFloat4-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/MatOfFloat4.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+MatOfFloat4-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/MatOfFloat4.java
 
 src/org/opencv/core/MatOfFloat6.java: modules/java/generator/gen_java.py
 src/org/opencv/core/MatOfFloat6.java: modules/java/../python/src2/hdr_parser.py
@@ -10193,9 +10193,9 @@ src/org/opencv/core/MatOfFloat6.java: modules/java/generator/src/java/gpu+Gpu.ja
 src/org/opencv/core/MatOfFloat6.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/MatOfFloat6.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/MatOfFloat6.java: modules/java/core+MatOfFloat6-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_66)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_66)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/MatOfFloat6.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+MatOfFloat6-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/MatOfFloat6.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+MatOfFloat6-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/MatOfFloat6.java
 
 src/org/opencv/core/MatOfInt.java: modules/java/generator/gen_java.py
 src/org/opencv/core/MatOfInt.java: modules/java/../python/src2/hdr_parser.py
@@ -10371,9 +10371,9 @@ src/org/opencv/core/MatOfInt.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/core/MatOfInt.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/MatOfInt.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/MatOfInt.java: modules/java/core+MatOfInt-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_67)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_67)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/MatOfInt.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+MatOfInt-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/MatOfInt.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+MatOfInt-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/MatOfInt.java
 
 src/org/opencv/core/MatOfInt4.java: modules/java/generator/gen_java.py
 src/org/opencv/core/MatOfInt4.java: modules/java/../python/src2/hdr_parser.py
@@ -10549,9 +10549,9 @@ src/org/opencv/core/MatOfInt4.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/core/MatOfInt4.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/MatOfInt4.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/MatOfInt4.java: modules/java/core+MatOfInt4-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_68)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_68)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/MatOfInt4.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+MatOfInt4-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/MatOfInt4.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+MatOfInt4-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/MatOfInt4.java
 
 src/org/opencv/core/MatOfKeyPoint.java: modules/java/generator/gen_java.py
 src/org/opencv/core/MatOfKeyPoint.java: modules/java/../python/src2/hdr_parser.py
@@ -10727,9 +10727,9 @@ src/org/opencv/core/MatOfKeyPoint.java: modules/java/generator/src/java/gpu+Gpu.
 src/org/opencv/core/MatOfKeyPoint.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/MatOfKeyPoint.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/MatOfKeyPoint.java: modules/java/core+MatOfKeyPoint-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_69)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_69)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/MatOfKeyPoint.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+MatOfKeyPoint-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/MatOfKeyPoint.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+MatOfKeyPoint-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/MatOfKeyPoint.java
 
 src/org/opencv/core/MatOfPoint.java: modules/java/generator/gen_java.py
 src/org/opencv/core/MatOfPoint.java: modules/java/../python/src2/hdr_parser.py
@@ -10905,9 +10905,9 @@ src/org/opencv/core/MatOfPoint.java: modules/java/generator/src/java/gpu+Gpu.jav
 src/org/opencv/core/MatOfPoint.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/MatOfPoint.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/MatOfPoint.java: modules/java/core+MatOfPoint-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_70)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_70)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/MatOfPoint.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+MatOfPoint-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/MatOfPoint.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+MatOfPoint-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/MatOfPoint.java
 
 src/org/opencv/core/MatOfPoint2f.java: modules/java/generator/gen_java.py
 src/org/opencv/core/MatOfPoint2f.java: modules/java/../python/src2/hdr_parser.py
@@ -11083,9 +11083,9 @@ src/org/opencv/core/MatOfPoint2f.java: modules/java/generator/src/java/gpu+Gpu.j
 src/org/opencv/core/MatOfPoint2f.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/MatOfPoint2f.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/MatOfPoint2f.java: modules/java/core+MatOfPoint2f-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_71)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_71)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/MatOfPoint2f.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+MatOfPoint2f-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/MatOfPoint2f.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+MatOfPoint2f-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/MatOfPoint2f.java
 
 src/org/opencv/core/MatOfPoint3.java: modules/java/generator/gen_java.py
 src/org/opencv/core/MatOfPoint3.java: modules/java/../python/src2/hdr_parser.py
@@ -11261,9 +11261,9 @@ src/org/opencv/core/MatOfPoint3.java: modules/java/generator/src/java/gpu+Gpu.ja
 src/org/opencv/core/MatOfPoint3.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/MatOfPoint3.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/MatOfPoint3.java: modules/java/core+MatOfPoint3-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_72)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_72)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/MatOfPoint3.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+MatOfPoint3-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/MatOfPoint3.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+MatOfPoint3-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/MatOfPoint3.java
 
 src/org/opencv/core/MatOfPoint3f.java: modules/java/generator/gen_java.py
 src/org/opencv/core/MatOfPoint3f.java: modules/java/../python/src2/hdr_parser.py
@@ -11439,9 +11439,9 @@ src/org/opencv/core/MatOfPoint3f.java: modules/java/generator/src/java/gpu+Gpu.j
 src/org/opencv/core/MatOfPoint3f.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/MatOfPoint3f.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/MatOfPoint3f.java: modules/java/core+MatOfPoint3f-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_73)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_73)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/MatOfPoint3f.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+MatOfPoint3f-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/MatOfPoint3f.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+MatOfPoint3f-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/MatOfPoint3f.java
 
 src/org/opencv/core/MatOfRect.java: modules/java/generator/gen_java.py
 src/org/opencv/core/MatOfRect.java: modules/java/../python/src2/hdr_parser.py
@@ -11617,9 +11617,9 @@ src/org/opencv/core/MatOfRect.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/core/MatOfRect.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/MatOfRect.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/MatOfRect.java: modules/java/core+MatOfRect-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_74)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_74)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/MatOfRect.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+MatOfRect-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/MatOfRect.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+MatOfRect-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/MatOfRect.java
 
 src/org/opencv/core/Point.java: modules/java/generator/gen_java.py
 src/org/opencv/core/Point.java: modules/java/../python/src2/hdr_parser.py
@@ -11795,9 +11795,9 @@ src/org/opencv/core/Point.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/core/Point.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/Point.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/Point.java: modules/java/core+Point-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_75)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_75)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/Point.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+Point-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/Point.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+Point-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/Point.java
 
 src/org/opencv/core/Point3.java: modules/java/generator/gen_java.py
 src/org/opencv/core/Point3.java: modules/java/../python/src2/hdr_parser.py
@@ -11973,9 +11973,9 @@ src/org/opencv/core/Point3.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/core/Point3.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/Point3.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/Point3.java: modules/java/core+Point3-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_76)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_76)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/Point3.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+Point3-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/Point3.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+Point3-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/Point3.java
 
 src/org/opencv/core/Range.java: modules/java/generator/gen_java.py
 src/org/opencv/core/Range.java: modules/java/../python/src2/hdr_parser.py
@@ -12151,9 +12151,9 @@ src/org/opencv/core/Range.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/core/Range.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/Range.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/Range.java: modules/java/core+Range-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_77)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_77)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/Range.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+Range-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/Range.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+Range-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/Range.java
 
 src/org/opencv/core/Rect.java: modules/java/generator/gen_java.py
 src/org/opencv/core/Rect.java: modules/java/../python/src2/hdr_parser.py
@@ -12329,9 +12329,9 @@ src/org/opencv/core/Rect.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/core/Rect.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/Rect.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/Rect.java: modules/java/core+Rect-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_78)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_78)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/Rect.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+Rect-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/Rect.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+Rect-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/Rect.java
 
 src/org/opencv/core/RotatedRect.java: modules/java/generator/gen_java.py
 src/org/opencv/core/RotatedRect.java: modules/java/../python/src2/hdr_parser.py
@@ -12507,9 +12507,9 @@ src/org/opencv/core/RotatedRect.java: modules/java/generator/src/java/gpu+Gpu.ja
 src/org/opencv/core/RotatedRect.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/RotatedRect.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/RotatedRect.java: modules/java/core+RotatedRect-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_79)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_79)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/RotatedRect.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+RotatedRect-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/RotatedRect.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+RotatedRect-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/RotatedRect.java
 
 src/org/opencv/core/Scalar.java: modules/java/generator/gen_java.py
 src/org/opencv/core/Scalar.java: modules/java/../python/src2/hdr_parser.py
@@ -12685,9 +12685,9 @@ src/org/opencv/core/Scalar.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/core/Scalar.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/Scalar.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/Scalar.java: modules/java/core+Scalar-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_80)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_80)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/Scalar.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+Scalar-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/Scalar.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+Scalar-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/Scalar.java
 
 src/org/opencv/core/Size.java: modules/java/generator/gen_java.py
 src/org/opencv/core/Size.java: modules/java/../python/src2/hdr_parser.py
@@ -12863,9 +12863,9 @@ src/org/opencv/core/Size.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/core/Size.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/Size.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/Size.java: modules/java/core+Size-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_81)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_81)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/Size.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+Size-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/Size.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+Size-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/Size.java
 
 src/org/opencv/core/TermCriteria.java: modules/java/generator/gen_java.py
 src/org/opencv/core/TermCriteria.java: modules/java/../python/src2/hdr_parser.py
@@ -13041,9 +13041,9 @@ src/org/opencv/core/TermCriteria.java: modules/java/generator/src/java/gpu+Gpu.j
 src/org/opencv/core/TermCriteria.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/core/TermCriteria.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/core/TermCriteria.java: modules/java/core+TermCriteria-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_82)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_82)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/core/TermCriteria.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core+TermCriteria-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/core/TermCriteria.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/core+TermCriteria-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/core/TermCriteria.java
 
 src/org/opencv/features2d/DMatch.java: modules/java/generator/gen_java.py
 src/org/opencv/features2d/DMatch.java: modules/java/../python/src2/hdr_parser.py
@@ -13219,9 +13219,9 @@ src/org/opencv/features2d/DMatch.java: modules/java/generator/src/java/gpu+Gpu.j
 src/org/opencv/features2d/DMatch.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/features2d/DMatch.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/features2d/DMatch.java: modules/java/features2d+DMatch-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_83)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_83)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/features2d/DMatch.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/features2d+DMatch-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/features2d/DMatch.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/features2d+DMatch-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/features2d/DMatch.java
 
 src/org/opencv/features2d/KeyPoint.java: modules/java/generator/gen_java.py
 src/org/opencv/features2d/KeyPoint.java: modules/java/../python/src2/hdr_parser.py
@@ -13397,9 +13397,9 @@ src/org/opencv/features2d/KeyPoint.java: modules/java/generator/src/java/gpu+Gpu
 src/org/opencv/features2d/KeyPoint.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/features2d/KeyPoint.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/features2d/KeyPoint.java: modules/java/features2d+KeyPoint-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_84)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_84)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/features2d/KeyPoint.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/features2d+KeyPoint-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/features2d/KeyPoint.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/features2d+KeyPoint-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/features2d/KeyPoint.java
 
 src/org/opencv/gpu/DeviceInfo.java: modules/java/generator/gen_java.py
 src/org/opencv/gpu/DeviceInfo.java: modules/java/../python/src2/hdr_parser.py
@@ -13575,9 +13575,9 @@ src/org/opencv/gpu/DeviceInfo.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/gpu/DeviceInfo.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/gpu/DeviceInfo.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/gpu/DeviceInfo.java: modules/java/gpu+DeviceInfo-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_85)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_85)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/gpu/DeviceInfo.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/gpu+DeviceInfo-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/gpu/DeviceInfo.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/gpu+DeviceInfo-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/gpu/DeviceInfo.java
 
 src/org/opencv/gpu/Gpu.java: modules/java/generator/gen_java.py
 src/org/opencv/gpu/Gpu.java: modules/java/../python/src2/hdr_parser.py
@@ -13753,9 +13753,9 @@ src/org/opencv/gpu/Gpu.java: modules/java/generator/src/java/gpu+Gpu.java
 src/org/opencv/gpu/Gpu.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/gpu/Gpu.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/gpu/Gpu.java: modules/java/gpu+Gpu-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_86)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_86)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/gpu/Gpu.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/gpu+Gpu-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/gpu/Gpu.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/gpu+Gpu-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/gpu/Gpu.java
 
 src/org/opencv/gpu/TargetArchs.java: modules/java/generator/gen_java.py
 src/org/opencv/gpu/TargetArchs.java: modules/java/../python/src2/hdr_parser.py
@@ -13931,9 +13931,9 @@ src/org/opencv/gpu/TargetArchs.java: modules/java/generator/src/java/gpu+Gpu.jav
 src/org/opencv/gpu/TargetArchs.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/gpu/TargetArchs.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/gpu/TargetArchs.java: modules/java/gpu+TargetArchs-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_87)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_87)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/gpu/TargetArchs.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/gpu+TargetArchs-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/gpu/TargetArchs.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/gpu+TargetArchs-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/gpu/TargetArchs.java
 
 src/org/opencv/utils/Converters.java: modules/java/generator/gen_java.py
 src/org/opencv/utils/Converters.java: modules/java/../python/src2/hdr_parser.py
@@ -14109,9 +14109,9 @@ src/org/opencv/utils/Converters.java: modules/java/generator/src/java/gpu+Gpu.ja
 src/org/opencv/utils/Converters.java: modules/java/generator/src/java/gpu+TargetArchs.java
 src/org/opencv/utils/Converters.java: modules/java/generator/src/java/utils+Converters.java
 src/org/opencv/utils/Converters.java: modules/java/utils+Converters-jdoc.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_88)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_88)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating src/org/opencv/utils/Converters.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/opencv-2.4.9/modules/java/utils+Converters-jdoc.java /Users/zj/Desktop/code/opencv-2.4.9/src/org/opencv/utils/Converters.java
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E copy /Users/zj/Desktop/code/pi/opencv/modules/java/utils+Converters-jdoc.java /Users/zj/Desktop/code/pi/opencv/src/org/opencv/utils/Converters.java
 
 bin/opencv-249.jar: modules/java/generator/gen_java.py
 bin/opencv-249.jar: modules/java/../python/src2/hdr_parser.py
@@ -14443,10 +14443,10 @@ bin/opencv-249.jar: src/org/opencv/gpu/Gpu.java
 bin/opencv-249.jar: src/org/opencv/gpu/TargetArchs.java
 bin/opencv-249.jar: src/org/opencv/utils/Converters.java
 bin/opencv-249.jar: build.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_89)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_89)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencv-249.jar"
 	/usr/bin/ant -q -noinput -k jar
-	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E touch /Users/zj/Desktop/code/opencv-2.4.9/bin/opencv-249.jar.dephelper
+	/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -E touch /Users/zj/Desktop/code/pi/opencv/bin/opencv-249.jar.dephelper
 
 bin/opencv-249.jar.dephelper: bin/opencv-249.jar
 
@@ -14623,9 +14623,9 @@ modules/java/core+Algorithm-jdoc.java: modules/java/generator/src/java/gpu+Devic
 modules/java/core+Algorithm-jdoc.java: modules/java/generator/src/java/gpu+Gpu.java
 modules/java/core+Algorithm-jdoc.java: modules/java/generator/src/java/gpu+TargetArchs.java
 modules/java/core+Algorithm-jdoc.java: modules/java/generator/src/java/utils+Converters.java
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_90)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_90)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating core+Algorithm-jdoc.java, core+Core-jdoc.java, imgproc+CLAHE-jdoc.java, imgproc+Imgproc-jdoc.java, imgproc+Moments-jdoc.java, imgproc+Subdiv2D-jdoc.java, objdetect+CascadeClassifier-jdoc.java, objdetect+HOGDescriptor-jdoc.java, objdetect+Objdetect-jdoc.java, features2d+DescriptorExtractor-jdoc.java, features2d+DescriptorMatcher-jdoc.java, features2d+FeatureDetector-jdoc.java, features2d+Features2d-jdoc.java, features2d+GenericDescriptorMatcher-jdoc.java, video+BackgroundSubtractor-jdoc.java, video+BackgroundSubtractorMOG-jdoc.java, video+BackgroundSubtractorMOG2-jdoc.java, video+KalmanFilter-jdoc.java, video+Video-jdoc.java, highgui+Highgui-jdoc.java, highgui+VideoCapture-jdoc.java, ml+CvANN_MLP-jdoc.java, ml+CvANN_MLP_TrainParams-jdoc.java, ml+CvBoost-jdoc.java, ml+CvBoostParams-jdoc.java, ml+CvDTree-jdoc.java, ml+CvDTreeParams-jdoc.java, ml+CvERTrees-jdoc.java, ml+CvGBTrees-jdoc.java, ml+CvGBTreesParams-jdoc.java, ml+CvKNearest-jdoc.java, ml+CvNormalBayesClassifier-jdoc.java, ml+CvParamGrid-jdoc.java, ml+CvRTParams-jdoc.java, ml+CvRTrees-jdoc.java, ml+CvStatModel-jdoc.java, ml+CvSVM-jdoc.java, ml+CvSVMParams-jdoc.java, ml+EM-jdoc.java, ml+Ml-jdoc.java, calib3d+Calib3d-jdoc.java, calib3d+StereoBM-jdoc.java, calib3d+StereoSGBM-jdoc.java, photo+Photo-jdoc.java, contrib+Contrib-jdoc.java, contrib+FaceRecognizer-jdoc.java, contrib+StereoVar-jdoc.java, core+CvException-jdoc.java, core+CvType-jdoc.java, core+Mat-jdoc.java, core+MatOfByte-jdoc.java, core+MatOfDMatch-jdoc.java, core+MatOfDouble-jdoc.java, core+MatOfFloat-jdoc.java, core+MatOfFloat4-jdoc.java, core+MatOfFloat6-jdoc.java, core+MatOfInt-jdoc.java, core+MatOfInt4-jdoc.java, core+MatOfKeyPoint-jdoc.java, core+MatOfPoint-jdoc.java, core+MatOfPoint2f-jdoc.java, core+MatOfPoint3-jdoc.java, core+MatOfPoint3f-jdoc.java, core+MatOfRect-jdoc.java, core+Point-jdoc.java, core+Point3-jdoc.java, core+Range-jdoc.java, core+Rect-jdoc.java, core+RotatedRect-jdoc.java, core+Scalar-jdoc.java, core+Size-jdoc.java, core+TermCriteria-jdoc.java, features2d+DMatch-jdoc.java, features2d+KeyPoint-jdoc.java, gpu+DeviceInfo-jdoc.java, gpu+Gpu-jdoc.java, gpu+TargetArchs-jdoc.java, utils+Converters-jdoc.java"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/python /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/gen_javadoc.py --modules core,imgproc,objdetect,features2d,video,highgui,ml,calib3d,photo,contrib /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/java /Users/zj/Desktop/code/opencv-2.4.9/modules/java 2> /Users/zj/Desktop/code/opencv-2.4.9/modules/java/get_javadoc_errors.log
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/python /Users/zj/Desktop/code/pi/opencv/modules/java/generator/gen_javadoc.py --modules core,imgproc,objdetect,features2d,video,highgui,ml,calib3d,photo,contrib /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/java /Users/zj/Desktop/code/pi/opencv/modules/java 2> /Users/zj/Desktop/code/pi/opencv/modules/java/get_javadoc_errors.log
 
 modules/java/core+Core-jdoc.java: modules/java/core+Algorithm-jdoc.java
 
@@ -14783,17 +14783,17 @@ modules/java/utils+Converters-jdoc.java: modules/java/core+Algorithm-jdoc.java
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.o: modules/java/generator/src/cpp/converters.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_91)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_91)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/converters.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/converters.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/converters.cpp > CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/converters.cpp > CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/converters.cpp -o CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/converters.cpp -o CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.o.requires
@@ -14806,17 +14806,17 @@ modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/converters.cpp.o.provi
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.o: modules/java/generator/src/cpp/core_manual.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_92)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_92)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/core_manual.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/core_manual.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/core_manual.cpp > CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/core_manual.cpp > CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/core_manual.cpp -o CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/core_manual.cpp -o CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.o.requires
@@ -14829,17 +14829,17 @@ modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/core_manual.cpp.o.prov
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.o: modules/java/generator/src/cpp/gpu.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_93)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_93)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/gpu.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/gpu.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/gpu.cpp > CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/gpu.cpp > CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/gpu.cpp -o CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/gpu.cpp -o CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.o.requires
@@ -14852,17 +14852,17 @@ modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/gpu.cpp.o.provides.bui
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.o: modules/java/generator/src/cpp/jni_part.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_94)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_94)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/jni_part.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/jni_part.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/jni_part.cpp > CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/jni_part.cpp > CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/jni_part.cpp -o CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/jni_part.cpp -o CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.o.requires
@@ -14875,17 +14875,17 @@ modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/jni_part.cpp.o.provide
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.o: modules/java/generator/src/cpp/Mat.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_95)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_95)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/Mat.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/Mat.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/Mat.cpp > CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/Mat.cpp > CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/Mat.cpp -o CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/Mat.cpp -o CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.o.requires
@@ -14898,17 +14898,17 @@ modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/Mat.cpp.o.provides.bui
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.o: modules/java/generator/src/cpp/utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_96)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_96)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/utils.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/utils.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/utils.cpp > CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/utils.cpp > CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/generator/src/cpp/utils.cpp -o CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/generator/src/cpp/utils.cpp -o CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.o.requires
@@ -14921,17 +14921,17 @@ modules/java/CMakeFiles/opencv_java.dir/generator/src/cpp/utils.cpp.o.provides.b
 
 modules/java/CMakeFiles/opencv_java.dir/core.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/core.cpp.o: modules/java/core.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_97)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_97)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/core.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/core.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/core.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/core.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/core.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/core.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core.cpp > CMakeFiles/opencv_java.dir/core.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/core.cpp > CMakeFiles/opencv_java.dir/core.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/core.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/core.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/core.cpp -o CMakeFiles/opencv_java.dir/core.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/core.cpp -o CMakeFiles/opencv_java.dir/core.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/core.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/core.cpp.o.requires
@@ -14944,17 +14944,17 @@ modules/java/CMakeFiles/opencv_java.dir/core.cpp.o.provides.build: modules/java/
 
 modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.o: modules/java/imgproc.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_98)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_98)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/imgproc.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/imgproc.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/imgproc.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/imgproc.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/imgproc.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/imgproc.cpp > CMakeFiles/opencv_java.dir/imgproc.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/imgproc.cpp > CMakeFiles/opencv_java.dir/imgproc.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/imgproc.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/imgproc.cpp -o CMakeFiles/opencv_java.dir/imgproc.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/imgproc.cpp -o CMakeFiles/opencv_java.dir/imgproc.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.o.requires
@@ -14967,17 +14967,17 @@ modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.o.provides.build: modules/ja
 
 modules/java/CMakeFiles/opencv_java.dir/objdetect.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/objdetect.cpp.o: modules/java/objdetect.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_99)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_99)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/objdetect.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/objdetect.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/objdetect.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/objdetect.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/objdetect.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/objdetect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/objdetect.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/objdetect.cpp > CMakeFiles/opencv_java.dir/objdetect.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/objdetect.cpp > CMakeFiles/opencv_java.dir/objdetect.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/objdetect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/objdetect.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/objdetect.cpp -o CMakeFiles/opencv_java.dir/objdetect.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/objdetect.cpp -o CMakeFiles/opencv_java.dir/objdetect.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/objdetect.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/objdetect.cpp.o.requires
@@ -14990,17 +14990,17 @@ modules/java/CMakeFiles/opencv_java.dir/objdetect.cpp.o.provides.build: modules/
 
 modules/java/CMakeFiles/opencv_java.dir/features2d.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/features2d.cpp.o: modules/java/features2d.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_100)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_100)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/features2d.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/features2d.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/features2d.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/features2d.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/features2d.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/features2d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/features2d.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/features2d.cpp > CMakeFiles/opencv_java.dir/features2d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/features2d.cpp > CMakeFiles/opencv_java.dir/features2d.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/features2d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/features2d.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/features2d.cpp -o CMakeFiles/opencv_java.dir/features2d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/features2d.cpp -o CMakeFiles/opencv_java.dir/features2d.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/features2d.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/features2d.cpp.o.requires
@@ -15013,17 +15013,17 @@ modules/java/CMakeFiles/opencv_java.dir/features2d.cpp.o.provides.build: modules
 
 modules/java/CMakeFiles/opencv_java.dir/video.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/video.cpp.o: modules/java/video.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_101)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_101)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/video.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/video.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/video.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/video.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/video.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/video.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/video.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/video.cpp > CMakeFiles/opencv_java.dir/video.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/video.cpp > CMakeFiles/opencv_java.dir/video.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/video.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/video.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/video.cpp -o CMakeFiles/opencv_java.dir/video.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/video.cpp -o CMakeFiles/opencv_java.dir/video.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/video.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/video.cpp.o.requires
@@ -15036,17 +15036,17 @@ modules/java/CMakeFiles/opencv_java.dir/video.cpp.o.provides.build: modules/java
 
 modules/java/CMakeFiles/opencv_java.dir/highgui.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/highgui.cpp.o: modules/java/highgui.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_102)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_102)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/highgui.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/highgui.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/highgui.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/highgui.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/highgui.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/highgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/highgui.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/highgui.cpp > CMakeFiles/opencv_java.dir/highgui.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/highgui.cpp > CMakeFiles/opencv_java.dir/highgui.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/highgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/highgui.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/highgui.cpp -o CMakeFiles/opencv_java.dir/highgui.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/highgui.cpp -o CMakeFiles/opencv_java.dir/highgui.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/highgui.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/highgui.cpp.o.requires
@@ -15059,17 +15059,17 @@ modules/java/CMakeFiles/opencv_java.dir/highgui.cpp.o.provides.build: modules/ja
 
 modules/java/CMakeFiles/opencv_java.dir/ml.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/ml.cpp.o: modules/java/ml.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_103)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_103)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/ml.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/ml.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/ml.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/ml.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/ml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/ml.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml.cpp > CMakeFiles/opencv_java.dir/ml.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/ml.cpp > CMakeFiles/opencv_java.dir/ml.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/ml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/ml.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/ml.cpp -o CMakeFiles/opencv_java.dir/ml.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/ml.cpp -o CMakeFiles/opencv_java.dir/ml.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/ml.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/ml.cpp.o.requires
@@ -15082,17 +15082,17 @@ modules/java/CMakeFiles/opencv_java.dir/ml.cpp.o.provides.build: modules/java/CM
 
 modules/java/CMakeFiles/opencv_java.dir/calib3d.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/calib3d.cpp.o: modules/java/calib3d.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_104)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_104)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/calib3d.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/calib3d.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/calib3d.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/calib3d.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/calib3d.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/calib3d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/calib3d.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/calib3d.cpp > CMakeFiles/opencv_java.dir/calib3d.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/calib3d.cpp > CMakeFiles/opencv_java.dir/calib3d.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/calib3d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/calib3d.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/calib3d.cpp -o CMakeFiles/opencv_java.dir/calib3d.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/calib3d.cpp -o CMakeFiles/opencv_java.dir/calib3d.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/calib3d.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/calib3d.cpp.o.requires
@@ -15105,17 +15105,17 @@ modules/java/CMakeFiles/opencv_java.dir/calib3d.cpp.o.provides.build: modules/ja
 
 modules/java/CMakeFiles/opencv_java.dir/photo.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/photo.cpp.o: modules/java/photo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_105)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_105)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/photo.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/photo.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/photo.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/photo.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/photo.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/photo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/photo.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/photo.cpp > CMakeFiles/opencv_java.dir/photo.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/photo.cpp > CMakeFiles/opencv_java.dir/photo.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/photo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/photo.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/photo.cpp -o CMakeFiles/opencv_java.dir/photo.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/photo.cpp -o CMakeFiles/opencv_java.dir/photo.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/photo.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/photo.cpp.o.requires
@@ -15128,17 +15128,17 @@ modules/java/CMakeFiles/opencv_java.dir/photo.cpp.o.provides.build: modules/java
 
 modules/java/CMakeFiles/opencv_java.dir/contrib.cpp.o: modules/java/CMakeFiles/opencv_java.dir/flags.make
 modules/java/CMakeFiles/opencv_java.dir/contrib.cpp.o: modules/java/contrib.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_106)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_106)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/java/CMakeFiles/opencv_java.dir/contrib.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/contrib.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/java/contrib.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_java.dir/contrib.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/java/contrib.cpp
 
 modules/java/CMakeFiles/opencv_java.dir/contrib.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_java.dir/contrib.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/java/contrib.cpp > CMakeFiles/opencv_java.dir/contrib.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/java/contrib.cpp > CMakeFiles/opencv_java.dir/contrib.cpp.i
 
 modules/java/CMakeFiles/opencv_java.dir/contrib.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_java.dir/contrib.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/java/contrib.cpp -o CMakeFiles/opencv_java.dir/contrib.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/java/contrib.cpp -o CMakeFiles/opencv_java.dir/contrib.cpp.s
 
 modules/java/CMakeFiles/opencv_java.dir/contrib.cpp.o.requires:
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/contrib.cpp.o.requires
@@ -15219,7 +15219,7 @@ lib/libopencv_java249.dylib: lib/libopencv_imgproc.2.4.9.dylib
 lib/libopencv_java249.dylib: lib/libopencv_core.2.4.9.dylib
 lib/libopencv_java249.dylib: modules/java/CMakeFiles/opencv_java.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../lib/libopencv_java249.dylib"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_java.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_java.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 modules/java/CMakeFiles/opencv_java.dir/build: lib/libopencv_java249.dylib
@@ -15244,7 +15244,7 @@ modules/java/CMakeFiles/opencv_java.dir/requires: modules/java/CMakeFiles/opencv
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/requires
 
 modules/java/CMakeFiles/opencv_java.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/java && $(CMAKE_COMMAND) -P CMakeFiles/opencv_java.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/java && $(CMAKE_COMMAND) -P CMakeFiles/opencv_java.dir/cmake_clean.cmake
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/clean
 
 modules/java/CMakeFiles/opencv_java.dir/depend: modules/java/core+Algorithm.java
@@ -15462,6 +15462,6 @@ modules/java/CMakeFiles/opencv_java.dir/depend: modules/java/gpu+DeviceInfo-jdoc
 modules/java/CMakeFiles/opencv_java.dir/depend: modules/java/gpu+Gpu-jdoc.java
 modules/java/CMakeFiles/opencv_java.dir/depend: modules/java/gpu+TargetArchs-jdoc.java
 modules/java/CMakeFiles/opencv_java.dir/depend: modules/java/utils+Converters-jdoc.java
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/java /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/java /Users/zj/Desktop/code/opencv-2.4.9/modules/java/CMakeFiles/opencv_java.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/java /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/java /Users/zj/Desktop/code/pi/opencv/modules/java/CMakeFiles/opencv_java.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/java/CMakeFiles/opencv_java.dir/depend
 

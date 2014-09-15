@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/Cellar/cmake/2.8.12.1/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_SOURCE_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zj/Desktop/code/opencv-2.4.9
+CMAKE_BINARY_DIR = /Users/zj/Desktop/code/pi/opencv
 
 # Include any dependencies generated for this target.
 include modules/ts/CMakeFiles/opencv_ts.dir/depend.make
@@ -54,17 +54,17 @@ include modules/ts/CMakeFiles/opencv_ts.dir/flags.make
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.o: modules/ts/CMakeFiles/opencv_ts.dir/flags.make
 modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.o: modules/ts/src/gpu_perf.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/gpu_perf.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ts/src/gpu_perf.cpp
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/gpu_perf.cpp > CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ts/src/gpu_perf.cpp > CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.i
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/gpu_perf.cpp -o CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ts/src/gpu_perf.cpp -o CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.s
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.o.requires:
 .PHONY : modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.o.requires
@@ -77,17 +77,17 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.o.provides.build: modules/t
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.o: modules/ts/CMakeFiles/opencv_ts.dir/flags.make
 modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.o: modules/ts/src/gpu_test.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/gpu_test.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ts/src/gpu_test.cpp
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/gpu_test.cpp > CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ts/src/gpu_test.cpp > CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.i
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/gpu_test.cpp -o CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ts/src/gpu_test.cpp -o CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.s
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.o.requires:
 .PHONY : modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.o.requires
@@ -100,17 +100,17 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.o.provides.build: modules/t
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.o: modules/ts/CMakeFiles/opencv_ts.dir/flags.make
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.o: modules/ts/src/ts.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ts.dir/src/ts.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ts.dir/src/ts.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts.cpp
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ts.dir/src/ts.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts.cpp > CMakeFiles/opencv_ts.dir/src/ts.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts.cpp > CMakeFiles/opencv_ts.dir/src/ts.cpp.i
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ts.dir/src/ts.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts.cpp -o CMakeFiles/opencv_ts.dir/src/ts.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts.cpp -o CMakeFiles/opencv_ts.dir/src/ts.cpp.s
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.o.requires:
 .PHONY : modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.o.requires
@@ -123,17 +123,17 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.o.provides.build: modules/ts/CMak
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o: modules/ts/CMakeFiles/opencv_ts.dir/flags.make
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o: modules/ts/src/ts_arrtest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts_arrtest.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts_arrtest.cpp
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts_arrtest.cpp > CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts_arrtest.cpp > CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.i
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts_arrtest.cpp -o CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts_arrtest.cpp -o CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.s
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o.requires:
 .PHONY : modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o.requires
@@ -146,17 +146,17 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o.provides.build: modules
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o: modules/ts/CMakeFiles/opencv_ts.dir/flags.make
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o: modules/ts/src/ts_func.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts_func.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts_func.cpp
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ts.dir/src/ts_func.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts_func.cpp > CMakeFiles/opencv_ts.dir/src/ts_func.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts_func.cpp > CMakeFiles/opencv_ts.dir/src/ts_func.cpp.i
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ts.dir/src/ts_func.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts_func.cpp -o CMakeFiles/opencv_ts.dir/src/ts_func.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts_func.cpp -o CMakeFiles/opencv_ts.dir/src/ts_func.cpp.s
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o.requires:
 .PHONY : modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o.requires
@@ -169,17 +169,17 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o.provides.build: modules/ts
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o: modules/ts/CMakeFiles/opencv_ts.dir/flags.make
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o: modules/ts/src/ts_gtest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts_gtest.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts_gtest.cpp
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts_gtest.cpp > CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts_gtest.cpp > CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.i
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts_gtest.cpp -o CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts_gtest.cpp -o CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.s
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o.requires:
 .PHONY : modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o.requires
@@ -192,17 +192,17 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o.provides.build: modules/t
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o: modules/ts/CMakeFiles/opencv_ts.dir/flags.make
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o: modules/ts/src/ts_perf.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/opencv-2.4.9/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/zj/Desktop/code/pi/opencv/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o -c /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts_perf.cpp
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o -c /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts_perf.cpp
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.i"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts_perf.cpp > CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.i
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts_perf.cpp > CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.i
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.s"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/src/ts_perf.cpp -o CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.s
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/zj/Desktop/code/pi/opencv/modules/ts/src/ts_perf.cpp -o CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.s
 
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o.requires:
 .PHONY : modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o.requires
@@ -236,8 +236,8 @@ lib/libopencv_ts.a: modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o
 lib/libopencv_ts.a: modules/ts/CMakeFiles/opencv_ts.dir/build.make
 lib/libopencv_ts.a: modules/ts/CMakeFiles/opencv_ts.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library ../../lib/libopencv_ts.a"
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && $(CMAKE_COMMAND) -P CMakeFiles/opencv_ts.dir/cmake_clean_target.cmake
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_ts.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && $(CMAKE_COMMAND) -P CMakeFiles/opencv_ts.dir/cmake_clean_target.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_ts.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 modules/ts/CMakeFiles/opencv_ts.dir/build: lib/libopencv_ts.a
@@ -253,10 +253,10 @@ modules/ts/CMakeFiles/opencv_ts.dir/requires: modules/ts/CMakeFiles/opencv_ts.di
 .PHONY : modules/ts/CMakeFiles/opencv_ts.dir/requires
 
 modules/ts/CMakeFiles/opencv_ts.dir/clean:
-	cd /Users/zj/Desktop/code/opencv-2.4.9/modules/ts && $(CMAKE_COMMAND) -P CMakeFiles/opencv_ts.dir/cmake_clean.cmake
+	cd /Users/zj/Desktop/code/pi/opencv/modules/ts && $(CMAKE_COMMAND) -P CMakeFiles/opencv_ts.dir/cmake_clean.cmake
 .PHONY : modules/ts/CMakeFiles/opencv_ts.dir/clean
 
 modules/ts/CMakeFiles/opencv_ts.dir/depend:
-	cd /Users/zj/Desktop/code/opencv-2.4.9 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/ts /Users/zj/Desktop/code/opencv-2.4.9 /Users/zj/Desktop/code/opencv-2.4.9/modules/ts /Users/zj/Desktop/code/opencv-2.4.9/modules/ts/CMakeFiles/opencv_ts.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zj/Desktop/code/pi/opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/ts /Users/zj/Desktop/code/pi/opencv /Users/zj/Desktop/code/pi/opencv/modules/ts /Users/zj/Desktop/code/pi/opencv/modules/ts/CMakeFiles/opencv_ts.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/ts/CMakeFiles/opencv_ts.dir/depend
 

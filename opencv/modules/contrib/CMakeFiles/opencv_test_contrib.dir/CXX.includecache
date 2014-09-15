@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/contrib/test/test_main.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/contrib/test/test_main.cpp
 test_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/contrib/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/contrib/test/test_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/contrib/test/test_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/contrib/test/test_precomp.hpp
 opencv2/ts/ts.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/contrib/test/opencv2/ts/ts.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/contrib/test/opencv2/ts/ts.hpp
 opencv2/contrib/contrib.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/contrib/test/opencv2/contrib/contrib.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/contrib/test/opencv2/contrib/contrib.hpp
 iostream
 -
 

@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/perf/perf_cascadeclassifier.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/perf/perf_cascadeclassifier.cpp
 perf_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/perf/perf_precomp.hpp
 opencv2/imgproc/imgproc.hpp
 -
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/perf/perf_main.cpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/perf/perf_main.cpp
 perf_precomp.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/perf/perf_precomp.hpp
 
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/perf/perf_precomp.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/perf/perf_precomp.hpp
 opencv2/ts/ts.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/perf/opencv2/ts/ts.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/perf/opencv2/ts/ts.hpp
 opencv2/objdetect/objdetect.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/perf/opencv2/objdetect/objdetect.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/perf/opencv2/objdetect/objdetect.hpp
 opencv2/highgui/highgui.hpp
-/Users/zj/Desktop/code/opencv-2.4.9/modules/objdetect/perf/opencv2/highgui/highgui.hpp
+/Users/zj/Desktop/code/pi/opencv/modules/objdetect/perf/opencv2/highgui/highgui.hpp
 
 modules/core/include/opencv2/core/core.hpp
 opencv2/core/types_c.h
