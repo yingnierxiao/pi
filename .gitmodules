@@ -8,3 +8,6 @@
 [submodule "luacv"]
 	path = luacv
 	url = https://github.com/yingnierxiao/luacv.git
+[submodule "wiringPi"]
+	path = wiringPi
+	url = git://git.drogon.net/wiringPi
