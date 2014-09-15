@@ -17,16 +17,16 @@ $(MY_LUA_CLIB_PATH) :
 
 all : \
 	skynet \
-	lpeg \
+	# lpeg \
 	$(foreach v, $(LUA_CLIB), $(MY_LUA_CLIB_PATH)/$(v).so) 
 
 skynet :
 	cd skynet && $(MAKE) $(PLAT)
 
-lpeg :
+# lpeg :
 	#git submodule update --init
-	cd 3rd/lpeg && $(MAKE) $(PLAT)
-	cp 3rd/lpeg/lpeg.so skynet/luaclib
+	# cd 3rd/lpeg && $(MAKE) $(PLAT)
+	# cp 3rd/lpeg/lpeg.so skynet/luaclib
 
 
 $(MY_LUA_CLIB_PATH)/lpack.so : 3rd/lpack/lpack.c | $(MY_LUA_CLIB_PATH)
