@@ -5,3 +5,6 @@
 [submodule "skynet"]
 	path = skynet
 	url = https://github.com/cloudwu/skynet.git
+[submodule "luacv"]
+	path = luacv
+	url = https://github.com/yingnierxiao/luacv.git
