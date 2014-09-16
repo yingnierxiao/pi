@@ -10,4 +10,11 @@
 		<nature>org.ccdt.cocosproject</nature>
 		<nature>org.eclipse.koneki.ldt.nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>config.json</name>
+			<type>1</type>
+			<location>/Users/zj/Desktop/code/pi/piclient/config.json</location>
+		</link>
+	</linkedResources>
 </projectDescription>
