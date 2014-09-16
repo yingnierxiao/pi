@@ -29,7 +29,10 @@ function GameScene:ctor()
     
     jc:setAutoPosition(true)
     jc:onRun()
-    jc:addEventListener(function (dir) print(dir) end )
+    jc:addEventListener(function (dir) print(dir)
+        self.socket:send()
+    
+     end )
     
 end
 
