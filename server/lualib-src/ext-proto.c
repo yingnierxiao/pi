@@ -1,6 +1,6 @@
 
-#include "lua.h"
-#include "lauxlib.h"
+#include <lua.h>
+#include <lauxlib.h>
 #include <stdlib.h>
 #include <stdint.h>
 #include <assert.h>
