@@ -20,7 +20,7 @@ skynet.register_protocol {
 	id = skynet.PTYPE_CLIENT,
 	unpack =function ( ... ) return protopack.pbcunpack(...) end ,
 	dispatch = function (session, address, pid,text,size)
-		carServer.post(text)
+		carServer.post.dir(pid,text)
 	end
 }
 
