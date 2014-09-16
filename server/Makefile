@@ -24,8 +24,8 @@ skynet :
 	cd skynet && $(MAKE) $(PLAT)
 	
 GPIO :
-	cd 3rd/rpi-gpio/lua && $(MAKE)
-	cp 3rd/rpi-gpio/lua/GPIO.so skynet/luaclib
+	cd 3rd/rpi-gpoi/lua && $(MAKE)
+	cp 3rd/rpi-gpoi/lua/GPIO.so skynet/luaclib
 
 $(MY_LUA_CLIB_PATH)/lpack.so : 3rd/lpack/lpack.c | $(MY_LUA_CLIB_PATH)
 	$(CC) $(CFLAGS) $(SHARED) $^ -o $@
