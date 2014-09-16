@@ -17,10 +17,15 @@ $(MY_LUA_CLIB_PATH) :
 
 all : \
 	skynet \
+	GPIO \
 	$(foreach v, $(LUA_CLIB), $(MY_LUA_CLIB_PATH)/$(v).so) 
 
 skynet :
 	cd skynet && $(MAKE) $(PLAT)
+	
+GPIO :
+	cd 3rd/rpi-gpio/lua && $(MAKE)
+	cp 3rd/rpi-gpio/lua/GPIO.so skynet/luaclib
 
 $(MY_LUA_CLIB_PATH)/lpack.so : 3rd/lpack/lpack.c | $(MY_LUA_CLIB_PATH)
 	$(CC) $(CFLAGS) $(SHARED) $^ -o $@
