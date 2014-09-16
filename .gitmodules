@@ -1,0 +1,12 @@
+[submodule "server/skynet"]
+	path = server/skynet
+	url = https://github.com/cloudwu/skynet.git
+[submodule "server/3rd/rpi-gpoi"]
+	path = server/3rd/rpi-gpoi
+	url = https://github.com/yingnierxiao/rpi-gpio.git
+[submodule "server/3rd/wiringPi"]
+	path = server/3rd/wiringPi
+	url = https://github.com/yingnierxiao/wiringPi.git
+[submodule "server/3rd/luacv"]
+	path = server/3rd/luacv
+	url = https://github.com/yingnierxiao/luacv.git
