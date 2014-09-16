@@ -16,6 +16,10 @@ function __G__TRACKBACK__(msg)
 end
 
 local function main()
+
+    CONFIG_SCREEN_WIDTH =1024
+    CONFIG_SCREEN_HEIGHT =768
+    
     collectgarbage("collect")
     -- avoid memory leak
     collectgarbage("setpause", 100)
@@ -25,10 +29,17 @@ local function main()
     cc.FileUtils:getInstance():addSearchPath("res")
     cc.Director:getInstance():getOpenGLView():setDesignResolutionSize(480, 320, 0)
     
+    require "fw.sys.common.sys"
+    require "fw.sys.common.string"
+    require "fw.sys.common.table"
+    device = require "fw.sys.common.device"
+	display = require "fw.sys.common.display"
+	
+	scheduler = require "fw.sys.common.scheduler"
+
     --create scene 
     local scene = require("GameScene")
     local gameScene = scene.create()
-    gameScene:playBgMusic()
     
     if cc.Director:getInstance():getRunningScene() then
         cc.Director:getInstance():replaceScene(gameScene)

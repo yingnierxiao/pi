@@ -5,6 +5,10 @@
 #include "Runtime.h"
 #include "ConfigParser.h"
 
+#include "3rd/ext-proto.h"
+#include "lua_cocos2dx_game_auto.hpp"
+
+
 using namespace CocosDenshion;
 
 USING_NS_CC;
@@ -57,8 +61,11 @@ bool AppDelegate::applicationDidFinishLaunching()
     stack->setXXTEAKeyAndSign("2dxLua", strlen("2dxLua"), "XXTEA", strlen("XXTEA"));
     
     //register custom function
-    //LuaStack* stack = engine->getLuaStack();
-    //register_custom_function(stack->getLuaState());
+    auto state = stack->getLuaState();
+    lua_getglobal(state, "_G");
+    
+    luaopen_protopack(state);
+    register_all_cocos2dx_game(state);
     
 #if (COCOS2D_DEBUG>0)
     if (startRuntime())

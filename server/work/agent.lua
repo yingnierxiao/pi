@@ -1,5 +1,4 @@
 local skynet = require "skynet"
-local jsonpack = require "jsonpack"
 local netpack = require "netpack"
 local socket = require "socket"
 local protopack = require "protopack"
