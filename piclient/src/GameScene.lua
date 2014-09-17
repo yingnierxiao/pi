@@ -24,6 +24,11 @@ function GameScene:ctor()
    
     local jc = Joystick:create("pan.png","dot.png")
     
+    local lb = cc.Label:create();
+    lb:setSystemFontSize(25)
+    self:addChild(lb)
+    lb:setString("no connect")
+    
     self:addChild(jc)
     jc:setPosition(cc.p(150,150))
     jc:setDieRadius(visibleSize.width/2)
@@ -54,10 +59,7 @@ function GameScene:ctor()
     end )
     
     
-    local lb = cc.Label:create();
-    lb:setSystemFontSize(25)
-    self:addChild(lb)
-    lb:setString("no connect")
+   
     
     local editBoxSize = cc.size(visibleSize.width *0.25, 60)
     local EditName = cc.EditBox:create(editBoxSize, cc.Scale9Sprite:create("green_edit.png"))

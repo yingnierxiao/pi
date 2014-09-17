@@ -22,6 +22,8 @@
 		38098F2919C7E4EF00780CC9 /* Joystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38098F2619C7E4EF00780CC9 /* Joystick.cpp */; };
 		38098F3119C7ED6E00780CC9 /* ext-proto.c in Sources */ = {isa = PBXBuildFile; fileRef = 38098F2D19C7ED6E00780CC9 /* ext-proto.c */; };
 		38098F3219C7ED6E00780CC9 /* ext-proto.c in Sources */ = {isa = PBXBuildFile; fileRef = 38098F2D19C7ED6E00780CC9 /* ext-proto.c */; };
+		38C2504319C9696E009948F1 /* lua_cocos2dx_game_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38C2504219C9696E009948F1 /* lua_cocos2dx_game_auto.cpp */; };
+		38C2504419C9696E009948F1 /* lua_cocos2dx_game_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38C2504219C9696E009948F1 /* lua_cocos2dx_game_auto.cpp */; };
 		3EB5152C19528284006966AA /* Protos.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3EB5152A19528284006966AA /* Protos.pb.cc */; };
 		3EB5152D19528284006966AA /* Protos.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3EB5152A19528284006966AA /* Protos.pb.cc */; };
 		3EB515581952865D006966AA /* extension_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3EB515321952865D006966AA /* extension_set.cc */; };
@@ -356,6 +358,8 @@
 		38098F2719C7E4EF00780CC9 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Joystick.h; path = ../Classes/Joystick.h; sourceTree = "<group>"; };
 		38098F2D19C7ED6E00780CC9 /* ext-proto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "ext-proto.c"; sourceTree = "<group>"; };
 		38098F2E19C7ED6E00780CC9 /* ext-proto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ext-proto.h"; sourceTree = "<group>"; };
+		38C2504119C9696E009948F1 /* lua_cocos2dx_game_auto.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = lua_cocos2dx_game_auto.hpp; path = ../Classes/lua_cocos2dx_game_auto.hpp; sourceTree = "<group>"; };
+		38C2504219C9696E009948F1 /* lua_cocos2dx_game_auto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lua_cocos2dx_game_auto.cpp; path = ../Classes/lua_cocos2dx_game_auto.cpp; sourceTree = "<group>"; };
 		3EB51526195187AF006966AA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		3EB5152A19528284006966AA /* Protos.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Protos.pb.cc; sourceTree = "<group>"; };
 		3EB5152B19528284006966AA /* Protos.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Protos.pb.h; sourceTree = "<group>"; };
@@ -814,6 +818,8 @@
 		F293BB7C15EB830F00256477 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				38C2504119C9696E009948F1 /* lua_cocos2dx_game_auto.hpp */,
+				38C2504219C9696E009948F1 /* lua_cocos2dx_game_auto.cpp */,
 				38098F2C19C7ED6E00780CC9 /* 3rd */,
 				C00FD4891938512100C6382D /* runtime */,
 				C033B51A191B337200D06937 /* VisibleRect.cpp */,
@@ -1164,6 +1170,7 @@
 				3EB5155D1952865D006966AA /* coded_stream.cc in Sources */,
 				C00FD4991938512100C6382D /* Portrait_png.cpp in Sources */,
 				C06C3797191A1D1E00617BED /* ConfigParser.cpp in Sources */,
+				38C2504419C9696E009948F1 /* lua_cocos2dx_game_auto.cpp in Sources */,
 				3EB5156D1952865D006966AA /* stringprintf.cc in Sources */,
 				C07828F818B4D72E00BD2287 /* main.m in Sources */,
 				3EB515611952865D006966AA /* zero_copy_stream_impl_lite.cc in Sources */,
@@ -1210,6 +1217,7 @@
 				3EB5155A1952865D006966AA /* generated_message_util.cc in Sources */,
 				3EB5155E1952865D006966AA /* zero_copy_stream.cc in Sources */,
 				3EB5155C1952865D006966AA /* coded_stream.cc in Sources */,
+				38C2504319C9696E009948F1 /* lua_cocos2dx_game_auto.cpp in Sources */,
 				C0619CD71896894800872C26 /* Runtime_ios-mac.mm in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
 			);
