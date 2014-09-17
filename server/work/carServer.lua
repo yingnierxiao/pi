@@ -1,6 +1,6 @@
 local skynet = require "skynet"
 
--- local GPIO = require "GPIO"
+local GPIO = require "GPIO"
 
 
 local wifiCar
@@ -12,30 +12,30 @@ function Wheel.new( pin )
     local obj = {}
 
     obj.pin = pin
-    -- GPIO.setmode(GPIO.BOARD)  
-    -- GPIO.setup(self.pin[0],GPIO.OUT)  
-    -- GPIO.setup(self.pin[1],GPIO.OUT)  
+    GPIO.setmode(GPIO.BOARD)  
+    GPIO.setup(self.pin[0],GPIO.OUT)  
+    GPIO.setup(self.pin[1],GPIO.OUT)  
     local w = setmetatable(obj,Wheel)
     w:stop()
     return w
 end
 
 function Wheel:forward()
-    -- print(self.pin[3].. " forward")
-    -- GPIO.output(self.pin[0],GPIO.HIGH)  
-    -- GPIO.output(self.pin[1],GPIO.LOW)  
+    print(self.pin[3].. " forward")
+    GPIO.output(self.pin[0],GPIO.HIGH)  
+    GPIO.output(self.pin[1],GPIO.LOW)  
 end
 
 function Wheel:stop(  )
-    -- print(self.pin[3].. " stop")
-    -- GPIO.output(self.pin[0],false)  
-    -- GPIO.output(self.pin[1],false) 
+    print(self.pin[3].. " stop")
+    GPIO.output(self.pin[0],false)  
+    GPIO.output(self.pin[1],false) 
 end
 
 function Wheel:back(  )
-    -- print(self.pin[3].. " back")
-    -- GPIO.output(self.pin[0],false)  
-    -- GPIO.output(self.pin[1],true)  
+    print(self.pin[3].. " back")
+    GPIO.output(self.pin[0],false)  
+    GPIO.output(self.pin[1],true)  
 end
 
 
