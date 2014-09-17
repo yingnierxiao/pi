@@ -1,7 +1,7 @@
 local skynet = require "skynet"
 local snax = require "snax"
 local max_client = 64
-local GPIO = require "GPIO"
+
 
 skynet.start(function()
 	local watchdog = skynet.newservice("watchdog")
