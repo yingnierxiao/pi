@@ -13,9 +13,9 @@ function Wheel.new( pin )
 
     obj.pin = pin
     print(pin)
-    GPIO.setmode(GPIO.BOARD)  
-    GPIO.setup(pin[1],GPIO.OUT)  
-    GPIO.setup(pin[2],GPIO.OUT)  
+    --GPIO.setmode(GPIO.BOARD)  
+    --GPIO.setup(pin[1],GPIO.OUT)  
+    --GPIO.setup(pin[2],GPIO.OUT)  
     local w = setmetatable(obj,Wheel)
     w:stop()
     return w
@@ -23,20 +23,20 @@ end
 
 function Wheel:forward()
     print(self.pin[3].. " forward")
-    GPIO.output(self.pin[1],GPIO.HIGH)  
-    GPIO.output(self.pin[2],GPIO.LOW)  
+    --GPIO.output(self.pin[1],GPIO.HIGH)  
+    --GPIO.output(self.pin[2],GPIO.LOW)  
 end
 
 function Wheel:stop(  )
     print(self.pin[3].. " stop")
-    GPIO.output(self.pin[1],false)  
-    GPIO.output(self.pin[2],false) 
+    --GPIO.output(self.pin[1],false)  
+    --GPIO.output(self.pin[2],false) 
 end
 
 function Wheel:back(  )
     print(self.pin[3].. " back")
-    GPIO.output(self.pin[1],false)  
-    GPIO.output(self.pin[2],true)  
+    --GPIO.output(self.pin[1],false)  
+    --GPIO.output(self.pin[2],true)  
 end
 
 
