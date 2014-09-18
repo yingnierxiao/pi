@@ -13,8 +13,8 @@ function Wheel.new( pin )
 
     obj.pin = pin
     GPIO.setmode(GPIO.BOARD)  
-    GPIO.setup(self.pin[0],GPIO.OUT)  
-    GPIO.setup(self.pin[1],GPIO.OUT)  
+    GPIO.setup(obj.pin[0],GPIO.OUT)  
+    GPIO.setup(obj.pin[1],GPIO.OUT)  
     local w = setmetatable(obj,Wheel)
     w:stop()
     return w
