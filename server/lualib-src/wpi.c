@@ -1,4 +1,4 @@
-luac#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
 #include "lua.h"
@@ -230,14 +230,14 @@ static int lcd_def (lua_State *L) {
 
 static const luaL_reg wpilib[] = {
 {"lcd",   wpi_lcd},
-{"mode",   wpi_mode},
+{"mode",   wpi_mode},//setmode   OUTPUT
 {"pwm",   wpi_pwm},
 {"freq",   wpi_freq},
 {"poff",   wpi_poff},
 {"pdown",   wpi_pdown},
 {"pup",   wpi_pup},
 {"read",   wpi_read},
-{"write",   wpi_write},
+{"write",   wpi_write},  //output   HIGH  LOW
 {"millis",   wpi_millis},
 {"micros",   wpi_micros},
 {"delay",   wpi_delay},
