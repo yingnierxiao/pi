@@ -110,35 +110,54 @@ function Car:stop( ... )
 end
 
 function accept.dir(pid,dir )
+    pid = tonumber(pid)
     dir = tonumber(dir)
-	if dir == 0 then                    --DEFAULT = 0, 
-        wifiCar.xspeed = 0
-        wifiCar.yspeed = 0
-    elseif dir == 1 then                --D_UP = 1,
-        wifiCar.xspeed = 0
-        wifiCar.yspeed =   wifiCar.speed
-    elseif dir == 2 then                --D_DOWN = 2,
-        wifiCar.xspeed = 0
-        wifiCar.yspeed = - wifiCar.speed
-    elseif dir == 3 then                --D_LEFT = 3,
-        wifiCar.xspeed = - wifiCar.speed
-        wifiCar.yspeed = 0
-    elseif dir == 4 then                --D_RIGHT = 4,
-        wifiCar.xspeed =   wifiCar.speed
-        wifiCar.yspeed = 0
-    elseif dir == 5 then                --D_LEFT_UP = 5,
-        wifiCar.xspeed = - wifiCar.speed
-        wifiCar.yspeed =   wifiCar.speed
-    elseif dir == 6 then                --D_LEFT_DOWN = 6,
-        wifiCar.xspeed = - wifiCar.speed
-        wifiCar.yspeed = - wifiCar.speed
-    elseif dir == 7 then                --D_RIGHT_UP = 7,
-        wifiCar.xspeed =   wifiCar.speed
-        wifiCar.yspeed =   wifiCar.speed
-    elseif dir == 8 then                --D_RIGHT_DOWN =8
-        wifiCar.xspeed =   wifiCar.speed
-        wifiCar.yspeed = - wifiCar.speed
+
+    if pid ==1 then 
+        if dir == 0 then                    --DEFAULT = 0, 
+            wifiCar.xspeed = 0
+            wifiCar.yspeed = 0
+        elseif dir == 1 then                --D_UP = 1,
+            wifiCar.yspeed =   wifiCar.speed
+        elseif dir == 2 then                --D_DOWN = 2,
+            wifiCar.yspeed = - wifiCar.speed
+        -- elseif dir == 3 then                --D_LEFT = 3,
+        --     wifiCar.yspeed = 0
+        -- elseif dir == 4 then                --D_RIGHT = 4,
+        --     wifiCar.yspeed = 0
+        elseif dir == 5 then                --D_LEFT_UP = 5,
+            wifiCar.yspeed =   wifiCar.speed
+        elseif dir == 6 then                --D_LEFT_DOWN = 6,
+            wifiCar.yspeed = - wifiCar.speed
+        elseif dir == 7 then                --D_RIGHT_UP = 7,
+            wifiCar.yspeed =   wifiCar.speed
+        elseif dir == 8 then                --D_RIGHT_DOWN =8
+            wifiCar.yspeed = - wifiCar.speed
+        end
+    else
+        if dir == 0 then                    --DEFAULT = 0, 
+            wifiCar.xspeed = 0
+            wifiCar.yspeed = 0
+        -- elseif dir == 1 then                --D_UP = 1,
+        --     wifiCar.yspeed =   wifiCar.speed
+        -- elseif dir == 2 then                --D_DOWN = 2,
+        --     wifiCar.xspeed = 0
+        elseif dir == 3 then                --D_LEFT = 3,
+            wifiCar.xspeed = - wifiCar.speed
+        elseif dir == 4 then                --D_RIGHT = 4,
+            wifiCar.xspeed =   wifiCar.speed
+        elseif dir == 5 then                --D_LEFT_UP = 5,
+            wifiCar.xspeed = - wifiCar.speed
+        elseif dir == 6 then                --D_LEFT_DOWN = 6,
+            wifiCar.xspeed = - wifiCar.speed
+        elseif dir == 7 then                --D_RIGHT_UP = 7,
+            wifiCar.xspeed =   wifiCar.speed
+        elseif dir == 8 then                --D_RIGHT_DOWN =8
+            wifiCar.xspeed =   wifiCar.speed
+        end
     end
+
+	
 end
 
 local function loop( ... )
