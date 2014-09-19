@@ -194,7 +194,7 @@ function exit( )
 end
 
 function init( )
-	
+	GPIO.setwarnings(false)
 	wifiCar = Car.new()
     wifiCar:stop()
 
