@@ -185,11 +185,11 @@ local function loop( ... )
     wifiCar.lasty = wifiCar.yspeed
 
     local delayTime = (skynet.time()-time)*100      
-    if delayTime > 100 then                         
+    if delayTime > 10 then                         
         print("error loop time > 1s") 
-        delayTime = 99
+        delayTime = 9
     end
-    skynet.timeout(100-delayTime,loop)              
+    skynet.timeout(10-delayTime,loop)              
 end
 
 function exit( )
