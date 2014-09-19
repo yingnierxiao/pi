@@ -10,11 +10,11 @@ Wheel.__index = Wheel
 
 function Wheel.new( pin )
     local obj = {}
-
+	print(pin[1],pin[2],pin[3])
     obj.pin = pin
     GPIO.setmode(GPIO.BOARD)  
-    GPIO.setup(self.pin[0],GPIO.OUT)  
-    GPIO.setup(self.pin[1],GPIO.OUT)  
+    GPIO.setup(pin[1],GPIO.OUT)  
+    GPIO.setup(pin[2],GPIO.OUT)  
     local w = setmetatable(obj,Wheel)
     w:stop()
     return w
@@ -22,20 +22,20 @@ end
 
 function Wheel:forward()
     print(self.pin[3].. " forward")
-    GPIO.output(self.pin[0],GPIO.HIGH)  
-    GPIO.output(self.pin[1],GPIO.LOW)  
+    GPIO.output(self.pin[1],GPIO.HIGH)  
+    GPIO.output(self.pin[2],GPIO.LOW)  
 end
 
 function Wheel:stop(  )
     print(self.pin[3].. " stop")
-    GPIO.output(self.pin[0],false)  
-    GPIO.output(self.pin[1],false) 
+    GPIO.output(self.pin[1],GPIO.LOW)  
+    GPIO.output(self.pin[2],GPIO.LOW) 
 end
 
 function Wheel:back(  )
-    print(self.pin[3].. " back")
-    GPIO.output(self.pin[0],false)  
-    GPIO.output(self.pin[1],true)  
+    print(self.pin[1].." "..self.pin[2].." "..self.pin[3].. " back")
+    GPIO.output(self.pin[2],GPIO.HIGH)  
+    GPIO.output(self.pin[1],GPIO.LOW)  
 end
 
 
@@ -80,10 +80,10 @@ end
 
 function Car:back( ... )
     self.fl:back()
-    self.bl:back()
+    --self.bl:back()
 
     self.fr:back()
-    self.br:back()
+    --self.br:back()
 end
 
 function Car:stop( ... )
@@ -96,6 +96,7 @@ end
 
 function accept.dir(pid,dir )
     dir = tonumber(dir)
+print(dir)
 	if dir == 0 then 
         wifiCar:stop()
     elseif dir == 1 then
@@ -103,9 +104,9 @@ function accept.dir(pid,dir )
     elseif dir == 2 then
         wifiCar:back()
     elseif dir == 3 then
-        wifiCar:left()
+       -- wifiCar:left()
     elseif dir == 4 then
-        wifiCar:right()
+       --  wifiCar:right()
     elseif dir == 5 then
 
     elseif dir == 6 then
@@ -132,5 +133,6 @@ end
 ]]
 
 function init( ... )
+	GPIO.cleanup()
 	wifiCar = Car.new()
 end
