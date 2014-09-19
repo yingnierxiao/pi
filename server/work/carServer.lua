@@ -58,7 +58,6 @@ function Car.new(  )
     obj.lastx = 0
     obj.lasty = 0
 
-
     return setmetatable(obj,Car)
 end
 
@@ -159,6 +158,8 @@ local function loop( ... )
         end
     end
 
+    wifiCar.lastx = wifiCar.xspeed
+    wifiCar.lasty = wifiCar.yspeed
 
     local delayTime = (skynet.time()-time)*100      
     if delayTime > 100 then                         
@@ -168,7 +169,13 @@ local function loop( ... )
     skynet.timeout(100-delayTime,loop)              
 end
 
-function init( ... )
-	GPIO.cleanup()
+function exit( )
+    GPIO.cleanup()
+end
+
+function init( )
+	
 	wifiCar = Car.new()
+
+    loop()
 end
