@@ -52,13 +52,17 @@ local Car = {}
 
 Car.__index = Car
 
-function Car.new(  )
+function Car.new( is4Wheel )
     local obj = {}
+    obj.is4Wheel = is4Wheel
+
     obj.fl = Wheel.new({13,15,"fl"})
     obj.fr = Wheel.new({16,18,"fr"})
 
-    obj.bl = Wheel.new({19,21,"bl"})
-    obj.br = Wheel.new({22,24,"br"})
+    if obj.is4Wheel then 
+        obj.bl = Wheel.new({19,21,"bl"})
+        obj.br = Wheel.new({22,24,"br"})
+    end
 
     obj.speed = 10
     obj.xspeed = 0   --right    +   left  - 
@@ -81,32 +85,42 @@ function Car:right( ... )
     self.fl:forward()
     self.fr:back()
 
-    self.bl:forward()
-    self.br:back()
+    if self.is4Wheel then 
+        self.bl:forward()
+        self.br:back()
+    end
+
 end
 
 function Car:forward( ... )
     self.fl:forward()
     self.fr:forward()
+    if self.is4Wheel then 
+        self.bl:forward()
+        self.br:forward()        
+    end
 
-    self.bl:forward()
-    self.br:forward()
 end
 
 function Car:back( ... )
     self.fl:back()
     self.fr:back()
 
-    self.bl:back()  
-    self.br:back()
+    if self.is4Wheel then 
+        self.bl:back()  
+        self.br:back()
+    end
+
 end
 
 function Car:stop( ... )
     self.fl:stop()
     self.fr:stop()
 
-    self.bl:stop()
-    self.br:stop()
+    if self.is4Wheel then 
+        self.bl:stop()
+        self.br:stop()
+    end
 end
 
 function accept.dir(pid,dir )
@@ -187,7 +201,7 @@ end
 
 function init( )
     GPIO.setwarnings(false)
-    wifiCar = Car.new()
+    wifiCar = Car.new(false)
     wifiCar:stop()
 
     loop()
