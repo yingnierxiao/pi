@@ -157,27 +157,27 @@ end
 local function loop( ... )
     local time = skynet.time()
 
-    if wifiCar.lastx ~= wifiCar.xspeed then
+    --if wifiCar.lastx ~= wifiCar.xspeed then
         if wifiCar.xspeed > 0 then
             wifiCar:right()
         elseif wifiCar.xspeed < 0 then
             wifiCar:left()
         end
-    end
-    if wifiCar.lasty ~= wifiCar.yspeed then 
+    --end
+    --if wifiCar.lasty ~= wifiCar.yspeed then 
         if wifiCar.yspeed > 0 then
             wifiCar:forward()
         elseif wifiCar.yspeed < 0 then
             wifiCar:back()
         end
-    end
+    --end
 
 	if wifiCar.xspeed ==0 and wifiCar.yspeed == 0 then 
 		wifiCar:stop()
 	end
 
-    wifiCar.lastx = wifiCar.xspeed
-    wifiCar.lasty = wifiCar.yspeed
+    --wifiCar.lastx = wifiCar.xspeed
+    --wifiCar.lasty = wifiCar.yspeed
 
     local delayTime = (skynet.time()-time)*100      
     if delayTime > 10 then                         
