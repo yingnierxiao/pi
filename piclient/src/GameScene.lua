@@ -23,14 +23,13 @@ function GameScene:ctor()
     
    
     local jc = Joystick:create("pan.png","dot.png")
-    
     local lb = cc.Label:create();
     lb:setSystemFontSize(25)
     self:addChild(lb)
     lb:setString("no connect")
     
     self:addChild(jc)
-    jc:setPosition(cc.p(150,150))
+    jc:setPosition(cc.p(250,250))
     jc:setDieRadius(visibleSize.width/2)
     jc:setAutoPosition(false)
     jc:onRun()
@@ -43,9 +42,8 @@ function GameScene:ctor()
     end )
     
     local jc2 = Joystick:create("pan.png","dot.png")
-
     self:addChild(jc2)
-    jc2:setPosition(cc.p(visibleSize.width-150,150))
+    jc2:setPosition(cc.p(visibleSize.width-250,250))
     jc2:setDieRadius(visibleSize.width/2)
     jc2:setAutoPosition(false)
     jc2:onRun()
@@ -65,6 +63,7 @@ function GameScene:ctor()
     local EditName = cc.EditBox:create(editBoxSize, cc.Scale9Sprite:create("green_edit.png"))
     EditName:setPosition(cc.p(visibleSize.width/2,visibleSize.height-EditName:getContentSize().height))
     self:addChild(EditName);
+    EditName:setText("192.168.1.11")
     
     
     lb:setPosition(visibleSize.width/2,visibleSize.height-EditName:getContentSize().height*2);
