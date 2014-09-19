@@ -149,7 +149,7 @@ local function loop( ... )
             wifiCar:right()
         elseif wifiCar.xspeed < 0 then
             wifiCar:left()
-        elseif wifiCar.xspeed = 0 then
+        elseif wifiCar.xspeed == 0 then
             wifiCar:stop()
         end
     elseif wifiCar.lasty ~= wifiCar.yspeed then 
@@ -157,7 +157,7 @@ local function loop( ... )
             wifiCar:forward()
         elseif wifiCar.yspeed < 0 then
             wifiCar:back()
-        elseif wifiCar.yspeed = 0 then
+        elseif wifiCar.yspeed == 0 then
             wifiCar:stop()
         end
     end
