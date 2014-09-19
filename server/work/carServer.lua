@@ -128,6 +128,8 @@ function accept.dir(pid,dir )
             wifiCar.yspeed =   wifiCar.speed
         elseif dir == 8 then                --D_RIGHT_DOWN =8
             wifiCar.yspeed = - wifiCar.speed
+        else
+        	wifiCar.yspeed = 0	
         end
     else
         if dir == 0 then                    --DEFAULT = 0, 
@@ -144,6 +146,8 @@ function accept.dir(pid,dir )
             wifiCar.xspeed =   wifiCar.speed
         elseif dir == 8 then                --D_RIGHT_DOWN =8
             wifiCar.xspeed =   wifiCar.speed
+        else
+        	wifiCar.xspeed = 0
         end
     end
 
