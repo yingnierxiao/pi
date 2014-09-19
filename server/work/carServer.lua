@@ -10,32 +10,41 @@ Wheel.__index = Wheel
 
 function Wheel.new( pin )
     local obj = {}
-	-- print(pin[1],pin[2],pin[3])
     obj.pin = pin
+    obj.state = 2
     GPIO.setmode(GPIO.BOARD)  
     GPIO.setup(pin[1],GPIO.OUT)  
     GPIO.setup(pin[2],GPIO.OUT)  
-    local w = setmetatable(obj,Wheel)
-    w:stop()
-    return w
+    return setmetatable(obj,Wheel)
+end
+
+function Wheel:change( state )
+    if self.state == state then 
+        return
+    end
+
+    if state == 0 then 
+        GPIO.output(self.pin[1],GPIO.LOW)  
+        GPIO.output(self.pin[2],GPIO.LOW) 
+    elseif state == 1 then 
+        GPIO.output(self.pin[2],GPIO.HIGH)  
+        GPIO.output(self.pin[1],GPIO.LOW)
+    elseif state == -1 then
+        GPIO.output(self.pin[1],GPIO.HIGH)  
+        GPIO.output(self.pin[2],GPIO.LOW)  
+    end
 end
 
 function Wheel:forward()
-    -- print(self.pin[3].. " forward")
-    GPIO.output(self.pin[1],GPIO.HIGH)  
-    GPIO.output(self.pin[2],GPIO.LOW)  
+    self:change(1)
 end
 
 function Wheel:stop(  )
-    -- print(self.pin[3].. " stop")
-    GPIO.output(self.pin[1],GPIO.LOW)  
-    GPIO.output(self.pin[2],GPIO.LOW) 
+    self:change(0) 
 end
 
 function Wheel:back(  )
-    -- print(self.pin[1].." "..self.pin[2].." "..self.pin[3].. " back")
-    GPIO.output(self.pin[2],GPIO.HIGH)  
-    GPIO.output(self.pin[1],GPIO.LOW)  
+    self:change(-1)
 end
 
 
@@ -57,7 +66,6 @@ function Car.new(  )
 
     obj.lastx = 0
     obj.lasty = 0
-
     return setmetatable(obj,Car)
 end
 
@@ -102,36 +110,34 @@ function Car:stop( ... )
 end
 
 function accept.dir(pid,dir )
-    --xspeed    right    +   left  - 
-    --yspeed    forward  +   back  -
     dir = tonumber(dir)
 	if dir == 0 then                    --DEFAULT = 0, 
         wifiCar.xspeed = 0
         wifiCar.yspeed = 0
     elseif dir == 1 then                --D_UP = 1,
         wifiCar.xspeed = 0
-        wifiCar.yspeed = wifiCar.speed
+        wifiCar.yspeed =   wifiCar.speed
     elseif dir == 2 then                --D_DOWN = 2,
         wifiCar.xspeed = 0
-        wifiCar.yspeed = -wifiCar.speed
+        wifiCar.yspeed = - wifiCar.speed
     elseif dir == 3 then                --D_LEFT = 3,
-        wifiCar.xspeed = -wifiCar.speed
+        wifiCar.xspeed = - wifiCar.speed
         wifiCar.yspeed = 0
     elseif dir == 4 then                --D_RIGHT = 4,
-        wifiCar.xspeed = wifiCar.speed
+        wifiCar.xspeed =   wifiCar.speed
         wifiCar.yspeed = 0
     elseif dir == 5 then                --D_LEFT_UP = 5,
-        wifiCar.xspeed = -wifiCar.speed
-        wifiCar.yspeed = wifiCar.speed
+        wifiCar.xspeed = - wifiCar.speed
+        wifiCar.yspeed =   wifiCar.speed
     elseif dir == 6 then                --D_LEFT_DOWN = 6,
-        wifiCar.xspeed = -wifiCar.speed
-        wifiCar.yspeed = -wifiCar.speed
+        wifiCar.xspeed = - wifiCar.speed
+        wifiCar.yspeed = - wifiCar.speed
     elseif dir == 7 then                --D_RIGHT_UP = 7,
-        wifiCar.xspeed = wifiCar.speed
-        wifiCar.yspeed = wifiCar.speed
+        wifiCar.xspeed =   wifiCar.speed
+        wifiCar.yspeed =   wifiCar.speed
     elseif dir == 8 then                --D_RIGHT_DOWN =8
-        wifiCar.xspeed = wifiCar.speed
-        wifiCar.yspeed = -wifiCar.speed
+        wifiCar.xspeed =   wifiCar.speed
+        wifiCar.yspeed = - wifiCar.speed
     end
 end
 
@@ -146,9 +152,7 @@ local function loop( ... )
         elseif wifiCar.xspeed = 0 then
             wifiCar:stop()
         end
-    end
-
-    if wifiCar.lasty ~= wifiCar.yspeed then 
+    elseif wifiCar.lasty ~= wifiCar.yspeed then 
         if wifiCar.yspeed > 0 then
             wifiCar:forward()
         elseif wifiCar.yspeed < 0 then
@@ -176,6 +180,7 @@ end
 function init( )
 	
 	wifiCar = Car.new()
+    wifiCar:stop()
 
     loop()
 end
