@@ -115,16 +115,11 @@ function accept.dir(pid,dir )
 
     if pid ==1 then 
         if dir == 0 then                    --DEFAULT = 0, 
-           -- wifiCar.xspeed = 0
             wifiCar.yspeed = 0
         elseif dir == 1 then                --D_UP = 1,
             wifiCar.yspeed =   wifiCar.speed
         elseif dir == 2 then                --D_DOWN = 2,
             wifiCar.yspeed = - wifiCar.speed
-        -- elseif dir == 3 then                --D_LEFT = 3,
-        --     wifiCar.yspeed = 0
-        -- elseif dir == 4 then                --D_RIGHT = 4,
-        --     wifiCar.yspeed = 0
         elseif dir == 5 then                --D_LEFT_UP = 5,
             wifiCar.yspeed =   wifiCar.speed
         elseif dir == 6 then                --D_LEFT_DOWN = 6,
@@ -137,11 +132,6 @@ function accept.dir(pid,dir )
     else
         if dir == 0 then                    --DEFAULT = 0, 
             wifiCar.xspeed = 0
-            --wifiCar.yspeed = 0
-        -- elseif dir == 1 then                --D_UP = 1,
-        --     wifiCar.yspeed =   wifiCar.speed
-        -- elseif dir == 2 then                --D_DOWN = 2,
-        --     wifiCar.xspeed = 0
         elseif dir == 3 then                --D_LEFT = 3,
             wifiCar.xspeed = - wifiCar.speed
         elseif dir == 4 then                --D_RIGHT = 4,
@@ -168,16 +158,13 @@ local function loop( ... )
             wifiCar:right()
         elseif wifiCar.xspeed < 0 then
             wifiCar:left()
-       -- elseif wifiCar.xspeed == 0 then
-         --   wifiCar:stop()
         end
-    elseif wifiCar.lasty ~= wifiCar.yspeed then 
+    end
+    if wifiCar.lasty ~= wifiCar.yspeed then 
         if wifiCar.yspeed > 0 then
             wifiCar:forward()
         elseif wifiCar.yspeed < 0 then
             wifiCar:back()
-       -- elseif wifiCar.yspeed == 0 then
-         --   wifiCar:stop()
         end
     end
 
