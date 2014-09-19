@@ -129,7 +129,7 @@ function accept.dir(pid,dir )
         elseif dir == 8 then                --D_RIGHT_DOWN =8
             wifiCar.yspeed = - wifiCar.speed
         else
-        	wifiCar.yspeed = 0	
+            wifiCar.yspeed = 0  
         end
     else
         if dir == 0 then                    --DEFAULT = 0, 
@@ -147,40 +147,32 @@ function accept.dir(pid,dir )
         elseif dir == 8 then                --D_RIGHT_DOWN =8
             wifiCar.xspeed =   wifiCar.speed
         else
-        	wifiCar.xspeed = 0
+            wifiCar.xspeed = 0
         end
     end
 
-	
+    
 end
 
 local function loop( ... )
     local time = skynet.time()
 
-    --if wifiCar.lastx ~= wifiCar.xspeed then
-        if wifiCar.xspeed > 0 then
-            wifiCar:right()
-        elseif wifiCar.xspeed < 0 then
-            wifiCar:left()
-        else    
+    if wifiCar.xspeed > 0 then
+        wifiCar:right()
+    elseif wifiCar.xspeed < 0 then
+        wifiCar:left()
+    else    
         if wifiCar.yspeed > 0 then
             wifiCar:forward()
         elseif wifiCar.yspeed < 0 then
             wifiCar:back()
         end
-        end
-    --end
-    --if wifiCar.lasty ~= wifiCar.yspeed then 
-       
-    --end
+    end
 
-	if wifiCar.xspeed ==0 and wifiCar.yspeed == 0 then 
-		wifiCar:stop()
-	end
-
-    --wifiCar.lastx = wifiCar.xspeed
-    --wifiCar.lasty = wifiCar.yspeed
-
+    if wifiCar.xspeed ==0 and wifiCar.yspeed == 0 then 
+        wifiCar:stop()
+    end
+  
     local delayTime = (skynet.time()-time)*100      
     if delayTime > 10 then                         
         print("error loop time > 1s") 
@@ -194,8 +186,8 @@ function exit( )
 end
 
 function init( )
-	GPIO.setwarnings(false)
-	wifiCar = Car.new()
+    GPIO.setwarnings(false)
+    wifiCar = Car.new()
     wifiCar:stop()
 
     loop()
