@@ -67,6 +67,27 @@ function Car.new( is4Wheel )
     obj.speed = 10
     obj.xspeed = 0   --right    +   left  - 
     obj.yspeed = 0   --forward  +   back  -
+    
+    obj.pwmA = gpio.new(14,100)
+    gpio.setup{
+        channel = 14,
+        direction = gpio.OUT,
+        initial = gpio.LOW,
+    }
+    
+    obj.pwmA:start(50)
+    
+    obj.pwmB = gpio.new(17,100)
+    gpio.setup{
+        channel = 17,
+        direction = gpio.OUT,
+        initial = gpio.LOW,
+    }
+    
+    obj.pwmB:start(50)
+    
+    --obj.pwmA:ChangeDutyCycle(60)
+    --obj.pwmA:stop()
 
     return setmetatable(obj,Car)
 end
