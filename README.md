@@ -16,3 +16,12 @@ pi server :
 
 pi client :
 	apk  ipa with mac, android , ios and window  ,don't test window
+g-2
+b-6
+
+g-13
+b-15
+o-16
+y-18
+bai-19
+hei-21
