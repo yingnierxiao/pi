@@ -68,25 +68,28 @@ function Car.new( is4Wheel )
     obj.xspeed = 0   --right    +   left  - 
     obj.yspeed = 0   --forward  +   back  -
     
-    obj.pwmA = gpio.new(14,100)
-    gpio.setup{
-        channel = 14,
-        direction = gpio.OUT,
-        initial = gpio.LOW,
+    
+    GPIO.setup {
+        channel = 21,
+        direction = GPIO.OUT,
+        initial = GPIO.LOW,
     }
+    obj.pwmA = GPIO.newPWM(21,100)
     
     obj.pwmA:start(50)
     
-    obj.pwmB = gpio.new(17,100)
-    gpio.setup{
-        channel = 17,
-        direction = gpio.OUT,
-        initial = gpio.LOW,
+    
+    GPIO.setup {
+        channel = 19,
+        direction = GPIO.OUT,
+        initial = GPIO.LOW,
     }
+    obj.pwmB = GPIO.newPWM(19,100)
     
     obj.pwmB:start(50)
     
-    --obj.pwmA:ChangeDutyCycle(60)
+    obj.pwmA:ChangeDutyCycle(90)
+    obj.pwmB:ChangeDutyCycle(90)
     --obj.pwmA:stop()
 
     return setmetatable(obj,Car)
